@@ -1,0 +1,7 @@
+# Default repository ownership
+* @KurbahTech
+
+# Lexical and grammar data require explicit review
+/data/ @KurbahTech
+/linguistics/ @KurbahTech
+/governance/ @KurbahTech
