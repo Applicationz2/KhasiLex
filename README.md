@@ -17,6 +17,34 @@ The first corpus targets are:
 
 Accuracy and provenance take priority over raw word count.
 
+## First real 100-entry review corpus
+
+The first source-attested review batch is now present at:
+
+`data/review/batches/v0.4-pilot-001.csv`
+
+It contains exactly **100 real Khasi lexical candidates** drawn from approved reusable lexical evidence and balanced across:
+
+- 50 nouns
+- 25 verbs
+- 13 adjectives
+- 4 adverbs
+- 8 pronouns
+
+A separate worksheet for competent Khasi human review is available at:
+
+`data/review/batches/v0.4-pilot-001-human-review.csv`
+
+These entries are intentionally still `pending`. Source attestation and part-of-speech evidence are recorded, but canonical spelling, Khasi definitions, sense separation, example sentences, dialect/register and final grammatical decisions still require human linguistic review.
+
+Run the batch quality gate with:
+
+```bash
+python scripts/audit_review_batch.py
+```
+
+See `docs/v0.4-first-100-review-corpus.md` for the review protocol and identified ambiguity/spelling cases.
+
 ## Core capabilities
 
 - Microsoft Word custom dictionary export
@@ -140,6 +168,7 @@ The API is exposed on port `8000`.
 See:
 
 - `docs/v0.4-editorial-policy.md`
+- `docs/v0.4-first-100-review-corpus.md`
 - `governance/EDITORIAL_WORKFLOW.md`
 - `governance/REVIEWER_ROLES.md`
 - `ROADMAP.md`
@@ -152,4 +181,4 @@ Do not copy copyrighted Khasi dictionaries or corpora unless their licence permi
 
 ## Current status
 
-**v0.4 is under active corpus development.** The technical platform is deployable; the authoritative public dictionary corpus will become useful progressively as reviewed Khasi entries are added.
+**v0.4 is under active corpus development.** The first 100-entry source-attested review batch is built and structurally auditable. The technical platform is deployable; the authoritative public dictionary corpus will become useful progressively as competent Khasi reviewers move entries through `pending` → `reviewed` → `verified`.
