@@ -1,0 +1,13 @@
+concept_id,preferred_gloss_en,semantic_domain,ontology_uri,status,source,license,notes
+kconcept-000001,house; home,general,,pending,starter seed,CC0-example,Seed concept generated from KhasiLex entry; requires sense review.
+kconcept-000002,I; me,general,,pending,starter seed,CC0-example,Seed concept generated from KhasiLex entry; requires sense review.
+kconcept-000003,we; us,general,,pending,starter seed,CC0-example,Seed concept generated from KhasiLex entry; requires sense review.
+kconcept-000004,you,general,,pending,starter seed,CC0-example,Seed concept generated from KhasiLex entry; requires sense review.
+kconcept-000005,,general,,pending,starter seed,CC0-example,Seed concept generated from KhasiLex entry; requires sense review.
+kconcept-000006,,general,,pending,starter seed,CC0-example,Seed concept generated from KhasiLex entry; requires sense review.
+kconcept-000007,,general,,pending,starter seed,CC0-example,Seed concept generated from KhasiLex entry; requires sense review.
+kconcept-000008,eat,general,,pending,starter seed,CC0-example,Seed concept generated from KhasiLex entry; requires sense review.
+kconcept-000009,water,general,,pending,starter seed,CC0-example,Seed concept generated from KhasiLex entry; requires sense review.
+kconcept-000010,,general,,pending,user-provided reduplication example,user-contributed example,Seed concept generated from KhasiLex entry; requires sense review.
+kconcept-000011,,general,,pending,user-provided reduplication example,user-contributed example,Seed concept generated from KhasiLex entry; requires sense review.
+kconcept-000012,,general,,pending,user-provided reduplication example,user-contributed example,Seed concept generated from KhasiLex entry; requires sense review.
