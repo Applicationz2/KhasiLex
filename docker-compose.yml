@@ -1,0 +1,7 @@
+services:
+  khasilex:
+    build: .
+    container_name: khasilex
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
