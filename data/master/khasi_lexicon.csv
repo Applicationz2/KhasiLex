@@ -1,0 +1,13 @@
+id,headword,normalized,language,entry_type,lemma,base_form,token_count,reduplication_type,reduplication_pattern,grammatical_function,semantic_relation,register,dialect,script,bcp47,translation_status,reviewer,last_reviewed,part_of_speech,definition_kha,definition_en,variants,inflections,synonyms,antonyms,example_kha,example_en,domain,frequency,source,license,verification_status,notes
+kha-000001,ïing,ïing,kha,word,ïing,ïing,1,,,,,,,Latn,kha,pending,,,noun,,house; home,,,,,,,general,,starter seed,CC0-example,pending,Illustrative seed entry
+kha-000002,nga,nga,kha,word,nga,nga,1,,,,,,,Latn,kha,pending,,,pronoun,,I; me,,,,,,,general,,starter seed,CC0-example,pending,Illustrative seed entry
+kha-000003,ngi,ngi,kha,word,ngi,ngi,1,,,,,,,Latn,kha,pending,,,pronoun,,we; us,,,,,,,general,,starter seed,CC0-example,pending,Illustrative seed entry
+kha-000004,phi,phi,kha,word,phi,phi,1,,,,,,,Latn,kha,pending,,,pronoun,,you,,,,,,,general,,starter seed,CC0-example,pending,Illustrative seed entry
+kha-000005,ki,ki,kha,word,ki,ki,1,,,,,,,Latn,kha,pending,,,,,,,,,,,,general,,starter seed,CC0-example,pending,Illustrative seed entry
+kha-000006,ka,ka,kha,word,ka,ka,1,,,,,,,Latn,kha,pending,,,,,,,,,,,,general,,starter seed,CC0-example,pending,Illustrative seed entry
+kha-000007,u,u,kha,word,u,u,1,,,,,,,Latn,kha,pending,,,,,,,,,,,,general,,starter seed,CC0-example,pending,Illustrative seed entry
+kha-000008,bam,bam,kha,word,bam,bam,1,,,,,,,Latn,kha,pending,,,verb,,eat,,,,,,,general,,starter seed,CC0-example,pending,Illustrative seed entry
+kha-000009,um,um,kha,word,um,um,1,,,,,,,Latn,kha,pending,,,noun,,water,,,,,,,general,,starter seed,CC0-example,pending,Illustrative seed entry
+kha-000010,biang biang,biang biang,kha,reduplication,biang biang,biang,2,full,X X,,Requires Khasi linguistic review; do not infer meaning from repetition alone.,,,Latn,kha,pending,,,,,,,,,,,,general,,user-provided reduplication example,user-contributed example,pending,Stored as a first-class reduplicative construction; meaning intentionally left unverified.
+kha-000011,wut wut,wut wut,kha,reduplication,wut wut,wut,2,full,X X,,Requires Khasi linguistic review; do not infer meaning from repetition alone.,,,Latn,kha,pending,,,,,,,,,,,,general,,user-provided reduplication example,user-contributed example,pending,Stored as a first-class reduplicative construction; meaning intentionally left unverified.
+kha-000012,kloi kloi,kloi kloi,kha,reduplication,kloi kloi,kloi,2,full,X X,,Requires Khasi linguistic review; do not infer meaning from repetition alone.,,,Latn,kha,pending,,,,,,,,,,,,general,,user-provided reduplication example,user-contributed example,pending,Stored as a first-class reduplicative construction; meaning intentionally left unverified.
