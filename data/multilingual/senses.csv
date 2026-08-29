@@ -1,0 +1,13 @@
+sense_id,entry_id,concept_id,sense_number,definition_kha,definition_en,part_of_speech,semantic_domain,register,dialect,usage_notes_kha,usage_notes_en,grammar_profile_id,verification_status,reviewer,source,license
+ksense-000001,kha-000001,kconcept-000001,1,,house; home,noun,general,,,,,kgrammar-000001,pending,,starter seed,CC0-example
+ksense-000002,kha-000002,kconcept-000002,1,,I; me,pronoun,general,,,,,kgrammar-000002,pending,,starter seed,CC0-example
+ksense-000003,kha-000003,kconcept-000003,1,,we; us,pronoun,general,,,,,kgrammar-000003,pending,,starter seed,CC0-example
+ksense-000004,kha-000004,kconcept-000004,1,,you,pronoun,general,,,,,kgrammar-000004,pending,,starter seed,CC0-example
+ksense-000005,kha-000005,kconcept-000005,1,,,,general,,,,,kgrammar-000005,pending,,starter seed,CC0-example
+ksense-000006,kha-000006,kconcept-000006,1,,,,general,,,,,kgrammar-000006,pending,,starter seed,CC0-example
+ksense-000007,kha-000007,kconcept-000007,1,,,,general,,,,,kgrammar-000007,pending,,starter seed,CC0-example
+ksense-000008,kha-000008,kconcept-000008,1,,eat,verb,general,,,,,kgrammar-000008,pending,,starter seed,CC0-example
+ksense-000009,kha-000009,kconcept-000009,1,,water,noun,general,,,,,kgrammar-000009,pending,,starter seed,CC0-example
+ksense-000010,kha-000010,kconcept-000010,1,,,,general,,,,,kgrammar-000010,pending,,user-provided reduplication example,user-contributed example
+ksense-000011,kha-000011,kconcept-000011,1,,,,general,,,,,kgrammar-000011,pending,,user-provided reduplication example,user-contributed example
+ksense-000012,kha-000012,kconcept-000012,1,,,,general,,,,,kgrammar-000012,pending,,user-provided reduplication example,user-contributed example
