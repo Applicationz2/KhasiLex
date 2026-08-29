@@ -7,6 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 for script in [
     "validate.py",
     "validate_sources.py",
+    "validate_nissor_1906_corpus.py",
     "audit_review_batch.py",
     "corpus_audit.py",
     "export_word_dic.py",
