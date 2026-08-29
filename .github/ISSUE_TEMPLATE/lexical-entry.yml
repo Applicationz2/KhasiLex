@@ -1,0 +1,63 @@
+name: Khasi lexical entry or correction
+description: Propose a Khasi word, sense, phrase, reduplication, idiom, pronunciation, or correction.
+title: "[Lexicon]: "
+labels: []
+body:
+  - type: input
+    id: headword
+    attributes:
+      label: Khasi headword or expression
+      placeholder: "e.g. a Khasi word or multiword expression"
+    validations:
+      required: true
+  - type: dropdown
+    id: entry_type
+    attributes:
+      label: Entry type
+      options:
+        - word
+        - phrase
+        - reduplication
+        - compound
+        - idiom
+        - correction to existing entry
+    validations:
+      required: true
+  - type: textarea
+    id: meaning
+    attributes:
+      label: Khasi meaning and usage
+      description: Explain the sense in Khasi where possible. Separate different meanings/senses.
+    validations:
+      required: true
+  - type: textarea
+    id: translation
+    attributes:
+      label: Translation equivalents
+      description: Give English or other language equivalents and identify the language.
+  - type: textarea
+    id: grammar
+    attributes:
+      label: Grammar information
+      description: Part of speech, agreement, morphology, reduplication function, syntax, register, dialect, etc.
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example sentences
+      description: Provide natural Khasi examples and translations if available.
+  - type: textarea
+    id: source
+    attributes:
+      label: Source and licence/provenance
+      description: State how the entry is known and whether the source can legally be reused.
+    validations:
+      required: true
+  - type: checkboxes
+    id: attest
+    attributes:
+      label: Contribution checks
+      options:
+        - label: I have preserved Khasi spelling and diacritics.
+          required: true
+        - label: I have not copied copyrighted dictionary content without permission.
+          required: true
