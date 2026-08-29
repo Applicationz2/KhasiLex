@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.4",
+  "principle": "Accuracy outranks raw entry count.",
+  "milestones": {
+    "review-pilot": {
+      "verified_entries": 100,
+      "purpose": "Validate editorial workflow, schema and reviewer consistency."
+    },
+    "technical-alpha": {
+      "verified_entries": 1000,
+      "purpose": "Internal and limited integration testing with meaningful lexical coverage."
+    },
+    "public-beta": {
+      "verified_entries": 5000,
+      "purpose": "First public dictionary beta with a useful reviewed core vocabulary."
+    },
+    "professional-core": {
+      "verified_entries": 25000,
+      "purpose": "Broad professional dictionary coverage before v1.0 claims."
+    }
+  },
+  "verified_entry_minimums": {
+    "requires_part_of_speech": true,
+    "requires_definition_kha": true,
+    "requires_source": true,
+    "requires_license": true,
+    "requires_reviewer": true,
+    "requires_review_date": true,
+    "requires_natural_example_for_v1": true,
+    "ai_generated_content_must_remain_pending_until_human_review": true
+  }
+}

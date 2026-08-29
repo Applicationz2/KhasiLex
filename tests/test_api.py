@@ -7,13 +7,41 @@ client = TestClient(app)
 def test_health():
     r = client.get("/health")
     assert r.status_code == 200
-    assert r.json()["version"] == "0.3.0"
+    assert r.json()["version"] == "0.4.0"
 
 
 def test_word_lookup():
     r = client.get("/api/v1/words/ïing")
     assert r.status_code == 200
     assert r.json()["headword"] == "ïing"
+
+
+def test_authoritative_lookup_rejects_pending_seed():
+    r = client.get("/api/v1/authoritative/words/ïing")
+    assert r.status_code == 404
+
+
+def test_corpus_stats_expose_review_target():
+    r = client.get("/api/v1/corpus/stats")
+    assert r.status_code == 200
+    data = r.json()
+    assert data["version"] == "0.4.0"
+    assert data["total_entries"] >= 12
+    assert data["verification"]["pending"] >= 12
+    assert data["next_target"]["name"] == "review-pilot"
+    assert data["next_target"]["required"] == 100
+
+
+def test_public_corpus_defaults_to_verified_only():
+    r = client.get("/api/v1/corpus/entries")
+    assert r.status_code == 200
+    assert r.json()["status"] == "verified"
+    assert r.json()["count"] == 0
+
+
+def test_corpus_filter_rejects_invalid_status():
+    r = client.get("/api/v1/corpus/entries", params={"status": "automatic"})
+    assert r.status_code == 400
 
 
 def test_normalize():

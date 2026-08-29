@@ -1,68 +1,131 @@
-# KhasiLex v0.3 Global Professional Lexical Platform
+# KhasiLex v0.4 — Authoritative Khasi Corpus Foundation
 
-KhasiLex is an open, AI-ready Khasi lexical platform designed to support:
-
-- Microsoft Word custom dictionaries
-- Hunspell spell checking
-- Khasi-English lexical lookup
-- Unicode-safe normalization
-- CSV / JSONL master lexicon management
-- SQLite storage
-- FastAPI REST API integration
-- Future NLP, RAG, embeddings, translation, morphology, and AI-platform integration
+KhasiLex is an open, AI-ready Khasi lexical platform for professional dictionary development, grammar, reduplication, spell-checking, multilingual translation, NLP and AI integration.
 
 Language code: `kha`
 
-## Project architecture
+## v0.4 objective
 
-The master lexicon is the authoritative source. Microsoft Word, Hunspell,
-JSONL, SQLite, and API resources are generated from the master lexicon.
+v0.4 moves KhasiLex from a technical prototype toward an **authoritative, human-reviewed Khasi lexical corpus**. The software remains deployable, but only entries marked `verified` after the editorial quality gates should be presented as authoritative dictionary content.
+
+The first corpus targets are:
+
+- **100 verified entries** — review-pilot milestone
+- **1,000 verified entries** — technical alpha corpus
+- **5,000 verified entries** — public-beta corpus
+- **25,000 verified entries** — professional core target
+
+Accuracy and provenance take priority over raw word count.
+
+## Core capabilities
+
+- Microsoft Word custom dictionary export
+- Hunspell dictionary export foundation
+- UTF-8 / Unicode NFC-safe Khasi text handling
+- Khasi `ï` / `Ï` preservation
+- FastAPI lexical API
+- authoritative verified-only API endpoints
+- corpus quality metrics and readiness targets
+- word, phrase, compound, idiom and reduplication entry types
+- full adjacent reduplication detection (`X X`, `X X X`, ...)
+- multiword lexical matching
+- sense/concept multilingual architecture
+- BCP-47-style source-language identifiers
+- safe candidate-staging workflow
+- provenance, licensing and human review gates
+- Docker deployment
+- automated CI across Python 3.11, 3.12 and 3.13
 
 ## Quick start
 
-### 1. Create a virtual environment
-
-Windows PowerShell:
+### Windows PowerShell
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
 pip install -r requirements.txt
+python scripts\build_all.py
+pytest -q
+uvicorn api.main:app --reload
 ```
 
-Linux/macOS:
+### Linux/macOS
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
+python -m pip install --upgrade pip
 pip install -r requirements.txt
-```
-
-### 2. Validate the master lexicon
-
-```bash
-python scripts/validate.py
-```
-
-### 3. Generate exports
-
-```bash
-python scripts/export_word_dic.py
-python scripts/export_jsonl.py
-python scripts/export_hunspell.py
-python scripts/build_database.py
-```
-
-### 4. Run the API
-
-```bash
+python scripts/build_all.py
+pytest -q
 uvicorn api.main:app --reload
 ```
 
-Open:
+Open `http://127.0.0.1:8000/docs` for the interactive API documentation.
 
-- `http://127.0.0.1:8000/docs`
-- `http://127.0.0.1:8000/health`
+## Corpus workflow
+
+Candidate data must not be written directly into the authoritative master lexicon without review.
+
+1. Copy `data/pending/import_template.csv` and add candidate Khasi entries.
+2. Stage the candidate file:
+
+```bash
+python scripts/stage_candidates.py path/to/candidates.csv
+```
+
+3. Review spelling, sense, grammar, provenance and licence.
+4. Move approved material through `pending` → `reviewed` → `verified`.
+5. Record review actions in `data/review/review_log.csv`.
+6. Run:
+
+```bash
+python scripts/validate.py
+python scripts/corpus_audit.py
+```
+
+The audit writes `quality/corpus_report.json` and reports progress toward the next corpus milestone.
+
+## Authoritative API
+
+Development lookup may include pending entries:
+
+`GET /api/v1/words/{word}`
+
+Production-safe verified-only lookup:
+
+`GET /api/v1/authoritative/words/{word}`
+
+Corpus statistics:
+
+`GET /api/v1/corpus/stats`
+
+Filtered corpus entries (defaults to verified):
+
+`GET /api/v1/corpus/entries`
+
+Global-language sense resolution:
+
+`POST /api/v2/resolve-to-khasi`
+
+## Reduplication
+
+KhasiLex treats repeated Khasi constructions as possible lexical or grammatical units rather than automatically as typing errors. Examples currently used for structural testing include `biang biang`, `wut wut`, and `kloi kloi`.
+
+The starter examples remain `pending`: their meanings and grammatical functions must be linguistically reviewed rather than guessed.
+
+## Microsoft Word
+
+Generate the Word custom dictionary with:
+
+```bash
+python scripts/export_word_dic.py
+```
+
+Then in Word use **File → Options → Proofing → Custom Dictionaries → Add** and select `dictionaries/microsoft-word/Khasi.dic`.
+
+The Word `.dic` is a spell-check word list. Rich definitions, grammar, sense data and multilingual information remain in KhasiLex.
 
 ## Docker
 
@@ -70,102 +133,23 @@ Open:
 docker compose up --build
 ```
 
-Then open:
+The API is exposed on port `8000`.
 
-`http://localhost:8000/docs`
+## Editorial policy
 
-## Microsoft Word installation
+See:
 
-The generated Word dictionary is:
+- `docs/v0.4-editorial-policy.md`
+- `governance/EDITORIAL_WORKFLOW.md`
+- `governance/REVIEWER_ROLES.md`
+- `ROADMAP.md`
 
-`dictionaries/microsoft-word/Khasi.dic`
-
-In Microsoft Word:
-
-File -> Options -> Proofing -> Custom Dictionaries -> Add
-
-Select `Khasi.dic`.
-
-Note: Microsoft Word custom dictionaries are word-acceptance lists. Definitions,
-grammar, morphology, and AI features remain in the KhasiLex master database/API.
-
-## Data model
-
-Each lexical entry can contain:
-
-- id
-- headword
-- normalized
-- language
-- part_of_speech
-- definition_kha
-- definition_en
-- variants
-- inflections
-- synonyms
-- antonyms
-- example_kha
-- example_en
-- domain
-- frequency
-- source
-- license
-- verification_status
-- notes
+No AI-generated, copied or linguistically uncertain material may be marked authoritative merely to increase coverage.
 
 ## Licensing and provenance
 
-Do not copy a copyrighted Khasi dictionary into KhasiLex unless its licence permits
-redistribution and derivative use.
-
-Every imported entry should retain provenance information using the `source`,
-`license`, and `verification_status` fields.
-
-## Roadmap
-
-1. KhasiLex Core
-2. Microsoft Word spell-check dictionary
-3. Rich linguistic dictionary
-4. Khasi Hunspell rules
-5. KhasiLex API
-6. Microsoft Word Add-in
-7. NLP / RAG / AI integration
-8. Khasi tokenizer and morphological analyzer
-9. Semantic search / embeddings
-10. Translation and grammar assistance
-
-## Professional Khasi features
-
-KhasiLex supports first-class multiword and reduplicative entries. Repeated Khasi forms such as `biang biang`, `wut wut`, and `kloi kloi` are not automatically treated as duplicate-word errors. The NLP layer detects and preserves repeated constructions, while the lexical database stores their linguistic analysis separately.
-
-Google/global-ready exports can be generated for glossary, sentence-pair, TMX, JSONL and linked-data workflows.
-
-## Global multilingual layer
-
-KhasiLex v0.3 adds a language-neutral concept/sense architecture. It can ingest equivalents from any BCP-47-tagged language while keeping Khasi as the authoritative target lexicon.
-
-Important: the platform is technically capable of accepting global-language data, but correctness depends on reviewed lexical mappings. The starter package does not pretend to contain verified translations for every world language.
-
-New data layers include:
-
-- concepts
-- senses
-- multilingual equivalents
-- grammar profiles
-- pronunciation / IPA
-- surface forms
-- semantic relations
-- multilingual examples
-- language metadata
-
-New API:
-
-- `POST /api/v2/resolve-to-khasi`
-- `GET /api/v2/language-tag/check`
-- `GET /api/v2/capabilities`
-
-The resolver refuses to guess when a reviewed translation is absent.
+Do not copy copyrighted Khasi dictionaries or corpora unless their licence permits the intended reuse and redistribution. Production entries must retain source and licence information.
 
 ## Current status
 
-This repository is the deployable technical foundation for a professional Khasi dictionary and global Khasi language technology platform. Lexical data must be expanded and expert-reviewed before being considered authoritative.
+**v0.4 is under active corpus development.** The technical platform is deployable; the authoritative public dictionary corpus will become useful progressively as reviewed Khasi entries are added.
