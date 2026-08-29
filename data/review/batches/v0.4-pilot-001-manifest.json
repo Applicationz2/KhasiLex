@@ -1,0 +1,41 @@
+{
+  "batch_id": "v0.4-pilot-001",
+  "language": "kha",
+  "created_at": "2026-08-29",
+  "purpose": "First real 100-entry source-attested Khasi human-review corpus",
+  "entry_count": 100,
+  "part_of_speech_distribution": {
+    "noun": 50,
+    "verb": 25,
+    "adjective": 13,
+    "adverb": 4,
+    "pronoun": 8
+  },
+  "primary_source": "enwiktionary-kha",
+  "primary_source_license": "CC-BY-SA-4.0",
+  "source_attestation_scope": [
+    "headword occurrence in a Khasi part-of-speech category",
+    "part-of-speech category membership",
+    "presence in Wiktionary IPA category where marked",
+    "presence in Wiktionary usage-example category where marked",
+    "compound or multiword category membership where marked"
+  ],
+  "not_claimed": [
+    "authoritative definition",
+    "canonical spelling approval",
+    "complete sense inventory",
+    "normative grammar",
+    "dialect classification",
+    "verified translation",
+    "human linguistic approval"
+  ],
+  "verification_status": "pending",
+  "human_review_required": true,
+  "existing_master_headwords_in_batch": 5,
+  "known_pos_overlap_cases": [
+    "dei: verb + adjective",
+    "phira: noun + verb"
+  ],
+  "known_spelling_review_case": "pyniap should be compared with separately attested pynïap before a canonical decision",
+  "promotion_rule": "No batch row may become verified until the KhasiLex v0.4 editorial policy's human-review and provenance gates are satisfied."
+}
