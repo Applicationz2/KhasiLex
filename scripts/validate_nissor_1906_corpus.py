@@ -80,6 +80,7 @@ def main() -> None:
         if row.get("review_priority") not in {"1", "2", "3"}:
             errors.append(f"line {line_no}: invalid review_priority")
 
+    review_rows: list[dict[str, str]] = []
     if not REVIEW.exists():
         errors.append("review_queue.csv is missing")
     else:
@@ -87,9 +88,20 @@ def main() -> None:
             review_rows = list(csv.DictReader(handle))
         if not review_rows:
             errors.append("review_queue.csv is empty")
-        review_keys = [(row.get("normalized", ""), row.get("part_of_speech", "")) for row in review_rows]
+        review_keys = [
+            (row.get("normalized", ""), row.get("part_of_speech", ""))
+            for row in review_rows
+        ]
         if len(review_keys) != len(set(review_keys)):
             errors.append("review_queue contains duplicate headword/POS pairs")
+        for line_no, row in enumerate(review_rows, start=2):
+            try:
+                confidence = float(row.get("ocr_confidence", ""))
+            except ValueError:
+                errors.append(f"review line {line_no}: invalid ocr_confidence")
+                continue
+            if confidence < 0.75:
+                errors.append(f"review line {line_no}: low-confidence record leaked into review queue")
 
     if not RAW.exists():
         errors.append("raw public-domain OCR snapshot is missing")
@@ -104,6 +116,8 @@ def main() -> None:
             errors.append("report unique_headwords does not match entries.csv")
         if report.get("pending_records") != len(rows):
             errors.append("report must show every extracted record as pending")
+        if report.get("review_queue_records") != len(review_rows):
+            errors.append("report review_queue_records does not match review_queue.csv")
         if RAW.exists():
             digest = hashlib.sha256(RAW.read_bytes()).hexdigest()
             if report.get("source_sha256") != digest:
@@ -114,7 +128,7 @@ def main() -> None:
 
     print(
         f"NISSOR 1906 CORPUS VALIDATION PASSED: {len(rows)} records, "
-        f"{len(unique)} unique headwords, {len(initials)} initial characters"
+        f"{len(unique)} unique headwords, {len(review_rows)} review-queue records"
     )
 
 

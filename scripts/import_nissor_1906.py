@@ -29,7 +29,7 @@ ENTRY_RE = re.compile(
     rf"(?<![{LETTERS}\w])"
     rf"(?P<marker>[*†‡+/^\\]{{0,3}})\s*"
     rf"(?P<head>{HEAD_ATOM}(?:\s+[{LETTERS}'’\-]+){{0,6}})"
-    rf"\s*(?:[!?])?\s*,?\s*"
+    rf"\s*(?P<sep>[,!?])\s*"
     rf"(?:(?P<sense>\d+)\.\s*)?"
     rf"(?:(?P<gender>[{LETTERS}\^?]{{1,10}})\s*,\s*)?"
     rf"(?P<pos>{POS_PATTERN})\s*\.",
@@ -39,6 +39,11 @@ HEADER_WORDS = {
     "KHASI", "ENGLISH", "DICTIONARY", "NOTES", "PREFACE",
     "HINDI", "BENGALI", "ENGLISLI", "ENGLISH.",
 }
+
+# Initial letters used by the standard Khasi alphabet represented in this source.
+# OCR candidates beginning with other Latin initials are retained in the raw corpus
+# but are downgraded for manual inspection.
+KHASI_INITIALS = set("'’abkdeghiïjlmnñoprstuwy")
 
 POS_MAP = {
     "n": "noun",
@@ -172,6 +177,14 @@ def confidence_for(head: str, gloss: str, marker: str, pos: str) -> float:
         score -= 0.25
     if len(head.split()) > 5:
         score -= 0.05
+    normalized = normalized_key(head)
+    initial = normalized[:1]
+    if initial and initial not in KHASI_INITIALS:
+        score -= 0.40
+    if gloss.startswith(("]", "}", ")")):
+        score -= 0.20
+    if head.count("'") + head.count("’") > 2:
+        score -= 0.10
     return max(0.0, min(1.0, score))
 
 
@@ -336,7 +349,10 @@ def write_review_queue(path: Path, rows: list[Candidate]) -> None:
         if incumbent is None or float(row.ocr_confidence) > float(incumbent.ocr_confidence):
             best[key] = row
 
-    selected = sorted(best.values(), key=lambda r: (int(r.review_priority), r.normalized, r.part_of_speech))
+    selected = sorted(
+        (row for row in best.values() if float(row.ocr_confidence) >= 0.75),
+        key=lambda r: (int(r.review_priority), r.normalized, r.part_of_speech),
+    )
     fields = [
         "record_id", "headword_candidate", "normalized", "part_of_speech",
         "entry_type", "historical_gloss_raw", "source_page_approx",
@@ -363,7 +379,7 @@ def build_report(raw_bytes: bytes, rows: list[Candidate], source_url: str) -> di
         "source_url": source_url,
         "source_sha256": hashlib.sha256(raw_bytes).hexdigest(),
         "source_bytes": len(raw_bytes),
-        "parser_version": "1.0.0",
+        "parser_version": "1.1.0",
         "records_extracted": len(rows),
         "unique_headwords": len(unique_headwords),
         "unique_headword_pos_pairs": len(unique_headword_pos),
@@ -373,6 +389,15 @@ def build_report(raw_bytes: bytes, rows: list[Candidate], source_url: str) -> di
         "pending_records": sum(row.verification_status == "pending" for row in rows),
         "existing_master_records": sum(row.existing_master == "yes" for row in rows),
         "low_confidence_records": sum(float(row.ocr_confidence) < 0.75 for row in rows),
+        "review_queue_records": len({
+            (row.normalized, row.part_of_speech)
+            for row in rows
+            if float(row.ocr_confidence) >= 0.75
+        }),
+        "non_khasi_initial_records": sum(
+            bool(row.normalized) and row.normalized[:1] not in KHASI_INITIALS
+            for row in rows
+        ),
         "policy": (
             "Historical OCR extraction only. No record is authoritative until "
             "modern Khasi human review and KhasiLex verification gates are complete."
@@ -402,7 +427,10 @@ def main() -> None:
 
     report = build_report(raw_bytes, rows, args.source_url)
     args.report_output.parent.mkdir(parents=True, exist_ok=True)
-    args.report_output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    args.report_output.write_text(
+        json.dumps(report, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
 
     print(
         f"NISSOR 1906 INGEST COMPLETE: {len(rows)} records, "
