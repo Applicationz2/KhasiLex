@@ -21,10 +21,32 @@ Status: implemented.
 
 ## v0.4 — Authoritative lexical corpus foundation
 
-Priority: highest.
+**Status: active development.**
 
-- establish Khasi editorial board/reviewer workflow;
-- define normative headword and variant policy;
+Implemented in the v0.4 development branch:
+
+- strict `pending` → `reviewed` → `verified` editorial states;
+- verified-entry provenance/reviewer/date requirements;
+- verified Khasi-definition and grammatical-classification gates;
+- stricter verified reduplication requirements;
+- verified-only production API lookup;
+- corpus statistics and readiness API;
+- safe candidate-staging workflow that does not modify the master lexicon;
+- auditable review-log schema;
+- corpus quality audit and CI artifact;
+- explicit corpus readiness targets.
+
+Corpus targets:
+
+- **100 verified entries** — review-pilot;
+- **1,000 verified entries** — technical alpha;
+- **5,000 verified entries** — public beta;
+- **25,000 verified entries** — professional core.
+
+Remaining v0.4 lexical work:
+
+- establish Khasi editorial board/reviewer participation;
+- define and refine normative headword/variant policy from reviewed evidence;
 - collect and verify high-frequency Khasi vocabulary;
 - split polysemous words into explicit senses;
 - expand parts of speech and semantic domains;
@@ -32,7 +54,7 @@ Priority: highest.
 - add natural Khasi example sentences;
 - expand reduplicative and multiword constructions;
 - record source/licence provenance for every production entry;
-- create quality metrics and corpus coverage reports.
+- grow the corpus through the 100 → 1,000 → 5,000 verified-entry gates.
 
 Target: first substantial verified core lexicon rather than a large unreviewed word dump.
 
