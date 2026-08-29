@@ -8,9 +8,12 @@ import json
 import sys
 import unicodedata
 
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
 from linguistics.tokenizer import tokenize
 
-ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "data/sources/source_registry.csv"
 MASTER = ROOT / "data/master/khasi_lexicon.csv"
 
@@ -146,7 +149,6 @@ def main():
         if not args.include_existing and key in existing:
             continue
 
-        # Preserve the most frequent observed NFC surface form. Editors decide the canonical form.
         surface = surfaces[key].most_common(1)[0][0]
         evidence = " || ".join(contexts[key])
         candidates.append({
