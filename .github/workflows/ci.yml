@@ -2,7 +2,7 @@ name: KhasiLex CI
 
 on:
   push:
-    branches: [main]
+    branches: [main, 'feature/**']
   pull_request:
   workflow_dispatch:
 
@@ -39,11 +39,22 @@ jobs:
       - name: Validate lexicon
         run: python scripts/validate.py
 
-      - name: Build generated dictionaries
+      - name: Build and audit corpus
         run: python scripts/build_all.py
+
+      - name: Validate candidate staging interface
+        run: python scripts/stage_candidates.py data/pending/import_template.csv --output /tmp/khasilex-staged.jsonl
 
       - name: Run tests
         run: pytest -q -p no:cacheprovider
+
+      - name: Upload corpus quality report
+        if: matrix.python-version == '3.12'
+        uses: actions/upload-artifact@v4
+        with:
+          name: khasilex-corpus-report
+          path: quality/corpus_report.json
+          if-no-files-found: error
 
   docker:
     name: Docker build
