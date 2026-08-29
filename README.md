@@ -17,13 +17,39 @@ The first corpus targets are:
 
 Accuracy and provenance take priority over raw word count.
 
+## Nissor Singh 1906 full historical corpus
+
+KhasiLex now systematically processes the complete public-domain **U Nissor Singh, Khasi-English Dictionary (1906)** from the canonical Internet Archive OCR snapshot.
+
+Current reproducible extraction:
+
+- **3,853** structurally recognized historical records
+- **3,848** unique normalized headwords
+- **3,851** unique headword / part-of-speech pairs
+- **3,816** normal editorial-review candidates
+- **35** suspicious/OCR-anomaly candidates quarantined for scan inspection
+- **39** deterministic review batches of up to 100 candidates
+
+All historical records remain `pending` and require modern Khasi human review. Historical spelling, definitions, POS labels and senses are evidence, not automatic modern lexical authority.
+
+Corpus files:
+
+- `data/sources/nissor-1906/khasienglishdict00singrich_djvu.txt` — preserved raw OCR snapshot
+- `data/historical/nissor-1906/entries.csv` — complete structurally recognized historical extraction
+- `data/historical/nissor-1906/review_queue.csv` — normal editorial queue
+- `data/historical/nissor-1906/suspicious_queue.csv` — OCR/anomaly quarantine
+- `data/historical/nissor-1906/review_plan.csv` — deterministic full-corpus batch plan
+- `quality/nissor1906_ingest_report.json` — source hash, counts and parser diagnostics
+
+See `docs/NISSOR_1906_FULL_INGEST.md` for the ingestion and review policy.
+
 ## First real 100-entry review corpus
 
-The first source-attested review batch is now present at:
+The first source-attested contemporary review batch remains available at:
 
 `data/review/batches/v0.4-pilot-001.csv`
 
-It contains exactly **100 real Khasi lexical candidates** drawn from approved reusable lexical evidence and balanced across:
+It contains exactly **100 real Khasi lexical candidates** balanced across:
 
 - 50 nouns
 - 25 verbs
@@ -61,6 +87,9 @@ See `docs/v0.4-first-100-review-corpus.md` for the review protocol and identifie
 - BCP-47-style source-language identifiers
 - safe candidate-staging workflow
 - provenance, licensing and human review gates
+- complete public-domain historical-dictionary ingestion pipeline
+- layout-aware OCR extraction and anomaly quarantine
+- deterministic 100-entry historical review planning
 - Docker deployment
 - automated CI across Python 3.11, 3.12 and 3.13
 
@@ -96,24 +125,23 @@ Open `http://127.0.0.1:8000/docs` for the interactive API documentation.
 
 Candidate data must not be written directly into the authoritative master lexicon without review.
 
-1. Copy `data/pending/import_template.csv` and add candidate Khasi entries.
-2. Stage the candidate file:
+1. Collect candidate evidence from an approved source.
+2. Preserve source, licence and provenance metadata.
+3. Stage candidates as `pending`.
+4. Review spelling, sense, grammar, provenance and licence.
+5. Move approved material through `pending` → `reviewed` → `verified`.
+6. Record review actions in `data/review/review_log.csv`.
+7. Run the validation and corpus audit gates.
+
+For ordinary candidate imports:
 
 ```bash
 python scripts/stage_candidates.py path/to/candidates.csv
-```
-
-3. Review spelling, sense, grammar, provenance and licence.
-4. Move approved material through `pending` → `reviewed` → `verified`.
-5. Record review actions in `data/review/review_log.csv`.
-6. Run:
-
-```bash
 python scripts/validate.py
 python scripts/corpus_audit.py
 ```
 
-The audit writes `quality/corpus_report.json` and reports progress toward the next corpus milestone.
+For the 1906 historical corpus, use the generated `review_plan.csv` and inspect the original scan whenever OCR or historical usage is uncertain.
 
 ## Authoritative API
 
@@ -141,7 +169,7 @@ Global-language sense resolution:
 
 KhasiLex treats repeated Khasi constructions as possible lexical or grammatical units rather than automatically as typing errors. Examples currently used for structural testing include `biang biang`, `wut wut`, and `kloi kloi`.
 
-The starter examples remain `pending`: their meanings and grammatical functions must be linguistically reviewed rather than guessed.
+The starter examples remain `pending`: their meanings and grammatical functions must be linguistically reviewed rather than guessed. Historical `[Imit.]` strings from the 1906 dictionary are not automatically promoted as headwords merely because they contain repeated or paired forms.
 
 ## Microsoft Word
 
@@ -169,16 +197,19 @@ See:
 
 - `docs/v0.4-editorial-policy.md`
 - `docs/v0.4-first-100-review-corpus.md`
+- `docs/NISSOR_1906_FULL_INGEST.md`
 - `governance/EDITORIAL_WORKFLOW.md`
 - `governance/REVIEWER_ROLES.md`
 - `ROADMAP.md`
 
-No AI-generated, copied or linguistically uncertain material may be marked authoritative merely to increase coverage.
+No AI-generated, copied, OCR-damaged, historical-only or linguistically uncertain material may be marked authoritative merely to increase coverage.
 
 ## Licensing and provenance
 
 Do not copy copyrighted Khasi dictionaries or corpora unless their licence permits the intended reuse and redistribution. Production entries must retain source and licence information.
 
+The Nissor Singh 1906 corpus is maintained as a public-domain historical evidence layer with the exact source snapshot and SHA-256 recorded for reproducibility.
+
 ## Current status
 
-**v0.4 is under active corpus development.** The first 100-entry source-attested review batch is built and structurally auditable. The technical platform is deployable; the authoritative public dictionary corpus will become useful progressively as competent Khasi reviewers move entries through `pending` → `reviewed` → `verified`.
+**v0.4 is under active corpus review.** The full Nissor Singh 1906 historical source has been systematically ingested and partitioned for review, alongside the original 100-entry source-attested pilot. The technical platform is deployable; the authoritative public dictionary grows only as competent Khasi reviewers move entries through `pending` → `reviewed` → `verified`.
