@@ -1,95 +1,70 @@
 # Nissor Singh 1906 Full-Dictionary Ingestion
 
-KhasiLex v0.4 uses U Nissor Singh's **Khasi-English Dictionary (1906)** as a historical lexical evidence source.
+KhasiLex v0.4 processes U Nissor Singh's **Khasi-English Dictionary (1906)** as a complete historical evidence source.
 
 Canonical digital source:
 
 - Internet Archive item: `khasienglishdict00singrich`
 - OCR text: `https://archive.org/download/khasienglishdict00singrich/khasienglishdict00singrich_djvu.txt`
-- Scan/PDF: Wikimedia Commons / Internet Archive
-- Publication: Shillong, Eastern Bengal and Assam Secretariat Press, 1906
-- Khasi variety: the author's preface identifies the Cherra/Cherrapunji dialect as the principal standard used by the dictionary
-- Rights status used by KhasiLex: public-domain historical work
+- scan/PDF: Wikimedia Commons / Internet Archive
+- publication: Shillong, Eastern Bengal and Assam Secretariat Press, 1906
+- historical variety: the author's preface identifies Cherra/Cherrapunji as the principal standard basis
+- rights status used by KhasiLex: public-domain historical work
 
-## Why the full book is not copied directly into the authoritative lexicon
+## Corpus policy
 
-A 1906 dictionary is valuable evidence, but it is not automatically a modern normative dictionary.
+The entire OCR snapshot is preserved so later parser improvements remain reproducible. Extracted records are **historical candidates**, never automatic modern dictionary entries.
 
-The source contains:
+Every extracted row is `pending` and `human_review_required=yes` because the source may contain historical spelling, obsolete senses, dialectal material, OCR corruption, older grammatical terminology, source abbreviations, loanword markers, and polysemy requiring modern sense separation.
 
-- historical spellings;
-- historical grammatical labels;
-- loanword markers;
-- obsolete or changed senses;
-- OCR errors from the digitized scan;
-- multi-sense entries that need sense separation;
-- phrases, compounds and imitative/reduplicative constructions;
-- forms whose modern Khasi status must be checked.
+## Layout-aware parser
 
-Therefore the complete extraction is stored in a **historical candidate layer** and every record remains `pending`.
+Parser v1.2 is deliberately conservative. The OCR preserves the original dictionary layout sufficiently well that genuine headword records normally begin on a new line. KhasiLex therefore requires an entry-shaped headword/POS structure at a **line start** instead of scanning arbitrary definition text.
 
-## Reproducible ingestion workflow
+This prevents imitative examples such as `[Imit. ...]` and embedded cross-references from being promoted to independent entries merely because they contain text resembling a part-of-speech abbreviation.
 
-The GitHub Actions workflow `.github/workflows/ingest-nissor-1906.yml`:
+The parser also:
 
-1. downloads the canonical Internet Archive OCR text;
-2. checks that the source is plausibly complete;
-3. stores the raw OCR snapshot in the repository;
-4. runs `scripts/import_nissor_1906.py`;
-5. creates `data/historical/nissor-1906/entries.csv`;
-6. creates a de-duplicated headword/POS `review_queue.csv`;
-7. writes `quality/nissor1906_ingest_report.json`, including the source SHA-256;
-8. validates the generated corpus;
-9. runs the normal KhasiLex build and tests;
-10. runs a Docker regression build;
-11. commits the reproducible generated snapshot back to the feature branch.
+- preserves source apostrophes and markers in the raw historical row;
+- checks the real alphabetic initial even when an apostrophe precedes it;
+- downgrades non-native/likely OCR initials instead of deleting them;
+- downgrades headwords with suspicious short trailing OCR tokens;
+- preserves low-confidence rows in the complete historical corpus;
+- excludes low-confidence rows from the normal editorial queue.
 
-## Generated historical entry fields
+## Generated layers
 
-The historical corpus preserves:
+`data/sources/nissor-1906/khasienglishdict00singrich_djvu.txt`
+: Exact downloaded public-domain OCR snapshot used for the ingest.
 
-- raw OCR headword;
-- normalized candidate form;
-- entry type;
-- normalized and raw part-of-speech evidence;
-- source gender/article label where detectable;
-- historical foreign/loan marker where detectable;
-- historical English gloss text;
-- source line and approximate scanned page;
-- OCR-confidence score;
-- duplicate headword/POS count;
-- whether the headword already exists in the master lexicon;
-- review priority;
-- mandatory human-review flag;
-- `pending` verification status.
+`data/historical/nissor-1906/entries.csv`
+: Complete structurally recognized historical extraction. This is evidence data, not an authoritative modern lexicon.
 
-## Confidence is not linguistic authority
+`data/historical/nissor-1906/review_queue.csv`
+: One best record per normalized headword/POS pair with structural confidence at or above the editorial threshold. These are candidates for human Khasi review.
 
-`ocr_confidence` measures how structurally plausible the OCR extraction is. It does **not** mean that a spelling, definition, grammar analysis, dialect classification or current usage has been verified.
+`data/historical/nissor-1906/suspicious_queue.csv`
+: OCR/anomaly cases deliberately withheld from the normal review queue. Reviewers can recover genuine entries from this queue after checking the scanned page.
 
-High-confidence records are simply better candidates to review first.
+`quality/nissor1906_ingest_report.json`
+: Reproducibility and coverage report containing source SHA-256, byte size, parser version, extracted counts, POS distribution and queue counts.
 
-## Review process
+## Reproducible workflow
 
-The recommended sequence is:
+`.github/workflows/ingest-nissor-1906.yml` downloads the canonical OCR, regenerates all three data layers, validates them, runs the full KhasiLex test/build suite, builds the Docker image, and commits generated results back to the feature branch.
 
-`historical extraction -> OCR/source-image check -> modern spelling check -> POS/grammar review -> sense split -> Khasi definition -> English gloss review -> example review -> provenance confirmation -> reviewed -> verified`
+## Promotion workflow
 
-Only the final reviewed records should be promoted into `data/master/khasi_lexicon.csv`.
+Historical rows move through:
 
-## Historical spelling policy
+`raw source -> historical extraction -> editorial/suspicious queue -> scan check -> modern spelling review -> POS/grammar review -> sense separation -> independently reviewed Khasi definition -> English gloss review -> example review -> reviewed -> verified`
 
-Do not silently erase historical variants. When the 1906 form differs from the modern accepted form:
+Only records that complete the full KhasiLex editorial process may be promoted into `data/master/khasi_lexicon.csv` as authoritative entries.
 
-- preserve the 1906 form as historical evidence;
-- add the modern canonical headword separately during human review;
-- link historical and modern forms as variants where appropriate;
-- record dialect/register/obsolete status when known.
+## Historical variants
 
-## Reduplication, imitative forms and compounds
+When a 1906 spelling differs from a modern accepted spelling, KhasiLex should preserve the historical form as evidence and link it to the reviewed modern canonical form rather than silently deleting the historical orthography.
 
-The source explicitly includes imitative word-collocations and many compounds. KhasiLex preserves these as candidates rather than treating repeated words or hyphenated forms as spelling mistakes.
+## Reduplication and imitative constructions
 
-## Supply-chain reproducibility
-
-The first successful full ingest records the SHA-256 of the raw Internet Archive OCR snapshot. Future refreshes should compare against the recorded hash so changes in the external OCR source are visible and reviewable.
+The source explicitly contains imitative word collocations and compounds. Genuine Khasi reduplications and repeated constructions must be modeled as linguistic forms, while strings appearing only inside an `[Imit.]` annotation must not automatically become dictionary headwords. Human review determines their final lexical or grammatical status.

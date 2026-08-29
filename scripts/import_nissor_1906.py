@@ -25,14 +25,19 @@ POS_PATTERN = (
 )
 
 HEAD_ATOM = rf"(?:['’][{LETTERS}]|[{UPPER}])[{LETTERS}'’\-]*"
+ORNAMENT = rf"(?:v-?(?=[{UPPER}])|[*†‡+/^\\,.;])"
+
+# The OCR preserves dictionary layout reasonably well: real headword records start
+# on a new line. Anchoring here prevents examples and [Imit.] strings inside a
+# definition from being promoted to independent headwords.
 ENTRY_RE = re.compile(
-    rf"(?<![{LETTERS}\w])"
-    rf"(?P<marker>[*†‡+/^\\]{{0,3}})\s*"
-    rf"(?P<head>{HEAD_ATOM}(?:\s+[{LETTERS}'’\-]+){{0,6}})"
-    rf"\s*(?P<sep>[,!?])\s*"
-    rf"(?:(?P<sense>\d+)\.\s*)?"
-    rf"(?:(?P<gender>[{LETTERS}\^?]{{1,10}})\s*,\s*)?"
-    rf"(?P<pos>{POS_PATTERN})\s*\.",
+    rf"^[ \t]*(?P<marker>(?:{ORNAMENT}){{0,5}})[ \t]*"
+    rf"(?P<head>{HEAD_ATOM}(?:[ \t]+[{LETTERS}'’\-]+){{0,6}})"
+    rf"[ \t]*(?P<sep>[,!?])[ \t]*"
+    rf"(?:(?P<sense>\d+)\.[ \t]*)?"
+    rf"(?:(?P<gender>[{LETTERS}\^?]{{1,10}})[ \t]*,[ \t]*)?"
+    rf"(?P<pos>{POS_PATTERN})[ \t]*\.",
+    flags=re.MULTILINE,
 )
 
 HEADER_WORDS = {
@@ -40,10 +45,10 @@ HEADER_WORDS = {
     "HINDI", "BENGALI", "ENGLISLI", "ENGLISH.",
 }
 
-# Initial letters used by the standard Khasi alphabet represented in this source.
-# OCR candidates beginning with other Latin initials are retained in the raw corpus
-# but are downgraded for manual inspection.
-KHASI_INITIALS = set("'’abkdeghiïjlmnñoprstuwy")
+# Native Khasi orthographic initials represented by this historical source.
+# Non-native initials are never deleted from the raw extraction: they are simply
+# downgraded into the suspicious queue until a reviewer checks the scan.
+KHASI_INITIALS = set("abkdeghiïjlmnñoprstuwy")
 
 POS_MAP = {
     "n": "noun",
@@ -113,12 +118,18 @@ def compact_ws(value: str) -> str:
 
 def clean_headword(raw: str) -> str:
     value = compact_ws(nfc(raw))
-    value = value.strip(" ,.;:")
-    return value
+    return value.strip(" ,.;:")
 
 
 def normalized_key(headword: str) -> str:
     return nfc(headword).casefold().strip()
+
+
+def lexical_initial(normalized: str) -> str:
+    # Leading apostrophes are source orthography/notation and must not hide the
+    # actual alphabetic initial for OCR-quality checks.
+    stripped = normalized.lstrip("'’")
+    return stripped[:1]
 
 
 def estimate_page(text: str, offset: int) -> int:
@@ -143,8 +154,7 @@ def plausible_match(match: re.Match[str]) -> bool:
         return False
     if len(tokens) > 1 and len(tokens[0].strip("'’")) == 1:
         return False
-    alpha = [ch for ch in head if ch.isalpha()]
-    if len(alpha) < 1:
+    if not any(ch.isalpha() for ch in head):
         return False
     if head.upper() in HEADER_WORDS:
         return False
@@ -177,14 +187,21 @@ def confidence_for(head: str, gloss: str, marker: str, pos: str) -> float:
         score -= 0.25
     if len(head.split()) > 5:
         score -= 0.05
-    normalized = normalized_key(head)
-    initial = normalized[:1]
+
+    initial = lexical_initial(normalized_key(head))
     if initial and initial not in KHASI_INITIALS:
         score -= 0.40
     if gloss.startswith(("]", "}", ")")):
         score -= 0.20
     if head.count("'") + head.count("’") > 2:
         score -= 0.10
+
+    # A very short trailing whitespace token is commonly a mangled gender/article
+    # label in OCR (for example a source "ka" or "u" shifted into the headword).
+    tokens = head.split()
+    if len(tokens) > 1 and len(tokens[-1].strip("'’")) <= 2:
+        score -= 0.30
+
     return max(0.0, min(1.0, score))
 
 
@@ -197,10 +214,10 @@ def priority_for(score: float) -> str:
 
 
 def detect_entry_type(headword: str, pos: str) -> str:
-    if " " in headword:
-        return "phrase"
     if re.search(r"\b(.+?)[-\s]\1\b", headword, flags=re.IGNORECASE):
         return "reduplication"
+    if " " in headword:
+        return "phrase"
     if "-" in headword:
         return "compound"
     if pos == "phrase":
@@ -227,13 +244,10 @@ def locate_dictionary_body(text: str) -> str:
     ]
     starts = [text.find(p) for p in probes if text.find(p) >= 0]
     if starts:
-        start = max(starts)
-        return text[start:]
+        return text[max(starts):]
     marker = "Abbreviations and Signs used in this Dictionary"
     idx = text.find(marker)
-    if idx >= 0:
-        return text[idx:]
-    return text
+    return text[idx:] if idx >= 0 else text
 
 
 def extract_candidates(
@@ -264,21 +278,19 @@ def extract_candidates(
         normalized = normalized_key(raw_head)
         absolute_offset = body_offset + match.start()
 
-        prelim.append(
-            {
-                "raw_head": raw_head,
-                "headword_candidate": raw_head.casefold(),
-                "normalized": normalized,
-                "pos": pos,
-                "pos_raw": pos_raw,
-                "gender": gender,
-                "marker": marker,
-                "gloss": gloss,
-                "line": line_number(text, absolute_offset),
-                "page": estimate_page(text, absolute_offset),
-                "score": score,
-            }
-        )
+        prelim.append({
+            "raw_head": raw_head,
+            "headword_candidate": raw_head.casefold(),
+            "normalized": normalized,
+            "pos": pos,
+            "pos_raw": pos_raw,
+            "gender": gender,
+            "marker": marker,
+            "gloss": gloss,
+            "line": line_number(text, absolute_offset),
+            "page": estimate_page(text, absolute_offset),
+            "score": score,
+        })
 
     duplicate_counts = Counter((item["normalized"], item["pos"]) for item in prelim)
 
@@ -287,6 +299,7 @@ def extract_candidates(
         headword = str(item["headword_candidate"])
         pos = str(item["pos"])
         duplicate_count = duplicate_counts[(item["normalized"], pos)]
+        score = float(item["score"])
         notes = [
             "Automatically extracted from the complete 1906 public-domain OCR.",
             "Historical spelling/meaning/POS must be checked against the scan and modern Khasi usage.",
@@ -295,37 +308,35 @@ def extract_candidates(
             notes.append("Repeated headword/POS in OCR; inspect for sense split, cross-reference, or OCR duplication.")
         if item["normalized"] in master_headwords:
             notes.append("Headword already exists in the KhasiLex master lexicon; update/review rather than duplicate.")
-        if float(item["score"]) < 0.75:
-            notes.append("Lower OCR confidence; inspect source image before lexical use.")
+        if score < 0.75:
+            notes.append("OCR/anomaly confidence below editorial threshold; inspect source image before lexical review.")
 
-        result.append(
-            Candidate(
-                record_id=f"kha-n1906-{idx:06d}",
-                headword_raw=str(item["raw_head"]),
-                headword_candidate=headword,
-                normalized=str(item["normalized"]),
-                language="kha",
-                entry_type=detect_entry_type(headword, pos),
-                part_of_speech=pos,
-                part_of_speech_raw=str(item["pos_raw"]),
-                gender_or_article_raw=str(item["gender"]),
-                source_marker=str(item["marker"]),
-                source_marker_interpretation=LOAN_MARKERS.get(str(item["marker"]), ""),
-                historical_gloss_raw=str(item["gloss"]),
-                source_id=SOURCE_ID,
-                source_year=str(SOURCE_YEAR),
-                source_url=source_url,
-                source_line_start=str(item["line"]),
-                source_page_approx=str(item["page"]),
-                ocr_confidence=f"{float(item['score']):.3f}",
-                review_priority=priority_for(float(item["score"])),
-                duplicate_headword_pos_count=str(duplicate_count),
-                existing_master="yes" if item["normalized"] in master_headwords else "no",
-                verification_status="pending",
-                human_review_required="yes",
-                notes=" ".join(notes),
-            )
-        )
+        result.append(Candidate(
+            record_id=f"kha-n1906-{idx:06d}",
+            headword_raw=str(item["raw_head"]),
+            headword_candidate=headword,
+            normalized=str(item["normalized"]),
+            language="kha",
+            entry_type=detect_entry_type(headword, pos),
+            part_of_speech=pos,
+            part_of_speech_raw=str(item["pos_raw"]),
+            gender_or_article_raw=str(item["gender"]),
+            source_marker=str(item["marker"]),
+            source_marker_interpretation=LOAN_MARKERS.get(str(item["marker"]), ""),
+            historical_gloss_raw=str(item["gloss"]),
+            source_id=SOURCE_ID,
+            source_year=str(SOURCE_YEAR),
+            source_url=source_url,
+            source_line_start=str(item["line"]),
+            source_page_approx=str(item["page"]),
+            ocr_confidence=f"{score:.3f}",
+            review_priority=priority_for(score),
+            duplicate_headword_pos_count=str(duplicate_count),
+            existing_master="yes" if item["normalized"] in master_headwords else "no",
+            verification_status="pending",
+            human_review_required="yes",
+            notes=" ".join(notes),
+        ))
 
     return result
 
@@ -340,17 +351,20 @@ def write_csv(path: Path, rows: list[Candidate]) -> None:
             writer.writerow(asdict(row))
 
 
-def write_review_queue(path: Path, rows: list[Candidate]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
+def best_per_headword_pos(rows: list[Candidate]) -> list[Candidate]:
     best: dict[tuple[str, str], Candidate] = {}
     for row in rows:
         key = (row.normalized, row.part_of_speech)
         incumbent = best.get(key)
         if incumbent is None or float(row.ocr_confidence) > float(incumbent.ocr_confidence):
             best[key] = row
+    return list(best.values())
 
+
+def write_review_queue(path: Path, rows: list[Candidate]) -> int:
+    path.parent.mkdir(parents=True, exist_ok=True)
     selected = sorted(
-        (row for row in best.values() if float(row.ocr_confidence) >= 0.75),
+        (row for row in best_per_headword_pos(rows) if float(row.ocr_confidence) >= 0.75),
         key=lambda r: (int(r.review_priority), r.normalized, r.part_of_speech),
     )
     fields = [
@@ -365,21 +379,48 @@ def write_review_queue(path: Path, rows: list[Candidate]) -> None:
         for row in selected:
             data = asdict(row)
             writer.writerow({field: data[field] for field in fields})
+    return len(selected)
 
 
-def build_report(raw_bytes: bytes, rows: list[Candidate], source_url: str) -> dict[str, object]:
+def write_suspicious_queue(path: Path, rows: list[Candidate]) -> int:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    suspicious = sorted(
+        (
+            row for row in best_per_headword_pos(rows)
+            if float(row.ocr_confidence) < 0.75
+            or lexical_initial(row.normalized) not in KHASI_INITIALS
+        ),
+        key=lambda r: (float(r.ocr_confidence), r.normalized, r.part_of_speech),
+    )
+    fields = [
+        "record_id", "headword_raw", "headword_candidate", "normalized",
+        "part_of_speech", "historical_gloss_raw", "source_line_start",
+        "source_page_approx", "ocr_confidence", "verification_status", "notes",
+    ]
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer.writeheader()
+        for row in suspicious:
+            data = asdict(row)
+            writer.writerow({field: data[field] for field in fields})
+    return len(suspicious)
+
+
+def build_report(raw_bytes: bytes, rows: list[Candidate], source_url: str,
+                 review_count: int, suspicious_count: int) -> dict[str, object]:
     unique_headwords = {row.normalized for row in rows}
     unique_headword_pos = {(row.normalized, row.part_of_speech) for row in rows}
     pos_counts = Counter(row.part_of_speech for row in rows)
     priority_counts = Counter(row.review_priority for row in rows)
-    initial_counts = Counter(row.normalized[:1] for row in rows if row.normalized)
+    initial_counts = Counter(lexical_initial(row.normalized) for row in rows if lexical_initial(row.normalized))
     return {
         "source_id": SOURCE_ID,
         "source_year": SOURCE_YEAR,
         "source_url": source_url,
         "source_sha256": hashlib.sha256(raw_bytes).hexdigest(),
         "source_bytes": len(raw_bytes),
-        "parser_version": "1.1.0",
+        "parser_version": "1.2.0",
+        "parser_strategy": "line-start-layout-aware",
         "records_extracted": len(rows),
         "unique_headwords": len(unique_headwords),
         "unique_headword_pos_pairs": len(unique_headword_pos),
@@ -389,13 +430,11 @@ def build_report(raw_bytes: bytes, rows: list[Candidate], source_url: str) -> di
         "pending_records": sum(row.verification_status == "pending" for row in rows),
         "existing_master_records": sum(row.existing_master == "yes" for row in rows),
         "low_confidence_records": sum(float(row.ocr_confidence) < 0.75 for row in rows),
-        "review_queue_records": len({
-            (row.normalized, row.part_of_speech)
-            for row in rows
-            if float(row.ocr_confidence) >= 0.75
-        }),
+        "review_queue_records": review_count,
+        "suspicious_queue_records": suspicious_count,
         "non_khasi_initial_records": sum(
-            bool(row.normalized) and row.normalized[:1] not in KHASI_INITIALS
+            bool(lexical_initial(row.normalized))
+            and lexical_initial(row.normalized) not in KHASI_INITIALS
             for row in rows
         ),
         "policy": (
@@ -412,6 +451,7 @@ def main() -> None:
     parser.add_argument("--input", required=True, type=Path)
     parser.add_argument("--entries-output", required=True, type=Path)
     parser.add_argument("--review-output", required=True, type=Path)
+    parser.add_argument("--suspicious-output", required=True, type=Path)
     parser.add_argument("--report-output", required=True, type=Path)
     parser.add_argument("--master", type=Path)
     parser.add_argument("--source-url", default=DEFAULT_SOURCE_URL)
@@ -423,9 +463,10 @@ def main() -> None:
 
     rows = extract_candidates(text, args.source_url, master)
     write_csv(args.entries_output, rows)
-    write_review_queue(args.review_output, rows)
+    review_count = write_review_queue(args.review_output, rows)
+    suspicious_count = write_suspicious_queue(args.suspicious_output, rows)
 
-    report = build_report(raw_bytes, rows, args.source_url)
+    report = build_report(raw_bytes, rows, args.source_url, review_count, suspicious_count)
     args.report_output.parent.mkdir(parents=True, exist_ok=True)
     args.report_output.write_text(
         json.dumps(report, ensure_ascii=False, indent=2) + "\n",
@@ -435,7 +476,7 @@ def main() -> None:
     print(
         f"NISSOR 1906 INGEST COMPLETE: {len(rows)} records, "
         f"{report['unique_headwords']} unique headwords, "
-        f"{report['unique_headword_pos_pairs']} unique headword/POS pairs"
+        f"{review_count} review candidates, {suspicious_count} suspicious candidates"
     )
 
 

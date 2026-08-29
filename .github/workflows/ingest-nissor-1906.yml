@@ -60,6 +60,7 @@ jobs:
             --input data/sources/nissor-1906/khasienglishdict00singrich_djvu.txt \
             --entries-output data/historical/nissor-1906/entries.csv \
             --review-output data/historical/nissor-1906/review_queue.csv \
+            --suspicious-output data/historical/nissor-1906/suspicious_queue.csv \
             --report-output quality/nissor1906_ingest_report.json \
             --master data/master/khasi_lexicon.csv
 
@@ -82,6 +83,7 @@ jobs:
             data/sources/nissor-1906/khasienglishdict00singrich_djvu.txt \
             data/historical/nissor-1906/entries.csv \
             data/historical/nissor-1906/review_queue.csv \
+            data/historical/nissor-1906/suspicious_queue.csv \
             quality/nissor1906_ingest_report.json
           if git diff --cached --quiet; then
             echo "No generated changes to commit."
