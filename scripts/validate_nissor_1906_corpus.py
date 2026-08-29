@@ -3,6 +3,7 @@ from __future__ import annotations
 import csv
 import hashlib
 import json
+from collections import Counter
 import unicodedata
 from pathlib import Path
 
@@ -10,12 +11,14 @@ ROOT = Path(__file__).resolve().parents[1]
 ENTRIES = ROOT / "data/historical/nissor-1906/entries.csv"
 REVIEW = ROOT / "data/historical/nissor-1906/review_queue.csv"
 SUSPICIOUS = ROOT / "data/historical/nissor-1906/suspicious_queue.csv"
+PLAN = ROOT / "data/historical/nissor-1906/review_plan.csv"
 RAW = ROOT / "data/sources/nissor-1906/khasienglishdict00singrich_djvu.txt"
 REPORT = ROOT / "quality/nissor1906_ingest_report.json"
 
 MIN_RECORDS = 500
 MIN_UNIQUE_HEADWORDS = 400
 MIN_REVIEW_QUEUE = 300
+BATCH_SIZE = 100
 
 
 def fail(errors: list[str]) -> None:
@@ -112,6 +115,31 @@ def main() -> None:
         if overlap:
             errors.append(f"{len(overlap)} records appear in both review and suspicious queues")
 
+    plan_rows: list[dict[str, str]] = []
+    if not PLAN.exists():
+        errors.append("review_plan.csv is missing")
+    else:
+        plan_rows = read_csv(PLAN)
+        if len(plan_rows) != len(review_rows):
+            errors.append("review plan must cover every normal review-queue record exactly once")
+        plan_ids = [row.get("record_id", "") for row in plan_rows]
+        review_ids_list = [row.get("record_id", "") for row in review_rows]
+        if len(plan_ids) != len(set(plan_ids)):
+            errors.append("review plan contains duplicate record IDs")
+        if set(plan_ids) != set(review_ids_list):
+            errors.append("review plan record IDs do not exactly match review queue")
+        expected_global = [str(i) for i in range(1, len(plan_rows) + 1)]
+        if [row.get("global_sequence", "") for row in plan_rows] != expected_global:
+            errors.append("review plan global_sequence is not contiguous")
+        batch_counts = Counter(row.get("review_batch", "") for row in plan_rows)
+        if any(count > BATCH_SIZE for count in batch_counts.values()):
+            errors.append("a review-plan batch exceeds configured batch size")
+        for line_no, row in enumerate(plan_rows, start=2):
+            if row.get("verification_status") != "pending":
+                errors.append(f"plan line {line_no}: verification_status must remain pending")
+            if row.get("human_review_required") != "yes":
+                errors.append(f"plan line {line_no}: human_review_required must be yes")
+
     if not RAW.exists():
         errors.append("raw public-domain OCR snapshot is missing")
 
@@ -141,10 +169,11 @@ def main() -> None:
     if errors:
         fail(errors)
 
+    batch_count = len({row.get("review_batch", "") for row in plan_rows})
     print(
         f"NISSOR 1906 CORPUS VALIDATION PASSED: {len(rows)} records, "
         f"{len(unique)} unique headwords, {len(review_rows)} editorial candidates, "
-        f"{len(suspicious_rows)} suspicious candidates"
+        f"{len(suspicious_rows)} suspicious candidates, {batch_count} review batches"
     )
 
 

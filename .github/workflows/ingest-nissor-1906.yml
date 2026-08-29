@@ -8,6 +8,7 @@ on:
     paths:
       - ".github/workflows/ingest-nissor-1906.yml"
       - "scripts/import_nissor_1906.py"
+      - "scripts/plan_nissor_1906_review.py"
       - "scripts/validate_nissor_1906_corpus.py"
       - "tests/test_nissor_1906_import.py"
       - "tests/fixtures/nissor_1906_sample.txt"
@@ -64,6 +65,13 @@ jobs:
             --report-output quality/nissor1906_ingest_report.json \
             --master data/master/khasi_lexicon.csv
 
+      - name: Build deterministic full review plan
+        run: |
+          python scripts/plan_nissor_1906_review.py \
+            --input data/historical/nissor-1906/review_queue.csv \
+            --output data/historical/nissor-1906/review_plan.csv \
+            --batch-size 100
+
       - name: Validate generated historical corpus
         run: |
           python scripts/validate_nissor_1906_corpus.py
@@ -84,6 +92,7 @@ jobs:
             data/historical/nissor-1906/entries.csv \
             data/historical/nissor-1906/review_queue.csv \
             data/historical/nissor-1906/suspicious_queue.csv \
+            data/historical/nissor-1906/review_plan.csv \
             quality/nissor1906_ingest_report.json
           if git diff --cached --quiet; then
             echo "No generated changes to commit."
