@@ -1,0 +1,91 @@
+name: Ingest Nissor 1906 Full Dictionary
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - feature/v0.4-nissor-1906-full-ingest
+    paths:
+      - ".github/workflows/ingest-nissor-1906.yml"
+      - "scripts/import_nissor_1906.py"
+      - "scripts/validate_nissor_1906_corpus.py"
+      - "tests/test_nissor_1906_import.py"
+      - "tests/fixtures/nissor_1906_sample.txt"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nissor-1906-full-ingest
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout feature branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install project dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Download canonical Internet Archive OCR
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p data/sources/nissor-1906
+          URL="https://archive.org/download/khasienglishdict00singrich/khasienglishdict00singrich_djvu.txt"
+          curl --proto '=https' --tlsv1.2 --fail --location --retry 5 --retry-delay 2 \
+            "$URL" \
+            --output data/sources/nissor-1906/khasienglishdict00singrich_djvu.txt
+          test "$(wc -c < data/sources/nissor-1906/khasienglishdict00singrich_djvu.txt)" -gt 400000
+          sha256sum data/sources/nissor-1906/khasienglishdict00singrich_djvu.txt
+
+      - name: Extract complete historical candidate corpus
+        run: |
+          python scripts/import_nissor_1906.py \
+            --input data/sources/nissor-1906/khasienglishdict00singrich_djvu.txt \
+            --entries-output data/historical/nissor-1906/entries.csv \
+            --review-output data/historical/nissor-1906/review_queue.csv \
+            --report-output quality/nissor1906_ingest_report.json \
+            --master data/master/khasi_lexicon.csv
+
+      - name: Validate generated historical corpus
+        run: |
+          python scripts/validate_nissor_1906_corpus.py
+          python scripts/build_all.py
+          pytest -q
+
+      - name: Container regression build
+        run: docker build -t khasilex:nissor-1906-ingest .
+
+      - name: Commit reproducible OCR snapshot and generated corpus
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            data/sources/nissor-1906/khasienglishdict00singrich_djvu.txt \
+            data/historical/nissor-1906/entries.csv \
+            data/historical/nissor-1906/review_queue.csv \
+            quality/nissor1906_ingest_report.json
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+          else
+            git commit -m "data: ingest complete Nissor 1906 historical corpus"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
