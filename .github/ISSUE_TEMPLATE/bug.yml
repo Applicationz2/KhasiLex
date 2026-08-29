@@ -1,0 +1,35 @@
+name: Software or API bug
+description: Report a reproducible KhasiLex software, API, build, export, or deployment problem.
+title: "[Bug]: "
+labels: []
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What happened and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      description: Include commands, API requests, input text, and environment details.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: "OS, Python version, Docker version, commit/release"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or output
+      render: shell
+  - type: checkboxes
+    id: lexical
+    attributes:
+      label: Language-data impact
+      options:
+        - label: This bug may affect Khasi spelling, grammar, reduplication, translation, or verified lexical data.
