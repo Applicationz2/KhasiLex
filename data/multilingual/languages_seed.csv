@@ -1,0 +1,31 @@
+language_tag,name_en,default_script,notes
+kha,Khasi,Latn,Khasi canonical language tag
+en,English,Latn,
+zh-Hans,Chinese (Simplified),Hans,
+zh-Hant,Chinese (Traditional),Hant,
+he,Hebrew,Hebr,
+el,Greek,Grek,
+hi,Hindi,Deva,
+pt,Portuguese,Latn,Use regional tags such as pt-BR or pt-PT when needed
+fr,French,Latn,Use regional tags where lexically relevant
+es,Spanish,Latn,
+ar,Arabic,Arab,
+bn,Bengali,Beng,
+de,German,Latn,
+it,Italian,Latn,
+ru,Russian,Cyrl,
+ja,Japanese,Jpan,
+ko,Korean,Kore,
+id,Indonesian,Latn,
+ms,Malay,Latn,
+sw,Swahili,Latn,
+ur,Urdu,Arab,
+pa,Punjabi,Guru,Script may vary by locale; use BCP47 script tags
+ta,Tamil,Taml,
+te,Telugu,Telu,
+mr,Marathi,Deva,
+ne,Nepali,Deva,
+th,Thai,Thai,
+vi,Vietnamese,Latn,
+tr,Turkish,Latn,
+fa,Persian,Arab,
