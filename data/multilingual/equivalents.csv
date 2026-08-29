@@ -1,0 +1,19 @@
+equivalent_id,concept_id,sense_id,language_tag,script,region,lemma,transliteration,part_of_speech,grammatical_gender,register,dialect,translation_type,confidence,verification_status,source,license,notes
+kequiv-kha-000001,kconcept-000001,ksense-000001,kha,Latn,,ïing,,noun,,,,canonical,0.5,pending,starter seed,CC0-example,Canonical Khasi lexical entry.
+kequiv-en-000001,kconcept-000001,ksense-000001,en,Latn,,house; home,,noun,,,,definition_gloss_candidate,0.4,pending,starter seed,CC0-example,English seed gloss only; must be sense-split and reviewed before production translation.
+kequiv-kha-000002,kconcept-000002,ksense-000002,kha,Latn,,nga,,pronoun,,,,canonical,0.5,pending,starter seed,CC0-example,Canonical Khasi lexical entry.
+kequiv-en-000002,kconcept-000002,ksense-000002,en,Latn,,I; me,,pronoun,,,,definition_gloss_candidate,0.4,pending,starter seed,CC0-example,English seed gloss only; must be reviewed.
+kequiv-kha-000003,kconcept-000003,ksense-000003,kha,Latn,,ngi,,pronoun,,,,canonical,0.5,pending,starter seed,CC0-example,Canonical Khasi lexical entry.
+kequiv-en-000003,kconcept-000003,ksense-000003,en,Latn,,we; us,,pronoun,,,,definition_gloss_candidate,0.4,pending,starter seed,CC0-example,English seed gloss only; must be reviewed.
+kequiv-kha-000004,kconcept-000004,ksense-000004,kha,Latn,,phi,,pronoun,,,,canonical,0.5,pending,starter seed,CC0-example,Canonical Khasi lexical entry.
+kequiv-en-000004,kconcept-000004,ksense-000004,en,Latn,,you,,pronoun,,,,definition_gloss_candidate,0.4,pending,starter seed,CC0-example,English seed gloss only; must be reviewed.
+kequiv-kha-000005,kconcept-000005,ksense-000005,kha,Latn,,ki,,,,,,canonical,0.5,pending,starter seed,CC0-example,Canonical Khasi lexical entry.
+kequiv-kha-000006,kconcept-000006,ksense-000006,kha,Latn,,ka,,,,,,canonical,0.5,pending,starter seed,CC0-example,Canonical Khasi lexical entry.
+kequiv-kha-000007,kconcept-000007,ksense-000007,kha,Latn,,u,,,,,,canonical,0.5,pending,starter seed,CC0-example,Canonical Khasi lexical entry.
+kequiv-kha-000008,kconcept-000008,ksense-000008,kha,Latn,,bam,,verb,,,,canonical,0.5,pending,starter seed,CC0-example,Canonical Khasi lexical entry.
+kequiv-en-000008,kconcept-000008,ksense-000008,en,Latn,,eat,,verb,,,,definition_gloss_candidate,0.4,pending,starter seed,CC0-example,English seed gloss only; must be reviewed.
+kequiv-kha-000009,kconcept-000009,ksense-000009,kha,Latn,,um,,noun,,,,canonical,0.5,pending,starter seed,CC0-example,Canonical Khasi lexical entry.
+kequiv-en-000009,kconcept-000009,ksense-000009,en,Latn,,water,,noun,,,,definition_gloss_candidate,0.4,pending,starter seed,CC0-example,English seed gloss only; must be reviewed.
+kequiv-kha-000010,kconcept-000010,ksense-000010,kha,Latn,,biang biang,,,,,,canonical,0.5,pending,user-provided reduplication example,user-contributed example,Canonical Khasi lexical entry.
+kequiv-kha-000011,kconcept-000011,ksense-000011,kha,Latn,,wut wut,,,,,,canonical,0.5,pending,user-provided reduplication example,user-contributed example,Canonical Khasi lexical entry.
+kequiv-kha-000012,kconcept-000012,ksense-000012,kha,Latn,,kloi kloi,,,,,,canonical,0.5,pending,user-provided reduplication example,user-contributed example,Canonical Khasi lexical entry.
