@@ -1,0 +1,17 @@
+{
+  "version": "0.3.0",
+  "language": "kha",
+  "status_policy": "No grammar rule becomes production-authoritative until expert verified.",
+  "description": "Schema for professional Khasi morphology, syntax, agreement, derivation, valency, reduplication and usage.",
+  "modules": {
+    "orthography": ["unicode_nfc", "capitalization", "punctuation", "word_boundary", "loanword_policy"],
+    "lexical_categories": ["noun", "pronoun", "verb", "adjective", "adverb", "preposition", "conjunction", "particle", "interjection", "numeral", "classifier"],
+    "noun_phrase": ["gender_class", "number", "determination", "agreement", "possession", "modification", "classifier_behavior"],
+    "verb_phrase": ["transitivity", "valency", "argument_structure", "tense", "aspect", "modality", "negation", "causative", "derivation"],
+    "syntax": ["clause_type", "word_order", "agreement", "relative_clause", "coordination", "subordination", "question", "negation"],
+    "morphology": ["prefix", "infix", "suffix", "compound", "derivation", "reduplication"],
+    "reduplication": ["full", "partial", "lexicalized", "productive", "semantic_function", "syntactic_function"],
+    "pragmatics": ["register", "politeness", "honorific_usage", "discourse_function"],
+    "variation": ["dialect", "regional_variant", "historical_form", "loanword"]
+  }
+}
