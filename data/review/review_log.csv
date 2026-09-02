@@ -1,1 +1,7 @@
 review_id,entry_id,action,from_status,to_status,reviewer,review_date,review_notes,evidence_reference
+review-n1906-001-002,kha-n1906-000001,review_later,pending,pending,KurbahTech,2026-09-02,"Needs further review before deciding whether this historical interjection remains valid/current Khasi.","Nissor 1906; n1906-001 #2"
+review-n1906-001-003,kha-n1906-000002,review_later,pending,pending,KurbahTech,2026-09-02,"Needs further lexical and borrowing-status review before acceptance.","Nissor 1906; n1906-001 #3"
+review-n1906-001-004,kha-n1906-000006,review_later,pending,pending,KurbahTech,2026-09-02,"Needs further historical/modern usage and loanword review.","Nissor 1906; n1906-001 #4"
+review-n1906-001-006,kha-n1906-000008,review_later,pending,pending,KurbahTech,2026-09-02,"Needs further review of modern usage and interjection sense.","Nissor 1906; n1906-001 #6"
+review-n1906-001-008,kha-n1906-000003,review_later,pending,pending,KurbahTech,2026-09-02,"Needs further review of attestation, modern usage, and precise pragmatic meaning.","Nissor 1906; n1906-001 #8"
+review-n1906-001-009,kha-n1906-000004,review_later,pending,pending,KurbahTech,2026-09-02,"Needs further review of whether this is distinct from or a variant of the related interjection ak.","Nissor 1906; n1906-001 #9"
