@@ -1,0 +1,100 @@
+name: KhasiLex Modern Evidence Pass
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-modern-evidence:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Validate repository evidence inputs
+        run: |
+          python scripts/validate_sources.py
+          python scripts/validate_modern_evidence.py
+          python scripts/validate_nissor_1906_ocr_resolutions.py
+
+      - name: Build structured historical layer
+        run: |
+          mkdir -p build external-data
+          python scripts/structure_nissor_1906_corpus.py \
+            --output build/nissor1906_structured.csv
+
+      - name: Download fixed Khasi NER 1.0.0 JSONL sources
+        run: |
+          curl --fail --location --retry 3 \
+            'https://huggingface.co/datasets/RansMairoi/khasi-ner/resolve/main/data/train.jsonl' \
+            --output external-data/train.jsonl
+          curl --fail --location --retry 3 \
+            'https://huggingface.co/datasets/RansMairoi/khasi-ner/resolve/main/data/dev.jsonl' \
+            --output external-data/dev.jsonl
+          sha256sum external-data/train.jsonl external-data/dev.jsonl > build/khasi_ner_source_sha256.txt
+
+      - name: Extract current Khasi corpus evidence
+        run: |
+          python scripts/extract_current_corpus_evidence.py external-data/train.jsonl \
+            --structured build/nissor1906_structured.csv \
+            --source-id khasi-ner-2026 \
+            --output build/khasi_ner_train_evidence.csv
+          python scripts/extract_current_corpus_evidence.py external-data/dev.jsonl \
+            --structured build/nissor1906_structured.csv \
+            --source-id khasi-ner-2026 \
+            --output build/khasi_ner_dev_evidence.csv
+
+      - name: Build evidence-ranked modern overlay
+        run: |
+          python scripts/enrich_nissor_modern.py \
+            --structured build/nissor1906_structured.csv \
+            --current-evidence build/khasi_ner_train_evidence.csv \
+            --current-evidence build/khasi_ner_dev_evidence.csv \
+            --output build/nissor1906_modern_evidence.csv \
+            --report build/nissor1906_modern_evidence_report.json
+
+      - name: Build review-only sense candidates
+        run: |
+          python scripts/generate_nissor_sense_candidates.py \
+            --structured build/nissor1906_structured.csv \
+            --output build/nissor1906_sense_candidates.csv
+
+      - name: Build evidence-ranked review queue
+        run: |
+          python scripts/generate_modern_review_queue.py \
+            --overlay build/nissor1906_modern_evidence.csv \
+            --output build/nissor1906_modern_review_queue.csv \
+            --manifest build/nissor1906_modern_review_manifest.json \
+            --batch-size 100
+
+      - name: Run tests
+        run: pytest -q -p no:cacheprovider
+
+      - name: Upload modern-evidence artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: khasilex-modern-evidence
+          path: |
+            build/nissor1906_modern_evidence.csv
+            build/nissor1906_modern_evidence_report.json
+            build/nissor1906_sense_candidates.csv
+            build/nissor1906_modern_review_queue.csv
+            build/nissor1906_modern_review_manifest.json
+            build/khasi_ner_train_evidence.csv
+            build/khasi_ner_dev_evidence.csv
+            build/khasi_ner_source_sha256.txt
+          if-no-files-found: error
+          retention-days: 14
