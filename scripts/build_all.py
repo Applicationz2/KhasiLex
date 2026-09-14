@@ -8,6 +8,7 @@ for script in [
     "validate.py",
     "validate_sources.py",
     "validate_nissor_1906_corpus.py",
+    "evaluate_nissor1906_source_approval.py",
     "audit_review_batch.py",
     "corpus_audit.py",
     "export_word_dic.py",
