@@ -1,0 +1,23 @@
+headword,source_id,evidence_type,source_url,source_date_or_version,minimum_occurrences,attestation_scope,license
+balang,khasi-ner-2026,contemporary_corpus,https://huggingface.co/datasets/RansMairoi/khasi-ner,1.0.0,1,exact lexical occurrence in published corpus sample,CC-BY-SA-4.0
+sngi,khasi-ner-2026,contemporary_corpus,https://huggingface.co/datasets/RansMairoi/khasi-ner,1.0.0,1,exact lexical occurrence in published corpus sample,CC-BY-SA-4.0
+bynta,khasi-ner-2026,contemporary_corpus,https://huggingface.co/datasets/RansMairoi/khasi-ner,1.0.0,1,exact lexical occurrence in published corpus sample,CC-BY-SA-4.0
+ri,khasi-ner-2026,contemporary_corpus,https://huggingface.co/datasets/RansMairoi/khasi-ner,1.0.0,1,exact lexical occurrence in published corpus sample,CC-BY-SA-4.0
+bynta,meg-gov-cid-advisory-kha,current_government_text,https://meghalaya.gov.in/sites/default/files/press_release/Advisory_0.pdf,current-publication,1,exact lexical occurrence,Government-publication-reference
+kyrteng,meg-gov-cid-advisory-kha,current_government_text,https://meghalaya.gov.in/sites/default/files/press_release/Advisory_0.pdf,current-publication,1,exact lexical occurrence,Government-publication-reference
+briew,meg-gov-cid-advisory-kha,current_government_text,https://meghalaya.gov.in/sites/default/files/press_release/Advisory_0.pdf,current-publication,1,exact lexical occurrence,Government-publication-reference
+paidbah,meg-gov-cid-advisory-kha,current_government_text,https://meghalaya.gov.in/sites/default/files/press_release/Advisory_0.pdf,current-publication,1,exact lexical occurrence,Government-publication-reference
+sorkar,meg-gov-cid-advisory-kha,current_government_text,https://meghalaya.gov.in/sites/default/files/press_release/Advisory_0.pdf,current-publication,1,exact lexical occurrence,Government-publication-reference
+shnong,meg-gov-rti-kha,current_government_text,https://meghalaya.gov.in/sites/default/files/documents/ka_ain_hok_ban_tip.pdf,current-publication,1,exact lexical occurrence,Government-publication-reference
+kyrteng,meg-gov-rti-kha,current_government_text,https://meghalaya.gov.in/sites/default/files/documents/ka_ain_hok_ban_tip.pdf,current-publication,1,exact lexical occurrence,Government-publication-reference
+briew,meg-gov-rti-kha,current_government_text,https://meghalaya.gov.in/sites/default/files/documents/ka_ain_hok_ban_tip.pdf,current-publication,1,exact lexical occurrence,Government-publication-reference
+bamsap,meg-gov-rti-kha,current_government_text,https://meghalaya.gov.in/sites/default/files/documents/ka_ain_hok_ban_tip.pdf,current-publication,1,exact lexical occurrence,Government-publication-reference
+paidbah,meg-gov-rti-kha,current_government_text,https://meghalaya.gov.in/sites/default/files/documents/ka_ain_hok_ban_tip.pdf,current-publication,1,exact lexical occurrence,Government-publication-reference
+sorkar,meg-gov-rti-kha,current_government_text,https://meghalaya.gov.in/sites/default/files/documents/ka_ain_hok_ban_tip.pdf,current-publication,1,exact lexical occurrence,Government-publication-reference
+tip,meg-gov-rti-kha,current_government_text,https://meghalaya.gov.in/sites/default/files/documents/ka_ain_hok_ban_tip.pdf,current-publication,1,exact lexical occurrence,Government-publication-reference
+bynta,meg-gov-aquaculture-kha,current_government_text,https://meghalaya.gov.in/sites/default/files/forms/community_ponds_form_khasi_0.pdf,current-publication,1,exact lexical occurrence,Government-publication-reference
+kyrteng,meg-gov-aquaculture-kha,current_government_text,https://meghalaya.gov.in/sites/default/files/forms/community_ponds_form_khasi_0.pdf,current-publication,1,exact lexical occurrence,Government-publication-reference
+shnong,meg-gov-aquaculture-kha,current_government_text,https://meghalaya.gov.in/sites/default/files/forms/community_ponds_form_khasi_0.pdf,current-publication,1,exact lexical occurrence,Government-publication-reference
+briew,meg-gov-aquaculture-kha,current_government_text,https://meghalaya.gov.in/sites/default/files/forms/community_ponds_form_khasi_0.pdf,current-publication,1,exact lexical occurrence,Government-publication-reference
+dohkha,meg-gov-aquaculture-kha,current_government_text,https://meghalaya.gov.in/sites/default/files/forms/community_ponds_form_khasi_0.pdf,current-publication,1,exact lexical occurrence,Government-publication-reference
+um,meg-gov-aquaculture-kha,current_government_text,https://meghalaya.gov.in/sites/default/files/forms/community_ponds_form_khasi_0.pdf,current-publication,1,exact lexical occurrence,Government-publication-reference
