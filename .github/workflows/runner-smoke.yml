@@ -1,0 +1,22 @@
+name: Actions Runner Smoke
+
+on:
+  push:
+    branches:
+      - diagnostic/actions-runner-smoke
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    name: GitHub-hosted runner smoke
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Runner alive
+        run: |
+          echo "runner alive"
+          uname -a
+          python3 --version
