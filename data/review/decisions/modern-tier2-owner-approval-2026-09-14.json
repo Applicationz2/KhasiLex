@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "decision_id": "modern-tier2-owner-approval-2026-09-14",
+  "decision_type": "bulk_editorial_approval",
+  "decision_status": "reviewed",
+  "reviewer": "KurbahTech",
+  "review_date": "2026-09-14",
+  "source": {
+    "workflow_name": "KhasiLex Modern Evidence Pass",
+    "workflow_run_id": 34870686979,
+    "source_head_sha": "e79d64ccbe7376c2c3705aa1dab9dcf338b8d86d",
+    "artifact_name": "khasilex-modern-evidence",
+    "artifact_sha256": "189dcc43975c6d046f9665ba34370f1f92d95bda75c782a58f06799479aaf242",
+    "queue_file": "nissor1906_modern_review_queue.csv",
+    "queue_file_sha256": "222b19dad46ee4823ba86d4df1cc51c4792aece954a43cfba8f7b8ef70c0ef38"
+  },
+  "scope": {
+    "tier": "tier2_current_attested",
+    "expected_record_count": 1285,
+    "tier_rank_min": 1,
+    "tier_rank_max": 1285,
+    "structured_id_set_sha256": "14b071b83803da7fc47d19b8bca1e3c4aa60b9b750a90261bf79916dd2e95c10"
+  },
+  "evidence_profile": {
+    "modern_standard_status": "candidate_current_attested",
+    "pos_evidence_status": "unassessed for all 1285 records",
+    "semantic_split_required_count": 514,
+    "single_historical_gloss_count": 771,
+    "historical_source_marked_loan_or_foreign_count": 111
+  },
+  "approved_scope": {
+    "lexical_inclusion": true,
+    "current_use_status": "current_attested",
+    "modern_canonical_candidate": "accepted at reviewed stage as an attested candidate"
+  },
+  "not_finally_verified": {
+    "modern_part_of_speech": true,
+    "sense_boundaries": true,
+    "definitions_and_glosses": true,
+    "grammar_and_register": true,
+    "variant_relationships": true,
+    "borrowing_and_etymology": true,
+    "final_verified_status": true
+  },
+  "preservation_rules": [
+    "Preserve all historical forms and source provenance.",
+    "Preserve semantic-split flags and do not collapse senses automatically.",
+    "Preserve borrowing/foreign-source flags for later etymological review.",
+    "Do not infer or approve a modern POS where the evidence layer reports POS as unassessed.",
+    "Do not promote any Tier-2 record to final verified status solely from this bulk approval.",
+    "This decision applies only to the exact 1285-record Tier-2 set identified by the pinned hashes above; a changed Tier-2 membership requires a new review decision."
+  ],
+  "owner_note": "Project owner approved the complete Tier-2 current-attested set. This records human editorial acceptance for lexical inclusion/current attestation at the reviewed stage while retaining all unresolved linguistic review gates."
+}
