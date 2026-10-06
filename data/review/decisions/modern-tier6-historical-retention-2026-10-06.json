@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "decision_id": "modern-tier6-historical-retention-2026-10-06",
   "decision_type": "bulk_historical_retention_modern_review_deferred",
-  "decision_status": "pending_owner_confirmation",
+  "decision_status": "reviewed",
   "reviewer": "KurbahTech",
   "review_date": "2026-10-06",
   "source": {
@@ -52,7 +52,7 @@
     "effective_stage": "lexical_review",
     "interpretation": "All genuine Nissor 1906 headwords are already approved for historical lexical inclusion. That source-wide approval does not certify modern spelling, meaning, POS, register, borrowing status, or present-day usage."
   },
-  "proposed_disposition": {
+  "approved_disposition": {
     "historical_lexical_inclusion": true,
     "modern_review_action": "defer",
     "current_use_status": "historical_only_unassessed",
@@ -70,5 +70,5 @@
     "Do not promote any Tier-6 record to current_attested or final verified status solely from this disposition.",
     "This disposition applies only to the exact 2518-record Tier-6 set identified by the pinned hashes above; changed membership requires a new decision."
   ],
-  "owner_note": "Tier 6 is handled differently from Tiers 1-5 because these records have historical evidence only and no modern/current attestation. The safe action is to retain them in the historical lexicon under the existing Nissor 1906 source-wide approval while deferring all modern-standard judgments."
+  "owner_note": "Project owner approved the complete Tier-6 historical-only disposition. All 2,518 records remain retained as historical lexical evidence while modern-standard judgments are deferred. No Tier-6 record is promoted to current_attested or final verified status by this approval."
 }
