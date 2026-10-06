@@ -1,3 +1,5 @@
+import os
+
 from fastapi.testclient import TestClient
 from api.main import app
 
@@ -8,6 +10,13 @@ def test_health():
     r = client.get("/health")
     assert r.status_code == 200
     assert r.json()["version"] == "0.4.0"
+
+
+def test_ready():
+    r = client.get("/ready")
+    assert r.status_code == 200
+    assert r.json()["status"] == "ready"
+    assert r.json()["entries_loaded"] >= 12
 
 
 def test_word_lookup():
@@ -92,3 +101,68 @@ def test_resolver_can_surface_candidate_in_dev_mode():
     })
     assert r.status_code == 200
     assert r.json()["status"] in {"resolved", "concept_found_no_verified_khasi"}
+
+
+def test_production_word_lookup_cannot_leak_pending(monkeypatch):
+    monkeypatch.setenv("KHASILEX_ENV", "production")
+    r = client.get("/api/v1/words/ïing")
+    assert r.status_code == 404
+    assert r.json()["detail"] == "No verified lexical entry found"
+
+
+def test_production_search_cannot_leak_pending(monkeypatch):
+    monkeypatch.setenv("KHASILEX_ENV", "production")
+    r = client.get("/api/v1/search", params={"q": "house"})
+    assert r.status_code == 200
+    assert r.json()["count"] == 0
+
+
+def test_production_corpus_rejects_nonverified_status(monkeypatch):
+    monkeypatch.setenv("KHASILEX_ENV", "production")
+    r = client.get("/api/v1/corpus/entries", params={"status": "pending"})
+    assert r.status_code == 403
+
+
+def test_production_reduplication_catalog_hides_pending(monkeypatch):
+    monkeypatch.setenv("KHASILEX_ENV", "production")
+    r = client.get("/api/v1/reduplications")
+    assert r.status_code == 200
+    assert r.json()["count"] == 0
+
+
+def test_production_analysis_keeps_structural_reduplication_but_hides_pending_phrase(monkeypatch):
+    monkeypatch.setenv("KHASILEX_ENV", "production")
+    r = client.post("/api/v1/analyze", json={"text": "kloi kloi"})
+    assert r.status_code == 200
+    assert len(r.json()["reduplications"]) == 1
+    assert r.json()["lexicalized_phrase_matches"] == []
+
+
+def test_production_resolver_rejects_unverified_override(monkeypatch):
+    monkeypatch.setenv("KHASILEX_ENV", "production")
+    r = client.post("/api/v2/resolve-to-khasi", json={
+        "source_language": "en",
+        "text": "water",
+        "require_verified": False,
+    })
+    assert r.status_code == 403
+
+
+def test_security_headers_and_request_id(monkeypatch):
+    monkeypatch.setenv("KHASILEX_ENV", "production")
+    r = client.get("/health")
+    assert r.status_code == 200
+    assert r.headers["x-content-type-options"] == "nosniff"
+    assert r.headers["x-frame-options"] == "DENY"
+    assert r.headers["referrer-policy"] == "no-referrer"
+    assert r.headers["x-request-id"]
+
+
+def test_production_rejects_oversized_declared_body(monkeypatch):
+    monkeypatch.setenv("KHASILEX_ENV", "production")
+    r = client.post(
+        "/api/v1/normalize",
+        headers={"content-length": "70000"},
+        content=b'{"text":"x"}',
+    )
+    assert r.status_code == 413
