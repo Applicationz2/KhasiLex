@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "v1.0-pilot-001",
+  "entry_count": 100,
+  "source_batch": "data/review/batches/v0.4-pilot-001-human-review.csv",
+  "source_batch_blob_sha": "58f1d6d22ffb77b9082c31e203c3328cf8a0dfa1",
+  "purpose": "First final-verification pilot for professional KhasiLex v1.0",
+  "state": "selected_for_final_verification",
+  "verification_standard": "governance/V1_VERIFICATION_STANDARD.md",
+  "final_review_file": "data/review/batches/v1.0-pilot-001-final-review.csv",
+  "promotion_rule": "Only rows with decision=verify that satisfy scripts/validate_v1_pilot.py may be promoted to verified production data.",
+  "authority_boundary": "Selection into this batch is not verification."
+}
