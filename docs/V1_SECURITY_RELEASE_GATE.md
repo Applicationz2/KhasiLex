@@ -8,9 +8,10 @@ The repository security workflow performs:
 
 1. a complete-Git-history secret scan using the pinned Gitleaks CLI;
 2. a Python dependency vulnerability audit with a pinned `pip-audit` version;
-3. GitHub dependency review on pull requests;
-4. CodeQL analysis for Python;
-5. the existing KhasiLex CI matrix and Docker build.
+3. CodeQL analysis for Python;
+4. the existing KhasiLex CI matrix and Docker build.
+
+GitHub Dependency Review should be added as an additional gate once the repository Dependency Graph is enabled. The action is not treated as passed while that repository feature is disabled.
 
 Third-party GitHub Actions used by the project are pinned to immutable commit SHAs. The corresponding release version is retained as an inline comment for maintainability.
 
