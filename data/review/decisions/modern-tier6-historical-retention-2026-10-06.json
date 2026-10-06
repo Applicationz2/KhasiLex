@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "decision_id": "modern-tier6-historical-retention-2026-10-06",
+  "decision_type": "bulk_historical_retention_modern_review_deferred",
+  "decision_status": "reviewed",
+  "reviewer": "KurbahTech",
+  "review_date": "2026-10-06",
+  "source": {
+    "workflow_name": "KhasiLex Modern Evidence Pass",
+    "workflow_run_id": 34870686979,
+    "source_head_sha": "e79d64ccbe7376c2c3705aa1dab9dcf338b8d86d",
+    "artifact_name": "khasilex-modern-evidence",
+    "artifact_sha256": "189dcc43975c6d046f9665ba34370f1f92d95bda75c782a58f06799479aaf242",
+    "queue_file": "nissor1906_modern_review_queue.csv",
+    "queue_file_sha256": "222b19dad46ee4823ba86d4df1cc51c4792aece954a43cfba8f7b8ef70c0ef38"
+  },
+  "scope": {
+    "tier": "tier6_historical_only",
+    "expected_record_count": 2518,
+    "tier_rank_min": 1,
+    "tier_rank_max": 2518,
+    "batch_count": 26,
+    "batch_id_min": "modern-tier6-001",
+    "batch_id_max": "modern-tier6-026",
+    "structured_id_set_sha256": "8f55bc5a34508df0f22084608bd5020f3fdf3b8ee74e82cc556231c4fc6c034d"
+  },
+  "evidence_profile": {
+    "current_evidence_source_count": 0,
+    "current_corpus_frequency": 0,
+    "modern_standard_status": "unassessed",
+    "current_use_status": "historical_only_unassessed",
+    "single_historical_gloss_count": 1759,
+    "semantic_split_required_count": 759,
+    "historical_source_marked_loan_or_foreign_count": 96,
+    "borrowing_unassessed_count": 2422,
+    "historical_pos_counts": {
+      "noun": 1056,
+      "verb": 653,
+      "adverb": 480,
+      "adjective": 273,
+      "phrase": 32,
+      "pronoun": 15,
+      "interjection": 6,
+      "conjunction": 3
+    }
+  },
+  "existing_authority": {
+    "decision_id": "n1906-owner-approval-20260914",
+    "source_id": "nissor-1906-kha-en",
+    "decision": "approve_inclusion",
+    "applies_to": "genuine_headwords",
+    "effective_stage": "lexical_review",
+    "interpretation": "All genuine Nissor 1906 headwords are already approved for historical lexical inclusion. That source-wide approval does not certify modern spelling, meaning, POS, register, borrowing status, or present-day usage."
+  },
+  "approved_disposition": {
+    "historical_lexical_inclusion": true,
+    "modern_review_action": "defer",
+    "current_use_status": "historical_only_unassessed",
+    "modern_canonical_spelling": "not_approved",
+    "modern_part_of_speech": "not_approved",
+    "archaic_or_obsolete_status": "not_inferred",
+    "final_verified_status": false
+  },
+  "preservation_rules": [
+    "Retain each genuine Nissor 1906 headword as historical lexical evidence under the existing source-wide owner approval.",
+    "Do not infer modern canonical spelling from the historical form alone.",
+    "Do not infer current use, obsolescence, or archaic status from absence in the licensed current corpus.",
+    "Preserve historical POS and glosses as source evidence, not as automatically verified modern analysis.",
+    "Preserve semantic-split flags and historical borrowing/foreign-source flags for later review.",
+    "Do not promote any Tier-6 record to current_attested or final verified status solely from this disposition.",
+    "This disposition applies only to the exact 2518-record Tier-6 set identified by the pinned hashes above; changed membership requires a new decision."
+  ],
+  "owner_note": "Project owner approved the complete Tier-6 historical-only disposition. All 2,518 records remain retained as historical lexical evidence while modern-standard judgments are deferred. No Tier-6 record is promoted to current_attested or final verified status by this approval."
+}
