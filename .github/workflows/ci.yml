@@ -39,6 +39,9 @@ jobs:
       - name: Validate lexicon
         run: python scripts/validate.py
 
+      - name: Validate v1 verification pilot
+        run: python scripts/validate_v1_pilot.py
+
       - name: Build and audit corpus
         run: python scripts/build_all.py
 
