@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "promotion_id": "v1-pilot-batch-008-promotion",
+  "source_review_commit": "629546a1a8121c8a05049ec5bb095c207a155568",
+  "source_review_file": "data/review/batches/v1.0-pilot-001-final-review.csv",
+  "promoted_count": 10,
+  "promoted": [
+    {
+      "candidate_id": "kha-v04-p001-071",
+      "source_headword": "phlait",
+      "headword": "phlait",
+      "id": "kha-000081",
+      "part_of_speech": "verb"
+    },
+    {
+      "candidate_id": "kha-v04-p001-072",
+      "source_headword": "phrung",
+      "headword": "phrung",
+      "id": "kha-000082",
+      "part_of_speech": "verb"
+    },
+    {
+      "candidate_id": "kha-v04-p001-073",
+      "source_headword": "pyniap",
+      "headword": "pynïap",
+      "id": "kha-000083",
+      "part_of_speech": "verb",
+      "source_variant_preserved": "pyniap"
+    },
+    {
+      "candidate_id": "kha-v04-p001-074",
+      "source_headword": "pynmih",
+      "headword": "pynmih",
+      "id": "kha-000084",
+      "part_of_speech": "verb"
+    },
+    {
+      "candidate_id": "kha-v04-p001-075",
+      "source_headword": "pyntip",
+      "headword": "pyntip",
+      "id": "kha-000085",
+      "part_of_speech": "verb"
+    },
+    {
+      "candidate_id": "kha-v04-p001-076",
+      "source_headword": "babha",
+      "headword": "babha",
+      "id": "kha-000086",
+      "part_of_speech": "adjective"
+    },
+    {
+      "candidate_id": "kha-v04-p001-077",
+      "source_headword": "baroh",
+      "headword": "baroh",
+      "id": "kha-000087",
+      "part_of_speech": "adjective"
+    },
+    {
+      "candidate_id": "kha-v04-p001-078",
+      "source_headword": "bha",
+      "headword": "bha",
+      "id": "kha-000088",
+      "part_of_speech": "adjective"
+    },
+    {
+      "candidate_id": "kha-v04-p001-079",
+      "source_headword": "bymjukut",
+      "headword": "bymjukut",
+      "id": "kha-000089",
+      "part_of_speech": "adjective"
+    },
+    {
+      "candidate_id": "kha-v04-p001-080",
+      "source_headword": "bymman",
+      "headword": "bymman",
+      "id": "kha-000090",
+      "part_of_speech": "adjective"
+    }
+  ],
+  "promotion_date": "2026-10-07",
+  "authority": "project-owner human final verification",
+  "canonicalization_boundary": "Candidate 073 is promoted under approved canonical spelling pynïap. Source form pyniap remains preserved as an orthographic/source variant and the originating pilot candidate remains marked as represented in master.",
+  "homograph_policy": "Master uniqueness is NFC-casefold(headword) + part_of_speech; duplicate headword/POS pairs remain forbidden.",
+  "standard_cross_check_policy": {
+    "scope": "pilot entries 21-100",
+    "lexical_reference": "nissor-1920-en-kha",
+    "grammar_reference": "nissor-hints-kha-grammar",
+    "authority_boundary": "corroborating evidence only; no automatic verification authority"
+  },
+  "release_boundary": "80 entries become authoritative verified lexical records after this promotion is merged. The 100-entry review-pilot threshold remains unsatisfied."
+}
