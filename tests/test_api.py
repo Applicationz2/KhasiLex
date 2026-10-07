@@ -26,7 +26,7 @@ def test_word_lookup():
 
 
 def test_authoritative_lookup_rejects_pending_seed():
-    r = client.get("/api/v1/authoritative/words/ïing")
+    r = client.get("/api/v1/authoritative/words/bam")
     assert r.status_code == 404
 
 
@@ -36,7 +36,9 @@ def test_corpus_stats_expose_review_target():
     data = r.json()
     assert data["version"] == "0.4.0"
     assert data["total_entries"] >= 12
-    assert data["verification"]["pending"] >= 12
+    assert data["verification"]["verified"] >= 50
+    assert data["verification"]["pending"] >= 1
+    assert sum(data["verification"].values()) == data["total_entries"]
     assert data["next_target"]["name"] == "review-pilot"
     assert data["next_target"]["required"] == 100
 
@@ -50,7 +52,8 @@ def test_public_corpus_defaults_to_verified_only():
     assert all(row["verification_status"] == "verified" for row in data["results"])
     headwords = {row["headword"] for row in data["results"]}
     assert "briew" in headwords
-    assert "ïing" not in headwords
+    assert "ïing" in headwords
+    assert "bam" not in headwords
 
 
 def test_corpus_filter_rejects_invalid_status():
@@ -110,14 +113,14 @@ def test_resolver_can_surface_candidate_in_dev_mode():
 
 def test_production_word_lookup_cannot_leak_pending(monkeypatch):
     monkeypatch.setenv("KHASILEX_ENV", "production")
-    r = client.get("/api/v1/words/ïing")
+    r = client.get("/api/v1/words/bam")
     assert r.status_code == 404
     assert r.json()["detail"] == "No verified lexical entry found"
 
 
 def test_production_search_cannot_leak_pending(monkeypatch):
     monkeypatch.setenv("KHASILEX_ENV", "production")
-    r = client.get("/api/v1/search", params={"q": "house"})
+    r = client.get("/api/v1/search", params={"q": "wut wut"})
     assert r.status_code == 200
     assert r.json()["count"] == 0
 
