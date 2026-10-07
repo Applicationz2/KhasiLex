@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_BATCH = ROOT / "data/review/batches/v0.4-pilot-001.csv"
 SOURCE_REGISTRY = ROOT / "data/sources/source_registry.csv"
 MASTER = ROOT / "data/master/khasi_lexicon.csv"
+FINAL_REVIEW = ROOT / "data/review/batches/v1.0-pilot-001-final-review.csv"
 
 EXPECTED_POS = {
     "noun": 50,
@@ -58,19 +59,36 @@ def approved_sources() -> dict[str, dict[str, str]]:
         }
 
 
-def master_headwords() -> set[str]:
+def master_forms() -> set[str]:
+    forms: set[str] = set()
     with MASTER.open(encoding="utf-8", newline="") as f:
+        for row in csv.DictReader(f):
+            headword = nfc(row.get("headword", ""))
+            if headword:
+                forms.add(headword.casefold())
+            for variant in (row.get("variants") or "").split("|"):
+                variant = nfc(variant)
+                if variant:
+                    forms.add(variant.casefold())
+    return forms
+
+
+def review_canonical_spellings() -> dict[str, str]:
+    if not FINAL_REVIEW.exists():
+        return {}
+    with FINAL_REVIEW.open(encoding="utf-8", newline="") as f:
         return {
-            nfc(row.get("headword", "")).casefold()
+            (row.get("candidate_id") or "").strip(): nfc(row.get("canonical_spelling", "")).casefold()
             for row in csv.DictReader(f)
-            if nfc(row.get("headword", ""))
+            if (row.get("candidate_id") or "").strip()
         }
 
 
 def audit(path: Path, expect_count: int = 100) -> list[str]:
     errors: list[str] = []
     sources = approved_sources()
-    master = master_headwords()
+    master = master_forms()
+    canonical_by_candidate = review_canonical_spellings()
 
     with path.open(encoding="utf-8-sig", newline="") as f:
         reader = csv.DictReader(f)
@@ -129,7 +147,13 @@ def audit(path: Path, expect_count: int = 100) -> list[str]:
         if row["human_review_required"].strip().lower() != "yes":
             errors.append(f"{cid}: human_review_required must be yes")
 
-        expected_existing = "yes" if nfc(headword).casefold() in master else "no"
+        source_form = nfc(headword).casefold()
+        canonical_form = canonical_by_candidate.get(cid, "")
+        expected_existing = (
+            "yes"
+            if source_form in master or (canonical_form and canonical_form in master)
+            else "no"
+        )
         if row["existing_master"].strip().lower() != expected_existing:
             errors.append(
                 f"{cid}: existing_master={row['existing_master']!r}; expected {expected_existing!r}"
