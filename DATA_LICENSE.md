@@ -53,9 +53,11 @@ KhasiLex may record that a lexical form occurs in a referenced publication, toge
 
 ## KhasiLex-authored linguistic/editorial data
 
-Original KhasiLex definitions, examples, annotations, grammar metadata, modern canonical decisions, sense analysis, and review decisions are **not automatically covered by the MIT software licence merely because they are stored in this repository**.
+Effective from the project-owner approval recorded on **7 October 2026**, original KhasiLex-authored definitions, examples, grammatical annotations, sense analysis, modern canonical decisions, editorial annotations, and comparable original linguistic/editorial additions are licensed under **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)** to the extent the KhasiLex project or its contributors hold the rights necessary to license that material.
 
-A dedicated open-data licence for original KhasiLex-authored linguistic/editorial data should be selected explicitly by the project owner before a stable public data release. Until then, a public file must not be described as having a blanket open-data licence unless that file or release explicitly states one.
+Reuse and adaptation of that KhasiLex-authored material must comply with CC BY-SA 4.0, including applicable attribution and ShareAlike requirements. See <https://creativecommons.org/licenses/by-sa/4.0/>.
+
+This grant is separate from the repository's MIT software licence and does not relicense third-party material. Public-domain source material remains public domain, while third-party material remains governed by its own licence, permission, or reference-only restriction.
 
 ## Mixed-source files
 
