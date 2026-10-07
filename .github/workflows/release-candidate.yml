@@ -1,0 +1,56 @@
+name: KhasiLex Release Candidate
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Release version without v prefix, e.g. 1.0.0-rc.1"
+        required: true
+        type: string
+      target:
+        description: "Lexical maturity gate"
+        required: true
+        default: review-pilot
+        type: choice
+        options:
+          - review-pilot
+          - technical-alpha
+          - public-beta
+          - professional-core
+
+permissions:
+  contents: read
+
+jobs:
+  build-release-candidate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+
+      - name: Validate repository corpus
+        run: |
+          python scripts/validate.py
+          python scripts/validate_v1_pilot.py
+          python scripts/corpus_audit.py
+
+      - name: Enforce release readiness
+        run: python scripts/release_readiness.py --target "${{ inputs.target }}" --strict --output quality/release_readiness.json
+
+      - name: Build reproducible verified-only bundle
+        run: python scripts/build_release_bundle.py --version "${{ inputs.version }}" --target "${{ inputs.target }}"
+
+      - name: Upload release candidate
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: KhasiLex-${{ inputs.version }}
+          path: |
+            release/KhasiLex-${{ inputs.version }}.zip
+            release/KhasiLex-${{ inputs.version }}.zip.sha256
+          if-no-files-found: error
