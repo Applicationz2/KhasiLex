@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "promotion_id": "v1-pilot-batch-006-promotion",
+  "source_review_commit": "3af3a6b3a6dc7d4fbd3b344c8cb2adc81699e62c",
+  "source_review_file": "data/review/batches/v1.0-pilot-001-final-review.csv",
+  "promoted_count": 10,
+  "promoted": [
+    {
+      "candidate_id": "kha-v04-p001-051",
+      "headword": "at-khu",
+      "id": "kha-000061",
+      "created": true,
+      "part_of_speech": "verb"
+    },
+    {
+      "candidate_id": "kha-v04-p001-052",
+      "headword": "bsa",
+      "id": "kha-000062",
+      "created": true,
+      "part_of_speech": "verb"
+    },
+    {
+      "candidate_id": "kha-v04-p001-053",
+      "headword": "bta",
+      "id": "kha-000063",
+      "created": true,
+      "part_of_speech": "verb"
+    },
+    {
+      "candidate_id": "kha-v04-p001-054",
+      "headword": "buh",
+      "id": "kha-000064",
+      "created": true,
+      "part_of_speech": "verb"
+    },
+    {
+      "candidate_id": "kha-v04-p001-055",
+      "headword": "dei",
+      "id": "kha-000065",
+      "created": true,
+      "part_of_speech": "verb"
+    },
+    {
+      "candidate_id": "kha-v04-p001-056",
+      "headword": "ker",
+      "id": "kha-000066",
+      "created": true,
+      "part_of_speech": "verb"
+    },
+    {
+      "candidate_id": "kha-v04-p001-057",
+      "headword": "kha",
+      "id": "kha-000067",
+      "created": true,
+      "part_of_speech": "verb"
+    },
+    {
+      "candidate_id": "kha-v04-p001-058",
+      "headword": "khap",
+      "id": "kha-000068",
+      "created": true,
+      "part_of_speech": "verb"
+    },
+    {
+      "candidate_id": "kha-v04-p001-059",
+      "headword": "kot",
+      "id": "kha-000069",
+      "created": true,
+      "part_of_speech": "verb"
+    },
+    {
+      "candidate_id": "kha-v04-p001-060",
+      "headword": "kren",
+      "id": "kha-000070",
+      "created": true,
+      "part_of_speech": "verb"
+    }
+  ],
+  "promotion_date": "2026-10-07",
+  "authority": "project-owner human final verification",
+  "homograph_boundary": "Candidate kha-v04-p001-081 dei remains pending as a separate later POS/sense review. Promotion only synchronizes its existing_master flag; it does not verify or merge that candidate.",
+  "standard_cross_check_policy": {
+    "scope": "pilot entries 21-100",
+    "lexical_reference": "nissor-1920-en-kha",
+    "grammar_reference": "nissor-hints-kha-grammar",
+    "authority_boundary": "corroborating evidence only; no automatic verification authority"
+  },
+  "release_boundary": "60 entries become authoritative verified lexical records after this promotion is merged. The 100-entry review-pilot threshold remains unsatisfied."
+}
