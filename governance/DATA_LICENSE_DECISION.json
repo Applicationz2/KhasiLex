@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "status": "pending_owner_decision",
+  "license_id": null,
+  "recommended_license_id": "CC-BY-SA-4.0",
+  "applies_to": [
+    "KhasiLex-authored definitions",
+    "KhasiLex-authored examples",
+    "KhasiLex-authored grammatical annotations",
+    "KhasiLex-authored sense analysis",
+    "KhasiLex-authored modern canonical decisions",
+    "KhasiLex-authored editorial annotations"
+  ],
+  "does_not_override": [
+    "public-domain status of Nissor 1906 source material",
+    "CC-BY-SA-4.0 obligations inherited from applicable third-party derived material",
+    "reference-only restrictions for sources without redistribution permission"
+  ],
+  "note": "This file is a release-control record only. It is not a licence grant while status is pending_owner_decision and license_id is null."
+}
