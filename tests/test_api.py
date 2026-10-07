@@ -44,8 +44,13 @@ def test_corpus_stats_expose_review_target():
 def test_public_corpus_defaults_to_verified_only():
     r = client.get("/api/v1/corpus/entries")
     assert r.status_code == 200
-    assert r.json()["status"] == "verified"
-    assert r.json()["count"] == 0
+    data = r.json()
+    assert data["status"] == "verified"
+    assert data["count"] >= 10
+    assert all(row["verification_status"] == "verified" for row in data["results"])
+    headwords = {row["headword"] for row in data["results"]}
+    assert "briew" in headwords
+    assert "ïing" not in headwords
 
 
 def test_corpus_filter_rejects_invalid_status():
