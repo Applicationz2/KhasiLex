@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "promotion_id": "v1-pilot-batch-003-promotion",
+  "source_review_commit": "2129307a24b6298cc485bbbf1ab8c0fc25faa69f",
+  "source_review_file": "data/review/batches/v1.0-pilot-001-final-review.csv",
+  "promoted_count": 10,
+  "promoted": [
+    {
+      "candidate_id": "kha-v04-p001-021",
+      "headword": "musla",
+      "id": "kha-000033",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-022",
+      "headword": "niam",
+      "id": "kha-000034",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-023",
+      "headword": "pdeng",
+      "id": "kha-000035",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-024",
+      "headword": "phira",
+      "id": "kha-000036",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-025",
+      "headword": "phlang",
+      "id": "kha-000037",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-026",
+      "headword": "phria",
+      "id": "kha-000038",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-027",
+      "headword": "pylleng",
+      "id": "kha-000039",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-028",
+      "headword": "pyrsut",
+      "id": "kha-000040",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-029",
+      "headword": "pyrthat",
+      "id": "kha-000041",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-030",
+      "headword": "pyrthei",
+      "id": "kha-000042",
+      "created": true,
+      "variant_of": null
+    }
+  ],
+  "promotion_date": "2026-10-07",
+  "authority": "project-owner human final verification",
+  "standard_cross_check_policy": {
+    "scope": "pilot entries 21-100",
+    "lexical_reference": "nissor-1920-en-kha",
+    "grammar_reference": "nissor-hints-kha-grammar",
+    "authority_boundary": "corroborating evidence only; no automatic verification authority"
+  },
+  "release_boundary": "30 entries become authoritative verified lexical records after this promotion is merged. The 100-entry review-pilot threshold and later 1,000/5,000/25,000 corpus milestones remain unsatisfied."
+}
