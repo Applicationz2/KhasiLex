@@ -1,6 +1,6 @@
 {
-  "schema_version": "0.4",
-  "principle": "Accuracy outranks raw entry count.",
+  "schema_version": "0.5",
+  "principle": "Accuracy, provenance, and architectural safety outrank raw entry count.",
   "milestones": {
     "review-pilot": {
       "verified_entries": 100,
@@ -8,15 +8,23 @@
     },
     "technical-alpha": {
       "verified_entries": 1000,
-      "purpose": "Internal and limited integration testing with meaningful lexical coverage."
+      "purpose": "Internal and limited integration testing with at least 1,000 verified entries plus the AI-native multilingual architecture gate.",
+      "required_architecture_gate": "ai-native-multilingual-g1"
     },
     "public-beta": {
       "verified_entries": 5000,
-      "purpose": "First public dictionary beta with a useful reviewed core vocabulary."
+      "purpose": "First public dictionary beta with a useful reviewed core vocabulary.",
+      "required_architecture_gate": "ai-native-multilingual-g1"
     },
     "professional-core": {
       "verified_entries": 25000,
-      "purpose": "Broad professional dictionary coverage before v1.0 claims."
+      "purpose": "Broad professional dictionary coverage before v1.0 claims.",
+      "required_architecture_gate": "ai-native-multilingual-g1"
+    },
+    "extended-beta-quality-gate": {
+      "verified_entries": 10000,
+      "required_architecture_gate": "ai-native-multilingual-g1",
+      "purpose": "Intermediate quality gate for broader domain, morphology, semantic, and translation evaluation before Professional Core."
     }
   },
   "verified_entry_minimums": {
@@ -27,6 +35,7 @@
     "requires_reviewer": true,
     "requires_review_date": true,
     "requires_natural_example_for_v1": true,
-    "ai_generated_content_must_remain_pending_until_human_review": true
+    "ai_generated_content_must_remain_pending_until_human_review": true,
+    "requires_stable_sense_identifier_for_multilingual_release": true
   }
 }
