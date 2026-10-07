@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "promotion_id": "v1-pilot-batch-005-promotion",
+  "source_review_commit": "83718d4c19ef3b0f9c72bc46e58ad1a78ae3397c",
+  "source_review_file": "data/review/batches/v1.0-pilot-001-final-review.csv",
+  "promoted_count": 10,
+  "promoted": [
+    {
+      "candidate_id": "kha-v04-p001-041",
+      "headword": "sla",
+      "id": "kha-000053",
+      "created": true,
+      "upgraded_existing": false
+    },
+    {
+      "candidate_id": "kha-v04-p001-042",
+      "headword": "slap",
+      "id": "kha-000054",
+      "created": true,
+      "upgraded_existing": false
+    },
+    {
+      "candidate_id": "kha-v04-p001-043",
+      "headword": "snait",
+      "id": "kha-000055",
+      "created": true,
+      "upgraded_existing": false
+    },
+    {
+      "candidate_id": "kha-v04-p001-044",
+      "headword": "snem",
+      "id": "kha-000056",
+      "created": true,
+      "upgraded_existing": false
+    },
+    {
+      "candidate_id": "kha-v04-p001-045",
+      "headword": "sner",
+      "id": "kha-000057",
+      "created": true,
+      "upgraded_existing": false
+    },
+    {
+      "candidate_id": "kha-v04-p001-046",
+      "headword": "sniang",
+      "id": "kha-000058",
+      "created": true,
+      "upgraded_existing": false
+    },
+    {
+      "candidate_id": "kha-v04-p001-047",
+      "headword": "sohpieng",
+      "id": "kha-000059",
+      "created": true,
+      "upgraded_existing": false
+    },
+    {
+      "candidate_id": "kha-v04-p001-048",
+      "headword": "spah",
+      "id": "kha-000060",
+      "created": true,
+      "upgraded_existing": false
+    },
+    {
+      "candidate_id": "kha-v04-p001-049",
+      "headword": "um",
+      "id": "kha-000009",
+      "created": false,
+      "upgraded_existing": true
+    },
+    {
+      "candidate_id": "kha-v04-p001-050",
+      "headword": "ïing",
+      "id": "kha-000001",
+      "created": false,
+      "upgraded_existing": true
+    }
+  ],
+  "promotion_date": "2026-10-07",
+  "authority": "project-owner human final verification",
+  "standard_cross_check_policy": {
+    "scope": "pilot entries 21-100",
+    "lexical_reference": "nissor-1920-en-kha",
+    "grammar_reference": "nissor-hints-kha-grammar",
+    "authority_boundary": "corroborating evidence only; no automatic verification authority"
+  },
+  "identity_boundary": "Existing illustrative seeds um (kha-000009) and ïing (kha-000001) are upgraded in place. No duplicate IDs or duplicate headwords are created.",
+  "release_boundary": "50 entries become authoritative verified lexical records after this promotion is merged. The 100-entry review-pilot threshold remains unsatisfied."
+}
