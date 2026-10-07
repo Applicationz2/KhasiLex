@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "gate_id": "g1-batch-002-evidence-pass",
+  "status": "in_progress",
+  "authority_boundary": "Evidence classification does not authorize verification or promotion.",
+  "sources_checked": [
+    {
+      "source_id": "nissor-1906-kha-en",
+      "role": "primary historical evidence",
+      "result": "confirmed; proofread source also exposed one source-record mismatch"
+    },
+    {
+      "source_id": "nissor-1920-en-kha",
+      "role": "reverse lexical corroboration",
+      "result": "source confirmed; candidate-by-candidate corroboration remains incomplete except dewiong"
+    },
+    {
+      "source_id": "nissor-hints-kha-grammar",
+      "role": "grammar/POS corroboration",
+      "result": "still required where material; no unchecked claim is treated as corroborated"
+    },
+    {
+      "source_id": "meg-gov-mining-geology-dewiong-2020",
+      "role": "modern government Khasi attestation",
+      "result": "dewiong independently attested in current official Khasi text with coal sense"
+    }
+  ],
+  "candidate_findings": {
+    "g1-hist-002-006": {
+      "headword": "dewiong",
+      "nissor_1920": "corroborated",
+      "modern_attestation": "confirmed",
+      "promotion_status": "still_pending_owner_and_editorial_review"
+    },
+    "g1-hist-002-017": {
+      "staged_headword": "'jat-diih",
+      "proofread_1906_form": "'jat-duh",
+      "finding": "source_record_or_ocr_mismatch",
+      "promotion_status": "blocked_until_source_correction"
+    }
+  },
+  "remaining_rule": "All other Batch 002 candidates remain unpromotable until their required 1920/Hints/modern-attestation fields are actually checked. Absence of search evidence must not be converted into a negative linguistic claim.",
+  "promotion_authorized": false
+}
