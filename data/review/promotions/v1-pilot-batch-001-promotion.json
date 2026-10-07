@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "promotion_id": "v1-pilot-batch-001-promotion",
+  "source_review_commit": "a3fe687e2c4bb3b1a4e41d6d53e4b5a43aa1702a",
+  "source_review_file": "data/review/batches/v1.0-pilot-001-final-review.csv",
+  "promoted_count": 10,
+  "promoted": [
+    {
+      "candidate_id": "kha-v04-p001-001",
+      "headword": "'ñiuhtmoh",
+      "id": "kha-000013",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-002",
+      "headword": "balang",
+      "id": "kha-000014",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-003",
+      "headword": "bamkhana",
+      "id": "kha-000015",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-004",
+      "headword": "barobakhor",
+      "id": "kha-000016",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-005",
+      "headword": "blei",
+      "id": "kha-000017",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-006",
+      "headword": "bnai",
+      "id": "kha-000018",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-007",
+      "headword": "bniat",
+      "id": "kha-000019",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-008",
+      "headword": "briew",
+      "id": "kha-000020",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-009",
+      "headword": "briw",
+      "id": "kha-000021",
+      "created": true,
+      "variant_of": "briew"
+    },
+    {
+      "candidate_id": "kha-v04-p001-010",
+      "headword": "burom",
+      "id": "kha-000022",
+      "created": true,
+      "variant_of": null
+    }
+  ],
+  "promotion_date": "2026-10-07",
+  "authority": "project-owner human final verification",
+  "release_boundary": "Entries are authoritative verified lexical records, but stable public data release remains blocked by the separate KhasiLex original-data licence gate and corpus milestone gates."
+}

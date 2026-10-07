@@ -104,7 +104,8 @@ def main():
         "next_target": next_target,
         "errors": errors,
         "warnings": warnings,
-        "production_ready": not errors and bool(verified),
+        "review_pilot_ready": not errors and len(verified) >= int(milestones.get("review-pilot", {}).get("verified_entries", 100)),
+        "production_ready": not errors and len(verified) >= int(milestones.get("review-pilot", {}).get("verified_entries", 100)),
     }
 
     REPORT.parent.mkdir(parents=True, exist_ok=True)

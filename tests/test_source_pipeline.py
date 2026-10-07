@@ -51,7 +51,7 @@ def test_frequency_extractor_excludes_existing_master(tmp_path):
     assert "um" not in by_word
     assert "bam" not in by_word
     assert by_word["kloi"]["frequency"] == "4"
-    assert by_word["briew"]["frequency"] == "3"
+    assert "briew" not in by_word
     assert by_word["kloi"]["source"] == "khasi-ner-2026"
     assert by_word["kloi"]["license"] == "CC-BY-SA-4.0"
 
