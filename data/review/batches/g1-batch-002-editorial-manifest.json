@@ -1,0 +1,18 @@
+{
+  "schema_version":"1.0",
+  "qualification_id":"g1-batch-002-editorial-qualification",
+  "source_batch":"g1-historical-batch-002",
+  "source_merge_sha":"7e2e00a55e80528cf2578b6c0e85b7d41034d739",
+  "candidate_count":16,
+  "deferred_count":4,
+  "deferred_candidates":["g1-hist-002-001","g1-hist-002-003","g1-hist-002-004","g1-hist-002-015"],
+  "authority_boundary":"All definitions and examples in this file are editorial candidates, not authoritative lexical data. They must not be copied to the verified master corpus without completed evidence review and explicit owner approval.",
+  "cross_check_policy":{
+    "nissor_1906":"confirmed historical basis for staged candidates",
+    "nissor_1920":"required lexical reverse corroboration before promotion",
+    "hints":"required when grammar, POS, compound analysis, or form classification materially depends on it",
+    "modern_attestation":"required before promotion for every candidate in this batch"
+  },
+  "multilingual_identity_policy":"Stable sense/concept identifiers are reserved only for candidates that survive evidence review; ambiguous entries such as dewmet and dewshrah must be sense-split first.",
+  "promotion_authorized":false
+}
