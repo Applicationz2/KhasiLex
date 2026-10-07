@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "promotion_id": "v1-pilot-batch-009-promotion",
+  "source_review_commit": "b60e590a3a406b18f0aadce8e7962235fca83205",
+  "source_review_file": "data/review/batches/v1.0-pilot-001-final-review.csv",
+  "promoted_count": 10,
+  "promoted": [
+    {
+      "candidate_id": "kha-v04-p001-081",
+      "headword": "dei",
+      "id": "kha-000091",
+      "part_of_speech": "adjective"
+    },
+    {
+      "candidate_id": "kha-v04-p001-082",
+      "headword": "hok",
+      "id": "kha-000092",
+      "part_of_speech": "adjective"
+    },
+    {
+      "candidate_id": "kha-v04-p001-083",
+      "headword": "jlih",
+      "id": "kha-000093",
+      "part_of_speech": "adjective"
+    },
+    {
+      "candidate_id": "kha-v04-p001-084",
+      "headword": "jngai",
+      "id": "kha-000094",
+      "part_of_speech": "adjective"
+    },
+    {
+      "candidate_id": "kha-v04-p001-085",
+      "headword": "jrong",
+      "id": "kha-000095",
+      "part_of_speech": "adjective"
+    },
+    {
+      "candidate_id": "kha-v04-p001-086",
+      "headword": "khia",
+      "id": "kha-000096",
+      "part_of_speech": "adjective"
+    },
+    {
+      "candidate_id": "kha-v04-p001-087",
+      "headword": "lieh",
+      "id": "kha-000097",
+      "part_of_speech": "adjective"
+    },
+    {
+      "candidate_id": "kha-v04-p001-088",
+      "headword": "lyngkot",
+      "id": "kha-000098",
+      "part_of_speech": "adjective"
+    },
+    {
+      "candidate_id": "kha-v04-p001-089",
+      "headword": "barobor",
+      "id": "kha-000099",
+      "part_of_speech": "adverb"
+    },
+    {
+      "candidate_id": "kha-v04-p001-090",
+      "headword": "hangne",
+      "id": "kha-000100",
+      "part_of_speech": "adverb"
+    }
+  ],
+  "promotion_date": "2026-10-07",
+  "authority": "project-owner human final verification",
+  "homograph_policy": {
+    "uniqueness_key": "NFC-casefold(headword) + part_of_speech",
+    "dei": "Verified adjective dei is intentionally distinct from verified verb dei; same spelling, different POS and lexical sense."
+  },
+  "bookkeeping_policy": "existing_master is evaluated against source spelling, approved canonical spelling, and recorded master variants so canonicalization does not create false negatives.",
+  "standard_cross_check_policy": {
+    "scope": "pilot entries 21-100",
+    "lexical_reference": "nissor-1920-en-kha",
+    "grammar_reference": "nissor-hints-kha-grammar",
+    "authority_boundary": "corroborating evidence only; no automatic verification authority"
+  },
+  "release_boundary": "90 entries become authoritative verified lexical records after this promotion is merged. The 100-entry review-pilot threshold remains unsatisfied."
+}
