@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "promotion_id": "v1-pilot-batch-007-promotion",
+  "source_review_commit": "3a5364e44563b0f1bb09abaf91fd981225cb55a0",
+  "source_review_file": "data/review/batches/v1.0-pilot-001-final-review.csv",
+  "promoted_count": 10,
+  "promoted": [
+    {
+      "candidate_id": "kha-v04-p001-061",
+      "headword": "kut",
+      "id": "kha-000071",
+      "created": true,
+      "part_of_speech": "verb"
+    },
+    {
+      "candidate_id": "kha-v04-p001-062",
+      "headword": "kynjat",
+      "id": "kha-000072",
+      "created": true,
+      "part_of_speech": "verb"
+    },
+    {
+      "candidate_id": "kha-v04-p001-063",
+      "headword": "kynmaw",
+      "id": "kha-000073",
+      "created": true,
+      "part_of_speech": "verb"
+    },
+    {
+      "candidate_id": "kha-v04-p001-064",
+      "headword": "kynton",
+      "id": "kha-000074",
+      "created": true,
+      "part_of_speech": "verb"
+    },
+    {
+      "candidate_id": "kha-v04-p001-065",
+      "headword": "kyrteng",
+      "id": "kha-000075",
+      "created": true,
+      "part_of_speech": "verb"
+    },
+    {
+      "candidate_id": "kha-v04-p001-066",
+      "headword": "kñia",
+      "id": "kha-000076",
+      "created": true,
+      "part_of_speech": "verb"
+    },
+    {
+      "candidate_id": "kha-v04-p001-067",
+      "headword": "lait",
+      "id": "kha-000077",
+      "created": true,
+      "part_of_speech": "verb"
+    },
+    {
+      "candidate_id": "kha-v04-p001-068",
+      "headword": "laitluid",
+      "id": "kha-000078",
+      "created": true,
+      "part_of_speech": "verb"
+    },
+    {
+      "candidate_id": "kha-v04-p001-069",
+      "headword": "phalang",
+      "id": "kha-000079",
+      "created": true,
+      "part_of_speech": "verb"
+    },
+    {
+      "candidate_id": "kha-v04-p001-070",
+      "headword": "phira",
+      "id": "kha-000080",
+      "created": true,
+      "part_of_speech": "verb"
+    }
+  ],
+  "promotion_date": "2026-10-07",
+  "authority": "project-owner human final verification",
+  "homograph_policy": {
+    "uniqueness_key": "NFC-casefold(headword) + part_of_speech",
+    "compatibility": "Legacy lookup without part_of_speech retains first-match behavior; callers may specify part_of_speech to select a homograph.",
+    "phira": "Verified noun phira remains unchanged; verified verb phira is a separate lexical row with its own ID."
+  },
+  "standard_cross_check_policy": {
+    "scope": "pilot entries 21-100",
+    "lexical_reference": "nissor-1920-en-kha",
+    "grammar_reference": "nissor-hints-kha-grammar",
+    "authority_boundary": "corroborating evidence only; no automatic verification authority"
+  },
+  "release_boundary": "70 entries become authoritative verified lexical records after this promotion is merged. The 100-entry review-pilot threshold remains unsatisfied."
+}
