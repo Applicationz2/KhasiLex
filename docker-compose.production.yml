@@ -1,0 +1,24 @@
+services:
+  khasilex:
+    build: .
+    image: khasilex:production
+    environment:
+      KHASILEX_ENV: production
+      KHASILEX_RATE_LIMIT_PER_MINUTE: "120"
+      KHASILEX_MAX_BODY_BYTES: "65536"
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/ready', timeout=3).read()"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s

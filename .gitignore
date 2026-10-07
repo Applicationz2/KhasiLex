@@ -20,3 +20,6 @@ database/*.db
 *.sqlite
 *.sqlite3
 build/
+
+# Generated release artifacts
+release/

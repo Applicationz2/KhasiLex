@@ -1,0 +1,50 @@
+name: KhasiLex Publish Production Container
+
+on:
+  workflow_dispatch:
+    inputs:
+      image_tag:
+        description: "Container tag, e.g. 1.0.0-rc.1"
+        required: true
+        type: string
+      target:
+        description: "Required lexical maturity gate"
+        required: true
+        default: review-pilot
+        type: choice
+        options:
+          - review-pilot
+          - technical-alpha
+          - public-beta
+          - professional-core
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Enforce release readiness
+        run: python scripts/release_readiness.py --target "${{ inputs.target }}" --strict
+
+      - name: Log in to GitHub Container Registry
+        shell: bash
+        env:
+          GHCR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: echo "$GHCR_TOKEN" | docker login ghcr.io -u "${{ github.actor }}" --password-stdin
+
+      - name: Build and publish immutable production image
+        shell: bash
+        run: |
+          set -euo pipefail
+          repo="${GITHUB_REPOSITORY,,}"
+          image="ghcr.io/${repo}:${{ inputs.image_tag }}"
+          docker build --pull --tag "$image" .
+          docker push "$image"
+          echo "Published $image"
