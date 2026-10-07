@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 LEXICON = ROOT / "data/master/khasi_lexicon.csv"
 TARGETS = ROOT / "quality/corpus_targets.json"
 LICENSE_DECISION = ROOT / "governance/DATA_LICENSE_DECISION.json"
+AI_GATE = ROOT / "quality/ai_architecture_gate.json"
 
 V1_REQUIRED = (
     "headword",
@@ -34,6 +35,12 @@ def _read_rows() -> list[dict[str, str]]:
 
 def _targets() -> dict:
     return json.loads(TARGETS.read_text(encoding="utf-8"))
+
+
+def _ai_gate() -> dict:
+    if not AI_GATE.exists():
+        return {"gate_id": None, "required_controls": {}}
+    return json.loads(AI_GATE.read_text(encoding="utf-8"))
 
 
 def _license_decision() -> dict:
@@ -70,6 +77,40 @@ def evaluate(target: str) -> dict:
     if not licence_ready:
         errors.append("KhasiLex-authored linguistic-data licence has not been explicitly approved")
 
+    architecture_gate = targets[target].get("required_architecture_gate")
+    architecture_ready = True
+    architecture_errors: list[str] = []
+    if architecture_gate:
+        gate = _ai_gate()
+        if gate.get("gate_id") != architecture_gate:
+            architecture_ready = False
+            architecture_errors.append(
+                f"{target}: required architecture gate {architecture_gate} is missing or mismatched"
+            )
+        controls = gate.get("required_controls") or {}
+        failed_controls = [name for name, enabled in controls.items() if enabled is not True]
+        if failed_controls:
+            architecture_ready = False
+            architecture_errors.append(
+                f"{target}: architecture controls not enabled: {', '.join(sorted(failed_controls))}"
+            )
+        required_confidence = {
+            "verified",
+            "high_confidence_ai_assisted",
+            "ai_assisted",
+            "low_resource",
+            "historical_or_uncertain",
+            "needs_human_review",
+        }
+        present_confidence = set(gate.get("confidence_classes") or [])
+        missing_confidence = sorted(required_confidence - present_confidence)
+        if missing_confidence:
+            architecture_ready = False
+            architecture_errors.append(
+                f"{target}: missing confidence classes: {', '.join(missing_confidence)}"
+            )
+        errors.extend(architecture_errors)
+
     if len(verified) < required_count:
         errors.append(
             f"{target}: requires {required_count} verified entries; found {len(verified)}"
@@ -83,6 +124,9 @@ def evaluate(target: str) -> dict:
         "remaining_verified_entries": max(0, required_count - len(verified)),
         "data_license_status": licence.get("status"),
         "data_license_id": licence.get("license_id"),
+        "required_architecture_gate": architecture_gate,
+        "architecture_ready": architecture_ready,
+        "architecture_errors": architecture_errors,
         "errors": errors,
         "ready": not errors,
     }
@@ -92,7 +136,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Evaluate KhasiLex release readiness.")
     parser.add_argument(
         "--target",
-        choices=("review-pilot", "technical-alpha", "public-beta", "professional-core"),
+        choices=("review-pilot", "technical-alpha", "public-beta", "extended-beta-quality-gate", "professional-core"),
         default="professional-core",
     )
     parser.add_argument(
