@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "g1-pending-seeds-review-001",
+  "entry_count": 4,
+  "master_entries": ["kha-000004","kha-000005","kha-000006","kha-000008"],
+  "purpose": "Qualify the four ordinary pending starter seeds before new G1 corpus expansion.",
+  "state": "pending_human_review",
+  "authority_boundary": "These rows are AI-prepared review candidates. They do not modify master verification status and cannot become authoritative without explicit human/project-owner approval.",
+  "evidence_policy": {
+    "primary": ["nissor-1906-kha-en"],
+    "standard_cross_check": ["nissor-1920-en-kha","nissor-hints-kha-grammar"],
+    "rule": "Historical evidence corroborates lexical and grammatical decisions but never automatically promotes a candidate."
+  },
+  "excluded_pending_entries": ["kha-000010","kha-000011","kha-000012"],
+  "exclusion_reason": "Reduplicative constructions remain pending until their semantics and grammatical function are directly evidenced and human reviewed."
+}
