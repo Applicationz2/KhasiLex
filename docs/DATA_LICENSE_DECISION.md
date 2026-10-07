@@ -1,31 +1,37 @@
 # KhasiLex Original Linguistic Data Licence Decision
 
-The repository software is MIT-licensed, but a professional public data release requires a separate explicit decision for **original KhasiLex-authored linguistic/editorial material**.
+The repository software is MIT-licensed. Original **KhasiLex-authored linguistic/editorial material** is separately licensed as recorded below.
 
-## Recommended option: CC BY-SA 4.0
+## Approved licence: CC BY-SA 4.0
 
-The current recommendation is **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)** for original KhasiLex-authored definitions, examples, grammatical annotations, sense analysis, modern canonical decisions and editorial annotations.
+On **7 October 2026**, the project owner explicitly approved **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)** for original KhasiLex-authored linguistic/editorial data.
 
-Why this is the recommended default:
+The approval applies to KhasiLex-authored:
 
-- it is a standard open-content licence designed for data/text rather than software;
-- it requires attribution;
-- ShareAlike helps keep adapted dictionary content open;
-- it aligns operationally with KhasiLex material that may already carry CC BY-SA obligations from sources such as applicable Wiktionary/Khasi-NER-derived material;
-- it does not change the public-domain status of Nissor 1906 source material.
+- definitions;
+- examples;
+- grammatical annotations;
+- sense analysis;
+- modern canonical decisions; and
+- editorial annotations.
 
-## Important boundary
+The controlling machine-readable decision record is `governance/DATA_LICENSE_DECISION.json`, which now records:
 
-No licence is granted by this proposal. The controlling file is
-`governance/DATA_LICENSE_DECISION.json`, which remains
-`pending_owner_decision` with `license_id: null`.
+- `status: approved`
+- `license_id: CC-BY-SA-4.0`
 
-A stable public linguistic-data release remains blocked until the project owner explicitly approves a licence. Once approved, the decision record and `DATA_LICENSE.md` must be updated in a dedicated reviewable commit.
+The licence text is available from Creative Commons at <https://creativecommons.org/licenses/by-sa/4.0/>.
 
-## Alternatives
+## Legal and provenance boundary
 
-**CC BY 4.0** allows broader downstream reuse without ShareAlike but is less aligned with mixed CC BY-SA-derived content.
+This decision does **not** relicense third-party material and does not change the public-domain status of the Nissor Singh 1906 source material.
 
-**CC0** maximizes unrestricted reuse but gives up attribution/share-alike requirements and is not recommended as the default for KhasiLex-authored professional editorial work.
+Applicable third-party CC BY-SA material continues under its source licence and attribution requirements. Reference-only sources remain reference-only unless separate reuse permission or licensing evidence is established.
 
-Licensing of third-party material remains controlled by the original source licence regardless of the licence selected for KhasiLex-authored material.
+Mixed-source files must continue to preserve provenance and source-specific licensing metadata where practical.
+
+## Release-control effect
+
+The dedicated KhasiLex-authored data-licence gate is now satisfied.
+
+This does **not** by itself make a KhasiLex release ready. Corpus verification counts, linguistic review, provenance, security, packaging and other release gates remain independently enforceable.
