@@ -25,9 +25,10 @@ def test_word_lookup():
     assert r.json()["headword"] == "ïing"
 
 
-def test_authoritative_lookup_rejects_pending_seed():
+def test_authoritative_lookup_accepts_promoted_seed():
     r = client.get("/api/v1/authoritative/words/bam")
-    assert r.status_code == 404
+    assert r.status_code == 200
+    assert r.json()["verification_status"] == "verified"
 
 
 def test_corpus_stats_expose_review_target():
@@ -53,7 +54,7 @@ def test_public_corpus_defaults_to_verified_only():
     headwords = {row["headword"] for row in data["results"]}
     assert "briew" in headwords
     assert "ïing" in headwords
-    assert "bam" not in headwords
+    assert "bam" in headwords
 
 
 def test_corpus_filter_rejects_invalid_status():
@@ -111,11 +112,11 @@ def test_resolver_can_surface_candidate_in_dev_mode():
     assert r.json()["status"] in {"resolved", "concept_found_no_verified_khasi"}
 
 
-def test_production_word_lookup_cannot_leak_pending(monkeypatch):
+def test_production_word_lookup_allows_promoted_verified_seed(monkeypatch):
     monkeypatch.setenv("KHASILEX_ENV", "production")
     r = client.get("/api/v1/words/bam")
-    assert r.status_code == 404
-    assert r.json()["detail"] == "No verified lexical entry found"
+    assert r.status_code == 200
+    assert r.json()["verification_status"] == "verified"
 
 
 def test_production_search_cannot_leak_pending(monkeypatch):

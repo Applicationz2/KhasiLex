@@ -6,7 +6,7 @@ def test_word_export_defaults_to_verified_only():
     words = build_words()
     assert "briew" in words
     assert "ïing" in words
-    assert "bam" not in words
+    assert "bam" in words
 
 
 def test_development_export_can_include_unverified():

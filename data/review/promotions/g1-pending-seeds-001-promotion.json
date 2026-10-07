@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "promotion_id": "g1-pending-seeds-001-promotion",
+  "source_review_pr": 49,
+  "source_review_head_sha": "e9d8bd3dcf748cf132a1aa9df77a4d12db2b813c",
+  "source_review_merge_sha": "770ad83b4fc97097e1b3a3ca33c682a0a092db83",
+  "source_review_file": "data/review/batches/g1-pending-seeds-review-001.csv",
+  "promoted_count": 4,
+  "upgraded_in_place_count": 4,
+  "promoted": [
+    {"candidate_id":"g1-pending-001-001","headword":"phi","id":"kha-000004","upgraded_in_place":true,"part_of_speech":"pronoun"},
+    {"candidate_id":"g1-pending-001-002","headword":"ki","id":"kha-000005","upgraded_in_place":true,"part_of_speech":"pronoun"},
+    {"candidate_id":"g1-pending-001-003","headword":"ka","id":"kha-000006","upgraded_in_place":true,"part_of_speech":"pronoun"},
+    {"candidate_id":"g1-pending-001-004","headword":"bam","id":"kha-000008","upgraded_in_place":true,"part_of_speech":"verb"}
+  ],
+  "promotion_date": "2026-10-07",
+  "authority": "project-owner human approval of PR #49 exact reviewed head",
+  "identity_policy": "All four starter-seed identities are upgraded in place; no duplicate lexical rows are created.",
+  "grammar_boundaries": {
+    "ki": "Pronoun sense remains separate from plural/article/agreement functions.",
+    "ka": "Pronoun she/it remains separate from article/agreement-marker functions.",
+    "bam": "Core eat/consume-food sense remains separate from compounds and extended senses."
+  },
+  "excluded_pending_entries": ["kha-000010","kha-000011","kha-000012"],
+  "milestone_boundary": "This promotion raises the authoritative verified corpus from 100 to 104 entries if validation passes; it does not satisfy the 1,000-entry G1 technical-alpha gate."
+}
