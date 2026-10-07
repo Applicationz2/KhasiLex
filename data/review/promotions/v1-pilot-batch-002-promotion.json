@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "promotion_id": "v1-pilot-batch-002-promotion",
+  "source_review_commit": "b69a138adcbb2eda0e0b64f5390c77e4379bc7c1",
+  "source_review_file": "data/review/batches/v1.0-pilot-001-final-review.csv",
+  "promoted_count": 10,
+  "promoted": [
+    {
+      "candidate_id": "kha-v04-p001-011",
+      "headword": "bynriew",
+      "id": "kha-000023",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-012",
+      "headword": "bynta",
+      "id": "kha-000024",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-013",
+      "headword": "dieng",
+      "id": "kha-000025",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-014",
+      "headword": "ding",
+      "id": "kha-000026",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-015",
+      "headword": "dkhan",
+      "id": "kha-000027",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-016",
+      "headword": "doh",
+      "id": "kha-000028",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-017",
+      "headword": "dohkha",
+      "id": "kha-000029",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-018",
+      "headword": "masi",
+      "id": "kha-000030",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-019",
+      "headword": "maw",
+      "id": "kha-000031",
+      "created": true,
+      "variant_of": null
+    },
+    {
+      "candidate_id": "kha-v04-p001-020",
+      "headword": "mrad",
+      "id": "kha-000032",
+      "created": true,
+      "variant_of": null
+    }
+  ],
+  "promotion_date": "2026-10-07",
+  "authority": "project-owner human final verification",
+  "additional_sources_registered": [
+    "nissor-1920-en-kha",
+    "nissor-hints-kha-grammar"
+  ],
+  "release_boundary": "20 entries are authoritative verified lexical records. The 100-entry review-pilot threshold and later 1,000/5,000/25,000 corpus milestones remain unsatisfied; stable/public production release claims remain blocked by corpus thresholds."
+}

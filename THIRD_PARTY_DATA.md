@@ -14,6 +14,27 @@ KhasiLex software code and third-party linguistic data have different licence an
 
 KhasiLex preserves the source snapshot and provenance separately from modern review decisions. Public-domain status does not make historical spelling, meaning, POS, register or present-day usage automatically authoritative modern Standard Khasi.
 
+## U Nissor Singh, English-Khasi Dictionary (1920)
+
+- Source ID: `nissor-1920-en-kha`
+- Title: **English-Khasi Dictionary**
+- Author: U Nissor Singh
+- Publication year: 1920
+- Canonical source: Wikimedia Commons / Internet Archive scan
+- Licence/status: **Public Domain**
+- KhasiLex use: English-to-Khasi lexical corroboration, historical equivalents and reverse lexical comparison
+
+This source is a companion historical dictionary to the 1906 Khasi-English work. It may strengthen provenance and sense comparison, but its historical equivalents do not become authoritative modern Standard Khasi without current Khasi review.
+
+## U Nissor Singh, Hints on the Study of the Khasi Language
+
+- Source ID: `nissor-hints-kha-grammar`
+- Resource: **Hints on the Study of the Khasi Language**
+- KhasiLex use: grammar/POS comparison, historical grammatical terminology and reviewer corroboration
+- Redistribution status: **reference-only until the exact scan edition and rights are confirmed**
+
+The work is still prescribed in current Meghalaya Khasi curricula, which makes it relevant as a living pedagogical grammar reference. That present-day curricular use does not itself establish a reusable data licence for the scanned edition, so KhasiLex will not bulk-copy it unless the precise edition and rights are separately verified.
+
 ## Khasi Named Entity Recognition Corpus
 
 - Source ID: `khasi-ner-2026`
