@@ -174,3 +174,29 @@ def test_production_rejects_oversized_declared_body(monkeypatch):
         content=b'{"text":"x"}',
     )
     assert r.status_code == 413
+
+
+def test_homograph_lookup_can_select_part_of_speech():
+    noun = client.get(
+        "/api/v1/authoritative/words/phira",
+        params={"part_of_speech": "noun"},
+    )
+    verb = client.get(
+        "/api/v1/authoritative/words/phira",
+        params={"part_of_speech": "verb"},
+    )
+    assert noun.status_code == 200
+    assert noun.json()["headword"] == "phira"
+    assert noun.json()["part_of_speech"] == "noun"
+    assert verb.status_code == 200
+    assert verb.json()["headword"] == "phira"
+    assert verb.json()["part_of_speech"] == "verb"
+    assert noun.json()["id"] != verb.json()["id"]
+
+
+def test_homograph_lookup_rejects_unknown_part_of_speech():
+    r = client.get(
+        "/api/v1/authoritative/words/phira",
+        params={"part_of_speech": "adjective"},
+    )
+    assert r.status_code == 404

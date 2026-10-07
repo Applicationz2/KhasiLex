@@ -71,12 +71,27 @@ def readiness():
     }
 
 
+def _matches_word(entry: dict[str, str], word: str, part_of_speech: str | None) -> bool:
+    if normalize(entry.get("headword", "")).casefold() != normalize(word).casefold():
+        return False
+    if part_of_speech is None:
+        return True
+    return normalize(entry.get("part_of_speech", "")).casefold() == normalize(part_of_speech).casefold()
+
+
 @app.get("/api/v1/words/{word}")
-def get_word(word: str):
-    """Development lookup; in production it becomes verified-only."""
-    target = normalize(word).casefold()
+def get_word(
+    word: str,
+    part_of_speech: str | None = Query(default=None, max_length=64),
+):
+    """Development lookup; in production it becomes verified-only.
+
+    Homographs may coexist as separate lexical rows. Supply part_of_speech to
+    select a specific row while preserving the legacy first-match behaviour
+    when no POS filter is provided.
+    """
     for entry in public_entries():
-        if normalize(entry["headword"]).casefold() == target:
+        if _matches_word(entry, word, part_of_speech):
             return entry
     if is_production():
         raise HTTPException(status_code=404, detail="No verified lexical entry found")
@@ -84,13 +99,15 @@ def get_word(word: str):
 
 
 @app.get("/api/v1/authoritative/words/{word}")
-def get_authoritative_word(word: str):
+def get_authoritative_word(
+    word: str,
+    part_of_speech: str | None = Query(default=None, max_length=64),
+):
     """Production-safe lookup: only human-verified Khasi entries are returned."""
-    target = normalize(word).casefold()
     for entry in load_entries():
         if entry.get("verification_status") != "verified":
             continue
-        if normalize(entry["headword"]).casefold() == target:
+        if _matches_word(entry, word, part_of_speech):
             return entry
     raise HTTPException(status_code=404, detail="No verified lexical entry found")
 

@@ -37,7 +37,7 @@ def valid_review_date(value):
 def main():
     errors = []
     seen_ids = set()
-    seen_words = set()
+    seen_lexemes = set()
     count = 0
 
     with CSV_PATH.open(encoding="utf-8", newline="") as f:
@@ -65,10 +65,15 @@ def main():
             if not word:
                 errors.append(f"Line {line_no}: missing headword")
             else:
-                key = unicodedata.normalize("NFC", word).casefold()
-                if key in seen_words:
-                    errors.append(f"Line {line_no}: duplicate headword {word}")
-                seen_words.add(key)
+                word_key = unicodedata.normalize("NFC", word).casefold()
+                pos_key = (row.get("part_of_speech") or "").strip().casefold()
+                lexeme_key = (word_key, pos_key)
+                if lexeme_key in seen_lexemes:
+                    errors.append(
+                        f"Line {line_no}: duplicate headword/POS {word} / "
+                        f"{row.get('part_of_speech') or '<blank>'}"
+                    )
+                seen_lexemes.add(lexeme_key)
 
             if row.get("language") != "kha":
                 errors.append(f"Line {line_no}: language should be kha")
