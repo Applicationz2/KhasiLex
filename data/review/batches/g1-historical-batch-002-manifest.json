@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "g1-historical-batch-002",
+  "entry_count": 20,
+  "purpose": "First post-pilot G1 historical qualification batch toward the 1,000 verified-entry Technical Alpha target.",
+  "state": "pending_human_review",
+  "baseline_verified_entries": 104,
+  "g1_required_verified_entries": 1000,
+  "authority_boundary": "Selection and historical evidence do not constitute modern verification. No candidate in this batch is authoritative or production-visible until separately human reviewed, promoted, validated, and merged.",
+  "selection_policy": {
+    "primary_source": "nissor-1906-kha-en",
+    "minimum_ocr_confidence": 0.975,
+    "existing_master": "no",
+    "preference": "concise or separable historical glosses suitable for controlled modern review"
+  },
+  "standard_cross_check": {
+    "lexical": "nissor-1920-en-kha",
+    "grammar": "nissor-hints-kha-grammar",
+    "status": "required_before_promotion",
+    "rule": "Cross-checking is corroborative only and never automatically verifies spelling, meaning, POS, register, or current usage."
+  },
+  "required_before_promotion": [
+    "modern canonical spelling decision",
+    "part-of-speech decision",
+    "independently authored Khasi definition",
+    "English equivalent or explicit omission rationale",
+    "natural Khasi example",
+    "register/dialect decision",
+    "source and licence review",
+    "stable sense/concept identity where multilingual release requires it",
+    "explicit human/project-owner approval"
+  ],
+  "id_policy": "New master IDs, if eventually promoted, begin at kha-000108 and are allocated only during a separate promotion step.",
+  "excluded_policy": "OCR-contaminated, culturally sensitive, semantically overloaded, or unclear candidates are deferred rather than guessed."
+}
