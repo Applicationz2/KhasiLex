@@ -263,7 +263,9 @@ Do not copy copyrighted Khasi dictionaries or corpora unless their licence permi
 
 The Nissor Singh 1906 corpus is maintained as a public-domain historical evidence layer with the exact source snapshot and SHA-256 recorded for reproducibility. The Khasi NER corpus is CC BY-SA 4.0; derived evidence must preserve its attribution and ShareAlike obligations where applicable. Current Meghalaya Government publications are used only as occurrence/spelling references unless a separate reuse licence is established.
 
-See `THIRD_PARTY_DATA.md`.
+Original KhasiLex-authored linguistic/editorial data is licensed under **CC BY-SA 4.0**, following the project-owner approval recorded on **7 October 2026**. This does not override source-specific licences, public-domain status, or reference-only restrictions.
+
+See `DATA_LICENSE.md`, `docs/DATA_LICENSE_DECISION.md`, and `THIRD_PARTY_DATA.md`.
 
 ## Current status
 

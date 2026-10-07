@@ -20,4 +20,5 @@ def test_current_repository_is_not_prematurely_release_ready():
     assert report["verified_entries"] >= 10
     assert report["verified_entries"] < report["required_verified_entries"]
     assert report["required_verified_entries"] == 100
-    assert report["data_license_status"] == "pending_owner_decision"
+    assert report["data_license_status"] == "approved"
+    assert report["data_license_id"] == "CC-BY-SA-4.0"
