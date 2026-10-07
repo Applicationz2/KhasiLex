@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "promotion_id": "v1-pilot-batch-010-promotion",
+  "source_review_commit": "416ef951dfbfac5091f7413903541b0b8cd76999",
+  "source_review_file": "data/review/batches/v1.0-pilot-001-final-review.csv",
+  "promoted_count": 10,
+  "created_count": 7,
+  "upgraded_in_place_count": 3,
+  "promoted": [
+    {
+      "candidate_id": "kha-v04-p001-091",
+      "headword": "khyndiat",
+      "id": "kha-000101",
+      "created": true,
+      "part_of_speech": "adverb"
+    },
+    {
+      "candidate_id": "kha-v04-p001-092",
+      "headword": "kumno",
+      "id": "kha-000102",
+      "created": true,
+      "part_of_speech": "adverb"
+    },
+    {
+      "candidate_id": "kha-v04-p001-093",
+      "headword": "aiu",
+      "id": "kha-000103",
+      "created": true,
+      "part_of_speech": "pronoun"
+    },
+    {
+      "candidate_id": "kha-v04-p001-094",
+      "headword": "kaba",
+      "id": "kha-000104",
+      "created": true,
+      "part_of_speech": "pronoun"
+    },
+    {
+      "candidate_id": "kha-v04-p001-095",
+      "headword": "kaei",
+      "id": "kha-000105",
+      "created": true,
+      "part_of_speech": "pronoun"
+    },
+    {
+      "candidate_id": "kha-v04-p001-096",
+      "headword": "kane",
+      "id": "kha-000106",
+      "created": true,
+      "part_of_speech": "pronoun"
+    },
+    {
+      "candidate_id": "kha-v04-p001-097",
+      "headword": "me",
+      "id": "kha-000107",
+      "created": true,
+      "part_of_speech": "pronoun"
+    },
+    {
+      "candidate_id": "kha-v04-p001-098",
+      "headword": "nga",
+      "id": "kha-000002",
+      "created": false,
+      "upgraded_in_place": true,
+      "part_of_speech": "pronoun"
+    },
+    {
+      "candidate_id": "kha-v04-p001-099",
+      "headword": "ngi",
+      "id": "kha-000003",
+      "created": false,
+      "upgraded_in_place": true,
+      "part_of_speech": "pronoun"
+    },
+    {
+      "candidate_id": "kha-v04-p001-100",
+      "headword": "u",
+      "id": "kha-000007",
+      "created": false,
+      "upgraded_in_place": true,
+      "part_of_speech": "pronoun"
+    }
+  ],
+  "promotion_date": "2026-10-07",
+  "authority": "project-owner human final verification",
+  "identity_policy": "Existing starter-seed identities for nga, ngi, and u are upgraded in place; no duplicate lexical rows are created.",
+  "grammar_boundaries": {
+    "kaba": "Relative-pronoun sense remains separate from nominalizing/particle use.",
+    "kane": "Demonstrative-pronoun sense remains distinguishable from determiner/adjectival distribution.",
+    "u": "Pronoun he/it remains separate from masculine definite-article use.",
+    "me": "Masculine singular second-person register sensitivity is preserved."
+  },
+  "bookkeeping_policy": "existing_master is canonical/variant-aware across the full pilot.",
+  "standard_cross_check_policy": {
+    "scope": "pilot entries 21-100",
+    "lexical_reference": "nissor-1920-en-kha",
+    "grammar_reference": "nissor-hints-kha-grammar",
+    "authority_boundary": "corroborating evidence only; no automatic verification authority"
+  },
+  "milestone_boundary": "After merge, all 100 fixed pilot candidates are human-verified and represented in the authoritative master. This satisfies the 100-entry review-pilot milestone only; it does not satisfy the 1,000-entry technical-alpha or stable/public-release gates."
+}

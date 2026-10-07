@@ -36,11 +36,11 @@ def test_corpus_stats_expose_review_target():
     data = r.json()
     assert data["version"] == "0.4.0"
     assert data["total_entries"] >= 12
-    assert data["verification"]["verified"] >= 50
+    assert data["verification"]["verified"] >= 100
     assert data["verification"]["pending"] >= 1
     assert sum(data["verification"].values()) == data["total_entries"]
-    assert data["next_target"]["name"] == "review-pilot"
-    assert data["next_target"]["required"] == 100
+    assert data["next_target"]["name"] == "technical-alpha"
+    assert data["next_target"]["required"] == 1000
 
 
 def test_public_corpus_defaults_to_verified_only():

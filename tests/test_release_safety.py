@@ -15,11 +15,22 @@ def test_development_export_can_include_unverified():
     assert "bam" in words
 
 
-def test_current_repository_is_not_prematurely_release_ready():
-    report = evaluate("review-pilot")
-    assert report["ready"] is False
-    assert report["verified_entries"] >= 10
-    assert report["verified_entries"] < report["required_verified_entries"]
-    assert report["required_verified_entries"] == 100
-    assert report["data_license_status"] == "approved"
-    assert report["data_license_id"] == "CC-BY-SA-4.0"
+def test_review_pilot_is_ready_but_larger_release_gates_remain_closed():
+    review_pilot = evaluate("review-pilot")
+    assert review_pilot["ready"] is True
+    assert review_pilot["verified_entries"] >= 100
+    assert review_pilot["required_verified_entries"] == 100
+    assert review_pilot["remaining_verified_entries"] == 0
+    assert review_pilot["data_license_status"] == "approved"
+    assert review_pilot["data_license_id"] == "CC-BY-SA-4.0"
+
+    technical_alpha = evaluate("technical-alpha")
+    assert technical_alpha["ready"] is False
+    assert technical_alpha["required_verified_entries"] == 1000
+    assert technical_alpha["verified_entries"] < technical_alpha["required_verified_entries"]
+    assert technical_alpha["remaining_verified_entries"] > 0
+
+    public_beta = evaluate("public-beta")
+    professional_core = evaluate("professional-core")
+    assert public_beta["ready"] is False
+    assert professional_core["ready"] is False
