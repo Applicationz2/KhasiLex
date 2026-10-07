@@ -45,6 +45,17 @@ Nissor 1906 forms and glosses are evidence, not automatic modern definitions. Hi
 
 Absence from the current licensed corpus does not prove that a word is archaic or obsolete.
 
+## Standard cross-check set for pilot entries 21–100
+
+For entries 21–100 of the v1.0 verification pilot, reviewers should use the following registered historical references as part of the standard corroboration set when relevant:
+
+- **U. Nissor Singh, *English-Khasi Dictionary* (1920)** — use for English-to-Khasi lexical equivalents, historical definition comparison and reverse sense checking.
+- **U. Nissor Singh, *Hints on the Study of the Khasi Language*** — use for grammar, part-of-speech and historical grammatical classification corroboration.
+
+These references are corroborating evidence only. They do not override modern Khasi usage, current corpus evidence or competent human Khasi review, and they never authorize automatic promotion to `verified`.
+
+The 1920 dictionary may be used according to its registered public-domain source status. *Hints* remains reference-only for extraction/copying unless the exact edition and reuse rights are separately confirmed; grammatical facts may be consulted and independently recorded with provenance.
+
 ## Review roles
 
 KhasiLex distinguishes lexical, grammar, translation, provenance and technical review. One qualified human may fill more than one role during the pilot, but disputed or high-impact entries should receive independent review where practical.
