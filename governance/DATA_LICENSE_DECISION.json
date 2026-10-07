@@ -1,8 +1,12 @@
 {
   "schema_version": "1.0",
-  "status": "pending_owner_decision",
-  "license_id": null,
-  "recommended_license_id": "CC-BY-SA-4.0",
+  "status": "approved",
+  "license_id": "CC-BY-SA-4.0",
+  "license_name": "Creative Commons Attribution-ShareAlike 4.0 International",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "approved_on": "2026-10-07",
+  "approved_by_role": "project_owner",
+  "decision_text": "Approve CC BY-SA 4.0 for KhasiLex data.",
   "applies_to": [
     "KhasiLex-authored definitions",
     "KhasiLex-authored examples",
@@ -16,5 +20,5 @@
     "CC-BY-SA-4.0 obligations inherited from applicable third-party derived material",
     "reference-only restrictions for sources without redistribution permission"
   ],
-  "note": "This file is a release-control record only. It is not a licence grant while status is pending_owner_decision and license_id is null."
+  "note": "Owner approval is recorded for original KhasiLex-authored linguistic/editorial data. Third-party and public-domain material retain their own legal status and source-specific terms."
 }
