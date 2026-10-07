@@ -39,9 +39,10 @@ Implemented in the v0.4 development branch:
 Corpus targets:
 
 - **100 verified entries** — review-pilot;
-- **1,000 verified entries** — technical alpha;
-- **5,000 verified entries** — public beta;
-- **25,000 verified entries** — professional core.
+- **1,000 verified entries + AI-native multilingual architecture gate** — technical alpha;
+- **5,000 verified entries + multilingual AI beta safeguards** — public beta;
+- **10,000 verified entries** — extended-beta quality gate;
+- **25,000 verified entries + professional editorial/release audit** — professional core.
 
 Remaining v0.4 lexical work:
 
@@ -81,6 +82,12 @@ Target: first substantial verified core lexicon rather than a large unreviewed w
 - speaker/dialect metadata;
 - pronunciation API.
 
+## AI-native multilingual architecture — now a G1 prerequisite
+
+KhasiLex must treat AI as an assistive linguistic layer rather than an editorial authority. The authoritative Khasi corpus, AI candidates, multilingual sense/concept mappings, confidence classes, and route provenance are explicitly separated.
+
+See `docs/AI_MULTILINGUAL_ARCHITECTURE.md` and `quality/ai_architecture_gate.json`.
+
 ## v0.7 — Global multilingual translation layer
 
 - verified English ↔ Khasi concept mappings;
@@ -91,7 +98,7 @@ Target: first substantial verified core lexicon rather than a large unreviewed w
 - TMX/TBX/TEI/OntoLex-compatible release exports;
 - translation-memory and glossary packages.
 
-The architecture supports any BCP-47-tagged language; language coverage is data-driven rather than hard-coded.
+The architecture supports any BCP-47-tagged language; language coverage is data-driven rather than hard-coded. KhasiLex does not guarantee translation for every known, undocumented, or data-scarce language. Support depends on adequate linguistic resources, models, or reviewed mappings.
 
 ## v0.8 — AI and NLP integration
 
