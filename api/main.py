@@ -202,6 +202,16 @@ def normalize_api(req: TextRequest):
     return {"original": req.text, "normalized": normalize(req.text)}
 
 
+CONFIDENCE_CLASSES = [
+    "verified",
+    "high_confidence_ai_assisted",
+    "ai_assisted",
+    "low_resource",
+    "historical_or_uncertain",
+    "needs_human_review",
+]
+
+
 class ResolveRequest(BaseModel):
     source_language: str = Field(min_length=1, max_length=64)
     text: str = Field(min_length=1, max_length=5000)
@@ -238,6 +248,19 @@ def capabilities():
         "authoritative_default": is_production(),
         "architecture": "sense/concept based multilingual lexicon with authoritative corpus gates",
         "accepts": "BCP47-style source language tags",
+        "universal_translation_guarantee": False,
+        "language_support_policy": (
+            "Language coverage is resource-driven. KhasiLex can support any language "
+            "with sufficient linguistic identification, data, models, or reviewed mappings, "
+            "but does not guarantee translation for every known or undocumented language."
+        ),
+        "authority_model": {
+            "authoritative_layer": "human-reviewed KhasiLex lexical data",
+            "ai_layer": "candidate, ranking, analysis, disambiguation and translation assistance",
+            "ai_can_self_verify": False,
+        },
+        "confidence_classes": CONFIDENCE_CLASSES,
+        "translation_route_provenance_required": True,
         "features": [
             "word lookup",
             "verified-only production lookup",
@@ -248,6 +271,12 @@ def capabilities():
             "grammar profiles",
             "pronunciation schema",
             "multilingual equivalents",
+            "AI-assisted candidate generation with mandatory human verification",
+            "translation-route provenance",
+            "confidence/authority classes",
         ],
-        "safety_policy": "No translation is guessed and no unreviewed entry is presented as authoritative.",
+        "safety_policy": (
+            "No ambiguous translation is silently guessed; no AI-generated or unreviewed "
+            "entry is presented as authoritative."
+        ),
     }

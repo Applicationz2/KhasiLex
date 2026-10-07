@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "gate_id": "ai-native-multilingual-g1",
+  "purpose": "Machine-readable architectural requirements that must pass before KhasiLex Technical Alpha can be declared.",
+  "universal_translation_claim": "KhasiLex is designed to support any language for which sufficient linguistic identification, data, models, or reviewed translation resources are available; it does not guarantee translation for every known or undocumented language.",
+  "required_controls": {
+    "authoritative_ai_separation": true,
+    "verified_only_production_lookup": true,
+    "stable_sense_concept_layer": true,
+    "bcp47_style_language_tags": true,
+    "ai_cannot_self_verify": true,
+    "ambiguity_must_not_be_guessed": true,
+    "provenance_and_license_required": true,
+    "confidence_classes_required": true,
+    "route_provenance_required": true
+  },
+  "confidence_classes": [
+    "verified",
+    "high_confidence_ai_assisted",
+    "ai_assisted",
+    "low_resource",
+    "historical_or_uncertain",
+    "needs_human_review"
+  ],
+  "high_risk_domains": [
+    "scripture",
+    "theology",
+    "law",
+    "medicine",
+    "safety_critical",
+    "historical_text",
+    "poetry",
+    "specialist_terminology"
+  ]
+}

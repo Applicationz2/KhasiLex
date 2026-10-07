@@ -200,3 +200,15 @@ def test_homograph_lookup_rejects_unknown_part_of_speech():
         params={"part_of_speech": "adjective"},
     )
     assert r.status_code == 404
+
+
+def test_capabilities_expose_ai_authority_boundary():
+    r = client.get("/api/v2/capabilities")
+    assert r.status_code == 200
+    data = r.json()
+    assert data["universal_translation_guarantee"] is False
+    assert data["authority_model"]["ai_can_self_verify"] is False
+    assert data["translation_route_provenance_required"] is True
+    assert "verified" in data["confidence_classes"]
+    assert "needs_human_review" in data["confidence_classes"]
+    assert "every known or undocumented language" in data["language_support_policy"]
