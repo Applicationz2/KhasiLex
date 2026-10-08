@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "gate_id": "g1-batch-002-evidence-pass",
-  "status": "in_progress_evidence_matrix",
+  "status": "disposition_recorded_evidence_checks_deferred",
   "authority_boundary": "Evidence classification does not authorize verification or promotion.",
   "sources_checked": [
     {
@@ -61,5 +61,36 @@
     "hints": "Required only where grammatical/POS/compound analysis materially depends on the historical grammar.",
     "modern_attestation": "Require an independently inspectable current Khasi occurrence for promotion; names/surnames and English-only documents do not count.",
     "sense_ids": "Reserve stable sense/concept IDs until evidence and sense-boundary review is complete."
+  },
+  "review_disposition": {
+    "scope": "All 20 staged historical candidates; editorial candidates remain non-authoritative.",
+    "closure_policy": "An evidence-review milestone can be closed with explicit deferred or blocked dispositions; closing it never promotes entries.",
+    "candidates": {
+      "g1-hist-002-001": "deferred_modern_spelling_and_attestation",
+      "g1-hist-002-002": "deferred_1920_and_modern_attestation",
+      "g1-hist-002-003": "deferred_historical_abbreviation",
+      "g1-hist-002-004": "deferred_historical_abbreviation",
+      "g1-hist-002-005": "deferred_1920_hints_compound_and_modern_attestation",
+      "g1-hist-002-006": "evidence_strengthened_owner_review_pending",
+      "g1-hist-002-007": "deferred_1920_and_modern_attestation",
+      "g1-hist-002-008": "deferred_1920_and_modern_attestation",
+      "g1-hist-002-009": "deferred_1920_and_modern_attestation",
+      "g1-hist-002-010": "blocked_sense_boundary_and_evidence",
+      "g1-hist-002-011": "deferred_1920_and_modern_attestation",
+      "g1-hist-002-012": "blocked_sense_boundary_and_evidence",
+      "g1-hist-002-013": "deferred_1920_and_modern_attestation",
+      "g1-hist-002-014": "deferred_1920_hints_compound_and_modern_attestation",
+      "g1-hist-002-015": "deferred_historical_abbreviation",
+      "g1-hist-002-016": "deferred_1906_scan_1920_and_modern_attestation",
+      "g1-hist-002-017": "blocked_source_record_mismatch",
+      "g1-hist-002-018": "deferred_1920_hints_compound_and_modern_attestation",
+      "g1-hist-002-019": "deferred_1920_and_modern_attestation",
+      "g1-hist-002-020": "deferred_1920_and_modern_attestation"
+    },
+    "reviewed_count": 20,
+    "ready_for_promotion_count": 0,
+    "unresolved_1920_and_modern_checks": "Explicitly deferred, not claimed completed.",
+    "source_note": "1920 original edition available at https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf; availability is not a verified candidate match.",
+    "human_approval_required": true
   }
 }
