@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "gate_id": "g1-batch-002-evidence-pass",
+  "status": "disposition_recorded_evidence_checks_deferred",
+  "authority_boundary": "Evidence classification does not authorize verification or promotion.",
+  "sources_checked": [
+    {
+      "source_id": "nissor-1906-kha-en",
+      "role": "primary historical evidence",
+      "result": "confirmed; proofread source also exposed one source-record mismatch"
+    },
+    {
+      "source_id": "nissor-1920-en-kha",
+      "role": "reverse lexical corroboration",
+      "result": "source confirmed; candidate-by-candidate corroboration remains incomplete except dewiong"
+    },
+    {
+      "source_id": "nissor-hints-kha-grammar",
+      "role": "grammar/POS corroboration",
+      "result": "still required where material; no unchecked claim is treated as corroborated"
+    },
+    {
+      "source_id": "meg-gov-mining-geology-dewiong-2020",
+      "role": "modern government Khasi attestation",
+      "result": "dewiong independently attested in current official Khasi text with coal sense"
+    }
+  ],
+  "candidate_findings": {
+    "g1-hist-002-006": {
+      "headword": "dewiong",
+      "nissor_1920": "corroborated",
+      "modern_attestation": "confirmed",
+      "promotion_status": "still_pending_owner_and_editorial_review"
+    },
+    "g1-hist-002-017": {
+      "staged_headword": "'jat-diih",
+      "proofread_1906_form": "'jat-duh",
+      "finding": "source_record_or_ocr_mismatch",
+      "promotion_status": "blocked_until_source_correction"
+    },
+    "g1-hist-002-001": {
+      "headword": "'amdûh",
+      "nissor_1906": "proofread transcription confirms full feminine noun entry, not abbreviation",
+      "modern_attestation": "required",
+      "promotion_status": "returned_to_editorial_review_not_promotable"
+    }
+  },
+  "remaining_rule": "Complete candidate-by-candidate 1920 reverse checks, material Hints checks, and independent modern Khasi attestations. No remaining candidate is promotable merely from the 1906 transcription.",
+  "promotion_authorized": false,
+  "transcription_audit": {
+    "status": "completed_with_corrections",
+    "interface": "https://wikisource.org/wiki/Khasi-English_Dictionary",
+    "independence_rule": "Same underlying 1906 work; transcription is not an independent corroborating source.",
+    "material_corrections": [
+      "'amduh -> historical 'amdûh; full noun rather than abbreviation",
+      "'jat-diih -> proofread 'jat-duh; candidate remains blocked"
+    ]
+  },
+  "evidence_matrix_policy": {
+    "nissor_1920": "Mark corroborated only after an actual reverse-dictionary match is inspected; no inference from absence of web search results.",
+    "hints": "Required only where grammatical/POS/compound analysis materially depends on the historical grammar.",
+    "modern_attestation": "Require an independently inspectable current Khasi occurrence for promotion; names/surnames and English-only documents do not count.",
+    "sense_ids": "Reserve stable sense/concept IDs until evidence and sense-boundary review is complete."
+  },
+  "review_disposition": {
+    "scope": "All 20 staged historical candidates; editorial candidates remain non-authoritative.",
+    "closure_policy": "An evidence-review milestone can be closed with explicit deferred or blocked dispositions; closing it never promotes entries.",
+    "candidates": {
+      "g1-hist-002-001": "deferred_modern_spelling_and_attestation",
+      "g1-hist-002-002": "deferred_1920_and_modern_attestation",
+      "g1-hist-002-003": "deferred_historical_abbreviation",
+      "g1-hist-002-004": "deferred_historical_abbreviation",
+      "g1-hist-002-005": "deferred_1920_hints_compound_and_modern_attestation",
+      "g1-hist-002-006": "evidence_strengthened_owner_review_pending",
+      "g1-hist-002-007": "deferred_1920_and_modern_attestation",
+      "g1-hist-002-008": "deferred_1920_and_modern_attestation",
+      "g1-hist-002-009": "deferred_1920_and_modern_attestation",
+      "g1-hist-002-010": "blocked_sense_boundary_and_evidence",
+      "g1-hist-002-011": "deferred_1920_and_modern_attestation",
+      "g1-hist-002-012": "blocked_sense_boundary_and_evidence",
+      "g1-hist-002-013": "deferred_1920_and_modern_attestation",
+      "g1-hist-002-014": "deferred_1920_hints_compound_and_modern_attestation",
+      "g1-hist-002-015": "deferred_historical_abbreviation",
+      "g1-hist-002-016": "deferred_1906_scan_1920_and_modern_attestation",
+      "g1-hist-002-017": "blocked_source_record_mismatch",
+      "g1-hist-002-018": "deferred_1920_hints_compound_and_modern_attestation",
+      "g1-hist-002-019": "deferred_1920_and_modern_attestation",
+      "g1-hist-002-020": "deferred_1920_and_modern_attestation"
+    },
+    "reviewed_count": 20,
+    "ready_for_promotion_count": 0,
+    "unresolved_1920_and_modern_checks": "Explicitly deferred, not claimed completed.",
+    "source_note": "1920 original edition available at https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf; availability is not a verified candidate match.",
+    "human_approval_required": true
+  }
+}

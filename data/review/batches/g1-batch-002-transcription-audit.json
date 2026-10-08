@@ -1,0 +1,30 @@
+{
+  "schema_version":"1.0",
+  "audit_id":"g1-batch-002-nissor1906-transcription-audit",
+  "source_id":"nissor-1906-kha-en",
+  "searchable_interface":"https://wikisource.org/wiki/Khasi-English_Dictionary",
+  "authority_rule":"Wikisource is a searchable transcription/read interface to the same 1906 work; page-image scan remains final authority for disputed characters. It is not independent corroboration.",
+  "findings":[
+    {"candidate_id":"g1-hist-002-001","result":"corrected","historical_form":"'amdûh","gender":"ka","pos":"noun","gloss":"wisdom tooth","note":"Full lexical entry; not an abbreviation."},
+    {"candidate_id":"g1-hist-002-003","result":"confirmed","historical_form":"'bat","gender":"u","pos":"noun","gloss":"weed; medicinal plant","note":"Explicit abbreviation of kynbat; retain defer-until-modern-evidence policy."},
+    {"candidate_id":"g1-hist-002-004","result":"confirmed","historical_form":"'dait","gender":"u","pos":"noun","gloss":"ekra; reed","note":"Explicit abbreviation of kdait; retain defer-until-modern-evidence policy."},
+    {"candidate_id":"g1-hist-002-005","result":"confirmed","historical_form":"'dér-phiang","gender":"u","pos":"noun","gloss":"grass dressed for thatching"},
+    {"candidate_id":"g1-hist-002-006","result":"confirmed","historical_form":"'dewiong","gender":"u","pos":"noun","gloss":"coal"},
+    {"candidate_id":"g1-hist-002-007","result":"confirmed","historical_form":"'dewksang","gender":"ka","pos":"noun","gloss":"hard earth"},
+    {"candidate_id":"g1-hist-002-008","result":"confirmed","historical_form":"'dewkynroi","gender":"ka","pos":"noun","gloss":"loose earth"},
+    {"candidate_id":"g1-hist-002-009","result":"confirmed","historical_form":"'dewlynnong","gender":"ka","pos":"noun","gloss":"island"},
+    {"candidate_id":"g1-hist-002-010","result":"confirmed_needs_sense_review","historical_form":"'dewmet","gender":"ka","pos":"noun","gloss":"dust; earth or soil free from sand and stone"},
+    {"candidate_id":"g1-hist-002-011","result":"confirmed","historical_form":"'dewsáw","gender":"ka","pos":"noun","gloss":"red earth"},
+    {"candidate_id":"g1-hist-002-012","result":"confirmed_needs_sense_review","historical_form":"'dewshrah","gender":"ka","pos":"noun","gloss":"fallow land; arable land; virgin soil"},
+    {"candidate_id":"g1-hist-002-013","result":"confirmed","historical_form":"'dewtrái","gender":"ka","pos":"noun","gloss":"solid earth; terra firma","note":"Source explicitly contrasts dewkynroi."},
+    {"candidate_id":"g1-hist-002-014","result":"confirmed","historical_form":"'diangti-diangjat","pos":"verb","gloss":"receive completely"},
+    {"candidate_id":"g1-hist-002-015","result":"confirmed","historical_form":"'hur","gender":"u","pos":"noun","gloss":"vegetable","note":"Explicit abbreviation of jhur; retain defer-until-modern-evidence policy."},
+    {"candidate_id":"g1-hist-002-017","result":"source_mismatch","staged_form":"'jat-diih","proofread_form":"'jat-duh","gender":"ka","pos":"noun","gloss":"little toe","action":"block until source record is corrected"},
+    {"candidate_id":"g1-hist-002-018","result":"confirmed","historical_form":"'jat-kmie","gender":"ka","pos":"noun","gloss":"big toe"},
+    {"candidate_id":"g1-hist-002-019","result":"confirmed","historical_form":"'kâin-dait","gender":"u","pos":"noun","gloss":"mosquito","note":"Dictionary also records 'kâin as abbreviation of skain = fly."},
+    {"candidate_id":"g1-hist-002-020","result":"confirmed","historical_form":"'kâin-iong","gender":"u","pos":"noun","gloss":"meat-fly","note":"Dictionary also records 'kâin as abbreviation of skain = fly."}
+  ],
+  "not_falsely_closed":["g1-hist-002-002","g1-hist-002-016"],
+  "not_falsely_closed_reason":"Searchable transcription lookup did not produce a reliable direct match in this pass; retain primary staged evidence and require scan/page verification rather than infer absence.",
+  "promotion_authorized":false
+}
