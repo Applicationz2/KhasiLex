@@ -1437,6 +1437,20 @@
       "hints_edition_warning": "Catalogs list a 1949 revised edition and a 2007 edition; do not assume wording or licensing of either edition matches earlier copies",
       "next_gate": "Acquire inspectable page images or searchable OCR with provenance; verify each English-index lookup and page number before changing status",
       "verified_reverse_matches": 0
+    },
+    "latest_direct_retrieval_attempt": {
+      "date": "2026-10-14",
+      "original_1920": "https://archive.org/details/in.ernet.dli.2015.42078",
+      "original_1920_scan": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+      "status": "blocked_no_inspectable_entry_pages",
+      "hints": "https://archive.org/details/in.ernet.dli.2015.460287",
+      "hints_status": "blocked_no_inspectable_passages",
+      "modern_khasi_status": "no_precise_independent_attestations_inspected",
+      "editorial_disposition": "all_20_deferred",
+      "next_action": "Obtain extractable scans or page images for entry-specific citation; inspect Hints and contemporary independent usage; rerun CI before owner review",
+      "verified_1920_matches": 0,
+      "verified_hints_findings": 0,
+      "verified_modern_attestations": 0
     }
   },
   "transcription_audit_note": "Rechecked printed pages 1-3 of proofread Wikisource against 20 source records. Printed page differs from earlier approximate OCR page. All independent checks still pending."
