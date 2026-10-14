@@ -1451,6 +1451,31 @@
       "verified_1920_matches": 0,
       "verified_hints_findings": 0,
       "verified_modern_attestations": 0
+    },
+    "additional_source_discovery": {
+      "date": "2026-10-14",
+      "sources": [
+        {
+          "name": "KhasiDRP digitized Khasi-Khasi dictionary",
+          "url": "https://udaycruise2903.github.io/khasidrp/dictionary/",
+          "scope": "8,400+ digitized dictionary entries; OCR requires validation",
+          "verified_batch_matches": 0
+        },
+        {
+          "name": "Bharatavani Khasi dictionaries (CIIL)",
+          "url": "https://bharatavani.in/khasi/dictionaries",
+          "scope": "Khasi multilingual lexicographic collections; exact entry and edition checks needed",
+          "verified_batch_matches": 0
+        },
+        {
+          "name": "Original 1920 English-Khasi dictionary",
+          "url": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "scope": "626-page scan, entry-level evidence still pending",
+          "verified_batch_matches": 0
+        }
+      ],
+      "status": "source_discovery_only_no_new_entry_verification",
+      "limitation": "Direct file retrieval in this environment unavailable; no exact candidate citations or page images independently inspected"
     }
   },
   "transcription_audit_note": "Rechecked printed pages 1-3 of proofread Wikisource against 20 source records. Printed page differs from earlier approximate OCR page. All independent checks still pending."
