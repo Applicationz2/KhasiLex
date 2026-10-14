@@ -91,6 +91,34 @@
           "collection": null,
           "source_attestation": null
         }
+      },
+      "option_a_public_source_review": {
+        "status": "source_identified_entry_level_1920_and_grammar_pending",
+        "reverse_1920": {
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "page_browser": "https://archive.org/details/in.ernet.dli.2015.42078/page/n1/mode/1up",
+          "english_lookup_terms": [
+            "crow",
+            "imitation"
+          ],
+          "exact_page": null,
+          "matched_khasi_form": null,
+          "verified": false
+        },
+        "grammar": {
+          "sources": [
+            "https://commons.wikimedia.org/wiki/File:An_Introduction_To_The_Khasi_Language_(IA_in.ernet.dli.2015.460881).pdf",
+            "https://archive.org/details/in.ernet.dli.2015.460287"
+          ],
+          "grammatical_passage": null,
+          "verified": false
+        },
+        "modern_usage": {
+          "source_type": "publicly_accessible_dated_khasi_publication",
+          "exact_context": null,
+          "sense_verified": false
+        },
+        "editorial_decision": "defer"
       }
     },
     {
@@ -183,6 +211,34 @@
           "collection": null,
           "source_attestation": null
         }
+      },
+      "option_a_public_source_review": {
+        "status": "source_identified_entry_level_1920_and_grammar_pending",
+        "reverse_1920": {
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "page_browser": "https://archive.org/details/in.ernet.dli.2015.42078/page/n1/mode/1up",
+          "english_lookup_terms": [
+            "red powder",
+            "Holi"
+          ],
+          "exact_page": null,
+          "matched_khasi_form": null,
+          "verified": false
+        },
+        "grammar": {
+          "sources": [
+            "https://commons.wikimedia.org/wiki/File:An_Introduction_To_The_Khasi_Language_(IA_in.ernet.dli.2015.460881).pdf",
+            "https://archive.org/details/in.ernet.dli.2015.460287"
+          ],
+          "grammatical_passage": null,
+          "verified": false
+        },
+        "modern_usage": {
+          "source_type": "publicly_accessible_dated_khasi_publication",
+          "exact_context": null,
+          "sense_verified": false
+        },
+        "editorial_decision": "defer"
       }
     },
     {
@@ -271,6 +327,34 @@
           "collection": null,
           "source_attestation": null
         }
+      },
+      "option_a_public_source_review": {
+        "status": "source_identified_entry_level_1920_and_grammar_pending",
+        "reverse_1920": {
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "page_browser": "https://archive.org/details/in.ernet.dli.2015.42078/page/n1/mode/1up",
+          "english_lookup_terms": [
+            "disgust",
+            "smell"
+          ],
+          "exact_page": null,
+          "matched_khasi_form": null,
+          "verified": false
+        },
+        "grammar": {
+          "sources": [
+            "https://commons.wikimedia.org/wiki/File:An_Introduction_To_The_Khasi_Language_(IA_in.ernet.dli.2015.460881).pdf",
+            "https://archive.org/details/in.ernet.dli.2015.460287"
+          ],
+          "grammatical_passage": null,
+          "verified": false
+        },
+        "modern_usage": {
+          "source_type": "publicly_accessible_dated_khasi_publication",
+          "exact_context": null,
+          "sense_verified": false
+        },
+        "editorial_decision": "defer"
       }
     },
     {
@@ -359,6 +443,34 @@
           "collection": null,
           "source_attestation": null
         }
+      },
+      "option_a_public_source_review": {
+        "status": "source_identified_entry_level_1920_and_grammar_pending",
+        "reverse_1920": {
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "page_browser": "https://archive.org/details/in.ernet.dli.2015.42078/page/n1/mode/1up",
+          "english_lookup_terms": [
+            "disgust",
+            "smell"
+          ],
+          "exact_page": null,
+          "matched_khasi_form": null,
+          "verified": false
+        },
+        "grammar": {
+          "sources": [
+            "https://commons.wikimedia.org/wiki/File:An_Introduction_To_The_Khasi_Language_(IA_in.ernet.dli.2015.460881).pdf",
+            "https://archive.org/details/in.ernet.dli.2015.460287"
+          ],
+          "grammatical_passage": null,
+          "verified": false
+        },
+        "modern_usage": {
+          "source_type": "publicly_accessible_dated_khasi_publication",
+          "exact_context": null,
+          "sense_verified": false
+        },
+        "editorial_decision": "defer"
       }
     },
     {
@@ -450,6 +562,35 @@
           "collection": null,
           "source_attestation": null
         }
+      },
+      "option_a_public_source_review": {
+        "status": "source_identified_entry_level_1920_and_grammar_pending",
+        "reverse_1920": {
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "page_browser": "https://archive.org/details/in.ernet.dli.2015.42078/page/n1/mode/1up",
+          "english_lookup_terms": [
+            "stage",
+            "horse",
+            "post"
+          ],
+          "exact_page": null,
+          "matched_khasi_form": null,
+          "verified": false
+        },
+        "grammar": {
+          "sources": [
+            "https://commons.wikimedia.org/wiki/File:An_Introduction_To_The_Khasi_Language_(IA_in.ernet.dli.2015.460881).pdf",
+            "https://archive.org/details/in.ernet.dli.2015.460287"
+          ],
+          "grammatical_passage": null,
+          "verified": false
+        },
+        "modern_usage": {
+          "source_type": "publicly_accessible_dated_khasi_publication",
+          "exact_context": null,
+          "sense_verified": false
+        },
+        "editorial_decision": "defer"
       }
     },
     {
@@ -538,6 +679,34 @@
           "collection": null,
           "source_attestation": null
         }
+      },
+      "option_a_public_source_review": {
+        "status": "source_identified_entry_level_1920_and_grammar_pending",
+        "reverse_1920": {
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "page_browser": "https://archive.org/details/in.ernet.dli.2015.42078/page/n1/mode/1up",
+          "english_lookup_terms": [
+            "dare-devil",
+            "reckless"
+          ],
+          "exact_page": null,
+          "matched_khasi_form": null,
+          "verified": false
+        },
+        "grammar": {
+          "sources": [
+            "https://commons.wikimedia.org/wiki/File:An_Introduction_To_The_Khasi_Language_(IA_in.ernet.dli.2015.460881).pdf",
+            "https://archive.org/details/in.ernet.dli.2015.460287"
+          ],
+          "grammatical_passage": null,
+          "verified": false
+        },
+        "modern_usage": {
+          "source_type": "publicly_accessible_dated_khasi_publication",
+          "exact_context": null,
+          "sense_verified": false
+        },
+        "editorial_decision": "defer"
       }
     },
     {
@@ -628,6 +797,34 @@
           "collection": null,
           "source_attestation": null
         }
+      },
+      "option_a_public_source_review": {
+        "status": "source_identified_entry_level_1920_and_grammar_pending",
+        "reverse_1920": {
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "page_browser": "https://archive.org/details/in.ernet.dli.2015.42078/page/n1/mode/1up",
+          "english_lookup_terms": [
+            "swamp",
+            "marsh"
+          ],
+          "exact_page": null,
+          "matched_khasi_form": null,
+          "verified": false
+        },
+        "grammar": {
+          "sources": [
+            "https://commons.wikimedia.org/wiki/File:An_Introduction_To_The_Khasi_Language_(IA_in.ernet.dli.2015.460881).pdf",
+            "https://archive.org/details/in.ernet.dli.2015.460287"
+          ],
+          "grammatical_passage": null,
+          "verified": false
+        },
+        "modern_usage": {
+          "source_type": "publicly_accessible_dated_khasi_publication",
+          "exact_context": null,
+          "sense_verified": false
+        },
+        "editorial_decision": "defer"
       }
     },
     {
@@ -722,6 +919,34 @@
           "collection": null,
           "source_attestation": null
         }
+      },
+      "option_a_public_source_review": {
+        "status": "source_identified_entry_level_1920_and_grammar_pending",
+        "reverse_1920": {
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "page_browser": "https://archive.org/details/in.ernet.dli.2015.42078/page/n1/mode/1up",
+          "english_lookup_terms": [
+            "money",
+            "market day"
+          ],
+          "exact_page": null,
+          "matched_khasi_form": null,
+          "verified": false
+        },
+        "grammar": {
+          "sources": [
+            "https://commons.wikimedia.org/wiki/File:An_Introduction_To_The_Khasi_Language_(IA_in.ernet.dli.2015.460881).pdf",
+            "https://archive.org/details/in.ernet.dli.2015.460287"
+          ],
+          "grammatical_passage": null,
+          "verified": false
+        },
+        "modern_usage": {
+          "source_type": "publicly_accessible_dated_khasi_publication",
+          "exact_context": null,
+          "sense_verified": false
+        },
+        "editorial_decision": "defer"
       }
     },
     {
@@ -816,6 +1041,34 @@
           "collection": null,
           "source_attestation": null
         }
+      },
+      "option_a_public_source_review": {
+        "status": "source_identified_entry_level_1920_and_grammar_pending",
+        "reverse_1920": {
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "page_browser": "https://archive.org/details/in.ernet.dli.2015.42078/page/n1/mode/1up",
+          "english_lookup_terms": [
+            "ready money",
+            "cash"
+          ],
+          "exact_page": null,
+          "matched_khasi_form": null,
+          "verified": false
+        },
+        "grammar": {
+          "sources": [
+            "https://commons.wikimedia.org/wiki/File:An_Introduction_To_The_Khasi_Language_(IA_in.ernet.dli.2015.460881).pdf",
+            "https://archive.org/details/in.ernet.dli.2015.460287"
+          ],
+          "grammatical_passage": null,
+          "verified": false
+        },
+        "modern_usage": {
+          "source_type": "publicly_accessible_dated_khasi_publication",
+          "exact_context": null,
+          "sense_verified": false
+        },
+        "editorial_decision": "defer"
       }
     },
     {
@@ -907,6 +1160,34 @@
           "collection": null,
           "source_attestation": null
         }
+      },
+      "option_a_public_source_review": {
+        "status": "source_identified_entry_level_1920_and_grammar_pending",
+        "reverse_1920": {
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "page_browser": "https://archive.org/details/in.ernet.dli.2015.42078/page/n1/mode/1up",
+          "english_lookup_terms": [
+            "slander",
+            "defame"
+          ],
+          "exact_page": null,
+          "matched_khasi_form": null,
+          "verified": false
+        },
+        "grammar": {
+          "sources": [
+            "https://commons.wikimedia.org/wiki/File:An_Introduction_To_The_Khasi_Language_(IA_in.ernet.dli.2015.460881).pdf",
+            "https://archive.org/details/in.ernet.dli.2015.460287"
+          ],
+          "grammatical_passage": null,
+          "verified": false
+        },
+        "modern_usage": {
+          "source_type": "publicly_accessible_dated_khasi_publication",
+          "exact_context": null,
+          "sense_verified": false
+        },
+        "editorial_decision": "defer"
       }
     },
     {
@@ -998,6 +1279,34 @@
           "collection": null,
           "source_attestation": null
         }
+      },
+      "option_a_public_source_review": {
+        "status": "source_identified_entry_level_1920_and_grammar_pending",
+        "reverse_1920": {
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "page_browser": "https://archive.org/details/in.ernet.dli.2015.42078/page/n1/mode/1up",
+          "english_lookup_terms": [
+            "neglect",
+            "outcast"
+          ],
+          "exact_page": null,
+          "matched_khasi_form": null,
+          "verified": false
+        },
+        "grammar": {
+          "sources": [
+            "https://commons.wikimedia.org/wiki/File:An_Introduction_To_The_Khasi_Language_(IA_in.ernet.dli.2015.460881).pdf",
+            "https://archive.org/details/in.ernet.dli.2015.460287"
+          ],
+          "grammatical_passage": null,
+          "verified": false
+        },
+        "modern_usage": {
+          "source_type": "publicly_accessible_dated_khasi_publication",
+          "exact_context": null,
+          "sense_verified": false
+        },
+        "editorial_decision": "defer"
       }
     },
     {
@@ -1090,6 +1399,34 @@
           "collection": null,
           "source_attestation": null
         }
+      },
+      "option_a_public_source_review": {
+        "status": "source_identified_entry_level_1920_and_grammar_pending",
+        "reverse_1920": {
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "page_browser": "https://archive.org/details/in.ernet.dli.2015.42078/page/n1/mode/1up",
+          "english_lookup_terms": [
+            "honour",
+            "merit"
+          ],
+          "exact_page": null,
+          "matched_khasi_form": null,
+          "verified": false
+        },
+        "grammar": {
+          "sources": [
+            "https://commons.wikimedia.org/wiki/File:An_Introduction_To_The_Khasi_Language_(IA_in.ernet.dli.2015.460881).pdf",
+            "https://archive.org/details/in.ernet.dli.2015.460287"
+          ],
+          "grammatical_passage": null,
+          "verified": false
+        },
+        "modern_usage": {
+          "source_type": "publicly_accessible_dated_khasi_publication",
+          "exact_context": null,
+          "sense_verified": false
+        },
+        "editorial_decision": "defer"
       }
     },
     {
@@ -1200,6 +1537,34 @@
           "collection": null,
           "source_attestation": null
         }
+      },
+      "option_a_public_source_review": {
+        "status": "source_identified_entry_level_1920_and_grammar_pending",
+        "reverse_1920": {
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "page_browser": "https://archive.org/details/in.ernet.dli.2015.42078/page/n1/mode/1up",
+          "english_lookup_terms": [
+            "dog",
+            "scent"
+          ],
+          "exact_page": null,
+          "matched_khasi_form": null,
+          "verified": false
+        },
+        "grammar": {
+          "sources": [
+            "https://commons.wikimedia.org/wiki/File:An_Introduction_To_The_Khasi_Language_(IA_in.ernet.dli.2015.460881).pdf",
+            "https://archive.org/details/in.ernet.dli.2015.460287"
+          ],
+          "grammatical_passage": null,
+          "verified": false
+        },
+        "modern_usage": {
+          "source_type": "publicly_accessible_dated_khasi_publication",
+          "exact_context": null,
+          "sense_verified": false
+        },
+        "editorial_decision": "defer"
       }
     },
     {
@@ -1293,6 +1658,33 @@
           "collection": null,
           "source_attestation": null
         }
+      },
+      "option_a_public_source_review": {
+        "status": "source_identified_entry_level_1920_and_grammar_pending",
+        "reverse_1920": {
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "page_browser": "https://archive.org/details/in.ernet.dli.2015.42078/page/n1/mode/1up",
+          "english_lookup_terms": [
+            "indulge"
+          ],
+          "exact_page": null,
+          "matched_khasi_form": null,
+          "verified": false
+        },
+        "grammar": {
+          "sources": [
+            "https://commons.wikimedia.org/wiki/File:An_Introduction_To_The_Khasi_Language_(IA_in.ernet.dli.2015.460881).pdf",
+            "https://archive.org/details/in.ernet.dli.2015.460287"
+          ],
+          "grammatical_passage": null,
+          "verified": false
+        },
+        "modern_usage": {
+          "source_type": "publicly_accessible_dated_khasi_publication",
+          "exact_context": null,
+          "sense_verified": false
+        },
+        "editorial_decision": "defer"
       }
     },
     {
@@ -1385,6 +1777,34 @@
           "collection": null,
           "source_attestation": null
         }
+      },
+      "option_a_public_source_review": {
+        "status": "source_identified_entry_level_1920_and_grammar_pending",
+        "reverse_1920": {
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "page_browser": "https://archive.org/details/in.ernet.dli.2015.42078/page/n1/mode/1up",
+          "english_lookup_terms": [
+            "release",
+            "liberty"
+          ],
+          "exact_page": null,
+          "matched_khasi_form": null,
+          "verified": false
+        },
+        "grammar": {
+          "sources": [
+            "https://commons.wikimedia.org/wiki/File:An_Introduction_To_The_Khasi_Language_(IA_in.ernet.dli.2015.460881).pdf",
+            "https://archive.org/details/in.ernet.dli.2015.460287"
+          ],
+          "grammatical_passage": null,
+          "verified": false
+        },
+        "modern_usage": {
+          "source_type": "publicly_accessible_dated_khasi_publication",
+          "exact_context": null,
+          "sense_verified": false
+        },
+        "editorial_decision": "defer"
       }
     },
     {
@@ -1477,6 +1897,34 @@
           "collection": null,
           "source_attestation": null
         }
+      },
+      "option_a_public_source_review": {
+        "status": "source_identified_entry_level_1920_and_grammar_pending",
+        "reverse_1920": {
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "page_browser": "https://archive.org/details/in.ernet.dli.2015.42078/page/n1/mode/1up",
+          "english_lookup_terms": [
+            "will",
+            "permission"
+          ],
+          "exact_page": null,
+          "matched_khasi_form": null,
+          "verified": false
+        },
+        "grammar": {
+          "sources": [
+            "https://commons.wikimedia.org/wiki/File:An_Introduction_To_The_Khasi_Language_(IA_in.ernet.dli.2015.460881).pdf",
+            "https://archive.org/details/in.ernet.dli.2015.460287"
+          ],
+          "grammatical_passage": null,
+          "verified": false
+        },
+        "modern_usage": {
+          "source_type": "publicly_accessible_dated_khasi_publication",
+          "exact_context": null,
+          "sense_verified": false
+        },
+        "editorial_decision": "defer"
       }
     },
     {
@@ -1565,6 +2013,33 @@
           "collection": null,
           "source_attestation": null
         }
+      },
+      "option_a_public_source_review": {
+        "status": "source_identified_entry_level_1920_and_grammar_pending",
+        "reverse_1920": {
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "page_browser": "https://archive.org/details/in.ernet.dli.2015.42078/page/n1/mode/1up",
+          "english_lookup_terms": [
+            "what"
+          ],
+          "exact_page": null,
+          "matched_khasi_form": null,
+          "verified": false
+        },
+        "grammar": {
+          "sources": [
+            "https://commons.wikimedia.org/wiki/File:An_Introduction_To_The_Khasi_Language_(IA_in.ernet.dli.2015.460881).pdf",
+            "https://archive.org/details/in.ernet.dli.2015.460287"
+          ],
+          "grammatical_passage": null,
+          "verified": false
+        },
+        "modern_usage": {
+          "source_type": "publicly_accessible_dated_khasi_publication",
+          "exact_context": null,
+          "sense_verified": false
+        },
+        "editorial_decision": "defer"
       }
     },
     {
@@ -1654,6 +2129,34 @@
           "collection": null,
           "source_attestation": null
         }
+      },
+      "option_a_public_source_review": {
+        "status": "source_identified_entry_level_1920_and_grammar_pending",
+        "reverse_1920": {
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "page_browser": "https://archive.org/details/in.ernet.dli.2015.42078/page/n1/mode/1up",
+          "english_lookup_terms": [
+            "prison",
+            "lock-up"
+          ],
+          "exact_page": null,
+          "matched_khasi_form": null,
+          "verified": false
+        },
+        "grammar": {
+          "sources": [
+            "https://commons.wikimedia.org/wiki/File:An_Introduction_To_The_Khasi_Language_(IA_in.ernet.dli.2015.460881).pdf",
+            "https://archive.org/details/in.ernet.dli.2015.460287"
+          ],
+          "grammatical_passage": null,
+          "verified": false
+        },
+        "modern_usage": {
+          "source_type": "publicly_accessible_dated_khasi_publication",
+          "exact_context": null,
+          "sense_verified": false
+        },
+        "editorial_decision": "defer"
       }
     },
     {
@@ -1742,6 +2245,34 @@
           "collection": null,
           "source_attestation": null
         }
+      },
+      "option_a_public_source_review": {
+        "status": "source_identified_entry_level_1920_and_grammar_pending",
+        "reverse_1920": {
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "page_browser": "https://archive.org/details/in.ernet.dli.2015.42078/page/n1/mode/1up",
+          "english_lookup_terms": [
+            "exclamation",
+            "escape"
+          ],
+          "exact_page": null,
+          "matched_khasi_form": null,
+          "verified": false
+        },
+        "grammar": {
+          "sources": [
+            "https://commons.wikimedia.org/wiki/File:An_Introduction_To_The_Khasi_Language_(IA_in.ernet.dli.2015.460881).pdf",
+            "https://archive.org/details/in.ernet.dli.2015.460287"
+          ],
+          "grammatical_passage": null,
+          "verified": false
+        },
+        "modern_usage": {
+          "source_type": "publicly_accessible_dated_khasi_publication",
+          "exact_context": null,
+          "sense_verified": false
+        },
+        "editorial_decision": "defer"
       }
     },
     {
@@ -1831,6 +2362,34 @@
           "collection": null,
           "source_attestation": null
         }
+      },
+      "option_a_public_source_review": {
+        "status": "source_identified_entry_level_1920_and_grammar_pending",
+        "reverse_1920": {
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "page_browser": "https://archive.org/details/in.ernet.dli.2015.42078/page/n1/mode/1up",
+          "english_lookup_terms": [
+            "harsh tone",
+            "empty words"
+          ],
+          "exact_page": null,
+          "matched_khasi_form": null,
+          "verified": false
+        },
+        "grammar": {
+          "sources": [
+            "https://commons.wikimedia.org/wiki/File:An_Introduction_To_The_Khasi_Language_(IA_in.ernet.dli.2015.460881).pdf",
+            "https://archive.org/details/in.ernet.dli.2015.460287"
+          ],
+          "grammatical_passage": null,
+          "verified": false
+        },
+        "modern_usage": {
+          "source_type": "publicly_accessible_dated_khasi_publication",
+          "exact_context": null,
+          "sense_verified": false
+        },
+        "editorial_decision": "defer"
       }
     }
   ],
@@ -2003,6 +2562,18 @@
       ],
       "note": "A catalog record does not substantiate candidate meanings; PDF of NEHU learners' dictionary explicitly requires login, so no entry text inspected",
       "verified_entry_matches": 0
+    },
+    "option_a_public_source_plan": {
+      "date": "2026-10-14",
+      "source_original_1920": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+      "source_1906": "https://wikisource.org/wiki/Page:Khasi-English_dictionary_(IA_khasienglishdict00singrich).pdf/16",
+      "alternative_grammar": "https://commons.wikimedia.org/wiki/File:An_Introduction_To_The_Khasi_Language_(IA_in.ernet.dli.2015.460881).pdf",
+      "source_note": "1920 file 626 pages, scanned; public page navigation available, individual reverse entries not yet inspected",
+      "candidates_prepared": 20,
+      "reverse_matches_verified": 0,
+      "grammar_passages_verified": 0,
+      "modern_senses_verified": 0,
+      "policy": "No guessed entry citations or promotions"
     }
   },
   "transcription_audit_note": "Rechecked printed pages 1-3 of proofread Wikisource against 20 source records. Printed page differs from earlier approximate OCR page. All independent checks still pending."
