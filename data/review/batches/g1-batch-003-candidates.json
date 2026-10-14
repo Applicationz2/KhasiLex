@@ -23,13 +23,34 @@
       "hints_pos_check": "conditional",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "historical_transcription_checked_not_verified",
+      "editorial_status": "deferred_independent_evidence",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Áb",
       "proofread_1906_gloss": "the imitation of the cry of a crow",
       "printed_page": 1,
-      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry"
+      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
+      "independent_evidence": {
+        "reverse_1920": {
+          "status": "not_verified",
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+        },
+        "hints": {
+          "status": "not_verified",
+          "source": "https://archive.org/details/in.ernet.dli.2015.460287",
+          "reason": "No directly inspected passage establishing this entry's grammatical analysis"
+        },
+        "modern_khasi": {
+          "status": "not_verified",
+          "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
+        },
+        "proofread_1906": {
+          "status": "transcription_source_recorded",
+          "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
+          "independent_corroboration": false
+        }
+      }
     },
     {
       "candidate_id": "g1-hist-003-002",
@@ -50,7 +71,7 @@
       "hints_pos_check": "conditional",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "historical_transcription_checked_not_verified",
+      "editorial_status": "deferred_independent_evidence",
       "promotion_authorized": false,
       "flags": [
         "ocr_or_entry_boundary_risk",
@@ -59,7 +80,28 @@
       "proofread_1906_headword": "*Abir",
       "proofread_1906_gloss": "red powder used in the Holi festival",
       "printed_page": 1,
-      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry"
+      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
+      "independent_evidence": {
+        "reverse_1920": {
+          "status": "not_verified",
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+        },
+        "hints": {
+          "status": "not_verified",
+          "source": "https://archive.org/details/in.ernet.dli.2015.460287",
+          "reason": "No directly inspected passage establishing this entry's grammatical analysis"
+        },
+        "modern_khasi": {
+          "status": "not_verified",
+          "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
+        },
+        "proofread_1906": {
+          "status": "transcription_source_recorded",
+          "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
+          "independent_corroboration": false
+        }
+      }
     },
     {
       "candidate_id": "g1-hist-003-003",
@@ -80,13 +122,34 @@
       "hints_pos_check": "conditional",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "historical_transcription_checked_not_verified",
+      "editorial_status": "deferred_independent_evidence",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Ak",
       "proofread_1906_gloss": "ejaculation of disgust at an unpleasant smell",
       "printed_page": 1,
-      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry"
+      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
+      "independent_evidence": {
+        "reverse_1920": {
+          "status": "not_verified",
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+        },
+        "hints": {
+          "status": "not_verified",
+          "source": "https://archive.org/details/in.ernet.dli.2015.460287",
+          "reason": "No directly inspected passage establishing this entry's grammatical analysis"
+        },
+        "modern_khasi": {
+          "status": "not_verified",
+          "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
+        },
+        "proofread_1906": {
+          "status": "transcription_source_recorded",
+          "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
+          "independent_corroboration": false
+        }
+      }
     },
     {
       "candidate_id": "g1-hist-003-004",
@@ -107,13 +170,34 @@
       "hints_pos_check": "conditional",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "historical_transcription_checked_not_verified",
+      "editorial_status": "deferred_independent_evidence",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Aku",
       "proofread_1906_gloss": "expressing disgust at a bad smell",
       "printed_page": 1,
-      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry"
+      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
+      "independent_evidence": {
+        "reverse_1920": {
+          "status": "not_verified",
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+        },
+        "hints": {
+          "status": "not_verified",
+          "source": "https://archive.org/details/in.ernet.dli.2015.460287",
+          "reason": "No directly inspected passage establishing this entry's grammatical analysis"
+        },
+        "modern_khasi": {
+          "status": "not_verified",
+          "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
+        },
+        "proofread_1906": {
+          "status": "transcription_source_recorded",
+          "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
+          "independent_corroboration": false
+        }
+      }
     },
     {
       "candidate_id": "g1-hist-003-005",
@@ -134,7 +218,7 @@
       "hints_pos_check": "conditional",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "historical_transcription_checked_not_verified",
+      "editorial_status": "deferred_independent_evidence",
       "promotion_authorized": false,
       "flags": [
         "source_marker_review"
@@ -142,7 +226,28 @@
       "proofread_1906_headword": "*Adda",
       "proofread_1906_gloss": "a stage for changing horses or dak-runners",
       "printed_page": 1,
-      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry"
+      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
+      "independent_evidence": {
+        "reverse_1920": {
+          "status": "not_verified",
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+        },
+        "hints": {
+          "status": "not_verified",
+          "source": "https://archive.org/details/in.ernet.dli.2015.460287",
+          "reason": "No directly inspected passage establishing this entry's grammatical analysis"
+        },
+        "modern_khasi": {
+          "status": "not_verified",
+          "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
+        },
+        "proofread_1906": {
+          "status": "transcription_source_recorded",
+          "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
+          "independent_corroboration": false
+        }
+      }
     },
     {
       "candidate_id": "g1-hist-003-006",
@@ -163,13 +268,34 @@
       "hints_pos_check": "conditional",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "historical_transcription_checked_not_verified",
+      "editorial_status": "deferred_independent_evidence",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Angret",
       "proofread_1906_gloss": "a dare-devil (from Hindustani Angrez)",
       "printed_page": 1,
-      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry"
+      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
+      "independent_evidence": {
+        "reverse_1920": {
+          "status": "not_verified",
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+        },
+        "hints": {
+          "status": "not_verified",
+          "source": "https://archive.org/details/in.ernet.dli.2015.460287",
+          "reason": "No directly inspected passage establishing this entry's grammatical analysis"
+        },
+        "modern_khasi": {
+          "status": "not_verified",
+          "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
+        },
+        "proofread_1906": {
+          "status": "transcription_source_recorded",
+          "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
+          "independent_corroboration": false
+        }
+      }
     },
     {
       "candidate_id": "g1-hist-003-007",
@@ -190,7 +316,7 @@
       "hints_pos_check": "conditional",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "historical_transcription_checked_not_verified",
+      "editorial_status": "deferred_independent_evidence",
       "promotion_authorized": false,
       "flags": [
         "ocr_or_entry_boundary_risk"
@@ -198,7 +324,28 @@
       "proofread_1906_headword": "Ahor",
       "proofread_1906_gloss": "a marshy place; swamp",
       "printed_page": 1,
-      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry"
+      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
+      "independent_evidence": {
+        "reverse_1920": {
+          "status": "not_verified",
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+        },
+        "hints": {
+          "status": "not_verified",
+          "source": "https://archive.org/details/in.ernet.dli.2015.460287",
+          "reason": "No directly inspected passage establishing this entry's grammatical analysis"
+        },
+        "modern_khasi": {
+          "status": "not_verified",
+          "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
+        },
+        "proofread_1906": {
+          "status": "transcription_source_recorded",
+          "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
+          "independent_corroboration": false
+        }
+      }
     },
     {
       "candidate_id": "g1-hist-003-008",
@@ -219,7 +366,7 @@
       "hints_pos_check": "required",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "historical_transcription_checked_not_verified",
+      "editorial_status": "deferred_independent_evidence",
       "promotion_authorized": false,
       "flags": [
         "ocr_or_entry_boundary_risk"
@@ -227,7 +374,28 @@
       "proofread_1906_headword": "Ai-bai-siew",
       "proofread_1906_gloss": "to give money for buying things at a time, e.g. on a market day",
       "printed_page": 2,
-      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry"
+      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
+      "independent_evidence": {
+        "reverse_1920": {
+          "status": "not_verified",
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+        },
+        "hints": {
+          "status": "not_verified",
+          "source": "https://archive.org/details/in.ernet.dli.2015.460287",
+          "reason": "No directly inspected passage establishing this entry's grammatical analysis"
+        },
+        "modern_khasi": {
+          "status": "not_verified",
+          "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
+        },
+        "proofread_1906": {
+          "status": "transcription_source_recorded",
+          "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
+          "independent_corroboration": false
+        }
+      }
     },
     {
       "candidate_id": "g1-hist-003-009",
@@ -248,7 +416,7 @@
       "hints_pos_check": "required",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "historical_transcription_checked_not_verified",
+      "editorial_status": "deferred_independent_evidence",
       "promotion_authorized": false,
       "flags": [
         "ocr_or_entry_boundary_risk"
@@ -256,7 +424,28 @@
       "proofread_1906_headword": "Ai-'baibat",
       "proofread_1906_gloss": "to pay ready money",
       "printed_page": 2,
-      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry"
+      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
+      "independent_evidence": {
+        "reverse_1920": {
+          "status": "not_verified",
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+        },
+        "hints": {
+          "status": "not_verified",
+          "source": "https://archive.org/details/in.ernet.dli.2015.460287",
+          "reason": "No directly inspected passage establishing this entry's grammatical analysis"
+        },
+        "modern_khasi": {
+          "status": "not_verified",
+          "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
+        },
+        "proofread_1906": {
+          "status": "transcription_source_recorded",
+          "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
+          "independent_corroboration": false
+        }
+      }
     },
     {
       "candidate_id": "g1-hist-003-010",
@@ -277,13 +466,34 @@
       "hints_pos_check": "required",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "historical_transcription_checked_not_verified",
+      "editorial_status": "deferred_independent_evidence",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Ai-bud-nám",
       "proofread_1906_gloss": "to slander; defame",
       "printed_page": 2,
-      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry"
+      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
+      "independent_evidence": {
+        "reverse_1920": {
+          "status": "not_verified",
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+        },
+        "hints": {
+          "status": "not_verified",
+          "source": "https://archive.org/details/in.ernet.dli.2015.460287",
+          "reason": "No directly inspected passage establishing this entry's grammatical analysis"
+        },
+        "modern_khasi": {
+          "status": "not_verified",
+          "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
+        },
+        "proofread_1906": {
+          "status": "transcription_source_recorded",
+          "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
+          "independent_corroboration": false
+        }
+      }
     },
     {
       "candidate_id": "g1-hist-003-011",
@@ -304,13 +514,34 @@
       "hints_pos_check": "required",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "historical_transcription_checked_not_verified",
+      "editorial_status": "deferred_independent_evidence",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Ai-khawdûh",
       "proofread_1906_gloss": "to leave uncared for; to be outcast",
       "printed_page": 2,
-      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry"
+      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
+      "independent_evidence": {
+        "reverse_1920": {
+          "status": "not_verified",
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+        },
+        "hints": {
+          "status": "not_verified",
+          "source": "https://archive.org/details/in.ernet.dli.2015.460287",
+          "reason": "No directly inspected passage establishing this entry's grammatical analysis"
+        },
+        "modern_khasi": {
+          "status": "not_verified",
+          "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
+        },
+        "proofread_1906": {
+          "status": "transcription_source_recorded",
+          "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
+          "independent_corroboration": false
+        }
+      }
     },
     {
       "candidate_id": "g1-hist-003-012",
@@ -331,13 +562,34 @@
       "hints_pos_check": "required",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "historical_transcription_checked_not_verified",
+      "editorial_status": "deferred_independent_evidence",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Ai-khusnám",
       "proofread_1906_gloss": "to confer honour for meritorious conduct",
       "printed_page": 2,
-      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry"
+      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
+      "independent_evidence": {
+        "reverse_1920": {
+          "status": "not_verified",
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+        },
+        "hints": {
+          "status": "not_verified",
+          "source": "https://archive.org/details/in.ernet.dli.2015.460287",
+          "reason": "No directly inspected passage establishing this entry's grammatical analysis"
+        },
+        "modern_khasi": {
+          "status": "not_verified",
+          "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
+        },
+        "proofread_1906": {
+          "status": "transcription_source_recorded",
+          "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
+          "independent_corroboration": false
+        }
+      }
     },
     {
       "candidate_id": "g1-hist-003-013",
@@ -358,13 +610,34 @@
       "hints_pos_check": "required",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "historical_transcription_checked_not_verified",
+      "editorial_status": "deferred_independent_evidence",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Ai-ksew",
       "proofread_1906_gloss": "to put a dog on the scent",
       "printed_page": 2,
-      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry"
+      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
+      "independent_evidence": {
+        "reverse_1920": {
+          "status": "not_verified",
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+        },
+        "hints": {
+          "status": "not_verified",
+          "source": "https://archive.org/details/in.ernet.dli.2015.460287",
+          "reason": "No directly inspected passage establishing this entry's grammatical analysis"
+        },
+        "modern_khasi": {
+          "status": "not_verified",
+          "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
+        },
+        "proofread_1906": {
+          "status": "transcription_source_recorded",
+          "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
+          "independent_corroboration": false
+        }
+      }
     },
     {
       "candidate_id": "g1-hist-003-014",
@@ -385,7 +658,7 @@
       "hints_pos_check": "required",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "historical_transcription_checked_not_verified",
+      "editorial_status": "deferred_independent_evidence",
       "promotion_authorized": false,
       "flags": [
         "ocr_or_entry_boundary_risk"
@@ -393,7 +666,28 @@
       "proofread_1906_headword": "Ai-huspai",
       "proofread_1906_gloss": "to indulge",
       "printed_page": 2,
-      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry"
+      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
+      "independent_evidence": {
+        "reverse_1920": {
+          "status": "not_verified",
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+        },
+        "hints": {
+          "status": "not_verified",
+          "source": "https://archive.org/details/in.ernet.dli.2015.460287",
+          "reason": "No directly inspected passage establishing this entry's grammatical analysis"
+        },
+        "modern_khasi": {
+          "status": "not_verified",
+          "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
+        },
+        "proofread_1906": {
+          "status": "transcription_source_recorded",
+          "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
+          "independent_corroboration": false
+        }
+      }
     },
     {
       "candidate_id": "g1-hist-003-015",
@@ -414,13 +708,34 @@
       "hints_pos_check": "required",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "historical_transcription_checked_not_verified",
+      "editorial_status": "deferred_independent_evidence",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Ai-lait-lân",
       "proofread_1906_gloss": "to let loose; give one their own inclination",
       "printed_page": 2,
-      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry"
+      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
+      "independent_evidence": {
+        "reverse_1920": {
+          "status": "not_verified",
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+        },
+        "hints": {
+          "status": "not_verified",
+          "source": "https://archive.org/details/in.ernet.dli.2015.460287",
+          "reason": "No directly inspected passage establishing this entry's grammatical analysis"
+        },
+        "modern_khasi": {
+          "status": "not_verified",
+          "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
+        },
+        "proofread_1906": {
+          "status": "transcription_source_recorded",
+          "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
+          "independent_corroboration": false
+        }
+      }
     },
     {
       "candidate_id": "g1-hist-003-016",
@@ -441,13 +756,34 @@
       "hints_pos_check": "required",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "historical_transcription_checked_not_verified",
+      "editorial_status": "deferred_independent_evidence",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Ai-mon",
       "proofread_1906_gloss": "to give one their own will",
       "printed_page": 2,
-      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry"
+      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
+      "independent_evidence": {
+        "reverse_1920": {
+          "status": "not_verified",
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+        },
+        "hints": {
+          "status": "not_verified",
+          "source": "https://archive.org/details/in.ernet.dli.2015.460287",
+          "reason": "No directly inspected passage establishing this entry's grammatical analysis"
+        },
+        "modern_khasi": {
+          "status": "not_verified",
+          "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
+        },
+        "proofread_1906": {
+          "status": "transcription_source_recorded",
+          "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
+          "independent_corroboration": false
+        }
+      }
     },
     {
       "candidate_id": "g1-hist-003-017",
@@ -468,13 +804,34 @@
       "hints_pos_check": "required",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "historical_transcription_checked_not_verified",
+      "editorial_status": "deferred_independent_evidence",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "A-iu",
       "proofread_1906_gloss": "what",
       "printed_page": 3,
-      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry"
+      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
+      "independent_evidence": {
+        "reverse_1920": {
+          "status": "not_verified",
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+        },
+        "hints": {
+          "status": "not_verified",
+          "source": "https://archive.org/details/in.ernet.dli.2015.460287",
+          "reason": "No directly inspected passage establishing this entry's grammatical analysis"
+        },
+        "modern_khasi": {
+          "status": "not_verified",
+          "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
+        },
+        "proofread_1906": {
+          "status": "transcription_source_recorded",
+          "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
+          "independent_corroboration": false
+        }
+      }
     },
     {
       "candidate_id": "g1-hist-003-018",
@@ -495,13 +852,34 @@
       "hints_pos_check": "conditional",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "historical_transcription_checked_not_verified",
+      "editorial_status": "deferred_independent_evidence",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Along",
       "proofread_1906_gloss": "a lock-up; Hajut",
       "printed_page": 3,
-      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry"
+      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
+      "independent_evidence": {
+        "reverse_1920": {
+          "status": "not_verified",
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+        },
+        "hints": {
+          "status": "not_verified",
+          "source": "https://archive.org/details/in.ernet.dli.2015.460287",
+          "reason": "No directly inspected passage establishing this entry's grammatical analysis"
+        },
+        "modern_khasi": {
+          "status": "not_verified",
+          "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
+        },
+        "proofread_1906": {
+          "status": "transcription_source_recorded",
+          "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
+          "independent_corroboration": false
+        }
+      }
     },
     {
       "candidate_id": "g1-hist-003-019",
@@ -522,13 +900,34 @@
       "hints_pos_check": "required",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "historical_transcription_checked_not_verified",
+      "editorial_status": "deferred_independent_evidence",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Ama or Amai",
       "proofread_1906_gloss": "exclamation upon narrow escape",
       "printed_page": 3,
-      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry"
+      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
+      "independent_evidence": {
+        "reverse_1920": {
+          "status": "not_verified",
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+        },
+        "hints": {
+          "status": "not_verified",
+          "source": "https://archive.org/details/in.ernet.dli.2015.460287",
+          "reason": "No directly inspected passage establishing this entry's grammatical analysis"
+        },
+        "modern_khasi": {
+          "status": "not_verified",
+          "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
+        },
+        "proofread_1906": {
+          "status": "transcription_source_recorded",
+          "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
+          "independent_corroboration": false
+        }
+      }
     },
     {
       "candidate_id": "g1-hist-003-020",
@@ -549,16 +948,52 @@
       "hints_pos_check": "conditional",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "historical_transcription_checked_not_verified",
+      "editorial_status": "deferred_independent_evidence",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Amrang",
       "proofread_1906_gloss": "harsh tone; empty words",
       "printed_page": 3,
-      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry"
+      "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
+      "independent_evidence": {
+        "reverse_1920": {
+          "status": "not_verified",
+          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+        },
+        "hints": {
+          "status": "not_verified",
+          "source": "https://archive.org/details/in.ernet.dli.2015.460287",
+          "reason": "No directly inspected passage establishing this entry's grammatical analysis"
+        },
+        "modern_khasi": {
+          "status": "not_verified",
+          "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
+        },
+        "proofread_1906": {
+          "status": "transcription_source_recorded",
+          "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
+          "independent_corroboration": false
+        }
+      }
     }
   ],
   "promotion_authorized": false,
   "audit_status": "20_of_20_cross_checked_against_proofread_1906_transcription; original page images and independent checks remain pending",
-  "transcription_url": "https://wikisource.org/wiki/Khasi-English_Dictionary"
+  "transcription_url": "https://wikisource.org/wiki/Khasi-English_Dictionary",
+  "independent_corroboration_pass": {
+    "status": "source_discovery_completed_individual_checks_outstanding",
+    "source_registry": {
+      "dictionary1920": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+      "hints": "https://archive.org/details/in.ernet.dli.2015.460287",
+      "grammar_secondary": "https://soas-repository.worktribe.com/output/413093/the-verbal-piece-in-khasi",
+      "proofread1906": "https://wikisource.org/wiki/Khasi-English_Dictionary"
+    },
+    "verified_1920_matches": 0,
+    "verified_hints_findings": 0,
+    "verified_modern_attestations": 0,
+    "editorial_decision": "defer_all_20_pending_direct_source_inspection",
+    "promotion_authorized": false,
+    "methodological_note": "A source catalog or same-edition transcription is not independent lexical corroboration. No inferred 1920 equivalence, Hints grammatical result, or modern attestation may be marked verified."
+  }
 }
