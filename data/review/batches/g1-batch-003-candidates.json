@@ -866,7 +866,14 @@
       "wikisource_transcription_check": "confirmed_same_1906_source",
       "reverse_1920_check": "pending_direct_inspection",
       "hints_pos_check": "required",
-      "modern_khasi_attestation": "pending_independent_current_usage",
+      "modern_khasi_attestation": {
+        "status": "attested_expression_not_sense",
+        "source": "https://megeducation.gov.in/dert/notices_and_circulars/2025/Notification%20%26%20Syllabus%20VI-IX%20%282026%29.pdf",
+        "context": "2026 Meghalaya Khasi Class VII syllabus: Ki Ktien Tymmen section lists Ai Ksew",
+        "exact_form": "Ai Ksew",
+        "historical_sense_verified": false,
+        "notes": "Contemporary educational recognition of expression; no definition or contextual sentence establishing 1906 sense"
+      },
       "sense_boundary_review": "pending",
       "editorial_status": "deferred_1920_hints_modern",
       "promotion_authorized": false,
@@ -887,8 +894,9 @@
           "reason": "No directly inspected passage establishing this entry's grammatical analysis"
         },
         "modern_khasi": {
-          "status": "not_verified",
-          "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
+          "status": "expression_attested_sense_not_verified",
+          "source": "https://megeducation.gov.in/dert/notices_and_circulars/2025/Notification%20%26%20Syllabus%20VI-IX%20%282026%29.pdf",
+          "reason": "Modern syllabus lists the expression without defining its meaning"
         },
         "proofread_1906": {
           "status": "verified_transcription_not_original_scan",
@@ -1494,6 +1502,22 @@
       "catalog_confirmation": "1920 original scan 626 pages; searchable OCR not confirmed",
       "policy": "Do not infer matches or mark evidence complete from catalog records; retain 20 deferred",
       "required_evidence": "exact page number, headword, sense, inspected scan/OCR and independent contemporary attestation"
+    },
+    "partial_modern_expression_attestations": 1,
+    "new_evidence_2026_10_14": {
+      "ai_ksew": {
+        "source": "https://megeducation.gov.in/dert/notices_and_circulars/2025/Notification%20%26%20Syllabus%20VI-IX%20%282026%29.pdf",
+        "attestation": "2026 Class VII syllabus Ki Ktien Tymmen: Ai Ksew",
+        "status": "form_attested_historical_sense_unconfirmed"
+      },
+      "hints_curriculum": {
+        "source": "https://megeducation.gov.in/dert/notices_and_circulars/2025/Notification%20%26%20Syllabus%20VI-IX%20%282026%29.pdf",
+        "status": "book_prescribed_for_verb_classes_no_entry_specific_grammar_verified"
+      },
+      "original_1920": {
+        "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+        "status": "scan_available_page_entry_text_not_inspected"
+      }
     }
   },
   "transcription_audit_note": "Rechecked printed pages 1-3 of proofread Wikisource against 20 source records. Printed page differs from earlier approximate OCR page. All independent checks still pending."
