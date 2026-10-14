@@ -2574,6 +2574,36 @@
       "grammar_passages_verified": 0,
       "modern_senses_verified": 0,
       "policy": "No guessed entry citations or promotions"
+    },
+    "option_a_additional_bibliography": {
+      "source": "https://khasiauthorssociety.org/ka-seng-ka-don-artylli-ki-kot-journals-kiba-ka-ju-pynmih-tista-man-la-ka-snem/",
+      "organization": "Khasi Authors Society",
+      "identified_works": [
+        {
+          "author": "Amirkha Chyne",
+          "title": "English-Khasi Dictionary",
+          "year": 1922
+        },
+        {
+          "author": "Iarington Kharkongor",
+          "title": "Ka Dinshonhi (Khasi-Khasi Dictionary)",
+          "year": 1968
+        },
+        {
+          "author": "A. K. Diengdoh",
+          "title": "Khasi-English Dictionary",
+          "year": 1967
+        },
+        {
+          "author": "E. Bars",
+          "title": "Khasi-English Dictionary",
+          "year": 1973
+        }
+      ],
+      "evidence_status": "bibliographic_only_no_entry_inspected",
+      "limitation": "No verified candidate equivalents or modern senses from bibliographic list",
+      "hints_edition_source": "https://search.worldcat.org/title/Hints-on-the-study-of-the-Khasi-language/oclc/19757615",
+      "hints_edition": "1949 third revised edition; not assumed identical to 1906 second edition"
     }
   },
   "transcription_audit_note": "Rechecked printed pages 1-3 of proofread Wikisource against 20 source records. Printed page differs from earlier approximate OCR page. All independent checks still pending."
