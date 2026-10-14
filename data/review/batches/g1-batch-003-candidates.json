@@ -1146,6 +1146,16 @@
           "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
           "printed_page": 2,
           "independent_corroboration": false
+        },
+        "historical_usage_secondary": {
+          "status": "historical_context_attested",
+          "source": "https://dspace.gipe.ac.in/xmlui/bitstream/handle/10973/22403/GIPE-001878.pdf?isAllowed=y&sequence=3",
+          "work": "The Khasis",
+          "printed_page": 48,
+          "attested_form": "ki nong-ai-ksew",
+          "context": "Hunting party members holding trained dogs on leashes before scent pursuit",
+          "sense_relation": "supports hunting/dog-scent semantic domain; derivative form, not direct equivalent or modern usage",
+          "modern_attestation": false
         }
       },
       "proofread_1906_evidence": {
@@ -1944,7 +1954,21 @@
       "limitation": "1906 historical text only, not 1920/Hints/modern corroboration"
     },
     "alternative_review_protocol": "docs/KHASI_ANCESTRAL_LANGUAGE_RESEARCH_PLAN.md",
-    "alternative_source_status": "20 individual lookup records initialized; no uninspected equivalences claimed"
+    "alternative_source_status": "20 individual lookup records initialized; no uninspected equivalences claimed",
+    "secondary_historical_usage_findings": 1,
+    "khasidrp_audit": {
+      "source": "https://github.com/udaycruise2903/khasi-dienshonhi",
+      "status": "documentation_verified_data_not_obtained",
+      "observation": "GitHub repository provides digitization scripts and documentation, not the 8400+ XML dataset in browsable repository listing; public webpage dictionary link points to localhost",
+      "bibliography": "Iarington Kharkongor Ka Dienshonhi 1968, 493 pages per project README",
+      "licence": "No redistribution permission established; project site states all rights reserved"
+    },
+    "bharatavani_audit": {
+      "source": "https://bharatavani.in/khasi/dictionaries",
+      "status": "dictionary_catalog_verified_entry_results_not_retrieved",
+      "observation": "Search/browse controls available but no exact matching candidate definition retrieved from indexed page",
+      "licence": "Copyright Bharatavani all rights reserved"
+    }
   },
   "transcription_audit_note": "Rechecked printed pages 1-3 of proofread Wikisource against 20 source records. Printed page differs from earlier approximate OCR page. All independent checks still pending."
 }
