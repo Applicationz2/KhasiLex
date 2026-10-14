@@ -1476,6 +1476,24 @@
       ],
       "status": "source_discovery_only_no_new_entry_verification",
       "limitation": "Direct file retrieval in this environment unavailable; no exact candidate citations or page images independently inspected"
+    },
+    "machine_text_retrieval_2026_10_14": {
+      "status": "blocked_not_verified",
+      "attempts": [
+        {
+          "source": "1920 dictionary",
+          "url": "https://archive.org/download/in.ernet.dli.2015.42078/in.ernet.dli.2015.42078_djvu.txt",
+          "result": "web retrieval inaccessible"
+        },
+        {
+          "source": "Hints",
+          "url": "https://archive.org/download/in.ernet.dli.2015.460287/in.ernet.dli.2015.460287_djvu.txt",
+          "result": "web retrieval inaccessible"
+        }
+      ],
+      "catalog_confirmation": "1920 original scan 626 pages; searchable OCR not confirmed",
+      "policy": "Do not infer matches or mark evidence complete from catalog records; retain 20 deferred",
+      "required_evidence": "exact page number, headword, sense, inspected scan/OCR and independent contemporary attestation"
     }
   },
   "transcription_audit_note": "Rechecked printed pages 1-3 of proofread Wikisource against 20 source records. Printed page differs from earlier approximate OCR page. All independent checks still pending."
