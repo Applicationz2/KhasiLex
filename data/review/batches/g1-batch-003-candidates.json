@@ -1968,6 +1968,41 @@
       "status": "dictionary_catalog_verified_entry_results_not_retrieved",
       "observation": "Search/browse controls available but no exact matching candidate definition retrieved from indexed page",
       "licence": "Copyright Bharatavani all rights reserved"
+    },
+    "bharatavani_edition_discovery_2026_10_14": {
+      "status": "bibliographic_metadata_confirmed_no_entry_read",
+      "source": "https://bharatavani.in/khasi/bhashakosha",
+      "works": [
+        {
+          "title": "Khasi-Hindi-English Learners' Dictionary",
+          "publisher": "North Eastern Hill University Publications, Shillong",
+          "pdf_mb": 12.34,
+          "access": "Login to Read",
+          "source": "https://bharatavani.in/khasi/dictionaries"
+        },
+        {
+          "title": "Hindi-Khasi Learner's Dictionary",
+          "year": 2016,
+          "author": "Nand Kishore Pandey"
+        },
+        {
+          "title": "Hindi-Khasi-Garo-Jaintia-English Concise Dictionary",
+          "year": 2020,
+          "author": "Nand Kishore Pandey"
+        },
+        {
+          "title": "Ka Batai Kyntien",
+          "year": 2015,
+          "author": "Antoinette Kharmalki"
+        },
+        {
+          "title": "Ki Nongrim Ka Pule-Ktien Bad Ka Hikai-Krien",
+          "year": 2006,
+          "author": "Antoinette Kharmalki"
+        }
+      ],
+      "note": "A catalog record does not substantiate candidate meanings; PDF of NEHU learners' dictionary explicitly requires login, so no entry text inspected",
+      "verified_entry_matches": 0
     }
   },
   "transcription_audit_note": "Rechecked printed pages 1-3 of proofread Wikisource against 20 source records. Printed page differs from earlier approximate OCR page. All independent checks still pending."
