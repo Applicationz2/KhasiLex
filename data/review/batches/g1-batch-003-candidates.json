@@ -23,7 +23,7 @@
       "hints_pos_check": "conditional",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "deferred_independent_evidence",
+      "editorial_status": "deferred_1920_hints_modern",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Áb!",
@@ -32,9 +32,9 @@
       "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
       "independent_evidence": {
         "reverse_1920": {
-          "status": "not_verified",
+          "status": "blocked_scan_not_read",
           "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+          "reason": "Reference identified but relevant English-index page and Khasi equivalent have not been inspected"
         },
         "hints": {
           "status": "not_verified",
@@ -58,6 +58,20 @@
         "printed_page": 1,
         "method": "Direct inspection of Wikisource transcription and adjacent entries; not independent of 1906 scan",
         "headword": "Áb!"
+      },
+      "reverse_1920_lookup": {
+        "english_index_terms": [
+          "crow",
+          "cry",
+          "imitate"
+        ],
+        "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+        "source_inspection": "attempted_full_scan_access",
+        "result": "unverified",
+        "page": null,
+        "exact_khasi_equivalent": null,
+        "limitation": "1920 scanned PDF is 626 pages / ~63 MB; direct source fetch exceeded available retrieval limit; no entry text inspected",
+        "do_not_infer_match": true
       }
     },
     {
@@ -79,7 +93,7 @@
       "hints_pos_check": "conditional",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "deferred_independent_evidence",
+      "editorial_status": "deferred_1920_hints_modern",
       "promotion_authorized": false,
       "flags": [
         "ocr_or_entry_boundary_risk",
@@ -91,9 +105,9 @@
       "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
       "independent_evidence": {
         "reverse_1920": {
-          "status": "not_verified",
+          "status": "blocked_scan_not_read",
           "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+          "reason": "Reference identified but relevant English-index page and Khasi equivalent have not been inspected"
         },
         "hints": {
           "status": "not_verified",
@@ -117,6 +131,20 @@
         "printed_page": 1,
         "method": "Direct inspection of Wikisource transcription and adjacent entries; not independent of 1906 scan",
         "headword": "*Abir"
+      },
+      "reverse_1920_lookup": {
+        "english_index_terms": [
+          "powder",
+          "Holi",
+          "red"
+        ],
+        "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+        "source_inspection": "attempted_full_scan_access",
+        "result": "unverified",
+        "page": null,
+        "exact_khasi_equivalent": null,
+        "limitation": "1920 scanned PDF is 626 pages / ~63 MB; direct source fetch exceeded available retrieval limit; no entry text inspected",
+        "do_not_infer_match": true
       }
     },
     {
@@ -138,7 +166,7 @@
       "hints_pos_check": "conditional",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "deferred_independent_evidence",
+      "editorial_status": "deferred_1920_hints_modern",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Ak!",
@@ -147,9 +175,9 @@
       "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
       "independent_evidence": {
         "reverse_1920": {
-          "status": "not_verified",
+          "status": "blocked_scan_not_read",
           "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+          "reason": "Reference identified but relevant English-index page and Khasi equivalent have not been inspected"
         },
         "hints": {
           "status": "not_verified",
@@ -173,6 +201,19 @@
         "printed_page": 1,
         "method": "Direct inspection of Wikisource transcription and adjacent entries; not independent of 1906 scan",
         "headword": "Ak!"
+      },
+      "reverse_1920_lookup": {
+        "english_index_terms": [
+          "disgust",
+          "smell"
+        ],
+        "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+        "source_inspection": "attempted_full_scan_access",
+        "result": "unverified",
+        "page": null,
+        "exact_khasi_equivalent": null,
+        "limitation": "1920 scanned PDF is 626 pages / ~63 MB; direct source fetch exceeded available retrieval limit; no entry text inspected",
+        "do_not_infer_match": true
       }
     },
     {
@@ -194,7 +235,7 @@
       "hints_pos_check": "conditional",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "deferred_independent_evidence",
+      "editorial_status": "deferred_1920_hints_modern",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Aku!",
@@ -203,9 +244,9 @@
       "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
       "independent_evidence": {
         "reverse_1920": {
-          "status": "not_verified",
+          "status": "blocked_scan_not_read",
           "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+          "reason": "Reference identified but relevant English-index page and Khasi equivalent have not been inspected"
         },
         "hints": {
           "status": "not_verified",
@@ -229,6 +270,19 @@
         "printed_page": 1,
         "method": "Direct inspection of Wikisource transcription and adjacent entries; not independent of 1906 scan",
         "headword": "Aku!"
+      },
+      "reverse_1920_lookup": {
+        "english_index_terms": [
+          "disgust",
+          "smell"
+        ],
+        "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+        "source_inspection": "attempted_full_scan_access",
+        "result": "unverified",
+        "page": null,
+        "exact_khasi_equivalent": null,
+        "limitation": "1920 scanned PDF is 626 pages / ~63 MB; direct source fetch exceeded available retrieval limit; no entry text inspected",
+        "do_not_infer_match": true
       }
     },
     {
@@ -250,7 +304,7 @@
       "hints_pos_check": "conditional",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "deferred_independent_evidence",
+      "editorial_status": "deferred_1920_hints_modern",
       "promotion_authorized": false,
       "flags": [
         "source_marker_review"
@@ -261,9 +315,9 @@
       "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
       "independent_evidence": {
         "reverse_1920": {
-          "status": "not_verified",
+          "status": "blocked_scan_not_read",
           "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+          "reason": "Reference identified but relevant English-index page and Khasi equivalent have not been inspected"
         },
         "hints": {
           "status": "not_verified",
@@ -287,6 +341,20 @@
         "printed_page": 1,
         "method": "Direct inspection of Wikisource transcription and adjacent entries; not independent of 1906 scan",
         "headword": "*Adda"
+      },
+      "reverse_1920_lookup": {
+        "english_index_terms": [
+          "stage",
+          "horse",
+          "post"
+        ],
+        "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+        "source_inspection": "attempted_full_scan_access",
+        "result": "unverified",
+        "page": null,
+        "exact_khasi_equivalent": null,
+        "limitation": "1920 scanned PDF is 626 pages / ~63 MB; direct source fetch exceeded available retrieval limit; no entry text inspected",
+        "do_not_infer_match": true
       }
     },
     {
@@ -308,7 +376,7 @@
       "hints_pos_check": "conditional",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "deferred_independent_evidence",
+      "editorial_status": "deferred_1920_hints_modern",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Angret",
@@ -317,9 +385,9 @@
       "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
       "independent_evidence": {
         "reverse_1920": {
-          "status": "not_verified",
+          "status": "blocked_scan_not_read",
           "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+          "reason": "Reference identified but relevant English-index page and Khasi equivalent have not been inspected"
         },
         "hints": {
           "status": "not_verified",
@@ -343,6 +411,19 @@
         "printed_page": 1,
         "method": "Direct inspection of Wikisource transcription and adjacent entries; not independent of 1906 scan",
         "headword": "Angret"
+      },
+      "reverse_1920_lookup": {
+        "english_index_terms": [
+          "daredevil",
+          "reckless"
+        ],
+        "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+        "source_inspection": "attempted_full_scan_access",
+        "result": "unverified",
+        "page": null,
+        "exact_khasi_equivalent": null,
+        "limitation": "1920 scanned PDF is 626 pages / ~63 MB; direct source fetch exceeded available retrieval limit; no entry text inspected",
+        "do_not_infer_match": true
       }
     },
     {
@@ -364,7 +445,7 @@
       "hints_pos_check": "conditional",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "deferred_independent_evidence",
+      "editorial_status": "deferred_1920_hints_modern",
       "promotion_authorized": false,
       "flags": [
         "ocr_or_entry_boundary_risk"
@@ -375,9 +456,9 @@
       "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
       "independent_evidence": {
         "reverse_1920": {
-          "status": "not_verified",
+          "status": "blocked_scan_not_read",
           "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+          "reason": "Reference identified but relevant English-index page and Khasi equivalent have not been inspected"
         },
         "hints": {
           "status": "not_verified",
@@ -401,6 +482,19 @@
         "printed_page": 1,
         "method": "Direct inspection of Wikisource transcription and adjacent entries; not independent of 1906 scan",
         "headword": "Ahor"
+      },
+      "reverse_1920_lookup": {
+        "english_index_terms": [
+          "marsh",
+          "swamp"
+        ],
+        "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+        "source_inspection": "attempted_full_scan_access",
+        "result": "unverified",
+        "page": null,
+        "exact_khasi_equivalent": null,
+        "limitation": "1920 scanned PDF is 626 pages / ~63 MB; direct source fetch exceeded available retrieval limit; no entry text inspected",
+        "do_not_infer_match": true
       }
     },
     {
@@ -422,7 +516,7 @@
       "hints_pos_check": "required",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "deferred_independent_evidence",
+      "editorial_status": "deferred_1920_hints_modern",
       "promotion_authorized": false,
       "flags": [
         "ocr_or_entry_boundary_risk"
@@ -433,9 +527,9 @@
       "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
       "independent_evidence": {
         "reverse_1920": {
-          "status": "not_verified",
+          "status": "blocked_scan_not_read",
           "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+          "reason": "Reference identified but relevant English-index page and Khasi equivalent have not been inspected"
         },
         "hints": {
           "status": "not_verified",
@@ -459,6 +553,20 @@
         "printed_page": 2,
         "method": "Direct inspection of Wikisource transcription and adjacent entries; not independent of 1906 scan",
         "headword": "Ai-bai-siew"
+      },
+      "reverse_1920_lookup": {
+        "english_index_terms": [
+          "money",
+          "buy",
+          "market"
+        ],
+        "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+        "source_inspection": "attempted_full_scan_access",
+        "result": "unverified",
+        "page": null,
+        "exact_khasi_equivalent": null,
+        "limitation": "1920 scanned PDF is 626 pages / ~63 MB; direct source fetch exceeded available retrieval limit; no entry text inspected",
+        "do_not_infer_match": true
       }
     },
     {
@@ -480,7 +588,7 @@
       "hints_pos_check": "required",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "deferred_independent_evidence",
+      "editorial_status": "deferred_1920_hints_modern",
       "promotion_authorized": false,
       "flags": [
         "ocr_or_entry_boundary_risk"
@@ -491,9 +599,9 @@
       "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
       "independent_evidence": {
         "reverse_1920": {
-          "status": "not_verified",
+          "status": "blocked_scan_not_read",
           "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+          "reason": "Reference identified but relevant English-index page and Khasi equivalent have not been inspected"
         },
         "hints": {
           "status": "not_verified",
@@ -517,6 +625,20 @@
         "printed_page": 2,
         "method": "Direct inspection of Wikisource transcription and adjacent entries; not independent of 1906 scan",
         "headword": "Ai-'baibat"
+      },
+      "reverse_1920_lookup": {
+        "english_index_terms": [
+          "cash",
+          "ready money",
+          "pay"
+        ],
+        "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+        "source_inspection": "attempted_full_scan_access",
+        "result": "unverified",
+        "page": null,
+        "exact_khasi_equivalent": null,
+        "limitation": "1920 scanned PDF is 626 pages / ~63 MB; direct source fetch exceeded available retrieval limit; no entry text inspected",
+        "do_not_infer_match": true
       }
     },
     {
@@ -538,7 +660,7 @@
       "hints_pos_check": "required",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "deferred_independent_evidence",
+      "editorial_status": "deferred_1920_hints_modern",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Ai-bud-nám",
@@ -547,9 +669,9 @@
       "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
       "independent_evidence": {
         "reverse_1920": {
-          "status": "not_verified",
+          "status": "blocked_scan_not_read",
           "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+          "reason": "Reference identified but relevant English-index page and Khasi equivalent have not been inspected"
         },
         "hints": {
           "status": "not_verified",
@@ -573,6 +695,19 @@
         "printed_page": 2,
         "method": "Direct inspection of Wikisource transcription and adjacent entries; not independent of 1906 scan",
         "headword": "Ai-bud-nám"
+      },
+      "reverse_1920_lookup": {
+        "english_index_terms": [
+          "slander",
+          "defame"
+        ],
+        "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+        "source_inspection": "attempted_full_scan_access",
+        "result": "unverified",
+        "page": null,
+        "exact_khasi_equivalent": null,
+        "limitation": "1920 scanned PDF is 626 pages / ~63 MB; direct source fetch exceeded available retrieval limit; no entry text inspected",
+        "do_not_infer_match": true
       }
     },
     {
@@ -594,7 +729,7 @@
       "hints_pos_check": "required",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "deferred_independent_evidence",
+      "editorial_status": "deferred_1920_hints_modern",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Ai-khawdûh",
@@ -603,9 +738,9 @@
       "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
       "independent_evidence": {
         "reverse_1920": {
-          "status": "not_verified",
+          "status": "blocked_scan_not_read",
           "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+          "reason": "Reference identified but relevant English-index page and Khasi equivalent have not been inspected"
         },
         "hints": {
           "status": "not_verified",
@@ -629,6 +764,19 @@
         "printed_page": 2,
         "method": "Direct inspection of Wikisource transcription and adjacent entries; not independent of 1906 scan",
         "headword": "Ai-khawdûh"
+      },
+      "reverse_1920_lookup": {
+        "english_index_terms": [
+          "neglect",
+          "outcast"
+        ],
+        "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+        "source_inspection": "attempted_full_scan_access",
+        "result": "unverified",
+        "page": null,
+        "exact_khasi_equivalent": null,
+        "limitation": "1920 scanned PDF is 626 pages / ~63 MB; direct source fetch exceeded available retrieval limit; no entry text inspected",
+        "do_not_infer_match": true
       }
     },
     {
@@ -650,7 +798,7 @@
       "hints_pos_check": "required",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "deferred_independent_evidence",
+      "editorial_status": "deferred_1920_hints_modern",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Ai-khusnám",
@@ -659,9 +807,9 @@
       "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
       "independent_evidence": {
         "reverse_1920": {
-          "status": "not_verified",
+          "status": "blocked_scan_not_read",
           "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+          "reason": "Reference identified but relevant English-index page and Khasi equivalent have not been inspected"
         },
         "hints": {
           "status": "not_verified",
@@ -685,6 +833,20 @@
         "printed_page": 2,
         "method": "Direct inspection of Wikisource transcription and adjacent entries; not independent of 1906 scan",
         "headword": "Ai-khusnám"
+      },
+      "reverse_1920_lookup": {
+        "english_index_terms": [
+          "honour",
+          "reward",
+          "merit"
+        ],
+        "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+        "source_inspection": "attempted_full_scan_access",
+        "result": "unverified",
+        "page": null,
+        "exact_khasi_equivalent": null,
+        "limitation": "1920 scanned PDF is 626 pages / ~63 MB; direct source fetch exceeded available retrieval limit; no entry text inspected",
+        "do_not_infer_match": true
       }
     },
     {
@@ -706,7 +868,7 @@
       "hints_pos_check": "required",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "deferred_independent_evidence",
+      "editorial_status": "deferred_1920_hints_modern",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Ai-ksew",
@@ -715,9 +877,9 @@
       "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
       "independent_evidence": {
         "reverse_1920": {
-          "status": "not_verified",
+          "status": "blocked_scan_not_read",
           "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+          "reason": "Reference identified but relevant English-index page and Khasi equivalent have not been inspected"
         },
         "hints": {
           "status": "not_verified",
@@ -741,6 +903,20 @@
         "printed_page": 2,
         "method": "Direct inspection of Wikisource transcription and adjacent entries; not independent of 1906 scan",
         "headword": "Ai-ksew"
+      },
+      "reverse_1920_lookup": {
+        "english_index_terms": [
+          "dog",
+          "scent",
+          "track"
+        ],
+        "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+        "source_inspection": "attempted_full_scan_access",
+        "result": "unverified",
+        "page": null,
+        "exact_khasi_equivalent": null,
+        "limitation": "1920 scanned PDF is 626 pages / ~63 MB; direct source fetch exceeded available retrieval limit; no entry text inspected",
+        "do_not_infer_match": true
       }
     },
     {
@@ -762,7 +938,7 @@
       "hints_pos_check": "required",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "deferred_independent_evidence",
+      "editorial_status": "deferred_1920_hints_modern",
       "promotion_authorized": false,
       "flags": [
         "ocr_or_entry_boundary_risk"
@@ -773,9 +949,9 @@
       "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
       "independent_evidence": {
         "reverse_1920": {
-          "status": "not_verified",
+          "status": "blocked_scan_not_read",
           "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+          "reason": "Reference identified but relevant English-index page and Khasi equivalent have not been inspected"
         },
         "hints": {
           "status": "not_verified",
@@ -799,6 +975,19 @@
         "printed_page": 2,
         "method": "Direct inspection of Wikisource transcription and adjacent entries; not independent of 1906 scan",
         "headword": "Ai-huspai"
+      },
+      "reverse_1920_lookup": {
+        "english_index_terms": [
+          "indulge",
+          "gratify"
+        ],
+        "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+        "source_inspection": "attempted_full_scan_access",
+        "result": "unverified",
+        "page": null,
+        "exact_khasi_equivalent": null,
+        "limitation": "1920 scanned PDF is 626 pages / ~63 MB; direct source fetch exceeded available retrieval limit; no entry text inspected",
+        "do_not_infer_match": true
       }
     },
     {
@@ -820,7 +1009,7 @@
       "hints_pos_check": "required",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "deferred_independent_evidence",
+      "editorial_status": "deferred_1920_hints_modern",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Ai-lait-lân",
@@ -829,9 +1018,9 @@
       "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
       "independent_evidence": {
         "reverse_1920": {
-          "status": "not_verified",
+          "status": "blocked_scan_not_read",
           "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+          "reason": "Reference identified but relevant English-index page and Khasi equivalent have not been inspected"
         },
         "hints": {
           "status": "not_verified",
@@ -855,6 +1044,20 @@
         "printed_page": 2,
         "method": "Direct inspection of Wikisource transcription and adjacent entries; not independent of 1906 scan",
         "headword": "Ai-lait-lân"
+      },
+      "reverse_1920_lookup": {
+        "english_index_terms": [
+          "loose",
+          "release",
+          "liberty"
+        ],
+        "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+        "source_inspection": "attempted_full_scan_access",
+        "result": "unverified",
+        "page": null,
+        "exact_khasi_equivalent": null,
+        "limitation": "1920 scanned PDF is 626 pages / ~63 MB; direct source fetch exceeded available retrieval limit; no entry text inspected",
+        "do_not_infer_match": true
       }
     },
     {
@@ -876,7 +1079,7 @@
       "hints_pos_check": "required",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "deferred_independent_evidence",
+      "editorial_status": "deferred_1920_hints_modern",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Ai-mon",
@@ -885,9 +1088,9 @@
       "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
       "independent_evidence": {
         "reverse_1920": {
-          "status": "not_verified",
+          "status": "blocked_scan_not_read",
           "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+          "reason": "Reference identified but relevant English-index page and Khasi equivalent have not been inspected"
         },
         "hints": {
           "status": "not_verified",
@@ -911,6 +1114,20 @@
         "printed_page": 2,
         "method": "Direct inspection of Wikisource transcription and adjacent entries; not independent of 1906 scan",
         "headword": "Ai-mon"
+      },
+      "reverse_1920_lookup": {
+        "english_index_terms": [
+          "will",
+          "permission",
+          "allow"
+        ],
+        "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+        "source_inspection": "attempted_full_scan_access",
+        "result": "unverified",
+        "page": null,
+        "exact_khasi_equivalent": null,
+        "limitation": "1920 scanned PDF is 626 pages / ~63 MB; direct source fetch exceeded available retrieval limit; no entry text inspected",
+        "do_not_infer_match": true
       }
     },
     {
@@ -932,7 +1149,7 @@
       "hints_pos_check": "required",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "deferred_independent_evidence",
+      "editorial_status": "deferred_1920_hints_modern",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "A-iu",
@@ -941,9 +1158,9 @@
       "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
       "independent_evidence": {
         "reverse_1920": {
-          "status": "not_verified",
+          "status": "blocked_scan_not_read",
           "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+          "reason": "Reference identified but relevant English-index page and Khasi equivalent have not been inspected"
         },
         "hints": {
           "status": "not_verified",
@@ -967,6 +1184,19 @@
         "printed_page": 3,
         "method": "Direct inspection of Wikisource transcription and adjacent entries; not independent of 1906 scan",
         "headword": "A-iu"
+      },
+      "reverse_1920_lookup": {
+        "english_index_terms": [
+          "what",
+          "interrogative"
+        ],
+        "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+        "source_inspection": "attempted_full_scan_access",
+        "result": "unverified",
+        "page": null,
+        "exact_khasi_equivalent": null,
+        "limitation": "1920 scanned PDF is 626 pages / ~63 MB; direct source fetch exceeded available retrieval limit; no entry text inspected",
+        "do_not_infer_match": true
       }
     },
     {
@@ -988,7 +1218,7 @@
       "hints_pos_check": "conditional",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "deferred_independent_evidence",
+      "editorial_status": "deferred_1920_hints_modern",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Along",
@@ -997,9 +1227,9 @@
       "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
       "independent_evidence": {
         "reverse_1920": {
-          "status": "not_verified",
+          "status": "blocked_scan_not_read",
           "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+          "reason": "Reference identified but relevant English-index page and Khasi equivalent have not been inspected"
         },
         "hints": {
           "status": "not_verified",
@@ -1023,6 +1253,20 @@
         "printed_page": 3,
         "method": "Direct inspection of Wikisource transcription and adjacent entries; not independent of 1906 scan",
         "headword": "Along"
+      },
+      "reverse_1920_lookup": {
+        "english_index_terms": [
+          "lockup",
+          "prison",
+          "jail"
+        ],
+        "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+        "source_inspection": "attempted_full_scan_access",
+        "result": "unverified",
+        "page": null,
+        "exact_khasi_equivalent": null,
+        "limitation": "1920 scanned PDF is 626 pages / ~63 MB; direct source fetch exceeded available retrieval limit; no entry text inspected",
+        "do_not_infer_match": true
       }
     },
     {
@@ -1044,7 +1288,7 @@
       "hints_pos_check": "required",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "deferred_independent_evidence",
+      "editorial_status": "deferred_1920_hints_modern",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Ama or Amai!",
@@ -1053,9 +1297,9 @@
       "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
       "independent_evidence": {
         "reverse_1920": {
-          "status": "not_verified",
+          "status": "blocked_scan_not_read",
           "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+          "reason": "Reference identified but relevant English-index page and Khasi equivalent have not been inspected"
         },
         "hints": {
           "status": "not_verified",
@@ -1079,6 +1323,19 @@
         "printed_page": 3,
         "method": "Direct inspection of Wikisource transcription and adjacent entries; not independent of 1906 scan",
         "headword": "Ama or Amai!"
+      },
+      "reverse_1920_lookup": {
+        "english_index_terms": [
+          "escape",
+          "exclamation"
+        ],
+        "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+        "source_inspection": "attempted_full_scan_access",
+        "result": "unverified",
+        "page": null,
+        "exact_khasi_equivalent": null,
+        "limitation": "1920 scanned PDF is 626 pages / ~63 MB; direct source fetch exceeded available retrieval limit; no entry text inspected",
+        "do_not_infer_match": true
       }
     },
     {
@@ -1100,7 +1357,7 @@
       "hints_pos_check": "conditional",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
-      "editorial_status": "deferred_independent_evidence",
+      "editorial_status": "deferred_1920_hints_modern",
       "promotion_authorized": false,
       "flags": [],
       "proofread_1906_headword": "Amrang",
@@ -1109,9 +1366,9 @@
       "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
       "independent_evidence": {
         "reverse_1920": {
-          "status": "not_verified",
+          "status": "blocked_scan_not_read",
           "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-          "reason": "No directly inspected reverse-entry page or exact equivalent recorded"
+          "reason": "Reference identified but relevant English-index page and Khasi equivalent have not been inspected"
         },
         "hints": {
           "status": "not_verified",
@@ -1135,6 +1392,20 @@
         "printed_page": 3,
         "method": "Direct inspection of Wikisource transcription and adjacent entries; not independent of 1906 scan",
         "headword": "Amrang"
+      },
+      "reverse_1920_lookup": {
+        "english_index_terms": [
+          "harsh",
+          "tone",
+          "empty words"
+        ],
+        "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+        "source_inspection": "attempted_full_scan_access",
+        "result": "unverified",
+        "page": null,
+        "exact_khasi_equivalent": null,
+        "limitation": "1920 scanned PDF is 626 pages / ~63 MB; direct source fetch exceeded available retrieval limit; no entry text inspected",
+        "do_not_infer_match": true
       }
     }
   ],
@@ -1142,7 +1413,7 @@
   "audit_status": "20_of_20_cross_checked_against_proofread_1906_transcription; original page images and independent checks remain pending",
   "transcription_url": "https://wikisource.org/wiki/Khasi-English_Dictionary",
   "independent_corroboration_pass": {
-    "status": "source_discovery_completed_individual_checks_outstanding",
+    "status": "1920_targeted_lookup_queue_prepared_scan_access_blocked",
     "source_registry": {
       "dictionary1920": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
       "hints": "https://archive.org/details/in.ernet.dli.2015.460287",
@@ -1154,7 +1425,8 @@
     "verified_modern_attestations": 0,
     "editorial_decision": "defer_all_20_pending_direct_source_inspection",
     "promotion_authorized": false,
-    "methodological_note": "A source catalog or same-edition transcription is not independent lexical corroboration. No inferred 1920 equivalence, Hints grammatical result, or modern attestation may be marked verified."
+    "methodological_note": "A source catalog or same-edition transcription is not independent lexical corroboration. No inferred 1920 equivalence, Hints grammatical result, or modern attestation may be marked verified.",
+    "scan_access_limitation": "Direct attempt to open 1920 Wikimedia Commons scan failed due to 66 MB retrieval limit; no individual 1920 reverse equivalence claimed"
   },
   "transcription_audit_note": "Rechecked printed pages 1-3 of proofread Wikisource against 20 source records. Printed page differs from earlier approximate OCR page. All independent checks still pending."
 }
