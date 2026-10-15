@@ -24,3 +24,11 @@ Independent learner's-dictionary evidence from user-supplied Bharatavani screens
 ## Source preservation policy
 
 Keep provenance, printed page numbers, exact historical forms, edition, and source-specific sense separate from modern standardized forms. Do not assume that a Wikisource export is an independent witness to its underlying transcription. If the PDF is uploaded to GitHub separately, add its final path here and verify its SHA-256.
+
+## 1920 reverse-lookup source — provenance caveat (2026-10-15)
+
+- **Original 1920 edition:** https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf — 626-page scan, 63.11 MB, Internet Archive identifier `in.ernet.dli.2015.42078`.
+- **1988 reprint, not a separate historical witness:** https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary.pdf — 632 pages, 45.83 MB.
+- **1906 photographic facsimile:** https://commons.wikimedia.org/wiki/File:Khasi-English_dictionary_(IA_khasienglishdict00singrich).pdf — 268-page scan, distinct from the 251-page user-provided Wikisource export.
+
+**Editorial rule:** The 1920 reverse dictionary is associated with Nissor Singh and editors also associated with the 1906 work. An exact reverse match, if directly inspected, is valuable **cross-edition corroboration**, but should **not automatically be called an independent authorial witness**. Record both the matching English lemma and the exact Khasi equivalent with the original 1920 printed page. A catalog entry or PDF existence alone does not establish any lexical match. Preserve edition distinctions and keep uninspected matches marked pending.
