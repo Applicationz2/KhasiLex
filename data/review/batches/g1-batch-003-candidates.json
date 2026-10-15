@@ -1000,7 +1000,7 @@
       "ocr_confidence": 0.975,
       "primary_scan_check": "confirmed_original_1906_photographic_page",
       "wikisource_transcription_check": "confirmed_same_1906_source",
-      "reverse_1920_check": "pending_direct_inspection",
+      "reverse_1920_check": "verified_1920_printed_page",
       "hints_pos_check": "conditional",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
@@ -1015,9 +1015,13 @@
       "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
       "independent_evidence": {
         "reverse_1920": {
-          "status": "blocked_scan_not_read",
-          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-          "reason": "Reference identified but relevant English-index page and Khasi equivalent have not been inspected"
+          "status": "verified_cross_edition_not_independent_modern",
+          "source": "user-uploaded English-Khasi Dictionary (1920)",
+          "english_headword": "Swamp",
+          "printed_page": 513,
+          "pdf_page": 532,
+          "attested_form": "ka ahor",
+          "relation": "direct_noun_equivalent"
         },
         "hints": {
           "status": "not_verified",
@@ -1049,12 +1053,15 @@
           "swamp"
         ],
         "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-        "source_inspection": "attempted_full_scan_access",
-        "result": "unverified",
-        "page": null,
-        "exact_khasi_equivalent": null,
-        "limitation": "1920 scanned PDF is 626 pages / ~63 MB; direct source fetch exceeded available retrieval limit; no entry text inspected",
-        "do_not_infer_match": true
+        "source_inspection": "user_uploaded_1920_original_pdf_page_text",
+        "result": "verified_cross_edition_attestation",
+        "page": 513,
+        "exact_khasi_equivalent": "ka ahor",
+        "limitation": "1920 companion edition, not independent contemporary usage",
+        "do_not_infer_match": false,
+        "pdf_page": 532,
+        "english_headword": "Swamp",
+        "relation": "direct_noun_equivalent"
       },
       "alternative_source_review": {
         "khasidrp": {
@@ -2712,7 +2719,7 @@
       "ocr_confidence": 0.975,
       "primary_scan_check": "confirmed_original_1906_photographic_page",
       "wikisource_transcription_check": "confirmed_same_1906_source",
-      "reverse_1920_check": "pending_direct_inspection",
+      "reverse_1920_check": "verified_1920_printed_page",
       "hints_pos_check": "required",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
@@ -2725,9 +2732,13 @@
       "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
       "independent_evidence": {
         "reverse_1920": {
-          "status": "blocked_scan_not_read",
-          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-          "reason": "Reference identified but relevant English-index page and Khasi equivalent have not been inspected"
+          "status": "verified_cross_edition_not_independent_modern",
+          "source": "user-uploaded English-Khasi Dictionary (1920)",
+          "english_headword": "What",
+          "printed_page": 589,
+          "pdf_page": 608,
+          "attested_form": "aiu",
+          "relation": "direct_pronoun_equivalent_orthographic_variant"
         },
         "hints": {
           "status": "not_verified",
@@ -2759,12 +2770,15 @@
           "interrogative"
         ],
         "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-        "source_inspection": "attempted_full_scan_access",
-        "result": "unverified",
-        "page": null,
-        "exact_khasi_equivalent": null,
-        "limitation": "1920 scanned PDF is 626 pages / ~63 MB; direct source fetch exceeded available retrieval limit; no entry text inspected",
-        "do_not_infer_match": true
+        "source_inspection": "user_uploaded_1920_original_pdf_page_text",
+        "result": "verified_cross_edition_attestation",
+        "page": 589,
+        "exact_khasi_equivalent": "aiu",
+        "limitation": "1920 companion edition, not independent contemporary usage",
+        "do_not_infer_match": false,
+        "pdf_page": 608,
+        "english_headword": "What",
+        "relation": "direct_pronoun_equivalent_orthographic_variant"
       },
       "alternative_source_review": {
         "khasidrp": {
@@ -3649,8 +3663,8 @@
     "date": "2026-10-15",
     "edition": "original_1920",
     "pdf_pages": 626,
-    "confirmed_candidate_cross_references": 3,
-    "remaining_candidates_not_yet_exhaustively_checked": 17,
+    "confirmed_candidate_cross_references": 5,
+    "remaining_candidates_not_yet_exhaustively_checked": 15,
     "independent_modern_usage_added": 0,
     "promotions": 0,
     "note": "Page numbers refer to printed pagination; English headword and Khasi expression inspected in uploaded 1920 scan; three hits are cross-edition attestations, not independent contemporary evidence."
