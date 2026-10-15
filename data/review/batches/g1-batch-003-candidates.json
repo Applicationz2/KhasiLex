@@ -1158,7 +1158,19 @@
         "independent_authorial_witness": false,
         "modern_usage_verified": false,
         "promotion_effect": "none"
-      }
+      },
+      "reverse_1920_additional_attestations": [
+        {
+          "english_headword": "Slough",
+          "sense": "muddy or marshy place (noun)",
+          "attested_khasi": "ka ahor",
+          "printed_page": 479,
+          "pdf_page": 498,
+          "verification": "directly_inspected_uploaded_1920_scan_text",
+          "relationship": "additional_direct_historical_equivalent",
+          "independent_modern_usage": false
+        }
+      ]
     },
     {
       "candidate_id": "g1-hist-003-008",
@@ -3667,6 +3679,7 @@
     "remaining_candidates_not_yet_exhaustively_checked": 15,
     "independent_modern_usage_added": 0,
     "promotions": 0,
-    "note": "Page numbers refer to printed pagination; English headword and Khasi expression inspected in uploaded 1920 scan; three hits are cross-edition attestations, not independent contemporary evidence."
+    "note": "Page numbers refer to printed pagination; English headword and Khasi expression inspected in uploaded 1920 scan; three hits are cross-edition attestations, not independent contemporary evidence.",
+    "additional_attestations": 1
   }
 }
