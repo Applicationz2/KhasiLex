@@ -17,7 +17,7 @@
       "source_id": "nissor-1906-kha-en",
       "source_scan": "https://commons.wikimedia.org/wiki/File:Khasi-English_dictionary_(IA_khasienglishdict00singrich).pdf",
       "ocr_confidence": 0.975,
-      "primary_scan_check": "pending_direct_scan_image_comparison",
+      "primary_scan_check": "confirmed_original_1906_photographic_page",
       "wikisource_transcription_check": "confirmed_same_1906_source",
       "reverse_1920_check": "pending_direct_inspection",
       "hints_pos_check": "conditional",
@@ -46,10 +46,11 @@
           "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
         },
         "proofread_1906": {
-          "status": "verified_transcription_not_original_scan",
+          "status": "confirmed_original_printing_and_transcription",
           "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
           "printed_page": 1,
-          "independent_corroboration": false
+          "independent_corroboration": false,
+          "original_scan_pdf_page": 15
         }
       },
       "proofread_1906_evidence": {
@@ -149,6 +150,21 @@
         "independent_corroboration": false,
         "provenance_note": "PDF is a rendered export of Wikisource transcription, not independent photographic evidence from 1906 printed copy",
         "promotion_effect": "none"
+      },
+      "original_1906_facsimile_review": {
+        "status": "confirmed_against_original_printed_page",
+        "edition": "1906",
+        "source_type": "photographic_facsimile_of_original_printing",
+        "uploaded_filename": "khasienglishdict00singrich(20261015-070807).pdf",
+        "sha256": "f90d17df04a9b13c78db419ca7417588a9a5a9448eb424d4b75f97277387283f",
+        "printed_page": 1,
+        "pdf_page": 15,
+        "verified_headword": "Áb!",
+        "verified_gloss": "the imitation of the cry of a crow",
+        "verification_method": "Direct comparison with user-uploaded 1906 photographic scan, printed pages 1–3 (PDF pages 15–17), alongside Wikisource transcription; preserve typographic accents and source spelling",
+        "independent_authorial_witness": false,
+        "modern_usage_verified": false,
+        "promotion_effect": "none"
       }
     },
     {
@@ -164,7 +180,7 @@
       "source_id": "nissor-1906-kha-en",
       "source_scan": "https://commons.wikimedia.org/wiki/File:Khasi-English_dictionary_(IA_khasienglishdict00singrich).pdf",
       "ocr_confidence": 0.975,
-      "primary_scan_check": "pending_direct_scan_image_comparison",
+      "primary_scan_check": "confirmed_original_1906_photographic_page",
       "wikisource_transcription_check": "confirmed_same_1906_source",
       "reverse_1920_check": "pending_direct_inspection",
       "hints_pos_check": "conditional",
@@ -196,10 +212,11 @@
           "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
         },
         "proofread_1906": {
-          "status": "verified_transcription_not_original_scan",
+          "status": "confirmed_original_printing_and_transcription",
           "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
           "printed_page": 1,
-          "independent_corroboration": false
+          "independent_corroboration": false,
+          "original_scan_pdf_page": 15
         }
       },
       "proofread_1906_evidence": {
@@ -299,6 +316,21 @@
         "independent_corroboration": false,
         "provenance_note": "PDF is a rendered export of Wikisource transcription, not independent photographic evidence from 1906 printed copy",
         "promotion_effect": "none"
+      },
+      "original_1906_facsimile_review": {
+        "status": "confirmed_against_original_printed_page",
+        "edition": "1906",
+        "source_type": "photographic_facsimile_of_original_printing",
+        "uploaded_filename": "khasienglishdict00singrich(20261015-070807).pdf",
+        "sha256": "f90d17df04a9b13c78db419ca7417588a9a5a9448eb424d4b75f97277387283f",
+        "printed_page": 1,
+        "pdf_page": 15,
+        "verified_headword": "*Abir",
+        "verified_gloss": "red powder used in the Holi festival",
+        "verification_method": "Direct comparison with user-uploaded 1906 photographic scan, printed pages 1–3 (PDF pages 15–17), alongside Wikisource transcription; preserve typographic accents and source spelling",
+        "independent_authorial_witness": false,
+        "modern_usage_verified": false,
+        "promotion_effect": "none"
       }
     },
     {
@@ -314,7 +346,7 @@
       "source_id": "nissor-1906-kha-en",
       "source_scan": "https://commons.wikimedia.org/wiki/File:Khasi-English_dictionary_(IA_khasienglishdict00singrich).pdf",
       "ocr_confidence": 0.975,
-      "primary_scan_check": "pending_direct_scan_image_comparison",
+      "primary_scan_check": "confirmed_original_1906_photographic_page",
       "wikisource_transcription_check": "confirmed_same_1906_source",
       "reverse_1920_check": "pending_direct_inspection",
       "hints_pos_check": "conditional",
@@ -343,10 +375,11 @@
           "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
         },
         "proofread_1906": {
-          "status": "verified_transcription_not_original_scan",
+          "status": "confirmed_original_printing_and_transcription",
           "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
           "printed_page": 1,
-          "independent_corroboration": false
+          "independent_corroboration": false,
+          "original_scan_pdf_page": 15
         }
       },
       "proofread_1906_evidence": {
@@ -445,6 +478,21 @@
         "independent_corroboration": false,
         "provenance_note": "PDF is a rendered export of Wikisource transcription, not independent photographic evidence from 1906 printed copy",
         "promotion_effect": "none"
+      },
+      "original_1906_facsimile_review": {
+        "status": "confirmed_against_original_printed_page",
+        "edition": "1906",
+        "source_type": "photographic_facsimile_of_original_printing",
+        "uploaded_filename": "khasienglishdict00singrich(20261015-070807).pdf",
+        "sha256": "f90d17df04a9b13c78db419ca7417588a9a5a9448eb424d4b75f97277387283f",
+        "printed_page": 1,
+        "pdf_page": 15,
+        "verified_headword": "Ak!",
+        "verified_gloss": "ejaculation of disgust at an unpleasant smell",
+        "verification_method": "Direct comparison with user-uploaded 1906 photographic scan, printed pages 1–3 (PDF pages 15–17), alongside Wikisource transcription; preserve typographic accents and source spelling",
+        "independent_authorial_witness": false,
+        "modern_usage_verified": false,
+        "promotion_effect": "none"
       }
     },
     {
@@ -460,7 +508,7 @@
       "source_id": "nissor-1906-kha-en",
       "source_scan": "https://commons.wikimedia.org/wiki/File:Khasi-English_dictionary_(IA_khasienglishdict00singrich).pdf",
       "ocr_confidence": 0.975,
-      "primary_scan_check": "pending_direct_scan_image_comparison",
+      "primary_scan_check": "confirmed_original_1906_photographic_page",
       "wikisource_transcription_check": "confirmed_same_1906_source",
       "reverse_1920_check": "pending_direct_inspection",
       "hints_pos_check": "conditional",
@@ -489,10 +537,11 @@
           "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
         },
         "proofread_1906": {
-          "status": "verified_transcription_not_original_scan",
+          "status": "confirmed_original_printing_and_transcription",
           "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
           "printed_page": 1,
-          "independent_corroboration": false
+          "independent_corroboration": false,
+          "original_scan_pdf_page": 15
         }
       },
       "proofread_1906_evidence": {
@@ -591,6 +640,21 @@
         "independent_corroboration": false,
         "provenance_note": "PDF is a rendered export of Wikisource transcription, not independent photographic evidence from 1906 printed copy",
         "promotion_effect": "none"
+      },
+      "original_1906_facsimile_review": {
+        "status": "confirmed_against_original_printed_page",
+        "edition": "1906",
+        "source_type": "photographic_facsimile_of_original_printing",
+        "uploaded_filename": "khasienglishdict00singrich(20261015-070807).pdf",
+        "sha256": "f90d17df04a9b13c78db419ca7417588a9a5a9448eb424d4b75f97277387283f",
+        "printed_page": 1,
+        "pdf_page": 15,
+        "verified_headword": "Aku!",
+        "verified_gloss": "expressing disgust at a bad smell",
+        "verification_method": "Direct comparison with user-uploaded 1906 photographic scan, printed pages 1–3 (PDF pages 15–17), alongside Wikisource transcription; preserve typographic accents and source spelling",
+        "independent_authorial_witness": false,
+        "modern_usage_verified": false,
+        "promotion_effect": "none"
       }
     },
     {
@@ -606,7 +670,7 @@
       "source_id": "nissor-1906-kha-en",
       "source_scan": "https://commons.wikimedia.org/wiki/File:Khasi-English_dictionary_(IA_khasienglishdict00singrich).pdf",
       "ocr_confidence": 0.975,
-      "primary_scan_check": "pending_direct_scan_image_comparison",
+      "primary_scan_check": "confirmed_original_1906_photographic_page",
       "wikisource_transcription_check": "confirmed_same_1906_source",
       "reverse_1920_check": "pending_direct_inspection",
       "hints_pos_check": "conditional",
@@ -637,10 +701,11 @@
           "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
         },
         "proofread_1906": {
-          "status": "verified_transcription_not_original_scan",
+          "status": "confirmed_original_printing_and_transcription",
           "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
           "printed_page": 1,
-          "independent_corroboration": false
+          "independent_corroboration": false,
+          "original_scan_pdf_page": 15
         }
       },
       "proofread_1906_evidence": {
@@ -741,6 +806,21 @@
         "independent_corroboration": false,
         "provenance_note": "PDF is a rendered export of Wikisource transcription, not independent photographic evidence from 1906 printed copy",
         "promotion_effect": "none"
+      },
+      "original_1906_facsimile_review": {
+        "status": "confirmed_against_original_printed_page",
+        "edition": "1906",
+        "source_type": "photographic_facsimile_of_original_printing",
+        "uploaded_filename": "khasienglishdict00singrich(20261015-070807).pdf",
+        "sha256": "f90d17df04a9b13c78db419ca7417588a9a5a9448eb424d4b75f97277387283f",
+        "printed_page": 1,
+        "pdf_page": 15,
+        "verified_headword": "*Adda",
+        "verified_gloss": "a stage for changing horses or dak-runners",
+        "verification_method": "Direct comparison with user-uploaded 1906 photographic scan, printed pages 1–3 (PDF pages 15–17), alongside Wikisource transcription; preserve typographic accents and source spelling",
+        "independent_authorial_witness": false,
+        "modern_usage_verified": false,
+        "promotion_effect": "none"
       }
     },
     {
@@ -756,7 +836,7 @@
       "source_id": "nissor-1906-kha-en",
       "source_scan": "https://commons.wikimedia.org/wiki/File:Khasi-English_dictionary_(IA_khasienglishdict00singrich).pdf",
       "ocr_confidence": 0.975,
-      "primary_scan_check": "pending_direct_scan_image_comparison",
+      "primary_scan_check": "confirmed_original_1906_photographic_page",
       "wikisource_transcription_check": "confirmed_same_1906_source",
       "reverse_1920_check": "pending_direct_inspection",
       "hints_pos_check": "conditional",
@@ -785,10 +865,11 @@
           "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
         },
         "proofread_1906": {
-          "status": "verified_transcription_not_original_scan",
+          "status": "confirmed_original_printing_and_transcription",
           "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
           "printed_page": 1,
-          "independent_corroboration": false
+          "independent_corroboration": false,
+          "original_scan_pdf_page": 15
         }
       },
       "proofread_1906_evidence": {
@@ -887,6 +968,21 @@
         "independent_corroboration": false,
         "provenance_note": "PDF is a rendered export of Wikisource transcription, not independent photographic evidence from 1906 printed copy",
         "promotion_effect": "none"
+      },
+      "original_1906_facsimile_review": {
+        "status": "confirmed_against_original_printed_page",
+        "edition": "1906",
+        "source_type": "photographic_facsimile_of_original_printing",
+        "uploaded_filename": "khasienglishdict00singrich(20261015-070807).pdf",
+        "sha256": "f90d17df04a9b13c78db419ca7417588a9a5a9448eb424d4b75f97277387283f",
+        "printed_page": 1,
+        "pdf_page": 15,
+        "verified_headword": "Angret",
+        "verified_gloss": "a dare-devil (from Hindustani Angrez)",
+        "verification_method": "Direct comparison with user-uploaded 1906 photographic scan, printed pages 1–3 (PDF pages 15–17), alongside Wikisource transcription; preserve typographic accents and source spelling",
+        "independent_authorial_witness": false,
+        "modern_usage_verified": false,
+        "promotion_effect": "none"
       }
     },
     {
@@ -902,7 +998,7 @@
       "source_id": "nissor-1906-kha-en",
       "source_scan": "https://commons.wikimedia.org/wiki/File:Khasi-English_dictionary_(IA_khasienglishdict00singrich).pdf",
       "ocr_confidence": 0.975,
-      "primary_scan_check": "pending_direct_scan_image_comparison",
+      "primary_scan_check": "confirmed_original_1906_photographic_page",
       "wikisource_transcription_check": "confirmed_same_1906_source",
       "reverse_1920_check": "pending_direct_inspection",
       "hints_pos_check": "conditional",
@@ -933,10 +1029,11 @@
           "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
         },
         "proofread_1906": {
-          "status": "verified_transcription_not_original_scan",
+          "status": "confirmed_original_printing_and_transcription",
           "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
           "printed_page": 1,
-          "independent_corroboration": false
+          "independent_corroboration": false,
+          "original_scan_pdf_page": 15
         }
       },
       "proofread_1906_evidence": {
@@ -1039,6 +1136,21 @@
         "independent_corroboration": false,
         "provenance_note": "PDF is a rendered export of Wikisource transcription, not independent photographic evidence from 1906 printed copy",
         "promotion_effect": "none"
+      },
+      "original_1906_facsimile_review": {
+        "status": "confirmed_against_original_printed_page",
+        "edition": "1906",
+        "source_type": "photographic_facsimile_of_original_printing",
+        "uploaded_filename": "khasienglishdict00singrich(20261015-070807).pdf",
+        "sha256": "f90d17df04a9b13c78db419ca7417588a9a5a9448eb424d4b75f97277387283f",
+        "printed_page": 1,
+        "pdf_page": 15,
+        "verified_headword": "Ahor",
+        "verified_gloss": "a marshy place; swamp",
+        "verification_method": "Direct comparison with user-uploaded 1906 photographic scan, printed pages 1–3 (PDF pages 15–17), alongside Wikisource transcription; preserve typographic accents and source spelling",
+        "independent_authorial_witness": false,
+        "modern_usage_verified": false,
+        "promotion_effect": "none"
       }
     },
     {
@@ -1054,7 +1166,7 @@
       "source_id": "nissor-1906-kha-en",
       "source_scan": "https://commons.wikimedia.org/wiki/File:Khasi-English_dictionary_(IA_khasienglishdict00singrich).pdf",
       "ocr_confidence": 0.975,
-      "primary_scan_check": "pending_direct_scan_image_comparison",
+      "primary_scan_check": "confirmed_original_1906_photographic_page",
       "wikisource_transcription_check": "confirmed_same_1906_source",
       "reverse_1920_check": "pending_direct_inspection",
       "hints_pos_check": "required",
@@ -1085,10 +1197,11 @@
           "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
         },
         "proofread_1906": {
-          "status": "verified_transcription_not_original_scan",
+          "status": "confirmed_original_printing_and_transcription",
           "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
           "printed_page": 2,
-          "independent_corroboration": false
+          "independent_corroboration": false,
+          "original_scan_pdf_page": 16
         }
       },
       "proofread_1906_evidence": {
@@ -1191,6 +1304,21 @@
         "independent_corroboration": false,
         "provenance_note": "PDF is a rendered export of Wikisource transcription, not independent photographic evidence from 1906 printed copy",
         "promotion_effect": "none"
+      },
+      "original_1906_facsimile_review": {
+        "status": "confirmed_against_original_printed_page",
+        "edition": "1906",
+        "source_type": "photographic_facsimile_of_original_printing",
+        "uploaded_filename": "khasienglishdict00singrich(20261015-070807).pdf",
+        "sha256": "f90d17df04a9b13c78db419ca7417588a9a5a9448eb424d4b75f97277387283f",
+        "printed_page": 2,
+        "pdf_page": 16,
+        "verified_headword": "Ai-bai-siew",
+        "verified_gloss": "to give money for buying things at a time, e.g. on a market day",
+        "verification_method": "Direct comparison with user-uploaded 1906 photographic scan, printed pages 1–3 (PDF pages 15–17), alongside Wikisource transcription; preserve typographic accents and source spelling",
+        "independent_authorial_witness": false,
+        "modern_usage_verified": false,
+        "promotion_effect": "none"
       }
     },
     {
@@ -1206,7 +1334,7 @@
       "source_id": "nissor-1906-kha-en",
       "source_scan": "https://commons.wikimedia.org/wiki/File:Khasi-English_dictionary_(IA_khasienglishdict00singrich).pdf",
       "ocr_confidence": 0.975,
-      "primary_scan_check": "pending_direct_scan_image_comparison",
+      "primary_scan_check": "confirmed_original_1906_photographic_page",
       "wikisource_transcription_check": "confirmed_same_1906_source",
       "reverse_1920_check": "pending_direct_inspection",
       "hints_pos_check": "required",
@@ -1237,10 +1365,11 @@
           "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
         },
         "proofread_1906": {
-          "status": "verified_transcription_not_original_scan",
+          "status": "confirmed_original_printing_and_transcription",
           "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
           "printed_page": 2,
-          "independent_corroboration": false
+          "independent_corroboration": false,
+          "original_scan_pdf_page": 16
         }
       },
       "proofread_1906_evidence": {
@@ -1343,6 +1472,21 @@
         "independent_corroboration": false,
         "provenance_note": "PDF is a rendered export of Wikisource transcription, not independent photographic evidence from 1906 printed copy",
         "promotion_effect": "none"
+      },
+      "original_1906_facsimile_review": {
+        "status": "confirmed_against_original_printed_page",
+        "edition": "1906",
+        "source_type": "photographic_facsimile_of_original_printing",
+        "uploaded_filename": "khasienglishdict00singrich(20261015-070807).pdf",
+        "sha256": "f90d17df04a9b13c78db419ca7417588a9a5a9448eb424d4b75f97277387283f",
+        "printed_page": 2,
+        "pdf_page": 16,
+        "verified_headword": "Ai-'baibat",
+        "verified_gloss": "to pay ready money",
+        "verification_method": "Direct comparison with user-uploaded 1906 photographic scan, printed pages 1–3 (PDF pages 15–17), alongside Wikisource transcription; preserve typographic accents and source spelling",
+        "independent_authorial_witness": false,
+        "modern_usage_verified": false,
+        "promotion_effect": "none"
       }
     },
     {
@@ -1358,7 +1502,7 @@
       "source_id": "nissor-1906-kha-en",
       "source_scan": "https://commons.wikimedia.org/wiki/File:Khasi-English_dictionary_(IA_khasienglishdict00singrich).pdf",
       "ocr_confidence": 0.975,
-      "primary_scan_check": "pending_direct_scan_image_comparison",
+      "primary_scan_check": "confirmed_original_1906_photographic_page",
       "wikisource_transcription_check": "confirmed_same_1906_source",
       "reverse_1920_check": "pending_direct_inspection",
       "hints_pos_check": "required",
@@ -1387,10 +1531,11 @@
           "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
         },
         "proofread_1906": {
-          "status": "verified_transcription_not_original_scan",
+          "status": "confirmed_original_printing_and_transcription",
           "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
           "printed_page": 2,
-          "independent_corroboration": false
+          "independent_corroboration": false,
+          "original_scan_pdf_page": 16
         }
       },
       "proofread_1906_evidence": {
@@ -1492,6 +1637,21 @@
         "independent_corroboration": false,
         "provenance_note": "PDF is a rendered export of Wikisource transcription, not independent photographic evidence from 1906 printed copy",
         "promotion_effect": "none"
+      },
+      "original_1906_facsimile_review": {
+        "status": "confirmed_against_original_printed_page",
+        "edition": "1906",
+        "source_type": "photographic_facsimile_of_original_printing",
+        "uploaded_filename": "khasienglishdict00singrich(20261015-070807).pdf",
+        "sha256": "f90d17df04a9b13c78db419ca7417588a9a5a9448eb424d4b75f97277387283f",
+        "printed_page": 2,
+        "pdf_page": 16,
+        "verified_headword": "Ai-bud-nám",
+        "verified_gloss": "to slander; defame",
+        "verification_method": "Direct comparison with user-uploaded 1906 photographic scan, printed pages 1–3 (PDF pages 15–17), alongside Wikisource transcription; preserve typographic accents and source spelling",
+        "independent_authorial_witness": false,
+        "modern_usage_verified": false,
+        "promotion_effect": "none"
       }
     },
     {
@@ -1507,7 +1667,7 @@
       "source_id": "nissor-1906-kha-en",
       "source_scan": "https://commons.wikimedia.org/wiki/File:Khasi-English_dictionary_(IA_khasienglishdict00singrich).pdf",
       "ocr_confidence": 0.975,
-      "primary_scan_check": "pending_direct_scan_image_comparison",
+      "primary_scan_check": "confirmed_original_1906_photographic_page",
       "wikisource_transcription_check": "confirmed_same_1906_source",
       "reverse_1920_check": "pending_direct_inspection",
       "hints_pos_check": "required",
@@ -1536,10 +1696,11 @@
           "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
         },
         "proofread_1906": {
-          "status": "verified_transcription_not_original_scan",
+          "status": "confirmed_original_printing_and_transcription",
           "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
           "printed_page": 2,
-          "independent_corroboration": false
+          "independent_corroboration": false,
+          "original_scan_pdf_page": 16
         }
       },
       "proofread_1906_evidence": {
@@ -1641,6 +1802,21 @@
         "independent_corroboration": false,
         "provenance_note": "PDF is a rendered export of Wikisource transcription, not independent photographic evidence from 1906 printed copy",
         "promotion_effect": "none"
+      },
+      "original_1906_facsimile_review": {
+        "status": "confirmed_against_original_printed_page",
+        "edition": "1906",
+        "source_type": "photographic_facsimile_of_original_printing",
+        "uploaded_filename": "khasienglishdict00singrich(20261015-070807).pdf",
+        "sha256": "f90d17df04a9b13c78db419ca7417588a9a5a9448eb424d4b75f97277387283f",
+        "printed_page": 2,
+        "pdf_page": 16,
+        "verified_headword": "Ai-khawdûh",
+        "verified_gloss": "to leave uncared for; to be outcast",
+        "verification_method": "Direct comparison with user-uploaded 1906 photographic scan, printed pages 1–3 (PDF pages 15–17), alongside Wikisource transcription; preserve typographic accents and source spelling",
+        "independent_authorial_witness": false,
+        "modern_usage_verified": false,
+        "promotion_effect": "none"
       }
     },
     {
@@ -1656,7 +1832,7 @@
       "source_id": "nissor-1906-kha-en",
       "source_scan": "https://commons.wikimedia.org/wiki/File:Khasi-English_dictionary_(IA_khasienglishdict00singrich).pdf",
       "ocr_confidence": 0.975,
-      "primary_scan_check": "pending_direct_scan_image_comparison",
+      "primary_scan_check": "confirmed_original_1906_photographic_page",
       "wikisource_transcription_check": "confirmed_same_1906_source",
       "reverse_1920_check": "pending_direct_inspection",
       "hints_pos_check": "required",
@@ -1685,10 +1861,11 @@
           "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
         },
         "proofread_1906": {
-          "status": "verified_transcription_not_original_scan",
+          "status": "confirmed_original_printing_and_transcription",
           "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
           "printed_page": 2,
-          "independent_corroboration": false
+          "independent_corroboration": false,
+          "original_scan_pdf_page": 16
         }
       },
       "proofread_1906_evidence": {
@@ -1791,6 +1968,21 @@
         "independent_corroboration": false,
         "provenance_note": "PDF is a rendered export of Wikisource transcription, not independent photographic evidence from 1906 printed copy",
         "promotion_effect": "none"
+      },
+      "original_1906_facsimile_review": {
+        "status": "confirmed_against_original_printed_page",
+        "edition": "1906",
+        "source_type": "photographic_facsimile_of_original_printing",
+        "uploaded_filename": "khasienglishdict00singrich(20261015-070807).pdf",
+        "sha256": "f90d17df04a9b13c78db419ca7417588a9a5a9448eb424d4b75f97277387283f",
+        "printed_page": 2,
+        "pdf_page": 16,
+        "verified_headword": "Ai-khusnám",
+        "verified_gloss": "to confer honour for meritorious conduct",
+        "verification_method": "Direct comparison with user-uploaded 1906 photographic scan, printed pages 1–3 (PDF pages 15–17), alongside Wikisource transcription; preserve typographic accents and source spelling",
+        "independent_authorial_witness": false,
+        "modern_usage_verified": false,
+        "promotion_effect": "none"
       }
     },
     {
@@ -1806,7 +1998,7 @@
       "source_id": "nissor-1906-kha-en",
       "source_scan": "https://commons.wikimedia.org/wiki/File:Khasi-English_dictionary_(IA_khasienglishdict00singrich).pdf",
       "ocr_confidence": 0.975,
-      "primary_scan_check": "pending_direct_scan_image_comparison",
+      "primary_scan_check": "confirmed_original_1906_photographic_page",
       "wikisource_transcription_check": "confirmed_same_1906_source",
       "reverse_1920_check": "pending_direct_inspection",
       "hints_pos_check": "required",
@@ -1843,10 +2035,11 @@
           "reason": "Modern syllabus lists the expression without defining its meaning"
         },
         "proofread_1906": {
-          "status": "verified_transcription_not_original_scan",
+          "status": "confirmed_original_printing_and_transcription",
           "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
           "printed_page": 2,
-          "independent_corroboration": false
+          "independent_corroboration": false,
+          "original_scan_pdf_page": 16
         },
         "historical_usage_secondary": {
           "status": "historical_context_attested",
@@ -1968,6 +2161,21 @@
         "independent_corroboration": false,
         "provenance_note": "PDF is a rendered export of Wikisource transcription, not independent photographic evidence from 1906 printed copy",
         "promotion_effect": "none"
+      },
+      "original_1906_facsimile_review": {
+        "status": "confirmed_against_original_printed_page",
+        "edition": "1906",
+        "source_type": "photographic_facsimile_of_original_printing",
+        "uploaded_filename": "khasienglishdict00singrich(20261015-070807).pdf",
+        "sha256": "f90d17df04a9b13c78db419ca7417588a9a5a9448eb424d4b75f97277387283f",
+        "printed_page": 2,
+        "pdf_page": 16,
+        "verified_headword": "Ai-ksew",
+        "verified_gloss": "to put a dog on the scent",
+        "verification_method": "Direct comparison with user-uploaded 1906 photographic scan, printed pages 1–3 (PDF pages 15–17), alongside Wikisource transcription; preserve typographic accents and source spelling",
+        "independent_authorial_witness": false,
+        "modern_usage_verified": false,
+        "promotion_effect": "none"
       }
     },
     {
@@ -1983,7 +2191,7 @@
       "source_id": "nissor-1906-kha-en",
       "source_scan": "https://commons.wikimedia.org/wiki/File:Khasi-English_dictionary_(IA_khasienglishdict00singrich).pdf",
       "ocr_confidence": 0.975,
-      "primary_scan_check": "pending_direct_scan_image_comparison",
+      "primary_scan_check": "confirmed_original_1906_photographic_page",
       "wikisource_transcription_check": "confirmed_same_1906_source",
       "reverse_1920_check": "pending_direct_inspection",
       "hints_pos_check": "required",
@@ -2014,10 +2222,11 @@
           "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
         },
         "proofread_1906": {
-          "status": "verified_transcription_not_original_scan",
+          "status": "confirmed_original_printing_and_transcription",
           "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
           "printed_page": 2,
-          "independent_corroboration": false
+          "independent_corroboration": false,
+          "original_scan_pdf_page": 16
         }
       },
       "proofread_1906_evidence": {
@@ -2118,6 +2327,21 @@
         "independent_corroboration": false,
         "provenance_note": "PDF is a rendered export of Wikisource transcription, not independent photographic evidence from 1906 printed copy",
         "promotion_effect": "none"
+      },
+      "original_1906_facsimile_review": {
+        "status": "confirmed_against_original_printed_page",
+        "edition": "1906",
+        "source_type": "photographic_facsimile_of_original_printing",
+        "uploaded_filename": "khasienglishdict00singrich(20261015-070807).pdf",
+        "sha256": "f90d17df04a9b13c78db419ca7417588a9a5a9448eb424d4b75f97277387283f",
+        "printed_page": 2,
+        "pdf_page": 16,
+        "verified_headword": "Ai-huspai",
+        "verified_gloss": "to indulge",
+        "verification_method": "Direct comparison with user-uploaded 1906 photographic scan, printed pages 1–3 (PDF pages 15–17), alongside Wikisource transcription; preserve typographic accents and source spelling",
+        "independent_authorial_witness": false,
+        "modern_usage_verified": false,
+        "promotion_effect": "none"
       }
     },
     {
@@ -2133,7 +2357,7 @@
       "source_id": "nissor-1906-kha-en",
       "source_scan": "https://commons.wikimedia.org/wiki/File:Khasi-English_dictionary_(IA_khasienglishdict00singrich).pdf",
       "ocr_confidence": 0.975,
-      "primary_scan_check": "pending_direct_scan_image_comparison",
+      "primary_scan_check": "confirmed_original_1906_photographic_page",
       "wikisource_transcription_check": "confirmed_same_1906_source",
       "reverse_1920_check": "pending_direct_inspection",
       "hints_pos_check": "required",
@@ -2162,10 +2386,11 @@
           "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
         },
         "proofread_1906": {
-          "status": "verified_transcription_not_original_scan",
+          "status": "confirmed_original_printing_and_transcription",
           "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
           "printed_page": 2,
-          "independent_corroboration": false
+          "independent_corroboration": false,
+          "original_scan_pdf_page": 16
         }
       },
       "proofread_1906_evidence": {
@@ -2268,6 +2493,21 @@
         "independent_corroboration": false,
         "provenance_note": "PDF is a rendered export of Wikisource transcription, not independent photographic evidence from 1906 printed copy",
         "promotion_effect": "none"
+      },
+      "original_1906_facsimile_review": {
+        "status": "confirmed_against_original_printed_page",
+        "edition": "1906",
+        "source_type": "photographic_facsimile_of_original_printing",
+        "uploaded_filename": "khasienglishdict00singrich(20261015-070807).pdf",
+        "sha256": "f90d17df04a9b13c78db419ca7417588a9a5a9448eb424d4b75f97277387283f",
+        "printed_page": 2,
+        "pdf_page": 16,
+        "verified_headword": "Ai-lait-lân",
+        "verified_gloss": "to let loose; give one their own inclination",
+        "verification_method": "Direct comparison with user-uploaded 1906 photographic scan, printed pages 1–3 (PDF pages 15–17), alongside Wikisource transcription; preserve typographic accents and source spelling",
+        "independent_authorial_witness": false,
+        "modern_usage_verified": false,
+        "promotion_effect": "none"
       }
     },
     {
@@ -2283,7 +2523,7 @@
       "source_id": "nissor-1906-kha-en",
       "source_scan": "https://commons.wikimedia.org/wiki/File:Khasi-English_dictionary_(IA_khasienglishdict00singrich).pdf",
       "ocr_confidence": 0.975,
-      "primary_scan_check": "pending_direct_scan_image_comparison",
+      "primary_scan_check": "confirmed_original_1906_photographic_page",
       "wikisource_transcription_check": "confirmed_same_1906_source",
       "reverse_1920_check": "pending_direct_inspection",
       "hints_pos_check": "required",
@@ -2312,10 +2552,11 @@
           "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
         },
         "proofread_1906": {
-          "status": "verified_transcription_not_original_scan",
+          "status": "confirmed_original_printing_and_transcription",
           "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
           "printed_page": 2,
-          "independent_corroboration": false
+          "independent_corroboration": false,
+          "original_scan_pdf_page": 16
         }
       },
       "proofread_1906_evidence": {
@@ -2418,6 +2659,21 @@
         "independent_corroboration": false,
         "provenance_note": "PDF is a rendered export of Wikisource transcription, not independent photographic evidence from 1906 printed copy",
         "promotion_effect": "none"
+      },
+      "original_1906_facsimile_review": {
+        "status": "confirmed_against_original_printed_page",
+        "edition": "1906",
+        "source_type": "photographic_facsimile_of_original_printing",
+        "uploaded_filename": "khasienglishdict00singrich(20261015-070807).pdf",
+        "sha256": "f90d17df04a9b13c78db419ca7417588a9a5a9448eb424d4b75f97277387283f",
+        "printed_page": 2,
+        "pdf_page": 16,
+        "verified_headword": "Ai-mon",
+        "verified_gloss": "to give one their own will",
+        "verification_method": "Direct comparison with user-uploaded 1906 photographic scan, printed pages 1–3 (PDF pages 15–17), alongside Wikisource transcription; preserve typographic accents and source spelling",
+        "independent_authorial_witness": false,
+        "modern_usage_verified": false,
+        "promotion_effect": "none"
       }
     },
     {
@@ -2433,7 +2689,7 @@
       "source_id": "nissor-1906-kha-en",
       "source_scan": "https://commons.wikimedia.org/wiki/File:Khasi-English_dictionary_(IA_khasienglishdict00singrich).pdf",
       "ocr_confidence": 0.975,
-      "primary_scan_check": "pending_direct_scan_image_comparison",
+      "primary_scan_check": "confirmed_original_1906_photographic_page",
       "wikisource_transcription_check": "confirmed_same_1906_source",
       "reverse_1920_check": "pending_direct_inspection",
       "hints_pos_check": "required",
@@ -2462,10 +2718,11 @@
           "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
         },
         "proofread_1906": {
-          "status": "verified_transcription_not_original_scan",
+          "status": "confirmed_original_printing_and_transcription",
           "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
           "printed_page": 3,
-          "independent_corroboration": false
+          "independent_corroboration": false,
+          "original_scan_pdf_page": 17
         }
       },
       "proofread_1906_evidence": {
@@ -2567,6 +2824,21 @@
         "independent_corroboration": false,
         "provenance_note": "PDF is a rendered export of Wikisource transcription, not independent photographic evidence from 1906 printed copy",
         "promotion_effect": "none"
+      },
+      "original_1906_facsimile_review": {
+        "status": "confirmed_against_original_printed_page",
+        "edition": "1906",
+        "source_type": "photographic_facsimile_of_original_printing",
+        "uploaded_filename": "khasienglishdict00singrich(20261015-070807).pdf",
+        "sha256": "f90d17df04a9b13c78db419ca7417588a9a5a9448eb424d4b75f97277387283f",
+        "printed_page": 3,
+        "pdf_page": 17,
+        "verified_headword": "A-iu",
+        "verified_gloss": "what",
+        "verification_method": "Direct comparison with user-uploaded 1906 photographic scan, printed pages 1–3 (PDF pages 15–17), alongside Wikisource transcription; preserve typographic accents and source spelling",
+        "independent_authorial_witness": false,
+        "modern_usage_verified": false,
+        "promotion_effect": "none"
       }
     },
     {
@@ -2582,7 +2854,7 @@
       "source_id": "nissor-1906-kha-en",
       "source_scan": "https://commons.wikimedia.org/wiki/File:Khasi-English_dictionary_(IA_khasienglishdict00singrich).pdf",
       "ocr_confidence": 0.975,
-      "primary_scan_check": "pending_direct_scan_image_comparison",
+      "primary_scan_check": "confirmed_original_1906_photographic_page",
       "wikisource_transcription_check": "confirmed_same_1906_source",
       "reverse_1920_check": "pending_direct_inspection",
       "hints_pos_check": "conditional",
@@ -2611,10 +2883,11 @@
           "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
         },
         "proofread_1906": {
-          "status": "verified_transcription_not_original_scan",
+          "status": "confirmed_original_printing_and_transcription",
           "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
           "printed_page": 3,
-          "independent_corroboration": false
+          "independent_corroboration": false,
+          "original_scan_pdf_page": 17
         }
       },
       "proofread_1906_evidence": {
@@ -2714,6 +2987,21 @@
         "independent_corroboration": false,
         "provenance_note": "PDF is a rendered export of Wikisource transcription, not independent photographic evidence from 1906 printed copy",
         "promotion_effect": "none"
+      },
+      "original_1906_facsimile_review": {
+        "status": "confirmed_against_original_printed_page",
+        "edition": "1906",
+        "source_type": "photographic_facsimile_of_original_printing",
+        "uploaded_filename": "khasienglishdict00singrich(20261015-070807).pdf",
+        "sha256": "f90d17df04a9b13c78db419ca7417588a9a5a9448eb424d4b75f97277387283f",
+        "printed_page": 3,
+        "pdf_page": 17,
+        "verified_headword": "Along",
+        "verified_gloss": "a lock-up; Hajut",
+        "verification_method": "Direct comparison with user-uploaded 1906 photographic scan, printed pages 1–3 (PDF pages 15–17), alongside Wikisource transcription; preserve typographic accents and source spelling",
+        "independent_authorial_witness": false,
+        "modern_usage_verified": false,
+        "promotion_effect": "none"
       }
     },
     {
@@ -2729,7 +3017,7 @@
       "source_id": "nissor-1906-kha-en",
       "source_scan": "https://commons.wikimedia.org/wiki/File:Khasi-English_dictionary_(IA_khasienglishdict00singrich).pdf",
       "ocr_confidence": 0.975,
-      "primary_scan_check": "pending_direct_scan_image_comparison",
+      "primary_scan_check": "confirmed_original_1906_photographic_page",
       "wikisource_transcription_check": "confirmed_same_1906_source",
       "reverse_1920_check": "pending_direct_inspection",
       "hints_pos_check": "required",
@@ -2758,10 +3046,11 @@
           "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
         },
         "proofread_1906": {
-          "status": "verified_transcription_not_original_scan",
+          "status": "confirmed_original_printing_and_transcription",
           "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
           "printed_page": 3,
-          "independent_corroboration": false
+          "independent_corroboration": false,
+          "original_scan_pdf_page": 17
         }
       },
       "proofread_1906_evidence": {
@@ -2860,6 +3149,21 @@
         "independent_corroboration": false,
         "provenance_note": "PDF is a rendered export of Wikisource transcription, not independent photographic evidence from 1906 printed copy",
         "promotion_effect": "none"
+      },
+      "original_1906_facsimile_review": {
+        "status": "confirmed_against_original_printed_page",
+        "edition": "1906",
+        "source_type": "photographic_facsimile_of_original_printing",
+        "uploaded_filename": "khasienglishdict00singrich(20261015-070807).pdf",
+        "sha256": "f90d17df04a9b13c78db419ca7417588a9a5a9448eb424d4b75f97277387283f",
+        "printed_page": 3,
+        "pdf_page": 17,
+        "verified_headword": "Ama or Amai!",
+        "verified_gloss": "exclamation upon narrow escape",
+        "verification_method": "Direct comparison with user-uploaded 1906 photographic scan, printed pages 1–3 (PDF pages 15–17), alongside Wikisource transcription; preserve typographic accents and source spelling",
+        "independent_authorial_witness": false,
+        "modern_usage_verified": false,
+        "promotion_effect": "none"
       }
     },
     {
@@ -2875,7 +3179,7 @@
       "source_id": "nissor-1906-kha-en",
       "source_scan": "https://commons.wikimedia.org/wiki/File:Khasi-English_dictionary_(IA_khasienglishdict00singrich).pdf",
       "ocr_confidence": 0.975,
-      "primary_scan_check": "pending_direct_scan_image_comparison",
+      "primary_scan_check": "confirmed_original_1906_photographic_page",
       "wikisource_transcription_check": "confirmed_same_1906_source",
       "reverse_1920_check": "pending_direct_inspection",
       "hints_pos_check": "conditional",
@@ -2904,10 +3208,11 @@
           "reason": "No independently inspected contemporary usage evidence for this precise headword and sense"
         },
         "proofread_1906": {
-          "status": "verified_transcription_not_original_scan",
+          "status": "confirmed_original_printing_and_transcription",
           "source": "https://wikisource.org/wiki/Khasi-English_Dictionary",
           "printed_page": 3,
-          "independent_corroboration": false
+          "independent_corroboration": false,
+          "original_scan_pdf_page": 17
         }
       },
       "proofread_1906_evidence": {
@@ -3006,6 +3311,21 @@
         "format": "251-page Wikisource PDF export supplied by user",
         "independent_corroboration": false,
         "provenance_note": "PDF is a rendered export of Wikisource transcription, not independent photographic evidence from 1906 printed copy",
+        "promotion_effect": "none"
+      },
+      "original_1906_facsimile_review": {
+        "status": "confirmed_against_original_printed_page",
+        "edition": "1906",
+        "source_type": "photographic_facsimile_of_original_printing",
+        "uploaded_filename": "khasienglishdict00singrich(20261015-070807).pdf",
+        "sha256": "f90d17df04a9b13c78db419ca7417588a9a5a9448eb424d4b75f97277387283f",
+        "printed_page": 3,
+        "pdf_page": 17,
+        "verified_headword": "Amrang",
+        "verified_gloss": "harsh tone; empty words",
+        "verification_method": "Direct comparison with user-uploaded 1906 photographic scan, printed pages 1–3 (PDF pages 15–17), alongside Wikisource transcription; preserve typographic accents and source spelling",
+        "independent_authorial_witness": false,
+        "modern_usage_verified": false,
         "promotion_effect": "none"
       }
     }
@@ -3284,5 +3604,24 @@
       "note": "Author preface confirms Cherra dialect standard; explanatory notes give prefixes, suffixes, orthographic variants; this reinforces original-source provenance only"
     }
   },
-  "transcription_audit_note": "Rechecked printed pages 1-3 of proofread Wikisource against 20 source records. Printed page differs from earlier approximate OCR page. All independent checks still pending."
+  "transcription_audit_note": "Rechecked printed pages 1-3 of proofread Wikisource against 20 source records. Printed page differs from earlier approximate OCR page. All independent checks still pending.",
+  "original_1906_facsimile_audit": {
+    "date": "2026-10-15",
+    "status": "all_20_candidate_entries_checked_against_1906_original_photographic_scan",
+    "source_pdf_pages": [
+      15,
+      16,
+      17
+    ],
+    "printed_pages": [
+      1,
+      2,
+      3
+    ],
+    "sha256": "f90d17df04a9b13c78db419ca7417588a9a5a9448eb424d4b75f97277387283f",
+    "candidate_count": 20,
+    "independent_corroboration_added": 0,
+    "promotions": 0,
+    "note": "This confirms the primary 1906 historical witness; does not establish contemporary use or independent 1920 corroboration."
+  }
 }
