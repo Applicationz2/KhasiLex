@@ -1504,7 +1504,7 @@
       "ocr_confidence": 0.975,
       "primary_scan_check": "confirmed_original_1906_photographic_page",
       "wikisource_transcription_check": "confirmed_same_1906_source",
-      "reverse_1920_check": "pending_direct_inspection",
+      "reverse_1920_check": "verified_1920_printed_page",
       "hints_pos_check": "required",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
@@ -1517,9 +1517,13 @@
       "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
       "independent_evidence": {
         "reverse_1920": {
-          "status": "blocked_scan_not_read",
-          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-          "reason": "Reference identified but relevant English-index page and Khasi equivalent have not been inspected"
+          "status": "verified_cross_edition_not_independent_modern",
+          "source": "user-uploaded English-Khasi Dictionary (1920)",
+          "english_headword": "Belie",
+          "printed_page": 42,
+          "pdf_page": 61,
+          "attested_form": "pynbud-nam",
+          "relation": "direct_equivalent_in_multi_gloss_english_entry"
         },
         "hints": {
           "status": "not_verified",
@@ -1554,12 +1558,15 @@
           "defame"
         ],
         "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-        "source_inspection": "attempted_full_scan_access",
-        "result": "unverified",
-        "page": null,
-        "exact_khasi_equivalent": null,
-        "limitation": "1920 scanned PDF is 626 pages / ~63 MB; direct source fetch exceeded available retrieval limit; no entry text inspected",
-        "do_not_infer_match": true
+        "source_inspection": "user_uploaded_1920_original_pdf_page_text",
+        "result": "verified_cross_edition_attestation",
+        "page": 42,
+        "exact_khasi_equivalent": "pynbud-nam",
+        "limitation": "1920 is companion volume from same author/editorial tradition; does not prove independent modern use",
+        "do_not_infer_match": false,
+        "pdf_page": 61,
+        "english_headword": "Belie",
+        "relation": "direct_equivalent_in_multi_gloss_english_entry"
       },
       "alternative_source_review": {
         "khasidrp": {
@@ -1834,7 +1841,7 @@
       "ocr_confidence": 0.975,
       "primary_scan_check": "confirmed_original_1906_photographic_page",
       "wikisource_transcription_check": "confirmed_same_1906_source",
-      "reverse_1920_check": "pending_direct_inspection",
+      "reverse_1920_check": "verified_1920_printed_page",
       "hints_pos_check": "required",
       "modern_khasi_attestation": "pending_independent_current_usage",
       "sense_boundary_review": "pending",
@@ -1847,9 +1854,13 @@
       "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
       "independent_evidence": {
         "reverse_1920": {
-          "status": "blocked_scan_not_read",
-          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-          "reason": "Reference identified but relevant English-index page and Khasi equivalent have not been inspected"
+          "status": "verified_cross_edition_not_independent_modern",
+          "source": "user-uploaded English-Khasi Dictionary (1920)",
+          "english_headword": "Commendable",
+          "printed_page": 80,
+          "pdf_page": 99,
+          "attested_form": "ba bit ba’n ai khusnam",
+          "relation": "phrase_attestation_not_direct_standalone_equivalence"
         },
         "hints": {
           "status": "not_verified",
@@ -1885,12 +1896,15 @@
           "merit"
         ],
         "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-        "source_inspection": "attempted_full_scan_access",
-        "result": "unverified",
-        "page": null,
-        "exact_khasi_equivalent": null,
-        "limitation": "1920 scanned PDF is 626 pages / ~63 MB; direct source fetch exceeded available retrieval limit; no entry text inspected",
-        "do_not_infer_match": true
+        "source_inspection": "user_uploaded_1920_original_pdf_page_text",
+        "result": "verified_cross_edition_attestation",
+        "page": 80,
+        "exact_khasi_equivalent": "ba bit ba’n ai khusnam",
+        "limitation": "1920 is companion volume from same author/editorial tradition; does not prove independent modern use",
+        "do_not_infer_match": false,
+        "pdf_page": 99,
+        "english_headword": "Commendable",
+        "relation": "phrase_attestation_not_direct_standalone_equivalence"
       },
       "alternative_source_review": {
         "khasidrp": {
@@ -2000,7 +2014,7 @@
       "ocr_confidence": 0.975,
       "primary_scan_check": "confirmed_original_1906_photographic_page",
       "wikisource_transcription_check": "confirmed_same_1906_source",
-      "reverse_1920_check": "pending_direct_inspection",
+      "reverse_1920_check": "verified_1920_printed_page",
       "hints_pos_check": "required",
       "modern_khasi_attestation": {
         "status": "attested_expression_not_sense",
@@ -2020,9 +2034,13 @@
       "ocr_entry_boundary_review": "transcription_corrected_or_separated_from_adjacent_entry",
       "independent_evidence": {
         "reverse_1920": {
-          "status": "blocked_scan_not_read",
-          "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-          "reason": "Reference identified but relevant English-index page and Khasi equivalent have not been inspected"
+          "status": "verified_cross_edition_not_independent_modern",
+          "source": "user-uploaded English-Khasi Dictionary (1920)",
+          "english_headword": "Hound",
+          "printed_page": 225,
+          "pdf_page": 244,
+          "attested_form": "ai ksew",
+          "relation": "direct_equivalent_under_verb_sense"
         },
         "hints": {
           "status": "not_verified",
@@ -2069,12 +2087,15 @@
           "track"
         ],
         "source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-        "source_inspection": "attempted_full_scan_access",
-        "result": "unverified",
-        "page": null,
-        "exact_khasi_equivalent": null,
-        "limitation": "1920 scanned PDF is 626 pages / ~63 MB; direct source fetch exceeded available retrieval limit; no entry text inspected",
-        "do_not_infer_match": true
+        "source_inspection": "user_uploaded_1920_original_pdf_page_text",
+        "result": "verified_cross_edition_attestation",
+        "page": 225,
+        "exact_khasi_equivalent": "ai ksew",
+        "limitation": "1920 is companion volume from same author/editorial tradition; does not prove independent modern use",
+        "do_not_infer_match": false,
+        "pdf_page": 244,
+        "english_headword": "Hound",
+        "relation": "direct_equivalent_under_verb_sense"
       },
       "alternative_source_review": {
         "khasidrp": {
@@ -3623,5 +3644,15 @@
     "independent_corroboration_added": 0,
     "promotions": 0,
     "note": "This confirms the primary 1906 historical witness; does not establish contemporary use or independent 1920 corroboration."
+  },
+  "reverse_1920_uploaded_pdf_review": {
+    "date": "2026-10-15",
+    "edition": "original_1920",
+    "pdf_pages": 626,
+    "confirmed_candidate_cross_references": 3,
+    "remaining_candidates_not_yet_exhaustively_checked": 17,
+    "independent_modern_usage_added": 0,
+    "promotions": 0,
+    "note": "Page numbers refer to printed pagination; English headword and Khasi expression inspected in uploaded 1920 scan; three hits are cross-edition attestations, not independent contemporary evidence."
   }
 }
