@@ -1678,6 +1678,29 @@
         "independent_authorial_witness": false,
         "modern_usage_verified": false,
         "promotion_effect": "none"
+      },
+      "reverse_1920_further_sense_review": {
+        "status": "inspected",
+        "source": "user-uploaded original 1920 English–Khasi Dictionary",
+        "observations": [
+          {
+            "english_headword": "Defame",
+            "printed_page": 111,
+            "pdf_page": 130,
+            "attested_form": "Kren pynbud nam",
+            "relationship": "related_derived_expression_not_exact_ai_bud_nam"
+          },
+          {
+            "english_headword": "Slander",
+            "printed_page": 274,
+            "pdf_page": 293,
+            "attested_form": "iathuh khana pynbudnam",
+            "relationship": "related_derived_expression_not_exact_ai_bud_nam"
+          }
+        ],
+        "direct_exact_compound_attestation_added": false,
+        "modern_use_attested": false,
+        "interpretation": "Do not count semantic overlaps or derived forms as exact full-compound matches."
       }
     },
     {
@@ -1843,6 +1866,22 @@
         "independent_authorial_witness": false,
         "modern_usage_verified": false,
         "promotion_effect": "none"
+      },
+      "reverse_1920_further_sense_review": {
+        "status": "inspected",
+        "source": "user-uploaded original 1920 English–Khasi Dictionary",
+        "observations": [
+          {
+            "english_headword": "Neglect",
+            "printed_page": 336,
+            "pdf_page": 355,
+            "attested_form": "Leh sting; leh klet; leh b'ym suidñiew",
+            "relationship": "semantic_overlap_no_exact_ai_khawduh_attestation"
+          }
+        ],
+        "direct_exact_compound_attestation_added": false,
+        "modern_use_attested": false,
+        "interpretation": "Do not count semantic overlaps or derived forms as exact full-compound matches."
       }
     },
     {
@@ -2382,6 +2421,22 @@
         "independent_authorial_witness": false,
         "modern_usage_verified": false,
         "promotion_effect": "none"
+      },
+      "reverse_1920_further_sense_review": {
+        "status": "inspected",
+        "source": "user-uploaded original 1920 English–Khasi Dictionary",
+        "observations": [
+          {
+            "english_headword": "Indulge",
+            "printed_page": 251,
+            "pdf_page": 270,
+            "attested_form": "Pynsngewbha; shah jem; pynsbuh",
+            "relationship": "semantic_overlap_no_exact_ai_huspai_attestation"
+          }
+        ],
+        "direct_exact_compound_attestation_added": false,
+        "modern_use_attested": false,
+        "interpretation": "Do not count semantic overlaps or derived forms as exact full-compound matches."
       }
     },
     {
@@ -3680,6 +3735,23 @@
     "independent_modern_usage_added": 0,
     "promotions": 0,
     "note": "Page numbers refer to printed pagination; English headword and Khasi expression inspected in uploaded 1920 scan; three hits are cross-edition attestations, not independent contemporary evidence.",
-    "additional_attestations": 1
+    "additional_attestations": 1,
+    "further_sense_review": {
+      "date": "2026-10-15",
+      "english_headwords_inspected": [
+        "Defame",
+        "Slander",
+        "Indulge",
+        "Neglect"
+      ],
+      "candidate_ids": [
+        "g1-hist-003-010",
+        "g1-hist-003-014",
+        "g1-hist-003-011"
+      ],
+      "new_exact_compound_matches": 0,
+      "new_modern_usage_attestations": 0,
+      "promotions": 0
+    }
   }
 }
