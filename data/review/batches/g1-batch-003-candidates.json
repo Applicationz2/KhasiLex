@@ -2590,6 +2590,15 @@
         ],
         "limitation": "OCR transcription is not conclusive evidence of precise diacritics or absence; none of these glosses is a newly verified full compound",
         "promotion_effect": "none"
+      },
+      "reverse_1920_outcast_image_review": {
+        "status": "verified_original_1920_page_image",
+        "english_headword": "Outcast",
+        "printed_page": 354,
+        "pdf_page": 373,
+        "printed_gloss": "U briw ba la kyntait; uba la beh noh",
+        "classification": "semantic_overlap_not_exact_ai_khawduh",
+        "modern_usage_attested": false
       }
     },
     {
@@ -3304,6 +3313,16 @@
         ],
         "limitation": "OCR transcription is not conclusive evidence of precise diacritics or absence; none of these glosses is a newly verified full compound",
         "promotion_effect": "none"
+      },
+      "reverse_1920_indulge_image_review": {
+        "status": "inspected_original_1920_page_image",
+        "english_headword": "Indulge",
+        "printed_page": 251,
+        "pdf_page": 270,
+        "readable_gloss": "Pynsngewbha; shah jem; pynsbuh",
+        "additional_form": "partially obscured ai- form",
+        "classification": "unresolved_no_verified_ai_huspai",
+        "modern_usage_attested": false
       }
     },
     {
@@ -3776,9 +3795,16 @@
           "status": "verified_original_1906_facsimile"
         },
         "reverse_1920": {
-          "status": "not_yet_established",
-          "classification": "unresolved_not_proven_absent",
-          "entries": [],
+          "status": "page_image_verified",
+          "classification": "complete_expression_in_phrase_spacing_variant",
+          "entries": [
+            {
+              "english_headword": "Indulgent",
+              "printed_page": 251,
+              "pdf_page": 270,
+              "attested_khasi": "ba ai mon"
+            }
+          ],
           "independent_modern_usage": false
         },
         "modern_usage": {
@@ -3825,6 +3851,18 @@
           }
         ],
         "limitation": "OCR transcription is not conclusive evidence of precise diacritics or absence; none of these glosses is a newly verified full compound",
+        "promotion_effect": "none"
+      },
+      "reverse_1920_indulgent_image_review": {
+        "status": "verified_original_1920_page_image",
+        "english_headword": "Indulgent",
+        "printed_page": 251,
+        "pdf_page": 270,
+        "exact_printed_phrase": "Ba shah jem; ba ai mon",
+        "relevant_form": "ai mon",
+        "relation": "complete_verbal_expression_in_adjectival_gloss_orthographic_spacing_variant_of_1906_ai_mon",
+        "not_identical_1906_punctuation": true,
+        "independent_modern_usage": false,
         "promotion_effect": "none"
       }
     },
@@ -5037,8 +5075,8 @@
     "date": "2026-10-15",
     "edition": "original_1920",
     "pdf_pages": 626,
-    "confirmed_candidate_cross_references": 8,
-    "remaining_candidates_not_yet_exhaustively_checked": 12,
+    "confirmed_candidate_cross_references": 9,
+    "remaining_candidates_not_yet_exhaustively_checked": 11,
     "independent_modern_usage_added": 0,
     "promotions": 0,
     "note": "Page numbers refer to printed pagination; English headword and Khasi expression inspected in uploaded 1920 scan; three hits are cross-edition attestations, not independent contemporary evidence.",
@@ -5105,9 +5143,9 @@
   "batch_003_evidence_matrix_review": {
     "review_date": "2026-10-19",
     "candidate_total": 20,
-    "page_image_verified_candidate_count": 8,
-    "unresolved_candidate_count": 12,
-    "exact_or_variant_candidate_count": 4,
+    "page_image_verified_candidate_count": 9,
+    "unresolved_candidate_count": 11,
+    "exact_or_variant_candidate_count": 5,
     "related_derived_only_candidate_count": 4,
     "promotion_count": 0,
     "original_1920_pdf_source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
@@ -5168,6 +5206,18 @@
       "reading": "’bai-bat",
       "classification": "related_not_exact",
       "promotions": 0
+    },
+    "targeted_ai_compound_image_review_2026_10_19": {
+      "verified_candidate": "g1-hist-003-016",
+      "english_headword": "Indulgent",
+      "printed_page": 251,
+      "pdf_page": 270,
+      "attested_form": "ba ai mon",
+      "unresolved_candidate_reviews": [
+        "g1-hist-003-014",
+        "g1-hist-003-011"
+      ],
+      "new_promotions": 0
     }
   }
 }
