@@ -189,6 +189,15 @@
           "1920 same-author companion edition is not independent modern usage",
           "OCR-only negative searches do not establish lexical absence"
         ]
+      },
+      "original_1906_typographic_audit": {
+        "status": "page_image_inspected",
+        "original_printed_headword": "Áb!",
+        "printed_page": 1,
+        "scan_pdf_page": 15,
+        "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
+        "source": "user-uploaded original 1906 photographic facsimile",
+        "modern_usage_inferred": false
       }
     },
     {
@@ -379,6 +388,15 @@
           "1920 same-author companion edition is not independent modern usage",
           "OCR-only negative searches do not establish lexical absence"
         ]
+      },
+      "original_1906_typographic_audit": {
+        "status": "page_image_inspected",
+        "original_printed_headword": "*Abir",
+        "printed_page": 1,
+        "scan_pdf_page": 15,
+        "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
+        "source": "user-uploaded original 1906 photographic facsimile",
+        "modern_usage_inferred": false
       }
     },
     {
@@ -565,6 +583,15 @@
           "1920 same-author companion edition is not independent modern usage",
           "OCR-only negative searches do not establish lexical absence"
         ]
+      },
+      "original_1906_typographic_audit": {
+        "status": "page_image_inspected",
+        "original_printed_headword": "Ak!",
+        "printed_page": 1,
+        "scan_pdf_page": 15,
+        "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
+        "source": "user-uploaded original 1906 photographic facsimile",
+        "modern_usage_inferred": false
       }
     },
     {
@@ -751,6 +778,15 @@
           "1920 same-author companion edition is not independent modern usage",
           "OCR-only negative searches do not establish lexical absence"
         ]
+      },
+      "original_1906_typographic_audit": {
+        "status": "page_image_inspected",
+        "original_printed_headword": "Aku!",
+        "printed_page": 1,
+        "scan_pdf_page": 15,
+        "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
+        "source": "user-uploaded original 1906 photographic facsimile",
+        "modern_usage_inferred": false
       }
     },
     {
@@ -941,6 +977,15 @@
           "1920 same-author companion edition is not independent modern usage",
           "OCR-only negative searches do not establish lexical absence"
         ]
+      },
+      "original_1906_typographic_audit": {
+        "status": "page_image_inspected",
+        "original_printed_headword": "*Adda",
+        "printed_page": 1,
+        "scan_pdf_page": 15,
+        "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
+        "source": "user-uploaded original 1906 photographic facsimile",
+        "modern_usage_inferred": false
       }
     },
     {
@@ -1127,6 +1172,15 @@
           "1920 same-author companion edition is not independent modern usage",
           "OCR-only negative searches do not establish lexical absence"
         ]
+      },
+      "original_1906_typographic_audit": {
+        "status": "page_image_inspected",
+        "original_printed_headword": "Angret",
+        "printed_page": 1,
+        "scan_pdf_page": 15,
+        "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
+        "source": "user-uploaded original 1906 photographic facsimile",
+        "modern_usage_inferred": false
       }
     },
     {
@@ -1367,6 +1421,15 @@
           "1920 same-author companion edition is not independent modern usage",
           "OCR-only negative searches do not establish lexical absence"
         ]
+      },
+      "original_1906_typographic_audit": {
+        "status": "page_image_inspected",
+        "original_printed_headword": "Ahor",
+        "printed_page": 1,
+        "scan_pdf_page": 15,
+        "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
+        "source": "user-uploaded original 1906 photographic facsimile",
+        "modern_usage_inferred": false
       }
     },
     {
@@ -1591,6 +1654,15 @@
           "1920 same-author companion edition is not independent modern usage",
           "OCR-only negative searches do not establish lexical absence"
         ]
+      },
+      "original_1906_typographic_audit": {
+        "status": "page_image_inspected",
+        "original_printed_headword": "Ai-bai-siew",
+        "printed_page": 2,
+        "scan_pdf_page": 16,
+        "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
+        "source": "user-uploaded original 1906 photographic facsimile",
+        "modern_usage_inferred": false
       }
     },
     {
@@ -1791,7 +1863,7 @@
         "historical_1906": {
           "printed_page": 2,
           "scan_page": 16,
-          "headword": "Ai-'baibat",
+          "headword": "Ai-’baibat",
           "gloss": "to pay ready money",
           "status": "verified_original_1906_facsimile"
         },
@@ -1810,6 +1882,16 @@
           "1920 same-author companion edition is not independent modern usage",
           "OCR-only negative searches do not establish lexical absence"
         ]
+      },
+      "original_1906_typographic_audit": {
+        "status": "page_image_inspected",
+        "original_printed_headword": "Ai-’baibat",
+        "printed_page": 2,
+        "scan_pdf_page": 16,
+        "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
+        "source": "user-uploaded original 1906 photographic facsimile",
+        "modern_usage_inferred": false,
+        "note": "apostrophe preserved after hyphen"
       }
     },
     {
@@ -2036,6 +2118,16 @@
           "1920 same-author companion edition is not independent modern usage",
           "OCR-only negative searches do not establish lexical absence"
         ]
+      },
+      "original_1906_typographic_audit": {
+        "status": "page_image_inspected",
+        "original_printed_headword": "Ai-bud-nám",
+        "printed_page": 2,
+        "scan_pdf_page": 16,
+        "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
+        "source": "user-uploaded original 1906 photographic facsimile",
+        "modern_usage_inferred": false,
+        "note": "OCR ndm corrected to nám from page image"
       }
     },
     {
@@ -2263,6 +2355,16 @@
           "1920 same-author companion edition is not independent modern usage",
           "OCR-only negative searches do not establish lexical absence"
         ]
+      },
+      "original_1906_typographic_audit": {
+        "status": "page_image_inspected",
+        "original_printed_headword": "Ai-khawdûh",
+        "printed_page": 2,
+        "scan_pdf_page": 16,
+        "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
+        "source": "user-uploaded original 1906 photographic facsimile",
+        "modern_usage_inferred": false,
+        "note": "OCR khawduh corrected to khawdûh"
       }
     },
     {
@@ -2441,7 +2543,7 @@
         "historical_1906": {
           "printed_page": 2,
           "scan_page": 16,
-          "headword": "Ai-khusnám",
+          "headword": "Ai-khusnâm",
           "gloss": "to confer honour for meritorious conduct",
           "status": "verified_original_1906_facsimile"
         },
@@ -2467,6 +2569,16 @@
           "1920 same-author companion edition is not independent modern usage",
           "OCR-only negative searches do not establish lexical absence"
         ]
+      },
+      "original_1906_typographic_audit": {
+        "status": "page_image_inspected",
+        "original_printed_headword": "Ai-khusnâm",
+        "printed_page": 2,
+        "scan_pdf_page": 16,
+        "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
+        "source": "user-uploaded original 1906 photographic facsimile",
+        "modern_usage_inferred": false,
+        "note": "OCR khusnam corrected to khusnâm"
       }
     },
     {
@@ -2716,6 +2828,15 @@
           "1920 same-author companion edition is not independent modern usage",
           "OCR-only negative searches do not establish lexical absence"
         ]
+      },
+      "original_1906_typographic_audit": {
+        "status": "page_image_inspected",
+        "original_printed_headword": "Ai-ksew",
+        "printed_page": 2,
+        "scan_pdf_page": 16,
+        "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
+        "source": "user-uploaded original 1906 photographic facsimile",
+        "modern_usage_inferred": false
       }
     },
     {
@@ -2922,6 +3043,15 @@
           "1920 same-author companion edition is not independent modern usage",
           "OCR-only negative searches do not establish lexical absence"
         ]
+      },
+      "original_1906_typographic_audit": {
+        "status": "page_image_inspected",
+        "original_printed_headword": "Ai-huspai",
+        "printed_page": 2,
+        "scan_pdf_page": 16,
+        "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
+        "source": "user-uploaded original 1906 photographic facsimile",
+        "modern_usage_inferred": false
       }
     },
     {
@@ -3110,7 +3240,7 @@
         "historical_1906": {
           "printed_page": 2,
           "scan_page": 16,
-          "headword": "Ai-lait-lân",
+          "headword": "Ai lait-lân",
           "gloss": "to let loose; give one their own inclination",
           "status": "verified_original_1906_facsimile"
         },
@@ -3129,6 +3259,16 @@
           "1920 same-author companion edition is not independent modern usage",
           "OCR-only negative searches do not establish lexical absence"
         ]
+      },
+      "original_1906_typographic_audit": {
+        "status": "page_image_inspected",
+        "original_printed_headword": "Ai lait-lân",
+        "printed_page": 2,
+        "scan_pdf_page": 16,
+        "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
+        "source": "user-uploaded original 1906 photographic facsimile",
+        "modern_usage_inferred": false,
+        "note": "space after Ai is original, not a hyphen"
       }
     },
     {
@@ -3341,6 +3481,15 @@
           "1920 same-author companion edition is not independent modern usage",
           "OCR-only negative searches do not establish lexical absence"
         ]
+      },
+      "original_1906_typographic_audit": {
+        "status": "page_image_inspected",
+        "original_printed_headword": "Ai-mon",
+        "printed_page": 2,
+        "scan_pdf_page": 16,
+        "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
+        "source": "user-uploaded original 1906 photographic facsimile",
+        "modern_usage_inferred": false
       }
     },
     {
@@ -3544,6 +3693,15 @@
           "1920 same-author companion edition is not independent modern usage",
           "OCR-only negative searches do not establish lexical absence"
         ]
+      },
+      "original_1906_typographic_audit": {
+        "status": "page_image_inspected",
+        "original_printed_headword": "A-iu",
+        "printed_page": 3,
+        "scan_pdf_page": 17,
+        "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
+        "source": "user-uploaded original 1906 photographic facsimile",
+        "modern_usage_inferred": false
       }
     },
     {
@@ -3753,6 +3911,15 @@
           "1920 same-author companion edition is not independent modern usage",
           "OCR-only negative searches do not establish lexical absence"
         ]
+      },
+      "original_1906_typographic_audit": {
+        "status": "page_image_inspected",
+        "original_printed_headword": "Along",
+        "printed_page": 3,
+        "scan_pdf_page": 17,
+        "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
+        "source": "user-uploaded original 1906 photographic facsimile",
+        "modern_usage_inferred": false
       }
     },
     {
@@ -3939,6 +4106,15 @@
           "1920 same-author companion edition is not independent modern usage",
           "OCR-only negative searches do not establish lexical absence"
         ]
+      },
+      "original_1906_typographic_audit": {
+        "status": "page_image_inspected",
+        "original_printed_headword": "Ama or Amai!",
+        "printed_page": 3,
+        "scan_pdf_page": 17,
+        "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
+        "source": "user-uploaded original 1906 photographic facsimile",
+        "modern_usage_inferred": false
       }
     },
     {
@@ -4126,6 +4302,15 @@
           "1920 same-author companion edition is not independent modern usage",
           "OCR-only negative searches do not establish lexical absence"
         ]
+      },
+      "original_1906_typographic_audit": {
+        "status": "page_image_inspected",
+        "original_printed_headword": "Amrang",
+        "printed_page": 3,
+        "scan_pdf_page": 17,
+        "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
+        "source": "user-uploaded original 1906 photographic facsimile",
+        "modern_usage_inferred": false
       }
     }
   ],
@@ -4501,6 +4686,22 @@
     "related_derived_only_candidate_count": 1,
     "promotion_count": 0,
     "original_1920_pdf_source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
-    "notes": "Seven page images checked: printed pp. 42,50,80,225,479,513,589. This matrix is a verification checkpoint, not a claim of exhaustive reverse-dictionary searching."
+    "notes": "Seven page images checked: printed pp. 42,50,80,225,479,513,589. This matrix is a verification checkpoint, not a claim of exhaustive reverse-dictionary searching.",
+    "original_1906_typographic_audit": {
+      "status": "all_20_entries_checked_against_page_images",
+      "printed_pages": [
+        1,
+        2,
+        3
+      ],
+      "pdf_pages": [
+        15,
+        16,
+        17
+      ],
+      "original_spellings_recorded": 20,
+      "modern_usage_attestations_added": 0,
+      "promotions": 0
+    }
   }
 }
