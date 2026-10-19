@@ -2028,9 +2028,16 @@
           "status": "verified_original_1906_facsimile"
         },
         "reverse_1920": {
-          "status": "not_yet_established",
-          "classification": "unresolved_not_proven_absent",
-          "entries": [],
+          "status": "page_image_verified_related_form_only",
+          "classification": "related_payment_noun_not_exact_compound",
+          "entries": [
+            {
+              "english_headword": "Cash",
+              "printed_page": 62,
+              "pdf_page": 81,
+              "attested_khasi": "’bai-bat"
+            }
+          ],
           "independent_modern_usage": false
         },
         "modern_usage": {
@@ -2063,6 +2070,18 @@
         "outcome": "no_exact_literal_compound_hit",
         "limitations": "OCR errors, hyphenation, accent loss and unrelated substrings can obscure true matches. Negative text searches do not prove absence. Printed page images still require targeted review.",
         "promotion_authorized": false
+      },
+      "reverse_1920_cash_page_image_confirmation": {
+        "status": "verified_original_page_image",
+        "english_headword": "Cash",
+        "printed_page": 62,
+        "pdf_page": 81,
+        "source_reading": "Ka tyngka-pliah; ’bai-bat",
+        "relevant_form": "’bai-bat",
+        "relation": "related_payment_noun_not_exact_ai_baibat_compound",
+        "note": "Original page confirms hyphen and apostrophe; OCR variants must not replace original reading.",
+        "independent_modern_usage": false,
+        "promotion_effect": "none"
       }
     },
     {
@@ -5018,8 +5037,8 @@
     "date": "2026-10-15",
     "edition": "original_1920",
     "pdf_pages": 626,
-    "confirmed_candidate_cross_references": 7,
-    "remaining_candidates_not_yet_exhaustively_checked": 13,
+    "confirmed_candidate_cross_references": 8,
+    "remaining_candidates_not_yet_exhaustively_checked": 12,
     "independent_modern_usage_added": 0,
     "promotions": 0,
     "note": "Page numbers refer to printed pagination; English headword and Khasi expression inspected in uploaded 1920 scan; three hits are cross-edition attestations, not independent contemporary evidence.",
@@ -5086,10 +5105,10 @@
   "batch_003_evidence_matrix_review": {
     "review_date": "2026-10-19",
     "candidate_total": 20,
-    "page_image_verified_candidate_count": 7,
-    "unresolved_candidate_count": 13,
+    "page_image_verified_candidate_count": 8,
+    "unresolved_candidate_count": 12,
     "exact_or_variant_candidate_count": 4,
-    "related_derived_only_candidate_count": 3,
+    "related_derived_only_candidate_count": 4,
     "promotion_count": 0,
     "original_1920_pdf_source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
     "notes": "Seven page images checked: printed pp. 42,50,80,225,479,513,589. This matrix is a verification checkpoint, not a claim of exhaustive reverse-dictionary searching.",
@@ -5140,6 +5159,15 @@
       "candidate_id": "g1-hist-003-008",
       "classification": "related_not_exact",
       "promotion_count": 0
+    },
+    "cash_page_image_2026_10_19": {
+      "candidate": "g1-hist-003-009",
+      "english_headword": "Cash",
+      "printed_page": 62,
+      "pdf_page": 81,
+      "reading": "’bai-bat",
+      "classification": "related_not_exact",
+      "promotions": 0
     }
   }
 }
