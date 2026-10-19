@@ -165,6 +165,30 @@
         "independent_authorial_witness": false,
         "modern_usage_verified": false,
         "promotion_effect": "none"
+      },
+      "batch_003_evidence_matrix": {
+        "historical_1906": {
+          "printed_page": 1,
+          "scan_page": 15,
+          "headword": "Áb!",
+          "gloss": "the imitation of the cry of a crow",
+          "status": "verified_original_1906_facsimile"
+        },
+        "reverse_1920": {
+          "status": "not_yet_established",
+          "classification": "unresolved_not_proven_absent",
+          "entries": [],
+          "independent_modern_usage": false
+        },
+        "modern_usage": {
+          "status": "not_verified",
+          "promotion_basis_established": false
+        },
+        "editorial_decision": "defer_no_promotion",
+        "limitations": [
+          "1920 same-author companion edition is not independent modern usage",
+          "OCR-only negative searches do not establish lexical absence"
+        ]
       }
     },
     {
@@ -331,6 +355,30 @@
         "independent_authorial_witness": false,
         "modern_usage_verified": false,
         "promotion_effect": "none"
+      },
+      "batch_003_evidence_matrix": {
+        "historical_1906": {
+          "printed_page": 1,
+          "scan_page": 15,
+          "headword": "*Abir",
+          "gloss": "red powder used in the Holi festival",
+          "status": "verified_original_1906_facsimile"
+        },
+        "reverse_1920": {
+          "status": "not_yet_established",
+          "classification": "unresolved_not_proven_absent",
+          "entries": [],
+          "independent_modern_usage": false
+        },
+        "modern_usage": {
+          "status": "not_verified",
+          "promotion_basis_established": false
+        },
+        "editorial_decision": "defer_no_promotion",
+        "limitations": [
+          "1920 same-author companion edition is not independent modern usage",
+          "OCR-only negative searches do not establish lexical absence"
+        ]
       }
     },
     {
@@ -493,6 +541,30 @@
         "independent_authorial_witness": false,
         "modern_usage_verified": false,
         "promotion_effect": "none"
+      },
+      "batch_003_evidence_matrix": {
+        "historical_1906": {
+          "printed_page": 1,
+          "scan_page": 15,
+          "headword": "Ak!",
+          "gloss": "ejaculation of disgust at an unpleasant smell",
+          "status": "verified_original_1906_facsimile"
+        },
+        "reverse_1920": {
+          "status": "not_yet_established",
+          "classification": "unresolved_not_proven_absent",
+          "entries": [],
+          "independent_modern_usage": false
+        },
+        "modern_usage": {
+          "status": "not_verified",
+          "promotion_basis_established": false
+        },
+        "editorial_decision": "defer_no_promotion",
+        "limitations": [
+          "1920 same-author companion edition is not independent modern usage",
+          "OCR-only negative searches do not establish lexical absence"
+        ]
       }
     },
     {
@@ -655,6 +727,30 @@
         "independent_authorial_witness": false,
         "modern_usage_verified": false,
         "promotion_effect": "none"
+      },
+      "batch_003_evidence_matrix": {
+        "historical_1906": {
+          "printed_page": 1,
+          "scan_page": 15,
+          "headword": "Aku!",
+          "gloss": "expressing disgust at a bad smell",
+          "status": "verified_original_1906_facsimile"
+        },
+        "reverse_1920": {
+          "status": "not_yet_established",
+          "classification": "unresolved_not_proven_absent",
+          "entries": [],
+          "independent_modern_usage": false
+        },
+        "modern_usage": {
+          "status": "not_verified",
+          "promotion_basis_established": false
+        },
+        "editorial_decision": "defer_no_promotion",
+        "limitations": [
+          "1920 same-author companion edition is not independent modern usage",
+          "OCR-only negative searches do not establish lexical absence"
+        ]
       }
     },
     {
@@ -821,6 +917,30 @@
         "independent_authorial_witness": false,
         "modern_usage_verified": false,
         "promotion_effect": "none"
+      },
+      "batch_003_evidence_matrix": {
+        "historical_1906": {
+          "printed_page": 1,
+          "scan_page": 15,
+          "headword": "*Adda",
+          "gloss": "a stage for changing horses or dak-runners",
+          "status": "verified_original_1906_facsimile"
+        },
+        "reverse_1920": {
+          "status": "not_yet_established",
+          "classification": "unresolved_not_proven_absent",
+          "entries": [],
+          "independent_modern_usage": false
+        },
+        "modern_usage": {
+          "status": "not_verified",
+          "promotion_basis_established": false
+        },
+        "editorial_decision": "defer_no_promotion",
+        "limitations": [
+          "1920 same-author companion edition is not independent modern usage",
+          "OCR-only negative searches do not establish lexical absence"
+        ]
       }
     },
     {
@@ -983,6 +1103,30 @@
         "independent_authorial_witness": false,
         "modern_usage_verified": false,
         "promotion_effect": "none"
+      },
+      "batch_003_evidence_matrix": {
+        "historical_1906": {
+          "printed_page": 1,
+          "scan_page": 15,
+          "headword": "Angret",
+          "gloss": "a dare-devil (from Hindustani Angrez)",
+          "status": "verified_original_1906_facsimile"
+        },
+        "reverse_1920": {
+          "status": "not_yet_established",
+          "classification": "unresolved_not_proven_absent",
+          "entries": [],
+          "independent_modern_usage": false
+        },
+        "modern_usage": {
+          "status": "not_verified",
+          "promotion_basis_established": false
+        },
+        "editorial_decision": "defer_no_promotion",
+        "limitations": [
+          "1920 same-author companion edition is not independent modern usage",
+          "OCR-only negative searches do not establish lexical absence"
+        ]
       }
     },
     {
@@ -1173,14 +1317,57 @@
         {
           "english_headword": "Bog",
           "sense": "marshy or wet ground",
-          "attested_khasi": "ka ahor (OCR displays ah6r)",
+          "attested_khasi": "Ka ahór",
           "printed_page": 50,
           "pdf_page": 69,
-          "verification": "direct_entry_found_in_uploaded_1920_pdf_text_layer_image_recheck_recommended_for_diacritics",
+          "verification": "confirmed_directly_from_rendered_original_1920_page_image",
           "relationship": "additional_direct_historical_equivalent",
           "independent_modern_usage": false
         }
-      ]
+      ],
+      "batch_003_evidence_matrix": {
+        "historical_1906": {
+          "printed_page": 1,
+          "scan_page": 15,
+          "headword": "Ahor",
+          "gloss": "a marshy place; swamp",
+          "status": "verified_original_1906_facsimile"
+        },
+        "reverse_1920": {
+          "status": "page_image_verified",
+          "classification": "direct_historical_noun",
+          "entries": [
+            {
+              "english_headword": "Bog",
+              "printed_page": 50,
+              "pdf_page": 69,
+              "attested_khasi": "Ka ahór"
+            },
+            {
+              "english_headword": "Slough",
+              "printed_page": 479,
+              "pdf_page": 498,
+              "attested_khasi": "ka ahor"
+            },
+            {
+              "english_headword": "Swamp",
+              "printed_page": 513,
+              "pdf_page": 532,
+              "attested_khasi": "Ka ahor"
+            }
+          ],
+          "independent_modern_usage": false
+        },
+        "modern_usage": {
+          "status": "independent_dictionary_evidence_not_contemporary_usage",
+          "promotion_basis_established": false
+        },
+        "editorial_decision": "defer_no_promotion",
+        "limitations": [
+          "1920 same-author companion edition is not independent modern usage",
+          "OCR-only negative searches do not establish lexical absence"
+        ]
+      }
     },
     {
       "candidate_id": "g1-hist-003-008",
@@ -1380,7 +1567,31 @@
           "method": "1920 PDF text-layer inspection; not an exhaustive search",
           "independent_modern_usage": false
         }
-      ]
+      ],
+      "batch_003_evidence_matrix": {
+        "historical_1906": {
+          "printed_page": 2,
+          "scan_page": 16,
+          "headword": "Ai-bai-siew",
+          "gloss": "to give money for buying things at a time, e.g. on a market day",
+          "status": "verified_original_1906_facsimile"
+        },
+        "reverse_1920": {
+          "status": "not_yet_established",
+          "classification": "unresolved_not_proven_absent",
+          "entries": [],
+          "independent_modern_usage": false
+        },
+        "modern_usage": {
+          "status": "not_verified",
+          "promotion_basis_established": false
+        },
+        "editorial_decision": "defer_no_promotion",
+        "limitations": [
+          "1920 same-author companion edition is not independent modern usage",
+          "OCR-only negative searches do not establish lexical absence"
+        ]
+      }
     },
     {
       "candidate_id": "g1-hist-003-009",
@@ -1575,6 +1786,30 @@
         ],
         "new_exact_candidate_attestation": false,
         "editorial_decision": "do_not_promote_semantic_overlap"
+      },
+      "batch_003_evidence_matrix": {
+        "historical_1906": {
+          "printed_page": 2,
+          "scan_page": 16,
+          "headword": "Ai-'baibat",
+          "gloss": "to pay ready money",
+          "status": "verified_original_1906_facsimile"
+        },
+        "reverse_1920": {
+          "status": "not_yet_established",
+          "classification": "unresolved_not_proven_absent",
+          "entries": [],
+          "independent_modern_usage": false
+        },
+        "modern_usage": {
+          "status": "not_verified",
+          "promotion_basis_established": false
+        },
+        "editorial_decision": "defer_no_promotion",
+        "limitations": [
+          "1920 same-author companion edition is not independent modern usage",
+          "OCR-only negative searches do not establish lexical absence"
+        ]
       }
     },
     {
@@ -1611,7 +1846,7 @@
           "printed_page": 42,
           "pdf_page": 61,
           "attested_form": "pynbud-nam",
-          "relation": "direct_equivalent_in_multi_gloss_english_entry"
+          "relation": "related_derived_form_not_exact_headword"
         },
         "hints": {
           "status": "not_verified",
@@ -1654,7 +1889,7 @@
         "do_not_infer_match": false,
         "pdf_page": 61,
         "english_headword": "Belie",
-        "relation": "direct_equivalent_in_multi_gloss_english_entry"
+        "relation": "related_derived_form_not_exact_headword"
       },
       "alternative_source_review": {
         "khasidrp": {
@@ -1770,6 +2005,37 @@
         "direct_exact_compound_attestation_added": false,
         "modern_use_attested": false,
         "interpretation": "Do not count semantic overlaps or derived forms as exact full-compound matches."
+      },
+      "batch_003_evidence_matrix": {
+        "historical_1906": {
+          "printed_page": 2,
+          "scan_page": 16,
+          "headword": "Ai-bud-nám",
+          "gloss": "to slander; defame",
+          "status": "verified_original_1906_facsimile"
+        },
+        "reverse_1920": {
+          "status": "page_image_verified",
+          "classification": "related_derived_form_not_exact_compound",
+          "entries": [
+            {
+              "english_headword": "Belie",
+              "printed_page": 42,
+              "pdf_page": 61,
+              "attested_khasi": "pynbud-nam"
+            }
+          ],
+          "independent_modern_usage": false
+        },
+        "modern_usage": {
+          "status": "not_verified",
+          "promotion_basis_established": false
+        },
+        "editorial_decision": "defer_no_promotion",
+        "limitations": [
+          "1920 same-author companion edition is not independent modern usage",
+          "OCR-only negative searches do not establish lexical absence"
+        ]
       }
     },
     {
@@ -1973,7 +2239,31 @@
           "method": "1920 PDF text-layer inspection; not an exhaustive search",
           "independent_modern_usage": false
         }
-      ]
+      ],
+      "batch_003_evidence_matrix": {
+        "historical_1906": {
+          "printed_page": 2,
+          "scan_page": 16,
+          "headword": "Ai-khawdûh",
+          "gloss": "to leave uncared for; to be outcast",
+          "status": "verified_original_1906_facsimile"
+        },
+        "reverse_1920": {
+          "status": "not_yet_established",
+          "classification": "unresolved_not_proven_absent",
+          "entries": [],
+          "independent_modern_usage": false
+        },
+        "modern_usage": {
+          "status": "not_verified",
+          "promotion_basis_established": false
+        },
+        "editorial_decision": "defer_no_promotion",
+        "limitations": [
+          "1920 same-author companion edition is not independent modern usage",
+          "OCR-only negative searches do not establish lexical absence"
+        ]
+      }
     },
     {
       "candidate_id": "g1-hist-003-012",
@@ -2146,6 +2436,37 @@
         "independent_authorial_witness": false,
         "modern_usage_verified": false,
         "promotion_effect": "none"
+      },
+      "batch_003_evidence_matrix": {
+        "historical_1906": {
+          "printed_page": 2,
+          "scan_page": 16,
+          "headword": "Ai-khusnám",
+          "gloss": "to confer honour for meritorious conduct",
+          "status": "verified_original_1906_facsimile"
+        },
+        "reverse_1920": {
+          "status": "page_image_verified",
+          "classification": "exact_compound_embedded_in_longer_phrase",
+          "entries": [
+            {
+              "english_headword": "Commendable",
+              "printed_page": 80,
+              "pdf_page": 99,
+              "attested_khasi": "ba bit ba’n ai khusnam"
+            }
+          ],
+          "independent_modern_usage": false
+        },
+        "modern_usage": {
+          "status": "not_verified",
+          "promotion_basis_established": false
+        },
+        "editorial_decision": "defer_no_promotion",
+        "limitations": [
+          "1920 same-author companion edition is not independent modern usage",
+          "OCR-only negative searches do not establish lexical absence"
+        ]
       }
     },
     {
@@ -2364,6 +2685,37 @@
         ],
         "new_exact_candidate_attestation": false,
         "editorial_decision": "do_not_promote_semantic_overlap"
+      },
+      "batch_003_evidence_matrix": {
+        "historical_1906": {
+          "printed_page": 2,
+          "scan_page": 16,
+          "headword": "Ai-ksew",
+          "gloss": "to put a dog on the scent",
+          "status": "verified_original_1906_facsimile"
+        },
+        "reverse_1920": {
+          "status": "page_image_verified",
+          "classification": "direct_verbal_equivalent",
+          "entries": [
+            {
+              "english_headword": "Hound",
+              "printed_page": 225,
+              "pdf_page": 244,
+              "attested_khasi": "ai-ksew"
+            }
+          ],
+          "independent_modern_usage": false
+        },
+        "modern_usage": {
+          "status": "not_verified",
+          "promotion_basis_established": false
+        },
+        "editorial_decision": "defer_no_promotion",
+        "limitations": [
+          "1920 same-author companion edition is not independent modern usage",
+          "OCR-only negative searches do not establish lexical absence"
+        ]
       }
     },
     {
@@ -2546,6 +2898,30 @@
         "direct_exact_compound_attestation_added": false,
         "modern_use_attested": false,
         "interpretation": "Do not count semantic overlaps or derived forms as exact full-compound matches."
+      },
+      "batch_003_evidence_matrix": {
+        "historical_1906": {
+          "printed_page": 2,
+          "scan_page": 16,
+          "headword": "Ai-huspai",
+          "gloss": "to indulge",
+          "status": "verified_original_1906_facsimile"
+        },
+        "reverse_1920": {
+          "status": "not_yet_established",
+          "classification": "unresolved_not_proven_absent",
+          "entries": [],
+          "independent_modern_usage": false
+        },
+        "modern_usage": {
+          "status": "not_verified",
+          "promotion_basis_established": false
+        },
+        "editorial_decision": "defer_no_promotion",
+        "limitations": [
+          "1920 same-author companion edition is not independent modern usage",
+          "OCR-only negative searches do not establish lexical absence"
+        ]
       }
     },
     {
@@ -2729,6 +3105,30 @@
         ],
         "new_exact_candidate_attestation": false,
         "editorial_decision": "do_not_promote_semantic_overlap"
+      },
+      "batch_003_evidence_matrix": {
+        "historical_1906": {
+          "printed_page": 2,
+          "scan_page": 16,
+          "headword": "Ai-lait-lân",
+          "gloss": "to let loose; give one their own inclination",
+          "status": "verified_original_1906_facsimile"
+        },
+        "reverse_1920": {
+          "status": "not_yet_established",
+          "classification": "unresolved_not_proven_absent",
+          "entries": [],
+          "independent_modern_usage": false
+        },
+        "modern_usage": {
+          "status": "not_verified",
+          "promotion_basis_established": false
+        },
+        "editorial_decision": "defer_no_promotion",
+        "limitations": [
+          "1920 same-author companion edition is not independent modern usage",
+          "OCR-only negative searches do not establish lexical absence"
+        ]
       }
     },
     {
@@ -2917,7 +3317,31 @@
           "method": "1920 PDF text-layer inspection; not an exhaustive search",
           "independent_modern_usage": false
         }
-      ]
+      ],
+      "batch_003_evidence_matrix": {
+        "historical_1906": {
+          "printed_page": 2,
+          "scan_page": 16,
+          "headword": "Ai-mon",
+          "gloss": "to give one their own will",
+          "status": "verified_original_1906_facsimile"
+        },
+        "reverse_1920": {
+          "status": "not_yet_established",
+          "classification": "unresolved_not_proven_absent",
+          "entries": [],
+          "independent_modern_usage": false
+        },
+        "modern_usage": {
+          "status": "not_verified",
+          "promotion_basis_established": false
+        },
+        "editorial_decision": "defer_no_promotion",
+        "limitations": [
+          "1920 same-author companion edition is not independent modern usage",
+          "OCR-only negative searches do not establish lexical absence"
+        ]
+      }
     },
     {
       "candidate_id": "g1-hist-003-017",
@@ -3089,6 +3513,37 @@
         "independent_authorial_witness": false,
         "modern_usage_verified": false,
         "promotion_effect": "none"
+      },
+      "batch_003_evidence_matrix": {
+        "historical_1906": {
+          "printed_page": 3,
+          "scan_page": 17,
+          "headword": "A-iu",
+          "gloss": "what",
+          "status": "verified_original_1906_facsimile"
+        },
+        "reverse_1920": {
+          "status": "page_image_verified",
+          "classification": "direct_equivalent_orthographic_variant",
+          "entries": [
+            {
+              "english_headword": "What",
+              "printed_page": 589,
+              "pdf_page": 608,
+              "attested_khasi": "aiu"
+            }
+          ],
+          "independent_modern_usage": false
+        },
+        "modern_usage": {
+          "status": "independent_dictionary_evidence_not_contemporary_usage",
+          "promotion_basis_established": false
+        },
+        "editorial_decision": "defer_no_promotion",
+        "limitations": [
+          "1920 same-author companion edition is not independent modern usage",
+          "OCR-only negative searches do not establish lexical absence"
+        ]
       }
     },
     {
@@ -3274,7 +3729,31 @@
           "method": "1920 PDF text-layer inspection; not an exhaustive search",
           "independent_modern_usage": false
         }
-      ]
+      ],
+      "batch_003_evidence_matrix": {
+        "historical_1906": {
+          "printed_page": 3,
+          "scan_page": 17,
+          "headword": "Along",
+          "gloss": "a lock-up; Hajut",
+          "status": "verified_original_1906_facsimile"
+        },
+        "reverse_1920": {
+          "status": "not_yet_established",
+          "classification": "unresolved_not_proven_absent",
+          "entries": [],
+          "independent_modern_usage": false
+        },
+        "modern_usage": {
+          "status": "not_verified",
+          "promotion_basis_established": false
+        },
+        "editorial_decision": "defer_no_promotion",
+        "limitations": [
+          "1920 same-author companion edition is not independent modern usage",
+          "OCR-only negative searches do not establish lexical absence"
+        ]
+      }
     },
     {
       "candidate_id": "g1-hist-003-019",
@@ -3436,6 +3915,30 @@
         "independent_authorial_witness": false,
         "modern_usage_verified": false,
         "promotion_effect": "none"
+      },
+      "batch_003_evidence_matrix": {
+        "historical_1906": {
+          "printed_page": 3,
+          "scan_page": 17,
+          "headword": "Ama or Amai!",
+          "gloss": "exclamation upon narrow escape",
+          "status": "verified_original_1906_facsimile"
+        },
+        "reverse_1920": {
+          "status": "not_yet_established",
+          "classification": "unresolved_not_proven_absent",
+          "entries": [],
+          "independent_modern_usage": false
+        },
+        "modern_usage": {
+          "status": "not_verified",
+          "promotion_basis_established": false
+        },
+        "editorial_decision": "defer_no_promotion",
+        "limitations": [
+          "1920 same-author companion edition is not independent modern usage",
+          "OCR-only negative searches do not establish lexical absence"
+        ]
       }
     },
     {
@@ -3599,6 +4102,30 @@
         "independent_authorial_witness": false,
         "modern_usage_verified": false,
         "promotion_effect": "none"
+      },
+      "batch_003_evidence_matrix": {
+        "historical_1906": {
+          "printed_page": 3,
+          "scan_page": 17,
+          "headword": "Amrang",
+          "gloss": "harsh tone; empty words",
+          "status": "verified_original_1906_facsimile"
+        },
+        "reverse_1920": {
+          "status": "not_yet_established",
+          "classification": "unresolved_not_proven_absent",
+          "entries": [],
+          "independent_modern_usage": false
+        },
+        "modern_usage": {
+          "status": "not_verified",
+          "promotion_basis_established": false
+        },
+        "editorial_decision": "defer_no_promotion",
+        "limitations": [
+          "1920 same-author companion edition is not independent modern usage",
+          "OCR-only negative searches do not establish lexical absence"
+        ]
       }
     }
   ],
@@ -3964,5 +4491,16 @@
       "scope": "targeted headword screening, not exhaustive candidate-level clearance",
       "image_verification_pending_for_ocr_diacritics": true
     }
+  },
+  "batch_003_evidence_matrix_review": {
+    "review_date": "2026-10-19",
+    "candidate_total": 20,
+    "page_image_verified_candidate_count": 5,
+    "unresolved_candidate_count": 15,
+    "exact_or_variant_candidate_count": 4,
+    "related_derived_only_candidate_count": 1,
+    "promotion_count": 0,
+    "original_1920_pdf_source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
+    "notes": "Seven page images checked: printed pp. 42,50,80,225,479,513,589. This matrix is a verification checkpoint, not a claim of exhaustive reverse-dictionary searching."
   }
 }
