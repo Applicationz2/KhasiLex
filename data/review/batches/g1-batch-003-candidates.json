@@ -2599,7 +2599,29 @@
         "printed_gloss": "U briw ba la kyntait; uba la beh noh",
         "classification": "semantic_overlap_not_exact_ai_khawduh",
         "modern_usage_attested": false
-      }
+      },
+      "reverse_1920_additional_page_image_checks": [
+        {
+          "english_headword": "Castaway",
+          "printed_page": 62,
+          "pdf_page": 81,
+          "reading": "Uba la tait noh; uba la ieh lyngkar sha kaba u’n jot; b’ym lar katam",
+          "classification": "semantic_outcast_abandonment_not_ai_khawduh",
+          "method": "visually inspected original 1920 page image",
+          "verified_full_compound": false,
+          "independent_modern_usage": false
+        },
+        {
+          "english_headword": "Outlaw",
+          "printed_page": 355,
+          "pdf_page": 374,
+          "reading": "U briw ia uba la pynduh noh ia ki jingmyntoi jong ka jinglong trai shnong",
+          "classification": "legal_exclusion_not_ai_khawduh",
+          "method": "visually inspected original 1920 page image",
+          "verified_full_compound": false,
+          "independent_modern_usage": false
+        }
+      ]
     },
     {
       "candidate_id": "g1-hist-003-012",
@@ -4774,7 +4796,29 @@
         ],
         "limitation": "OCR transcription is not conclusive evidence of precise diacritics or absence; none of these glosses is a newly verified full compound",
         "promotion_effect": "none"
-      }
+      },
+      "reverse_1920_additional_page_image_checks": [
+        {
+          "english_headword": "Harsh",
+          "printed_page": 214,
+          "pdf_page": 233,
+          "reading": "Ba kher-kher; ba khain",
+          "classification": "adjectival_harshness_not_amrang",
+          "method": "visually inspected original 1920 page image",
+          "verified_full_compound": false,
+          "independent_modern_usage": false
+        },
+        {
+          "english_headword": "Major",
+          "printed_page": 304,
+          "pdf_page": 323,
+          "reading": "Ba khamkhraw; khamrangbah",
+          "classification": "substring_amrang_false_positive",
+          "method": "visually inspected original 1920 page image",
+          "verified_full_compound": false,
+          "independent_modern_usage": false
+        }
+      ]
     }
   ],
   "promotion_authorized": false,
@@ -5218,6 +5262,24 @@
         "g1-hist-003-011"
       ],
       "new_promotions": 0
+    },
+    "additional_image_checks_2026_10_19": {
+      "english_headwords": [
+        "Castaway",
+        "Outlaw",
+        "Harsh",
+        "Major"
+      ],
+      "printed_pages": [
+        62,
+        355,
+        214,
+        304
+      ],
+      "finding": "No new exact candidate matches. Major contains khamrangbah, an OCR substring false positive for Amrang. Outlaw and Castaway provide related semantic context only.",
+      "confirmed_candidate_count_unchanged": 9,
+      "unresolved_candidate_count_unchanged": 11,
+      "promotions": 0
     }
   }
 }
