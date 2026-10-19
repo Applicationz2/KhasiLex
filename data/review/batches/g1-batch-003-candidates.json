@@ -1753,9 +1753,16 @@
           "status": "verified_original_1906_facsimile"
         },
         "reverse_1920": {
-          "status": "not_yet_established",
-          "classification": "unresolved_not_proven_absent",
-          "entries": [],
+          "status": "page_image_verified_related_form_only",
+          "classification": "related_payment_expression_not_exact_compound",
+          "entries": [
+            {
+              "english_headword": "Fee",
+              "printed_page": 176,
+              "pdf_page": 195,
+              "attested_khasi": "Bat da ka bai siew"
+            }
+          ],
           "independent_modern_usage": false
         },
         "modern_usage": {
@@ -1803,6 +1810,18 @@
           }
         ],
         "limitation": "OCR transcription is not conclusive evidence of precise diacritics or absence; none of these glosses is a newly verified full compound",
+        "promotion_effect": "none"
+      },
+      "reverse_1920_fee_image_review": {
+        "status": "verified_from_original_page_image",
+        "english_headword": "Fee",
+        "printed_page": 176,
+        "pdf_page": 195,
+        "printed_expression": "Bat da ka bai siew",
+        "relevant_form": "bai siew",
+        "classification": "related_payment_expression_not_exact_ai_bai_siew",
+        "source": "original 1920 English–Khasi Dictionary",
+        "modern_usage_verified": false,
         "promotion_effect": "none"
       }
     },
@@ -4999,8 +5018,8 @@
     "date": "2026-10-15",
     "edition": "original_1920",
     "pdf_pages": 626,
-    "confirmed_candidate_cross_references": 6,
-    "remaining_candidates_not_yet_exhaustively_checked": 14,
+    "confirmed_candidate_cross_references": 7,
+    "remaining_candidates_not_yet_exhaustively_checked": 13,
     "independent_modern_usage_added": 0,
     "promotions": 0,
     "note": "Page numbers refer to printed pagination; English headword and Khasi expression inspected in uploaded 1920 scan; three hits are cross-edition attestations, not independent contemporary evidence.",
@@ -5067,10 +5086,10 @@
   "batch_003_evidence_matrix_review": {
     "review_date": "2026-10-19",
     "candidate_total": 20,
-    "page_image_verified_candidate_count": 6,
-    "unresolved_candidate_count": 14,
+    "page_image_verified_candidate_count": 7,
+    "unresolved_candidate_count": 13,
     "exact_or_variant_candidate_count": 4,
-    "related_derived_only_candidate_count": 2,
+    "related_derived_only_candidate_count": 3,
     "promotion_count": 0,
     "original_1920_pdf_source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
     "notes": "Seven page images checked: printed pp. 42,50,80,225,479,513,589. This matrix is a verification checkpoint, not a claim of exhaustive reverse-dictionary searching.",
@@ -5113,6 +5132,14 @@
       "candidate": "g1-hist-003-015",
       "status": "related_form_not_exact_compound",
       "promotions": 0
+    },
+    "fee_page_image_2026_10_19": {
+      "printed_page": 176,
+      "pdf_page": 195,
+      "exact_expression": "Bat da ka bai siew",
+      "candidate_id": "g1-hist-003-008",
+      "classification": "related_not_exact",
+      "promotion_count": 0
     }
   }
 }
