@@ -3459,9 +3459,17 @@
           "status": "verified_original_1906_facsimile"
         },
         "reverse_1920": {
-          "status": "not_yet_established",
-          "classification": "unresolved_not_proven_absent",
-          "entries": [],
+          "status": "page_image_verified_related_form_only",
+          "classification": "related_base_form_not_exact_compound",
+          "entries": [
+            {
+              "english_headword": "Unrestrained",
+              "printed_page": 532,
+              "pdf_page": 581,
+              "attested_khasi": "ba laitlân",
+              "relation": "1906 Ai lait-lân includes Ai prefix not present in 1920 adjective"
+            }
+          ],
           "independent_modern_usage": false
         },
         "modern_usage": {
@@ -3510,14 +3518,27 @@
           },
           {
             "headword": "Unrestrained",
-            "printed_page": 562,
+            "printed_page": 532,
             "pdf_page": 581,
-            "ocr_excerpt": "ba leh pathar; ba laitMn [OCR uncertain]",
-            "classification": "possible_related_laitlan_orthography_unverified",
-            "exact_1906_headword_verified": false
+            "ocr_excerpt": "ba laitMn [incorrect OCR; image confirms ba laitlân]",
+            "classification": "page_image_confirmed_related_base_form_not_exact_ai_lait_lan",
+            "exact_1906_headword_verified": false,
+            "page_image_verified": true
           }
         ],
         "limitation": "OCR transcription is not conclusive evidence of precise diacritics or absence; none of these glosses is a newly verified full compound",
+        "promotion_effect": "none"
+      },
+      "reverse_1920_page_image_confirmation": {
+        "status": "confirmed_original_1920_page_image",
+        "english_headword": "Unrestrained",
+        "printed_page": 532,
+        "pdf_page": 581,
+        "exact_printed_phrase": "Ba leh pathar; ba lyngkâr; ba laitlân",
+        "attested_relevant_form": "ba laitlân",
+        "relation": "related_base_form_in_adjectival_phrase_not_exact_ai_lait_lan",
+        "notes": "OCR laitMn was erroneous; prior printed page 562 was erroneous; photographic image shows printed 532",
+        "modern_usage_attested": false,
         "promotion_effect": "none"
       }
     },
@@ -4978,8 +4999,8 @@
     "date": "2026-10-15",
     "edition": "original_1920",
     "pdf_pages": 626,
-    "confirmed_candidate_cross_references": 5,
-    "remaining_candidates_not_yet_exhaustively_checked": 15,
+    "confirmed_candidate_cross_references": 6,
+    "remaining_candidates_not_yet_exhaustively_checked": 14,
     "independent_modern_usage_added": 0,
     "promotions": 0,
     "note": "Page numbers refer to printed pagination; English headword and Khasi expression inspected in uploaded 1920 scan; three hits are cross-edition attestations, not independent contemporary evidence.",
@@ -5046,10 +5067,10 @@
   "batch_003_evidence_matrix_review": {
     "review_date": "2026-10-19",
     "candidate_total": 20,
-    "page_image_verified_candidate_count": 5,
-    "unresolved_candidate_count": 15,
+    "page_image_verified_candidate_count": 6,
+    "unresolved_candidate_count": 14,
     "exact_or_variant_candidate_count": 4,
-    "related_derived_only_candidate_count": 1,
+    "related_derived_only_candidate_count": 2,
     "promotion_count": 0,
     "original_1920_pdf_source": "https://commons.wikimedia.org/wiki/File:English-Khasi_Dictionary_(1920).pdf",
     "notes": "Seven page images checked: printed pp. 42,50,80,225,479,513,589. This matrix is a verification checkpoint, not a claim of exhaustive reverse-dictionary searching.",
@@ -5083,6 +5104,15 @@
       "remaining_unresolved": 15,
       "review_scope": "targeted not exhaustive",
       "promotion_count": 0
+    },
+    "original_1920_unrestrained_correction": {
+      "english_headword": "Unrestrained",
+      "printed_page": 532,
+      "pdf_page": 581,
+      "confirmed_reading": "ba laitlân",
+      "candidate": "g1-hist-003-015",
+      "status": "related_form_not_exact_compound",
+      "promotions": 0
     }
   }
 }
