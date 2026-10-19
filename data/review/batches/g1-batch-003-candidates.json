@@ -397,6 +397,17 @@
         "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
         "source": "user-uploaded original 1906 photographic facsimile",
         "modern_usage_inferred": false
+      },
+      "reverse_1920_ocr_term_screening": {
+        "status": "completed_non_exhaustive_text_layer_screen",
+        "terms": [
+          "abir"
+        ],
+        "source": "user_uploaded_original_1920_English_Khasi_Dictionary_PDF",
+        "method": "case_insensitive_literal_search_over_PyMuPDF_page_text",
+        "outcome": "ambiguous_substring_hits_only_no_validated_entry_attestation",
+        "limitations": "OCR errors, hyphenation, accent loss and unrelated substrings can obscure true matches. Negative text searches do not prove absence. Printed page images still require targeted review.",
+        "promotion_authorized": false
       }
     },
     {
@@ -986,6 +997,17 @@
         "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
         "source": "user-uploaded original 1906 photographic facsimile",
         "modern_usage_inferred": false
+      },
+      "reverse_1920_ocr_term_screening": {
+        "status": "completed_non_exhaustive_text_layer_screen",
+        "terms": [
+          "adda"
+        ],
+        "source": "user_uploaded_original_1920_English_Khasi_Dictionary_PDF",
+        "method": "case_insensitive_literal_search_over_PyMuPDF_page_text",
+        "outcome": "ambiguous_substring_hits_only_no_validated_entry_attestation",
+        "limitations": "OCR errors, hyphenation, accent loss and unrelated substrings can obscure true matches. Negative text searches do not prove absence. Printed page images still require targeted review.",
+        "promotion_authorized": false
       }
     },
     {
@@ -1181,6 +1203,17 @@
         "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
         "source": "user-uploaded original 1906 photographic facsimile",
         "modern_usage_inferred": false
+      },
+      "reverse_1920_ocr_term_screening": {
+        "status": "completed_non_exhaustive_text_layer_screen",
+        "terms": [
+          "angret"
+        ],
+        "source": "user_uploaded_original_1920_English_Khasi_Dictionary_PDF",
+        "method": "case_insensitive_literal_search_over_PyMuPDF_page_text",
+        "outcome": "no_exact_literal_compound_hit",
+        "limitations": "OCR errors, hyphenation, accent loss and unrelated substrings can obscure true matches. Negative text searches do not prove absence. Printed page images still require targeted review.",
+        "promotion_authorized": false
       }
     },
     {
@@ -1663,6 +1696,18 @@
         "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
         "source": "user-uploaded original 1906 photographic facsimile",
         "modern_usage_inferred": false
+      },
+      "reverse_1920_ocr_term_screening": {
+        "status": "completed_non_exhaustive_text_layer_screen",
+        "terms": [
+          "baisiew",
+          "ai-bai"
+        ],
+        "source": "user_uploaded_original_1920_English_Khasi_Dictionary_PDF",
+        "method": "case_insensitive_literal_search_over_PyMuPDF_page_text",
+        "outcome": "no_exact_literal_compound_hit",
+        "limitations": "OCR errors, hyphenation, accent loss and unrelated substrings can obscure true matches. Negative text searches do not prove absence. Printed page images still require targeted review.",
+        "promotion_authorized": false
       }
     },
     {
@@ -1892,6 +1937,17 @@
         "source": "user-uploaded original 1906 photographic facsimile",
         "modern_usage_inferred": false,
         "note": "apostrophe preserved after hyphen"
+      },
+      "reverse_1920_ocr_term_screening": {
+        "status": "completed_non_exhaustive_text_layer_screen",
+        "terms": [
+          "baibat"
+        ],
+        "source": "user_uploaded_original_1920_English_Khasi_Dictionary_PDF",
+        "method": "case_insensitive_literal_search_over_PyMuPDF_page_text",
+        "outcome": "no_exact_literal_compound_hit",
+        "limitations": "OCR errors, hyphenation, accent loss and unrelated substrings can obscure true matches. Negative text searches do not prove absence. Printed page images still require targeted review.",
+        "promotion_authorized": false
       }
     },
     {
@@ -2365,6 +2421,17 @@
         "source": "user-uploaded original 1906 photographic facsimile",
         "modern_usage_inferred": false,
         "note": "OCR khawduh corrected to khawdûh"
+      },
+      "reverse_1920_ocr_term_screening": {
+        "status": "completed_non_exhaustive_text_layer_screen",
+        "terms": [
+          "khawduh"
+        ],
+        "source": "user_uploaded_original_1920_English_Khasi_Dictionary_PDF",
+        "method": "case_insensitive_literal_search_over_PyMuPDF_page_text",
+        "outcome": "no_exact_literal_compound_hit",
+        "limitations": "OCR errors, hyphenation, accent loss and unrelated substrings can obscure true matches. Negative text searches do not prove absence. Printed page images still require targeted review.",
+        "promotion_authorized": false
       }
     },
     {
@@ -3052,6 +3119,17 @@
         "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
         "source": "user-uploaded original 1906 photographic facsimile",
         "modern_usage_inferred": false
+      },
+      "reverse_1920_ocr_term_screening": {
+        "status": "completed_non_exhaustive_text_layer_screen",
+        "terms": [
+          "huspai"
+        ],
+        "source": "user_uploaded_original_1920_English_Khasi_Dictionary_PDF",
+        "method": "case_insensitive_literal_search_over_PyMuPDF_page_text",
+        "outcome": "no_exact_literal_compound_hit",
+        "limitations": "OCR errors, hyphenation, accent loss and unrelated substrings can obscure true matches. Negative text searches do not prove absence. Printed page images still require targeted review.",
+        "promotion_authorized": false
       }
     },
     {
@@ -3269,6 +3347,18 @@
         "source": "user-uploaded original 1906 photographic facsimile",
         "modern_usage_inferred": false,
         "note": "space after Ai is original, not a hyphen"
+      },
+      "reverse_1920_ocr_term_screening": {
+        "status": "completed_non_exhaustive_text_layer_screen",
+        "terms": [
+          "laitlan",
+          "ai-lait"
+        ],
+        "source": "user_uploaded_original_1920_English_Khasi_Dictionary_PDF",
+        "method": "case_insensitive_literal_search_over_PyMuPDF_page_text",
+        "outcome": "no_exact_literal_compound_hit",
+        "limitations": "OCR errors, hyphenation, accent loss and unrelated substrings can obscure true matches. Negative text searches do not prove absence. Printed page images still require targeted review.",
+        "promotion_authorized": false
       }
     },
     {
@@ -3490,6 +3580,17 @@
         "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
         "source": "user-uploaded original 1906 photographic facsimile",
         "modern_usage_inferred": false
+      },
+      "reverse_1920_ocr_term_screening": {
+        "status": "completed_non_exhaustive_text_layer_screen",
+        "terms": [
+          "ai-mon"
+        ],
+        "source": "user_uploaded_original_1920_English_Khasi_Dictionary_PDF",
+        "method": "case_insensitive_literal_search_over_PyMuPDF_page_text",
+        "outcome": "no_exact_literal_compound_hit",
+        "limitations": "OCR errors, hyphenation, accent loss and unrelated substrings can obscure true matches. Negative text searches do not prove absence. Printed page images still require targeted review.",
+        "promotion_authorized": false
       }
     },
     {
@@ -3920,6 +4021,17 @@
         "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
         "source": "user-uploaded original 1906 photographic facsimile",
         "modern_usage_inferred": false
+      },
+      "reverse_1920_ocr_term_screening": {
+        "status": "completed_non_exhaustive_text_layer_screen",
+        "terms": [
+          "along"
+        ],
+        "source": "user_uploaded_original_1920_English_Khasi_Dictionary_PDF",
+        "method": "case_insensitive_literal_search_over_PyMuPDF_page_text",
+        "outcome": "ambiguous_substring_hits_only_no_validated_entry_attestation",
+        "limitations": "OCR errors, hyphenation, accent loss and unrelated substrings can obscure true matches. Negative text searches do not prove absence. Printed page images still require targeted review.",
+        "promotion_authorized": false
       }
     },
     {
@@ -4115,6 +4227,17 @@
         "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
         "source": "user-uploaded original 1906 photographic facsimile",
         "modern_usage_inferred": false
+      },
+      "reverse_1920_ocr_term_screening": {
+        "status": "completed_non_exhaustive_text_layer_screen",
+        "terms": [
+          "amai"
+        ],
+        "source": "user_uploaded_original_1920_English_Khasi_Dictionary_PDF",
+        "method": "case_insensitive_literal_search_over_PyMuPDF_page_text",
+        "outcome": "ambiguous_substring_hits_only_no_validated_entry_attestation",
+        "limitations": "OCR errors, hyphenation, accent loss and unrelated substrings can obscure true matches. Negative text searches do not prove absence. Printed page images still require targeted review.",
+        "promotion_authorized": false
       }
     },
     {
@@ -4311,6 +4434,17 @@
         "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
         "source": "user-uploaded original 1906 photographic facsimile",
         "modern_usage_inferred": false
+      },
+      "reverse_1920_ocr_term_screening": {
+        "status": "completed_non_exhaustive_text_layer_screen",
+        "terms": [
+          "amrang"
+        ],
+        "source": "user_uploaded_original_1920_English_Khasi_Dictionary_PDF",
+        "method": "case_insensitive_literal_search_over_PyMuPDF_page_text",
+        "outcome": "ambiguous_substring_hits_only_no_validated_entry_attestation",
+        "limitations": "OCR errors, hyphenation, accent loss and unrelated substrings can obscure true matches. Negative text searches do not prove absence. Printed page images still require targeted review.",
+        "promotion_authorized": false
       }
     }
   ],
@@ -4701,6 +4835,13 @@
       ],
       "original_spellings_recorded": 20,
       "modern_usage_attestations_added": 0,
+      "promotions": 0
+    },
+    "follow_up_ocr_screen_2026_10_19": {
+      "scope": "targeted OCR text-layer screening for 12 candidate strings, including alternate spelling fragments",
+      "conclusion": "no newly page-image-verified candidate attestations",
+      "remaining_unresolved": 15,
+      "limitations": "Non-exhaustive; substring hits for abir, adda, along, amai, amrang cannot be treated as lexical matches",
       "promotions": 0
     }
   }
