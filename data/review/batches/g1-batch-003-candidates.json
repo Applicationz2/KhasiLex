@@ -1169,6 +1169,16 @@
           "verification": "directly_inspected_uploaded_1920_scan_text",
           "relationship": "additional_direct_historical_equivalent",
           "independent_modern_usage": false
+        },
+        {
+          "english_headword": "Bog",
+          "sense": "marshy or wet ground",
+          "attested_khasi": "ka ahor (OCR displays ah6r)",
+          "printed_page": 50,
+          "pdf_page": 69,
+          "verification": "direct_entry_found_in_uploaded_1920_pdf_text_layer_image_recheck_recommended_for_diacritics",
+          "relationship": "additional_direct_historical_equivalent",
+          "independent_modern_usage": false
         }
       ]
     },
@@ -1338,7 +1348,39 @@
         "independent_authorial_witness": false,
         "modern_usage_verified": false,
         "promotion_effect": "none"
-      }
+      },
+      "reverse_1920_targeted_screening": [
+        {
+          "english_headword": "Buy",
+          "printed_page": 57,
+          "pdf_page": 76,
+          "ocr_rendered_khasi": "thied; siew-dor; suh-tyngka",
+          "classification": "semantic_overlap_not_exact_ai_bai_siew",
+          "exact_compound_verified": false,
+          "method": "1920 PDF text-layer inspection; not an exhaustive search",
+          "independent_modern_usage": false
+        },
+        {
+          "english_headword": "Purchase",
+          "printed_page": 412,
+          "pdf_page": 431,
+          "ocr_rendered_khasi": "thied; shim siew",
+          "classification": "semantic_overlap_not_exact_ai_bai_siew",
+          "exact_compound_verified": false,
+          "method": "1920 PDF text-layer inspection; not an exhaustive search",
+          "independent_modern_usage": false
+        },
+        {
+          "english_headword": "Market",
+          "printed_page": 308,
+          "pdf_page": 327,
+          "ocr_rendered_khasi": "ka iew; ka por iadie-iathied",
+          "classification": "semantic_overlap_not_exact_ai_bai_siew",
+          "exact_compound_verified": false,
+          "method": "1920 PDF text-layer inspection; not an exhaustive search",
+          "independent_modern_usage": false
+        }
+      ]
     },
     {
       "candidate_id": "g1-hist-003-009",
@@ -1909,7 +1951,29 @@
         "direct_exact_compound_attestation_added": false,
         "modern_use_attested": false,
         "interpretation": "Do not count semantic overlaps or derived forms as exact full-compound matches."
-      }
+      },
+      "reverse_1920_targeted_screening": [
+        {
+          "english_headword": "Forsake",
+          "printed_page": 189,
+          "pdf_page": 208,
+          "ocr_rendered_khasi": "kiar noh; iehnoh",
+          "classification": "semantic_overlap_not_exact_ai_khawduh",
+          "exact_compound_verified": false,
+          "method": "1920 PDF text-layer inspection; not an exhaustive search",
+          "independent_modern_usage": false
+        },
+        {
+          "english_headword": "Abandon",
+          "printed_page": 1,
+          "pdf_page": 20,
+          "ocr_rendered_khasi": "iehnoh jynduh",
+          "classification": "semantic_overlap_not_exact_ai_khawduh",
+          "exact_compound_verified": false,
+          "method": "1920 PDF text-layer inspection; not an exhaustive search",
+          "independent_modern_usage": false
+        }
+      ]
     },
     {
       "candidate_id": "g1-hist-003-012",
@@ -2831,7 +2895,29 @@
         "independent_authorial_witness": false,
         "modern_usage_verified": false,
         "promotion_effect": "none"
-      }
+      },
+      "reverse_1920_targeted_screening": [
+        {
+          "english_headword": "Will",
+          "printed_page": 593,
+          "pdf_page": 612,
+          "ocr_rendered_khasi": "ka mon",
+          "classification": "base_noun_only_not_exact_ai_mon",
+          "exact_compound_verified": false,
+          "method": "1920 PDF text-layer inspection; not an exhaustive search",
+          "independent_modern_usage": false
+        },
+        {
+          "english_headword": "Wish",
+          "printed_page": 594,
+          "pdf_page": 613,
+          "ocr_rendered_khasi": "ka mon",
+          "classification": "base_noun_only_not_exact_ai_mon",
+          "exact_compound_verified": false,
+          "method": "1920 PDF text-layer inspection; not an exhaustive search",
+          "independent_modern_usage": false
+        }
+      ]
     },
     {
       "candidate_id": "g1-hist-003-017",
@@ -3166,7 +3252,29 @@
         "independent_authorial_witness": false,
         "modern_usage_verified": false,
         "promotion_effect": "none"
-      }
+      },
+      "reverse_1920_targeted_screening": [
+        {
+          "english_headword": "Jail",
+          "printed_page": 275,
+          "pdf_page": 294,
+          "ocr_rendered_khasi": "ka iingbyndi; ka phatok",
+          "classification": "semantic_overlap_not_exact_along",
+          "exact_compound_verified": false,
+          "method": "1920 PDF text-layer inspection; not an exhaustive search",
+          "independent_modern_usage": false
+        },
+        {
+          "english_headword": "Prison",
+          "printed_page": 401,
+          "pdf_page": 420,
+          "ocr_rendered_khasi": "ka byndi; ka phatok",
+          "classification": "semantic_overlap_not_exact_along",
+          "exact_compound_verified": false,
+          "method": "1920 PDF text-layer inspection; not an exhaustive search",
+          "independent_modern_usage": false
+        }
+      ]
     },
     {
       "candidate_id": "g1-hist-003-019",
@@ -3797,7 +3905,7 @@
     "independent_modern_usage_added": 0,
     "promotions": 0,
     "note": "Page numbers refer to printed pagination; English headword and Khasi expression inspected in uploaded 1920 scan; three hits are cross-edition attestations, not independent contemporary evidence.",
-    "additional_attestations": 1,
+    "additional_attestations": 2,
     "further_sense_review": {
       "date": "2026-10-15",
       "english_headwords_inspected": [
@@ -3839,6 +3947,22 @@
       "new_exact_batch_003_matches": 0,
       "modern_attestations": 0,
       "promotions": 0
+    },
+    "targeted_screening_2026_10_19": {
+      "headwords": [
+        "Will",
+        "Wish",
+        "Jail",
+        "Prison",
+        "Forsake",
+        "Abandon",
+        "Buy",
+        "Purchase",
+        "Market"
+      ],
+      "exact_new_candidate_matches": 0,
+      "scope": "targeted headword screening, not exhaustive candidate-level clearance",
+      "image_verification_pending_for_ocr_diacritics": true
     }
   }
 }
