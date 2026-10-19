@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "g1-historical-batch-003",
+  "status": "candidate_selection_staged_evidence_pending",
+  "base_commit": "49ab639491fc81217e5c6844d57b44f4eab4a7e0",
+  "source": "nissor-1906-kha-en",
+  "source_path": "data/historical/nissor-1906/entries.csv",
+  "objective": "Select the next nonduplicated historical lexical candidates after Batch 002, preserving source row IDs and page evidence.",
+  "selection_requirements": [
+    "Exclude all existing master headwords and historical Batch 001/002 source_record_ids.",
+    "Retain historical headword and orthography; do not silently modernize.",
+    "Record 1906 scan/transcription match, 1920 reverse corroboration, Hints when grammatically material, and independent modern Khasi attestation.",
+    "Separate editorially authored candidate definitions from verified definitions.",
+    "Flag OCR mismatches, abbreviations, ambiguous senses and dialect/register uncertainty.",
+    "Do not allocate stable sense/concept IDs or promote without owner review and explicit authorization."
+  ],
+  "candidate_count": 20,
+  "promotion_authorized": false,
+  "notes": "Initialization only. No lexical candidates or verified entries have been added; next operation is deterministic nonduplicate selection from historical corpus.",
+  "candidate_file": "data/review/batches/g1-batch-003-candidates.json",
+  "selection_note": "First 20 historical records meeting source-ID and normalized-headword exclusions; some contain OCR/entry-boundary contamination requiring correction."
+}
