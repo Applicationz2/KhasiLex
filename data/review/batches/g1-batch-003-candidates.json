@@ -408,6 +408,22 @@
         "outcome": "ambiguous_substring_hits_only_no_validated_entry_attestation",
         "limitations": "OCR errors, hyphenation, accent loss and unrelated substrings can obscure true matches. Negative text searches do not prove absence. Printed page images still require targeted review.",
         "promotion_authorized": false
+      },
+      "reverse_1920_alternative_english_gloss_review": {
+        "method": "direct inspection of pdftotext-layout extracted 1920 page text, with printed-page mapping; page-image check pending for uncertain readings",
+        "status": "targeted_meaning_review_not_exhaustive",
+        "entries": [
+          {
+            "headword": "Vermilion",
+            "printed_page": 574,
+            "pdf_page": 593,
+            "ocr_excerpt": "ka rong saw; ka sindur",
+            "classification": "related_color_term_not_abir",
+            "exact_1906_headword_verified": false
+          }
+        ],
+        "limitation": "OCR transcription is not conclusive evidence of precise diacritics or absence; none of these glosses is a newly verified full compound",
+        "promotion_effect": "none"
       }
     },
     {
@@ -603,6 +619,30 @@
         "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
         "source": "user-uploaded original 1906 photographic facsimile",
         "modern_usage_inferred": false
+      },
+      "reverse_1920_alternative_english_gloss_review": {
+        "method": "direct inspection of pdftotext-layout extracted 1920 page text, with printed-page mapping; page-image check pending for uncertain readings",
+        "status": "targeted_meaning_review_not_exhaustive",
+        "entries": [
+          {
+            "headword": "Disgust",
+            "printed_page": 128,
+            "pdf_page": 147,
+            "ocr_excerpt": "ka jingbym sngewbha; ka jingisih",
+            "classification": "semantic_not_exclamation",
+            "exact_1906_headword_verified": false
+          },
+          {
+            "headword": "Stench",
+            "printed_page": 496,
+            "pdf_page": 515,
+            "ocr_excerpt": "ka jingiewtung",
+            "classification": "smell_context_not_exclamation",
+            "exact_1906_headword_verified": false
+          }
+        ],
+        "limitation": "OCR transcription is not conclusive evidence of precise diacritics or absence; none of these glosses is a newly verified full compound",
+        "promotion_effect": "none"
       }
     },
     {
@@ -798,6 +838,22 @@
         "transcription_policy": "preserve source punctuation, accents, spacing and source loanword asterisk; normalized form kept separate",
         "source": "user-uploaded original 1906 photographic facsimile",
         "modern_usage_inferred": false
+      },
+      "reverse_1920_alternative_english_gloss_review": {
+        "method": "direct inspection of pdftotext-layout extracted 1920 page text, with printed-page mapping; page-image check pending for uncertain readings",
+        "status": "targeted_meaning_review_not_exhaustive",
+        "entries": [
+          {
+            "headword": "Disgust",
+            "printed_page": 128,
+            "pdf_page": 147,
+            "ocr_excerpt": "ka jingbym sngewbha; ka jingisih",
+            "classification": "semantic_not_exclamation",
+            "exact_1906_headword_verified": false
+          }
+        ],
+        "limitation": "OCR transcription is not conclusive evidence of precise diacritics or absence; none of these glosses is a newly verified full compound",
+        "promotion_effect": "none"
       }
     },
     {
@@ -1008,6 +1064,30 @@
         "outcome": "ambiguous_substring_hits_only_no_validated_entry_attestation",
         "limitations": "OCR errors, hyphenation, accent loss and unrelated substrings can obscure true matches. Negative text searches do not prove absence. Printed page images still require targeted review.",
         "promotion_authorized": false
+      },
+      "reverse_1920_alternative_english_gloss_review": {
+        "method": "direct inspection of pdftotext-layout extracted 1920 page text, with printed-page mapping; page-image check pending for uncertain readings",
+        "status": "targeted_meaning_review_not_exhaustive",
+        "entries": [
+          {
+            "headword": "Stable",
+            "printed_page": 493,
+            "pdf_page": 512,
+            "ocr_excerpt": "ka sem kulai",
+            "classification": "horse_stable_not_postal_stage",
+            "exact_1906_headword_verified": false
+          },
+          {
+            "headword": "Station",
+            "printed_page": 495,
+            "pdf_page": 514,
+            "ocr_excerpt": "ka jaka pynsangeh ia ka rel",
+            "classification": "station_not_dak_runner_stage",
+            "exact_1906_headword_verified": false
+          }
+        ],
+        "limitation": "OCR transcription is not conclusive evidence of precise diacritics or absence; none of these glosses is a newly verified full compound",
+        "promotion_effect": "none"
       }
     },
     {
@@ -1708,6 +1788,22 @@
         "outcome": "no_exact_literal_compound_hit",
         "limitations": "OCR errors, hyphenation, accent loss and unrelated substrings can obscure true matches. Negative text searches do not prove absence. Printed page images still require targeted review.",
         "promotion_authorized": false
+      },
+      "reverse_1920_alternative_english_gloss_review": {
+        "method": "direct inspection of pdftotext-layout extracted 1920 page text, with printed-page mapping; page-image check pending for uncertain readings",
+        "status": "targeted_meaning_review_not_exhaustive",
+        "entries": [
+          {
+            "headword": "Market",
+            "printed_page": 308,
+            "pdf_page": 327,
+            "ocr_excerpt": "ka iew",
+            "classification": "context_only_not_compound",
+            "exact_1906_headword_verified": false
+          }
+        ],
+        "limitation": "OCR transcription is not conclusive evidence of precise diacritics or absence; none of these glosses is a newly verified full compound",
+        "promotion_effect": "none"
       }
     },
     {
@@ -2432,6 +2528,30 @@
         "outcome": "no_exact_literal_compound_hit",
         "limitations": "OCR errors, hyphenation, accent loss and unrelated substrings can obscure true matches. Negative text searches do not prove absence. Printed page images still require targeted review.",
         "promotion_authorized": false
+      },
+      "reverse_1920_alternative_english_gloss_review": {
+        "method": "direct inspection of pdftotext-layout extracted 1920 page text, with printed-page mapping; page-image check pending for uncertain readings",
+        "status": "targeted_meaning_review_not_exhaustive",
+        "entries": [
+          {
+            "headword": "Outcast",
+            "printed_page": 354,
+            "pdf_page": 373,
+            "ocr_excerpt": "u briew ba la kyntait; uba la beh noh",
+            "classification": "semantic_overlap_no_exact_compound",
+            "exact_1906_headword_verified": false
+          },
+          {
+            "headword": "Disown",
+            "printed_page": 130,
+            "pdf_page": 149,
+            "ocr_excerpt": "kyntait",
+            "classification": "semantic_overlap_no_exact_compound",
+            "exact_1906_headword_verified": false
+          }
+        ],
+        "limitation": "OCR transcription is not conclusive evidence of precise diacritics or absence; none of these glosses is a newly verified full compound",
+        "promotion_effect": "none"
       }
     },
     {
@@ -3130,6 +3250,22 @@
         "outcome": "no_exact_literal_compound_hit",
         "limitations": "OCR errors, hyphenation, accent loss and unrelated substrings can obscure true matches. Negative text searches do not prove absence. Printed page images still require targeted review.",
         "promotion_authorized": false
+      },
+      "reverse_1920_alternative_english_gloss_review": {
+        "method": "direct inspection of pdftotext-layout extracted 1920 page text, with printed-page mapping; page-image check pending for uncertain readings",
+        "status": "targeted_meaning_review_not_exhaustive",
+        "entries": [
+          {
+            "headword": "Indulgence",
+            "printed_page": 251,
+            "pdf_page": 270,
+            "ocr_excerpt": "ka jingpynsngewbha; kaba shah jem",
+            "classification": "semantic_overlap_no_exact_compound",
+            "exact_1906_headword_verified": false
+          }
+        ],
+        "limitation": "OCR transcription is not conclusive evidence of precise diacritics or absence; none of these glosses is a newly verified full compound",
+        "promotion_effect": "none"
       }
     },
     {
@@ -3359,6 +3495,30 @@
         "outcome": "no_exact_literal_compound_hit",
         "limitations": "OCR errors, hyphenation, accent loss and unrelated substrings can obscure true matches. Negative text searches do not prove absence. Printed page images still require targeted review.",
         "promotion_authorized": false
+      },
+      "reverse_1920_alternative_english_gloss_review": {
+        "method": "direct inspection of pdftotext-layout extracted 1920 page text, with printed-page mapping; page-image check pending for uncertain readings",
+        "status": "targeted_meaning_review_not_exhaustive",
+        "entries": [
+          {
+            "headword": "Freedom",
+            "printed_page": 192,
+            "pdf_page": 211,
+            "ocr_excerpt": "ka jingpyllait luid",
+            "classification": "semantic_overlap_no_exact_compound",
+            "exact_1906_headword_verified": false
+          },
+          {
+            "headword": "Unrestrained",
+            "printed_page": 562,
+            "pdf_page": 581,
+            "ocr_excerpt": "ba leh pathar; ba laitMn [OCR uncertain]",
+            "classification": "possible_related_laitlan_orthography_unverified",
+            "exact_1906_headword_verified": false
+          }
+        ],
+        "limitation": "OCR transcription is not conclusive evidence of precise diacritics or absence; none of these glosses is a newly verified full compound",
+        "promotion_effect": "none"
       }
     },
     {
@@ -3591,6 +3751,22 @@
         "outcome": "no_exact_literal_compound_hit",
         "limitations": "OCR errors, hyphenation, accent loss and unrelated substrings can obscure true matches. Negative text searches do not prove absence. Printed page images still require targeted review.",
         "promotion_authorized": false
+      },
+      "reverse_1920_alternative_english_gloss_review": {
+        "method": "direct inspection of pdftotext-layout extracted 1920 page text, with printed-page mapping; page-image check pending for uncertain readings",
+        "status": "targeted_meaning_review_not_exhaustive",
+        "entries": [
+          {
+            "headword": "Liberty",
+            "printed_page": 291,
+            "pdf_page": 310,
+            "ocr_excerpt": "ka jinglaitluid",
+            "classification": "semantic_overlap_no_exact_ai_mon",
+            "exact_1906_headword_verified": false
+          }
+        ],
+        "limitation": "OCR transcription is not conclusive evidence of precise diacritics or absence; none of these glosses is a newly verified full compound",
+        "promotion_effect": "none"
       }
     },
     {
@@ -4032,6 +4208,22 @@
         "outcome": "ambiguous_substring_hits_only_no_validated_entry_attestation",
         "limitations": "OCR errors, hyphenation, accent loss and unrelated substrings can obscure true matches. Negative text searches do not prove absence. Printed page images still require targeted review.",
         "promotion_authorized": false
+      },
+      "reverse_1920_alternative_english_gloss_review": {
+        "method": "direct inspection of pdftotext-layout extracted 1920 page text, with printed-page mapping; page-image check pending for uncertain readings",
+        "status": "targeted_meaning_review_not_exhaustive",
+        "entries": [
+          {
+            "headword": "Prison",
+            "printed_page": 401,
+            "pdf_page": 420,
+            "ocr_excerpt": "ka byndi; ka phatok",
+            "classification": "semantic_overlap_no_exact_along",
+            "exact_1906_headword_verified": false
+          }
+        ],
+        "limitation": "OCR transcription is not conclusive evidence of precise diacritics or absence; none of these glosses is a newly verified full compound",
+        "promotion_effect": "none"
       }
     },
     {
@@ -4238,6 +4430,22 @@
         "outcome": "ambiguous_substring_hits_only_no_validated_entry_attestation",
         "limitations": "OCR errors, hyphenation, accent loss and unrelated substrings can obscure true matches. Negative text searches do not prove absence. Printed page images still require targeted review.",
         "promotion_authorized": false
+      },
+      "reverse_1920_alternative_english_gloss_review": {
+        "method": "direct inspection of pdftotext-layout extracted 1920 page text, with printed-page mapping; page-image check pending for uncertain readings",
+        "status": "targeted_meaning_review_not_exhaustive",
+        "entries": [
+          {
+            "headword": "Escape",
+            "printed_page": 159,
+            "pdf_page": 178,
+            "ocr_excerpt": "lait; kiar",
+            "classification": "semantic_context_not_interjection",
+            "exact_1906_headword_verified": false
+          }
+        ],
+        "limitation": "OCR transcription is not conclusive evidence of precise diacritics or absence; none of these glosses is a newly verified full compound",
+        "promotion_effect": "none"
       }
     },
     {
@@ -4445,6 +4653,30 @@
         "outcome": "ambiguous_substring_hits_only_no_validated_entry_attestation",
         "limitations": "OCR errors, hyphenation, accent loss and unrelated substrings can obscure true matches. Negative text searches do not prove absence. Printed page images still require targeted review.",
         "promotion_authorized": false
+      },
+      "reverse_1920_alternative_english_gloss_review": {
+        "method": "direct inspection of pdftotext-layout extracted 1920 page text, with printed-page mapping; page-image check pending for uncertain readings",
+        "status": "targeted_meaning_review_not_exhaustive",
+        "entries": [
+          {
+            "headword": "Harsh",
+            "printed_page": 214,
+            "pdf_page": 233,
+            "ocr_excerpt": "ba kher-kher; ba khain",
+            "classification": "semantic_overlap_not_amrang",
+            "exact_1906_headword_verified": false
+          },
+          {
+            "headword": "Empty",
+            "printed_page": 151,
+            "pdf_page": 170,
+            "ocr_excerpt": "pynthylli; pynsuda",
+            "classification": "semantic_overlap_not_amrang",
+            "exact_1906_headword_verified": false
+          }
+        ],
+        "limitation": "OCR transcription is not conclusive evidence of precise diacritics or absence; none of these glosses is a newly verified full compound",
+        "promotion_effect": "none"
       }
     }
   ],
@@ -4843,6 +5075,14 @@
       "remaining_unresolved": 15,
       "limitations": "Non-exhaustive; substring hits for abir, adda, along, amai, amrang cannot be treated as lexical matches",
       "promotions": 0
+    },
+    "alternative_english_gloss_review_2026_10_19": {
+      "candidates_with_targeted_review": 12,
+      "method": "1920 printed headwords located in uploaded PDF extracted text, source pages identified; page-image confirmation still pending",
+      "new_exact_matches": 0,
+      "remaining_unresolved": 15,
+      "review_scope": "targeted not exhaustive",
+      "promotion_count": 0
     }
   }
 }
