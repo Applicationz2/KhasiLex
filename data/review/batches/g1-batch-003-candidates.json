@@ -1294,6 +1294,17 @@
         "outcome": "no_exact_literal_compound_hit",
         "limitations": "OCR errors, hyphenation, accent loss and unrelated substrings can obscure true matches. Negative text searches do not prove absence. Printed page images still require targeted review.",
         "promotion_authorized": false
+      },
+      "independent_historical_1977_source": {
+        "status": "published_source_text_located_not_original_page_image_verified",
+        "citation": "Heymann (1977), gender and borrowed Khasi nouns, §27 Loanwords",
+        "url": "https://sealang.net/sala/archives/pdf8/heymann1977gender.pdf",
+        "form": "?u ?angret",
+        "gloss": "an evil spirit",
+        "classification": "independent_historical_form_attestation_with_semantic_conflict",
+        "conflicts_with_1906": "1906 gloss dare-devil; 1977 gloss evil spirit",
+        "editorial_action": "defer sense reconciliation; do not collapse meanings",
+        "modern_usage_attested": false
       }
     },
     {
@@ -2621,7 +2632,18 @@
           "verified_full_compound": false,
           "independent_modern_usage": false
         }
-      ]
+      ],
+      "additional_1906_internal_dictionary_evidence": {
+        "status": "confirmed_from_original_photographic_page_image",
+        "headword": "Kháwdûh (ai-)",
+        "printed_page": 28,
+        "pdf_page": 42,
+        "gloss": "to outcast (see kynther jymbuin)",
+        "relation": "internal_1906_crossreference_explicit_ai_prefix",
+        "independent_source": false,
+        "modern_usage_attested": false,
+        "promotion_effect": "none"
+      }
     },
     {
       "candidate_id": "g1-hist-003-012",
@@ -3345,6 +3367,17 @@
         "additional_form": "partially obscured ai- form",
         "classification": "unresolved_no_verified_ai_huspai",
         "modern_usage_attested": false
+      },
+      "additional_1906_internal_dictionary_evidence": {
+        "status": "confirmed_from_original_photographic_page_image",
+        "headword": "Huspai (ai-)",
+        "printed_page": 83,
+        "pdf_page": 97,
+        "gloss": "to indulge; to give one his own wrong way",
+        "relation": "internal_1906_crossreference_explicit_ai_prefix",
+        "independent_source": false,
+        "modern_usage_attested": false,
+        "promotion_effect": "none"
       }
     },
     {
@@ -5280,6 +5313,28 @@
       "confirmed_candidate_count_unchanged": 9,
       "unresolved_candidate_count_unchanged": 11,
       "promotions": 0
+    },
+    "follow_up_2026_11_20": {
+      "original_1906_page_images_confirmed": [
+        {
+          "candidate": "014",
+          "printed_page": 83,
+          "pdf_page": 97
+        },
+        {
+          "candidate": "011",
+          "printed_page": 28,
+          "pdf_page": 42
+        }
+      ],
+      "independent_source_lead": {
+        "candidate": "006",
+        "year": 1977,
+        "gloss": "an evil spirit",
+        "status": "independent_historical_attestation_semantic_conflict_requires_review"
+      },
+      "along_independent_attestation": "not_established",
+      "promotion_count": 0
     }
   }
 }
