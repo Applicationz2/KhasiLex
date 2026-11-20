@@ -5412,5 +5412,45 @@
     "source_independence_caution": "Different authorship is not proof of independent item-level elicitation; examine prefaces and citations.",
     "copyright_caution": "Record brief evidence and metadata; do not redistribute full scans without authorization.",
     "promotions": 0
+  },
+  "batch_003_independent_source_access_review_2026_11_20": {
+    "status": "source_access_and_provenance_verified_no_entry_attestations_claimed",
+    "kharkongngor_1968": {
+      "title": "Ka Dienshonhi",
+      "author": "Iarington Kharkongngor",
+      "year": 1968,
+      "primary_source_digitization_project": "https://udaycruise2903.github.io/khasidrp/dictionary/",
+      "processing_documentation": "https://github.com/udaycruise2903/khasi-dienshonhi",
+      "reported_entries": "8400+",
+      "reported_scan_pages": 493,
+      "source_library": "State Central Library, Shillong",
+      "source_identifier": "http://www.new.dli.ernet.in/handle/2015/464423",
+      "status": "digital_derivative_identified; no candidate entry checked",
+      "limitations": "OCR and manual correction may omit or corrupt headwords; original page-image confirmation required",
+      "priority_headwords": [
+        "Angret",
+        "Along",
+        "Amrang",
+        "Huspai",
+        "Khawdûh"
+      ]
+    },
+    "bars_1973": {
+      "title": "Khasi-English Dictionary",
+      "author": "E. Bars",
+      "year": 1973,
+      "publisher": "Don Bosco, Shillong",
+      "pages": 1000,
+      "openlibrary": "https://openlibrary.org/books/OL4525280M/Khasi-English_dictionary",
+      "library_catalog": "https://tufs.repo.nii.ac.jp/records/37658",
+      "access": "metadata only at TUFS; no inspected entry pages",
+      "status": "bibliographic_identity_verified_not_lexical_attestation"
+    },
+    "editorial_guardrails": {
+      "new_lexical_attestations": 0,
+      "independent_item_level_corroborations": 0,
+      "promotions": 0,
+      "pr_merge_authorized": false
+    }
   }
 }
