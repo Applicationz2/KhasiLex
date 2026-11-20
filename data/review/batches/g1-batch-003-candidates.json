@@ -5364,5 +5364,53 @@
       "along": "no independent verified lexical attestation",
       "promotion_count": 0
     }
+  },
+  "batch_003_independent_source_discovery_2026_11_20": {
+    "status": "bibliographic_sources_identified_not_entry_verified",
+    "sources": [
+      {
+        "author": "Amirkha Chyne",
+        "title": "English-Khasi Dictionary",
+        "year": 1922
+      },
+      {
+        "author": "T. Cajee",
+        "title": "Ka Jingspel Bad Ka Dikshoneri Khasi",
+        "year": 1937
+      },
+      {
+        "author": "A. K. Diengdoh",
+        "title": "Khasi-English Dictionary",
+        "year": 1967
+      },
+      {
+        "author": "Iarington Kharkongngor",
+        "title": "Ka Dienshonhi",
+        "year": 1968
+      },
+      {
+        "author": "E. Bars",
+        "title": "Khasi-English Dictionary",
+        "year": 1973
+      },
+      {
+        "author": "E. Blah and L. Harrison",
+        "title": "English-Khasi Dictionary",
+        "year": 1976
+      }
+    ],
+    "bibliography_url": "https://khasiauthorssociety.org/ka-seng-ka-don-artylli-ki-kot-journals-kiba-ka-ju-pynmih-tista-man-la-ka-snem/",
+    "cross_check_url": "https://files.eric.ed.gov/fulltext/ED228863.pdf",
+    "priority_headwords": [
+      "Angret",
+      "Along",
+      "Amrang",
+      "Ai-huspai",
+      "Ai-khawdûh"
+    ],
+    "verified_new_entries": 0,
+    "source_independence_caution": "Different authorship is not proof of independent item-level elicitation; examine prefaces and citations.",
+    "copyright_caution": "Record brief evidence and metadata; do not redistribute full scans without authorization.",
+    "promotions": 0
   }
 }
