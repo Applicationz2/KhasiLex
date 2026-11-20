@@ -5452,5 +5452,27 @@
       "promotions": 0,
       "pr_merge_authorized": false
     }
+  },
+  "batch_003_followup_screening_2026_11_20": {
+    "scope": "Independent 1968 Khasi-Khasi dictionary access and 1922–1976 source verification",
+    "khasi_drp_landing_page": "https://udaycruise2903.github.io/khasidrp/dictionary/",
+    "result": "Landing page describes digitization, but does not expose individual searchable entries in accessible page text; no headword verified",
+    "source_quality": "Digitization explicitly warns of OCR omission and line segmentation errors",
+    "source_scan_catalog": "https://openlibrary.org/books/OL4525272M/Ka_dienshonhi",
+    "source_catalog_details": "1968, xvi + 472 printed pages; bibliographic record only, not entry evidence",
+    "additional_historical_study": "https://openresearch-repository.anu.edu.au/bitstreams/d4141078-5c19-43a0-9e8c-77d628cc290f/download",
+    "study_context": "Ivan M. Simon 1989 discusses 1968 Ka Dienshonhi and 1973 Bars as distinct lexicographic sources, but does not verify any of the target five headwords in the consulted excerpt",
+    "false_positive_exclusion": "Unrelated web results matching Angret as a name, misspelling or non-Khasi form are excluded",
+    "remaining_priority": [
+      "Locate downloadable 1968 source pages or entry-level dataset",
+      "Verify Angret, Along, Amrang, Huspai, Khawdûh in primary images",
+      "Inspect 1967 Diengdoh and 1973 Bars entry pages",
+      "Resolve Angret 1906 vs 1977 sense conflict",
+      "Require separate modern contextual attestations and editorial review before promotion"
+    ],
+    "new_verified_headword_attestations": 0,
+    "unresolved_1920_candidates": 11,
+    "promotions": 0,
+    "merge_authorized": false
   }
 }
