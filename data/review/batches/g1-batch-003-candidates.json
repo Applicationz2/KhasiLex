@@ -1273,6 +1273,17 @@
         "limitations": [
           "1920 same-author companion edition is not independent modern usage",
           "OCR-only negative searches do not establish lexical absence"
+        ],
+        "additional_historical_sources": [
+          {
+            "source": "Rabel-Heymann 1977",
+            "printed_page": 269,
+            "form": "?u ?angret",
+            "gloss": "an evil spirit",
+            "status": "published_text_verified",
+            "independence_of_1906": "not_fully_established",
+            "sense_equivalence": "unresolved"
+          }
         ]
       },
       "original_1906_typographic_audit": {
@@ -1296,15 +1307,17 @@
         "promotion_authorized": false
       },
       "independent_historical_1977_source": {
-        "status": "published_source_text_located_not_original_page_image_verified",
-        "citation": "Heymann (1977), gender and borrowed Khasi nouns, §27 Loanwords",
+        "status": "verified_in_published_article_text",
+        "citation": "Lili Rabel-Heymann, Gender in Khasi Nouns, Mon-Khmer Studies VI (1977), section 27 Loanwords, printed p.269",
         "url": "https://sealang.net/sala/archives/pdf8/heymann1977gender.pdf",
-        "form": "?u ?angret",
+        "source_form": "?u ?angret",
+        "interpretation": "u angret (phonetic notation)",
         "gloss": "an evil spirit",
-        "classification": "independent_historical_form_attestation_with_semantic_conflict",
-        "conflicts_with_1906": "1906 gloss dare-devil; 1977 gloss evil spirit",
-        "editorial_action": "defer sense reconciliation; do not collapse meanings",
-        "modern_usage_attested": false
+        "classification": "later_linguistic_attestation_with_distinct_sense",
+        "sense_conflict": "1906 gloss dare-devil; 1977 gloss evil spirit; do not merge senses",
+        "independence_qualification": "Separate author and later publication; article cites 1920 Nissor Singh dictionary elsewhere, so independent field elicitation for this exact item is not established",
+        "modern_usage_attested": false,
+        "editorial_decision": "defer_pending_sense_and_source_lineage_review"
       }
     },
     {
@@ -4339,6 +4352,12 @@
         "limitations": [
           "1920 same-author companion edition is not independent modern usage",
           "OCR-only negative searches do not establish lexical absence"
+        ],
+        "additional_historical_sources": [
+          {
+            "status": "no_verified_independent_attestation",
+            "note": "General prison/jail translations do not establish the headword Along; continue search in independently authored Khasi works"
+          }
         ]
       },
       "original_1906_typographic_audit": {
@@ -5334,6 +5353,15 @@
         "status": "independent_historical_attestation_semantic_conflict_requires_review"
       },
       "along_independent_attestation": "not_established",
+      "promotion_count": 0
+    },
+    "angret_source_critical_review_2026_11_20": {
+      "verified": "Rabel-Heymann 1977, Gender in Khasi Nouns, §27, printed p269",
+      "form": "?u ?angret",
+      "gloss": "an evil spirit",
+      "source_lineage": "article cites Nissor Singh 1920 elsewhere; item-level independence not proven",
+      "sense_relation_to_1906": "unresolved",
+      "along": "no independent verified lexical attestation",
       "promotion_count": 0
     }
   }
