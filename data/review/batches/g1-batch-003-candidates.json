@@ -51,6 +51,14 @@
           "printed_page": 1,
           "independent_corroboration": false,
           "original_scan_pdf_page": 15
+        },
+        "pryse_1855": {
+          "source": "William Pryse, An Introduction to the Khasia Language (1855)",
+          "source_url": "https://archive.org/details/in.ernet.dli.2015.460881",
+          "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
+          "status": "no_exact_match_in_inspected_scope",
+          "modern_usage_verified": false,
+          "promotion_effect": "none"
         }
       },
       "proofread_1906_evidence": {
@@ -250,6 +258,14 @@
           "printed_page": 1,
           "independent_corroboration": false,
           "original_scan_pdf_page": 15
+        },
+        "pryse_1855": {
+          "source": "William Pryse, An Introduction to the Khasia Language (1855)",
+          "source_url": "https://archive.org/details/in.ernet.dli.2015.460881",
+          "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
+          "status": "no_exact_match_in_inspected_scope",
+          "modern_usage_verified": false,
+          "promotion_effect": "none"
         }
       },
       "proofread_1906_evidence": {
@@ -473,6 +489,14 @@
           "printed_page": 1,
           "independent_corroboration": false,
           "original_scan_pdf_page": 15
+        },
+        "pryse_1855": {
+          "source": "William Pryse, An Introduction to the Khasia Language (1855)",
+          "source_url": "https://archive.org/details/in.ernet.dli.2015.460881",
+          "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
+          "status": "no_exact_match_in_inspected_scope",
+          "modern_usage_verified": false,
+          "promotion_effect": "none"
         }
       },
       "proofread_1906_evidence": {
@@ -692,6 +716,14 @@
           "printed_page": 1,
           "independent_corroboration": false,
           "original_scan_pdf_page": 15
+        },
+        "pryse_1855": {
+          "source": "William Pryse, An Introduction to the Khasia Language (1855)",
+          "source_url": "https://archive.org/details/in.ernet.dli.2015.460881",
+          "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
+          "status": "no_exact_match_in_inspected_scope",
+          "modern_usage_verified": false,
+          "promotion_effect": "none"
         }
       },
       "proofread_1906_evidence": {
@@ -905,6 +937,18 @@
           "printed_page": 1,
           "independent_corroboration": false,
           "original_scan_pdf_page": 15
+        },
+        "pryse_1855": {
+          "source": "William Pryse, An Introduction to the Khasia Language (1855)",
+          "source_url": "https://archive.org/details/in.ernet.dli.2015.460881",
+          "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
+          "status": "same_form_different_sense",
+          "modern_usage_verified": false,
+          "promotion_effect": "none",
+          "attested_form": "Adda or Addi",
+          "gloss": "oh my! oh dear!",
+          "printed_page": 123,
+          "pdf_page": 135
         }
       },
       "proofread_1906_evidence": {
@@ -1137,6 +1181,14 @@
           "printed_page": 1,
           "independent_corroboration": false,
           "original_scan_pdf_page": 15
+        },
+        "pryse_1855": {
+          "source": "William Pryse, An Introduction to the Khasia Language (1855)",
+          "source_url": "https://archive.org/details/in.ernet.dli.2015.460881",
+          "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
+          "status": "no_exact_match_in_inspected_scope",
+          "modern_usage_verified": false,
+          "promotion_effect": "none"
         }
       },
       "proofread_1906_evidence": {
@@ -1373,6 +1425,14 @@
           "printed_page": 1,
           "independent_corroboration": false,
           "original_scan_pdf_page": 15
+        },
+        "pryse_1855": {
+          "source": "William Pryse, An Introduction to the Khasia Language (1855)",
+          "source_url": "https://archive.org/details/in.ernet.dli.2015.460881",
+          "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
+          "status": "no_exact_match_in_inspected_scope",
+          "modern_usage_verified": false,
+          "promotion_effect": "none"
         }
       },
       "proofread_1906_evidence": {
@@ -1618,6 +1678,17 @@
           "printed_page": 2,
           "independent_corroboration": false,
           "original_scan_pdf_page": 16
+        },
+        "pryse_1855": {
+          "source": "William Pryse, An Introduction to the Khasia Language (1855)",
+          "source_url": "https://archive.org/details/in.ernet.dli.2015.460881",
+          "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
+          "status": "constituent_evidence_only",
+          "modern_usage_verified": false,
+          "promotion_effect": "none",
+          "attested_form": "Ai",
+          "printed_page": 123,
+          "pdf_page": 135
         }
       },
       "proofread_1906_evidence": {
@@ -1898,6 +1969,25 @@
           "printed_page": 2,
           "independent_corroboration": false,
           "original_scan_pdf_page": 16
+        },
+        "pryse_1855": {
+          "source": "William Pryse, An Introduction to the Khasia Language (1855)",
+          "source_url": "https://archive.org/details/in.ernet.dli.2015.460881",
+          "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
+          "status": "constituent_evidence_only",
+          "modern_usage_verified": false,
+          "promotion_effect": "none",
+          "attested_form": "Ai",
+          "printed_page": 123,
+          "pdf_page": 135,
+          "additional_evidence": [
+            {
+              "form": "Bat",
+              "gloss": "to hold fast, to cling",
+              "printed_page": 126,
+              "pdf_page": 138
+            }
+          ]
         }
       },
       "proofread_1906_evidence": {
@@ -2159,6 +2249,25 @@
           "printed_page": 2,
           "independent_corroboration": false,
           "original_scan_pdf_page": 16
+        },
+        "pryse_1855": {
+          "source": "William Pryse, An Introduction to the Khasia Language (1855)",
+          "source_url": "https://archive.org/details/in.ernet.dli.2015.460881",
+          "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
+          "status": "related_form_different_gloss",
+          "modern_usage_verified": false,
+          "promotion_effect": "none",
+          "attested_form": "Ai",
+          "printed_page": 123,
+          "pdf_page": 135,
+          "additional_evidence": [
+            {
+              "form": "Budnam",
+              "gloss": "to suspect, imagine evil",
+              "printed_page": 127,
+              "pdf_page": 139
+            }
+          ]
         }
       },
       "proofread_1906_evidence": {
@@ -2391,6 +2500,17 @@
           "printed_page": 2,
           "independent_corroboration": false,
           "original_scan_pdf_page": 16
+        },
+        "pryse_1855": {
+          "source": "William Pryse, An Introduction to the Khasia Language (1855)",
+          "source_url": "https://archive.org/details/in.ernet.dli.2015.460881",
+          "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
+          "status": "constituent_evidence_only",
+          "modern_usage_verified": false,
+          "promotion_effect": "none",
+          "attested_form": "Ai",
+          "printed_page": 123,
+          "pdf_page": 135
         }
       },
       "proofread_1906_evidence": {
@@ -2709,6 +2829,17 @@
           "printed_page": 2,
           "independent_corroboration": false,
           "original_scan_pdf_page": 16
+        },
+        "pryse_1855": {
+          "source": "William Pryse, An Introduction to the Khasia Language (1855)",
+          "source_url": "https://archive.org/details/in.ernet.dli.2015.460881",
+          "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
+          "status": "constituent_evidence_only",
+          "modern_usage_verified": false,
+          "promotion_effect": "none",
+          "attested_form": "Ai",
+          "printed_page": 123,
+          "pdf_page": 135
         }
       },
       "proofread_1906_evidence": {
@@ -2941,6 +3072,17 @@
           "context": "Hunting party members holding trained dogs on leashes before scent pursuit",
           "sense_relation": "supports hunting/dog-scent semantic domain; derivative form, not direct equivalent or modern usage",
           "modern_attestation": false
+        },
+        "pryse_1855": {
+          "source": "William Pryse, An Introduction to the Khasia Language (1855)",
+          "source_url": "https://archive.org/details/in.ernet.dli.2015.460881",
+          "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
+          "status": "constituent_evidence_only",
+          "modern_usage_verified": false,
+          "promotion_effect": "none",
+          "attested_form": "Ai",
+          "printed_page": 123,
+          "pdf_page": 135
         }
       },
       "proofread_1906_evidence": {
@@ -3179,6 +3321,17 @@
           "printed_page": 2,
           "independent_corroboration": false,
           "original_scan_pdf_page": 16
+        },
+        "pryse_1855": {
+          "source": "William Pryse, An Introduction to the Khasia Language (1855)",
+          "source_url": "https://archive.org/details/in.ernet.dli.2015.460881",
+          "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
+          "status": "constituent_evidence_only",
+          "modern_usage_verified": false,
+          "promotion_effect": "none",
+          "attested_form": "Ai",
+          "printed_page": 123,
+          "pdf_page": 135
         }
       },
       "proofread_1906_evidence": {
@@ -3440,6 +3593,17 @@
           "printed_page": 2,
           "independent_corroboration": false,
           "original_scan_pdf_page": 16
+        },
+        "pryse_1855": {
+          "source": "William Pryse, An Introduction to the Khasia Language (1855)",
+          "source_url": "https://archive.org/details/in.ernet.dli.2015.460881",
+          "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
+          "status": "constituent_evidence_only",
+          "modern_usage_verified": false,
+          "promotion_effect": "none",
+          "attested_form": "Ai",
+          "printed_page": 123,
+          "pdf_page": 135
         }
       },
       "proofread_1906_evidence": {
@@ -3714,6 +3878,17 @@
           "printed_page": 2,
           "independent_corroboration": false,
           "original_scan_pdf_page": 16
+        },
+        "pryse_1855": {
+          "source": "William Pryse, An Introduction to the Khasia Language (1855)",
+          "source_url": "https://archive.org/details/in.ernet.dli.2015.460881",
+          "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
+          "status": "constituent_evidence_only",
+          "modern_usage_verified": false,
+          "promotion_effect": "none",
+          "attested_form": "Ai",
+          "printed_page": 123,
+          "pdf_page": 135
         }
       },
       "proofread_1906_evidence": {
@@ -3985,6 +4160,18 @@
           "printed_page": 3,
           "independent_corroboration": false,
           "original_scan_pdf_page": 17
+        },
+        "pryse_1855": {
+          "source": "William Pryse, An Introduction to the Khasia Language (1855)",
+          "source_url": "https://archive.org/details/in.ernet.dli.2015.460881",
+          "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
+          "status": "independent_historical_sense_match",
+          "modern_usage_verified": false,
+          "promotion_effect": "none",
+          "attested_form": "Aiuh",
+          "gloss": "what?",
+          "printed_page": 124,
+          "pdf_page": 136
         }
       },
       "proofread_1906_evidence": {
@@ -4193,6 +4380,14 @@
           "printed_page": 3,
           "independent_corroboration": false,
           "original_scan_pdf_page": 17
+        },
+        "pryse_1855": {
+          "source": "William Pryse, An Introduction to the Khasia Language (1855)",
+          "source_url": "https://archive.org/details/in.ernet.dli.2015.460881",
+          "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
+          "status": "no_exact_match_in_inspected_scope",
+          "modern_usage_verified": false,
+          "promotion_effect": "none"
         }
       },
       "proofread_1906_evidence": {
@@ -4444,6 +4639,14 @@
           "printed_page": 3,
           "independent_corroboration": false,
           "original_scan_pdf_page": 17
+        },
+        "pryse_1855": {
+          "source": "William Pryse, An Introduction to the Khasia Language (1855)",
+          "source_url": "https://archive.org/details/in.ernet.dli.2015.460881",
+          "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
+          "status": "no_exact_match_in_inspected_scope",
+          "modern_usage_verified": false,
+          "promotion_effect": "none"
         }
       },
       "proofread_1906_evidence": {
@@ -4666,6 +4869,14 @@
           "printed_page": 3,
           "independent_corroboration": false,
           "original_scan_pdf_page": 17
+        },
+        "pryse_1855": {
+          "source": "William Pryse, An Introduction to the Khasia Language (1855)",
+          "source_url": "https://archive.org/details/in.ernet.dli.2015.460881",
+          "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
+          "status": "no_exact_match_in_inspected_scope",
+          "modern_usage_verified": false,
+          "promotion_effect": "none"
         }
       },
       "proofread_1906_evidence": {
