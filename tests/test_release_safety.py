@@ -39,3 +39,27 @@ def test_review_pilot_is_ready_but_larger_release_gates_remain_closed():
     assert quality_gate["ready"] is False
     assert quality_gate["required_verified_entries"] == 10000
     assert professional_core["ready"] is False
+
+
+def test_release_bundle_cli(tmp_path):
+    import csv
+    import hashlib
+    import io
+    import subprocess
+    import sys
+    import zipfile
+    from pathlib import Path
+
+    root = Path(__file__).resolve().parents[1]
+    version = "0.1.0-rc.1"
+    subprocess.run([sys.executable, "-m", "scripts.build_release_bundle",
+                    "--version", version, "--target", "review-pilot",
+                    "--output-dir", str(tmp_path)], cwd=root, check=True)
+    bundle = tmp_path / f"KhasiLex-{version}.zip"
+    digest = hashlib.sha256(bundle.read_bytes()).hexdigest()
+    assert (tmp_path / f"KhasiLex-{version}.zip.sha256").read_text().split()[0] == digest
+    with zipfile.ZipFile(bundle) as archive:
+        rows = list(csv.DictReader(io.StringIO(archive.read(
+            f"KhasiLex-{version}/data/khasi_lexicon_verified.csv").decode("utf-8"))))
+    assert len(rows) == evaluate("review-pilot")["verified_entries"]
+    assert all(row["verification_status"] == "verified" for row in rows)
