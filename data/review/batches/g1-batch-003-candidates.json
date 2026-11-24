@@ -1707,11 +1707,13 @@
           "supplemental_inspection_scope": "PDF 157–174 and 187–198; targeted vocabulary inspection, not exhaustive",
           "supplemental_constituents": [
             {
-              "form": "Siwapah",
+              "form": "Siwspah",
               "gloss": "redeemer; one who has bought liberty for a slave",
               "printed_page": 184,
               "pdf_page": 196,
-              "classification": "constituent_or_related_form_only"
+              "classification": "constituent_or_related_form_only",
+              "normalized_form": "Siewspah",
+              "orthography_note": "Rechecked printed p.184, PDF p.196; source prints Siwspah; owner supplies modern Siewspah."
             }
           ]
         }
@@ -2544,11 +2546,13 @@
           "supplemental_inspection_scope": "PDF 157–174 and 187–198; targeted vocabulary inspection, not exhaustive",
           "supplemental_constituents": [
             {
-              "form": "Khaddah",
+              "form": "Khadduh",
               "gloss": "last",
               "printed_page": 146,
               "pdf_page": 158,
-              "classification": "constituent_or_related_form_only"
+              "classification": "constituent_or_related_form_only",
+              "normalized_form": "Khadduh",
+              "orthography_note": "Rechecked printed p.146, PDF p.158; adjective, last."
             },
             {
               "form": "Khaw",
