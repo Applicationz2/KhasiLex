@@ -58,7 +58,9 @@
           "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
           "status": "no_exact_match_in_inspected_scope",
           "modern_usage_verified": false,
-          "promotion_effect": "none"
+          "promotion_effect": "none",
+          "source_pdf_pages": 204,
+          "supplemental_inspection_scope": "PDF 157–174 and 187–198; targeted vocabulary inspection, not exhaustive"
         }
       },
       "proofread_1906_evidence": {
@@ -265,7 +267,9 @@
           "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
           "status": "no_exact_match_in_inspected_scope",
           "modern_usage_verified": false,
-          "promotion_effect": "none"
+          "promotion_effect": "none",
+          "source_pdf_pages": 204,
+          "supplemental_inspection_scope": "PDF 157–174 and 187–198; targeted vocabulary inspection, not exhaustive"
         }
       },
       "proofread_1906_evidence": {
@@ -496,7 +500,9 @@
           "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
           "status": "no_exact_match_in_inspected_scope",
           "modern_usage_verified": false,
-          "promotion_effect": "none"
+          "promotion_effect": "none",
+          "source_pdf_pages": 204,
+          "supplemental_inspection_scope": "PDF 157–174 and 187–198; targeted vocabulary inspection, not exhaustive"
         }
       },
       "proofread_1906_evidence": {
@@ -723,7 +729,9 @@
           "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
           "status": "no_exact_match_in_inspected_scope",
           "modern_usage_verified": false,
-          "promotion_effect": "none"
+          "promotion_effect": "none",
+          "source_pdf_pages": 204,
+          "supplemental_inspection_scope": "PDF 157–174 and 187–198; targeted vocabulary inspection, not exhaustive"
         }
       },
       "proofread_1906_evidence": {
@@ -948,7 +956,9 @@
           "attested_form": "Adda or Addi",
           "gloss": "oh my! oh dear!",
           "printed_page": 123,
-          "pdf_page": 135
+          "pdf_page": 135,
+          "source_pdf_pages": 204,
+          "supplemental_inspection_scope": "PDF 157–174 and 187–198; targeted vocabulary inspection, not exhaustive"
         }
       },
       "proofread_1906_evidence": {
@@ -1188,7 +1198,9 @@
           "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
           "status": "no_exact_match_in_inspected_scope",
           "modern_usage_verified": false,
-          "promotion_effect": "none"
+          "promotion_effect": "none",
+          "source_pdf_pages": 204,
+          "supplemental_inspection_scope": "PDF 157–174 and 187–198; targeted vocabulary inspection, not exhaustive"
         }
       },
       "proofread_1906_evidence": {
@@ -1432,7 +1444,9 @@
           "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
           "status": "no_exact_match_in_inspected_scope",
           "modern_usage_verified": false,
-          "promotion_effect": "none"
+          "promotion_effect": "none",
+          "source_pdf_pages": 204,
+          "supplemental_inspection_scope": "PDF 157–174 and 187–198; targeted vocabulary inspection, not exhaustive"
         }
       },
       "proofread_1906_evidence": {
@@ -1688,7 +1702,18 @@
           "promotion_effect": "none",
           "attested_form": "Ai",
           "printed_page": 123,
-          "pdf_page": 135
+          "pdf_page": 135,
+          "source_pdf_pages": 204,
+          "supplemental_inspection_scope": "PDF 157–174 and 187–198; targeted vocabulary inspection, not exhaustive",
+          "supplemental_constituents": [
+            {
+              "form": "Siwapah",
+              "gloss": "redeemer; one who has bought liberty for a slave",
+              "printed_page": 184,
+              "pdf_page": 196,
+              "classification": "constituent_or_related_form_only"
+            }
+          ]
         }
       },
       "proofread_1906_evidence": {
@@ -1987,7 +2012,9 @@
               "printed_page": 126,
               "pdf_page": 138
             }
-          ]
+          ],
+          "source_pdf_pages": 204,
+          "supplemental_inspection_scope": "PDF 157–174 and 187–198; targeted vocabulary inspection, not exhaustive"
         }
       },
       "proofread_1906_evidence": {
@@ -2267,7 +2294,9 @@
               "printed_page": 127,
               "pdf_page": 139
             }
-          ]
+          ],
+          "source_pdf_pages": 204,
+          "supplemental_inspection_scope": "PDF 157–174 and 187–198; targeted vocabulary inspection, not exhaustive"
         }
       },
       "proofread_1906_evidence": {
@@ -2510,7 +2539,25 @@
           "promotion_effect": "none",
           "attested_form": "Ai",
           "printed_page": 123,
-          "pdf_page": 135
+          "pdf_page": 135,
+          "source_pdf_pages": 204,
+          "supplemental_inspection_scope": "PDF 157–174 and 187–198; targeted vocabulary inspection, not exhaustive",
+          "supplemental_constituents": [
+            {
+              "form": "Khaddah",
+              "gloss": "last",
+              "printed_page": 146,
+              "pdf_page": 158,
+              "classification": "constituent_or_related_form_only"
+            },
+            {
+              "form": "Khaw",
+              "gloss": "rice",
+              "printed_page": 147,
+              "pdf_page": 159,
+              "classification": "constituent_or_related_form_only"
+            }
+          ]
         }
       },
       "proofread_1906_evidence": {
@@ -2839,7 +2886,9 @@
           "promotion_effect": "none",
           "attested_form": "Ai",
           "printed_page": 123,
-          "pdf_page": 135
+          "pdf_page": 135,
+          "source_pdf_pages": 204,
+          "supplemental_inspection_scope": "PDF 157–174 and 187–198; targeted vocabulary inspection, not exhaustive"
         }
       },
       "proofread_1906_evidence": {
@@ -3082,7 +3131,18 @@
           "promotion_effect": "none",
           "attested_form": "Ai",
           "printed_page": 123,
-          "pdf_page": 135
+          "pdf_page": 135,
+          "source_pdf_pages": 204,
+          "supplemental_inspection_scope": "PDF 157–174 and 187–198; targeted vocabulary inspection, not exhaustive",
+          "supplemental_constituents": [
+            {
+              "form": "Ksew",
+              "gloss": "dog; bitch",
+              "printed_page": 150,
+              "pdf_page": 162,
+              "classification": "constituent_or_related_form_only"
+            }
+          ]
         }
       },
       "proofread_1906_evidence": {
@@ -3331,7 +3391,9 @@
           "promotion_effect": "none",
           "attested_form": "Ai",
           "printed_page": 123,
-          "pdf_page": 135
+          "pdf_page": 135,
+          "source_pdf_pages": 204,
+          "supplemental_inspection_scope": "PDF 157–174 and 187–198; targeted vocabulary inspection, not exhaustive"
         }
       },
       "proofread_1906_evidence": {
@@ -3603,7 +3665,18 @@
           "promotion_effect": "none",
           "attested_form": "Ai",
           "printed_page": 123,
-          "pdf_page": 135
+          "pdf_page": 135,
+          "source_pdf_pages": 204,
+          "supplemental_inspection_scope": "PDF 157–174 and 187–198; targeted vocabulary inspection, not exhaustive",
+          "supplemental_constituents": [
+            {
+              "form": "Lait",
+              "gloss": "deliver, set free, disentangle; pass; depart",
+              "printed_page": 156,
+              "pdf_page": 168,
+              "classification": "constituent_or_related_form_only"
+            }
+          ]
         }
       },
       "proofread_1906_evidence": {
@@ -3888,7 +3961,18 @@
           "promotion_effect": "none",
           "attested_form": "Ai",
           "printed_page": 123,
-          "pdf_page": 135
+          "pdf_page": 135,
+          "source_pdf_pages": 204,
+          "supplemental_inspection_scope": "PDF 157–174 and 187–198; targeted vocabulary inspection, not exhaustive",
+          "supplemental_constituents": [
+            {
+              "form": "Mon",
+              "gloss": "wish, will, choose, desire; will, choice",
+              "printed_page": 159,
+              "pdf_page": 171,
+              "classification": "constituent_or_related_form_only"
+            }
+          ]
         }
       },
       "proofread_1906_evidence": {
@@ -4171,7 +4255,9 @@
           "attested_form": "Aiuh",
           "gloss": "what?",
           "printed_page": 124,
-          "pdf_page": 136
+          "pdf_page": 136,
+          "source_pdf_pages": 204,
+          "supplemental_inspection_scope": "PDF 157–174 and 187–198; targeted vocabulary inspection, not exhaustive"
         }
       },
       "proofread_1906_evidence": {
@@ -4387,7 +4473,9 @@
           "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
           "status": "no_exact_match_in_inspected_scope",
           "modern_usage_verified": false,
-          "promotion_effect": "none"
+          "promotion_effect": "none",
+          "source_pdf_pages": 204,
+          "supplemental_inspection_scope": "PDF 157–174 and 187–198; targeted vocabulary inspection, not exhaustive"
         }
       },
       "proofread_1906_evidence": {
@@ -4646,7 +4734,9 @@
           "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
           "status": "no_exact_match_in_inspected_scope",
           "modern_usage_verified": false,
-          "promotion_effect": "none"
+          "promotion_effect": "none",
+          "source_pdf_pages": 204,
+          "supplemental_inspection_scope": "PDF 157–174 and 187–198; targeted vocabulary inspection, not exhaustive"
         }
       },
       "proofread_1906_evidence": {
@@ -4876,7 +4966,9 @@
           "inspected_scope": "uploaded PDF pages 135–150, printed 123–138",
           "status": "no_exact_match_in_inspected_scope",
           "modern_usage_verified": false,
-          "promotion_effect": "none"
+          "promotion_effect": "none",
+          "source_pdf_pages": 204,
+          "supplemental_inspection_scope": "PDF 157–174 and 187–198; targeted vocabulary inspection, not exhaustive"
         }
       },
       "proofread_1906_evidence": {
