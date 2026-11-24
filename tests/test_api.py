@@ -213,3 +213,38 @@ def test_capabilities_expose_ai_authority_boundary():
     assert "verified" in data["confidence_classes"]
     assert "needs_human_review" in data["confidence_classes"]
     assert "every known or undocumented language" in data["language_support_policy"]
+
+
+def test_blank_search_rejected():
+    assert client.get("/api/v1/search", params={"q": "   "}).status_code == 422
+
+
+def test_production_actual_body_limit(monkeypatch):
+    monkeypatch.setenv("KHASILEX_ENV", "production")
+    monkeypatch.setenv("KHASILEX_MAX_BODY_BYTES", "1024")
+    response = client.post("/api/v1/normalize", content=b'{"text":"' + b'x' * 2048 + b'"}',
+                           headers={"content-length": "10", "content-type": "application/json"})
+    assert response.status_code == 413
+
+
+def test_production_body_replayed(monkeypatch):
+    monkeypatch.setenv("KHASILEX_ENV", "production")
+    response = client.post("/api/v1/normalize", json={"text": " ïing "})
+    assert response.status_code == 200
+    assert response.json()["normalized"] == "ïing"
+
+
+def test_rate_state_bounded_and_expires(monkeypatch):
+    from api import runtime
+    monkeypatch.setattr(runtime, "_RATE_BUCKETS", {})
+    monkeypatch.setattr(runtime, "_RATE_WINDOW", -1)
+    monkeypatch.setattr(runtime, "_MAX_RATE_KEYS", 2)
+    monkeypatch.setattr(runtime.time, "time", lambda: 60)
+    assert runtime.rate_allowed("a", 2)[0]
+    assert runtime.rate_allowed("b", 2)[0]
+    assert not runtime.rate_allowed("c", 2)[0]
+    assert runtime.rate_allowed("a", 2)[0]
+    assert not runtime.rate_allowed("a", 2)[0]
+    monkeypatch.setattr(runtime.time, "time", lambda: 120)
+    assert runtime.rate_allowed("c", 2)[0]
+    assert set(runtime._RATE_BUCKETS) == {"c"}
