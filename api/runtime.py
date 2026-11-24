@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-from collections import defaultdict
 import json
 import logging
 import os
@@ -15,6 +14,8 @@ logger = logging.getLogger("khasilex.request")
 
 _RATE_LOCK = threading.Lock()
 _RATE_BUCKETS: dict[str, tuple[int, int]] = {}
+_RATE_WINDOW = -1
+_MAX_RATE_KEYS = 10000
 
 
 def environment() -> str:
@@ -63,9 +64,15 @@ def client_key(request: Request) -> str:
 
 
 def rate_allowed(key: str, limit: int | None = None) -> tuple[bool, int]:
+    global _RATE_WINDOW
     limit = limit or rate_limit_per_minute()
     window = int(time.time() // 60)
     with _RATE_LOCK:
+        if window != _RATE_WINDOW:
+            _RATE_BUCKETS.clear()
+            _RATE_WINDOW = window
+        if key not in _RATE_BUCKETS and len(_RATE_BUCKETS) >= _MAX_RATE_KEYS:
+            return False, 0
         current_window, count = _RATE_BUCKETS.get(key, (window, 0))
         if current_window != window:
             current_window, count = window, 0
@@ -84,6 +91,8 @@ async def production_guard(request: Request, call_next):
         content_length = request.headers.get("content-length")
         if content_length:
             try:
+                if int(content_length) < 0:
+                    raise ValueError("Negative Content-Length")
                 if int(content_length) > request_limit_bytes():
                     return JSONResponse(
                         status_code=413,
@@ -108,6 +117,18 @@ async def production_guard(request: Request, call_next):
                     "X-RateLimit-Remaining": "0",
                 },
             )
+        # Bound the actual ASGI body before handing it to the application.
+        # Starlette replays the cached body to downstream handlers.
+        chunks = bytearray()
+        async for chunk in request.stream():
+            if len(chunks) + len(chunk) > request_limit_bytes():
+                return JSONResponse(
+                    status_code=413,
+                    content={"detail": "Request body too large", "request_id": request_id},
+                    headers={"X-Request-ID": request_id},
+                )
+            chunks.extend(chunk)
+        request._body = bytes(chunks)
     else:
         remaining = -1
 

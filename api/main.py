@@ -155,6 +155,8 @@ def search(
     limit: int = Query(default=20, ge=1, le=100),
 ):
     query = normalize(q).casefold()
+    if not query:
+        raise HTTPException(status_code=422, detail="Search query must not be blank")
     results = []
     for entry in public_entries():
         fields = [
