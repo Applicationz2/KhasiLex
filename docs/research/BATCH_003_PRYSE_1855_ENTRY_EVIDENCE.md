@@ -13,3 +13,7 @@ No contemporary contextual attestations or promotions. Candidate records now inc
 ## Scope supplement
 
 Printed pages 125–138 (PDF 137–150) inspected. Bat (126) and Budnam (127) are constituent/related-form evidence only. Budnam means to suspect or imagine evil, not an exact match for the target compound's slander sense. Pages beyond 150 unavailable in uploaded copy; archive metadata retrieval unsuccessful. No absence claims beyond inspected scope.
+
+## Complete PDF extent correction and targeted supplement
+
+The uploaded binary has 204 pages; the earlier 150-page limit was an inspection limit, not a truncated source. Additional targeted visual inspection: PDF 157–174 and 187–198. Ksew (printed 150), Lait (156), Mon (159), Khaddah (146), Khaw (147), Siwapah (184) recorded as constituent or related-form evidence only. No exact target compound or contemporary sense established. Earlier scope statements describe the earlier pass only. No promotions or merge authorization.
