@@ -16,4 +16,8 @@ Printed pages 125–138 (PDF 137–150) inspected. Bat (126) and Budnam (127) ar
 
 ## Complete PDF extent correction and targeted supplement
 
-The uploaded binary has 204 pages; the earlier 150-page limit was an inspection limit, not a truncated source. Additional targeted visual inspection: PDF 157–174 and 187–198. Ksew (printed 150), Lait (156), Mon (159), Khaddah (146), Khaw (147), Siwapah (184) recorded as constituent or related-form evidence only. No exact target compound or contemporary sense established. Earlier scope statements describe the earlier pass only. No promotions or merge authorization.
+The uploaded binary has 204 pages; the earlier 150-page limit was an inspection limit, not a truncated source. Additional targeted visual inspection: PDF 157–174 and 187–198. Ksew (printed 150), Lait (156), Mon (159), Khadduh (146), Khaw (147), Siwspah (184) recorded as constituent or related-form evidence only. No exact target compound or contemporary sense established. Earlier scope statements describe the earlier pass only. No promotions or merge authorization.
+
+## Orthographic correction after owner review
+
+Printed p.146 (PDF 158) reads Khadduh, a. last. Printed p.184 (PDF 196) reads Siwspah, u, s. a redeemer; one who has bought liberty for a slave. Owner supplies modern spelling Siewspah, retained separately from the diplomatic source transcription. Previous erroneous readings Khaddah and Siwapah are superseded. No change to compound verification or promotion status.
