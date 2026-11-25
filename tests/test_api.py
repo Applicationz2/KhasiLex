@@ -288,3 +288,51 @@ def test_directional_search_production_verified_only(monkeypatch):
         response = client.get("/api/v1/search", params={"q": "a", "direction": direction, "limit": 100})
         assert response.status_code == 200
         assert all(row["verification_status"] == "verified" for row in response.json()["results"])
+
+
+def test_khasi_unicode_lookup_and_search():
+    import unicodedata
+    for spelling in ("ïing", "ÏING", unicodedata.normalize("NFD", "ïing")):
+        response = client.get("/api/v1/authoritative/words/" + spelling)
+        assert response.status_code == 200
+        assert response.json()["headword"] == "ïing"
+        search = client.get("/api/v1/search", params={"q": spelling, "direction": "kha-en"})
+        assert search.status_code == 200
+        assert search.json()["results"][0]["headword"] == "ïing"
+
+
+def test_khasi_distinct_letters_and_connectors():
+    from linguistics.tokenizer import normalize_token, tokenize
+    assert normalize_token("ñ") != normalize_token("n")
+    assert normalize_token("ï") != normalize_token("i")
+    assert normalize_token("Siwspah") != normalize_token("Siewspah")
+    assert [t["text"] for t in tokenize("ai-mon ka ïing")] == ["ai-mon", "ka", "ïing"]
+
+
+def test_unicode_original_token_offsets():
+    from linguistics.tokenizer import tokenize
+    text = "  i\u0308ing n\u0303 ai-mon"
+    tokens = tokenize(text)
+    assert [t["normalized"] for t in tokens] == ["ïing", "ñ", "ai-mon"]
+    for token in tokens:
+        assert text[token["start"]:token["end"]] == token["text"]
+
+
+def test_unicode_reduplication_original_offsets():
+    from linguistics.tokenizer import detect_adjacent_reduplication
+    text = "i\u0308ing ïing"
+    match = detect_adjacent_reduplication(text)[0]
+    assert match["repeat_count"] == 2
+    assert text[match["start"]:match["end"]] == text
+    assert match["normalized_base"] == "ïing"
+
+
+def test_unicode_phrase_original_offsets(monkeypatch):
+    from linguistics import phrase_matcher
+    monkeypatch.setattr(phrase_matcher, "load_multiword_entries", lambda: [
+        {"headword": "ïing ñ", "id": "fixture", "entry_type": "phrase", "verification_status": "verified"}
+    ])
+    text = "  i\u0308ing n\u0303"
+    match = phrase_matcher.match_phrases(text)[0]
+    assert match["surface"] == text[2:]
+    assert text[match["start"]:match["end"]] == match["surface"]
