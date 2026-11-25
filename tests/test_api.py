@@ -248,3 +248,43 @@ def test_rate_state_bounded_and_expires(monkeypatch):
     monkeypatch.setattr(runtime.time, "time", lambda: 120)
     assert runtime.rate_allowed("c", 2)[0]
     assert set(runtime._RATE_BUCKETS) == {"c"}
+
+
+def test_directional_khasi_search():
+    response = client.get("/api/v1/search", params={"q": "ÏING", "direction": "kha-en"})
+    assert response.status_code == 200
+    assert response.json()["results"][0]["headword"] == "ïing"
+
+
+def test_directional_english_search():
+    response = client.get("/api/v1/search", params={"q": "HOUSE", "direction": "en-kha"})
+    assert response.status_code == 200
+    assert any(row["headword"] == "ïing" for row in response.json()["results"])
+
+
+def test_search_rank():
+    from api.main import _search_rank
+    assert _search_rank("house; home", "home") == 0
+    assert _search_rank("a house", "house") == 1
+    assert _search_rank("household", "house") == 2
+    assert _search_rank("warehouse", "house") == 3
+    assert _search_rank("tree", "house") is None
+
+
+def test_search_homograph_pos_filter():
+    response = client.get("/api/v1/search", params={"q": "phira", "direction": "kha-en", "part_of_speech": "verb"})
+    assert response.status_code == 200
+    assert response.json()["results"][0]["headword"] == "phira"
+    assert all(row["part_of_speech"] == "verb" for row in response.json()["results"])
+
+
+def test_search_direction_validation():
+    assert client.get("/api/v1/search", params={"q": "house", "direction": "invalid"}).status_code == 422
+
+
+def test_directional_search_production_verified_only(monkeypatch):
+    monkeypatch.setenv("KHASILEX_ENV", "production")
+    for direction in ("all", "kha-en", "en-kha"):
+        response = client.get("/api/v1/search", params={"q": "a", "direction": direction, "limit": 100})
+        assert response.status_code == 200
+        assert all(row["verification_status"] == "verified" for row in response.json()["results"])
