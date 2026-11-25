@@ -1,6 +1,8 @@
 from pathlib import Path
 import csv
 import os
+import re
+from typing import Literal
 import unicodedata
 
 from fastapi import FastAPI, HTTPException, Query
@@ -149,32 +151,47 @@ def reduplications(q: str = Query(default="", max_length=128)):
     return {"count": len(entries), "results": entries}
 
 
+def _search_rank(value: str, query: str) -> int | None:
+    value = normalize(value).casefold()
+    if value == query:
+        return 0
+    if query in [part.strip() for part in value.split(";")]:
+        return 0
+    if re.search(r"(?<!\w)" + re.escape(query) + r"(?!\w)", value):
+        return 1
+    if value.startswith(query):
+        return 2
+    if query in value:
+        return 3
+    return None
+
+
 @app.get("/api/v1/search")
 def search(
     q: str = Query(min_length=1, max_length=128),
     limit: int = Query(default=20, ge=1, le=100),
+    direction: Literal["all", "kha-en", "en-kha"] = "all",
+    part_of_speech: str | None = Query(default=None, max_length=64),
 ):
     query = normalize(q).casefold()
     if not query:
         raise HTTPException(status_code=422, detail="Search query must not be blank")
-    results = []
+    khasi_fields = ("headword", "lemma", "base_form", "synonyms", "variants")
+    fields = {
+        "all": khasi_fields + ("definition_kha", "definition_en"),
+        "kha-en": khasi_fields,
+        "en-kha": ("definition_en",),
+    }[direction]
+    ranked = []
     for entry in public_entries():
-        fields = [
-            entry.get(k, "")
-            for k in (
-                "headword",
-                "lemma",
-                "base_form",
-                "definition_kha",
-                "definition_en",
-                "synonyms",
-                "variants",
-            )
-        ]
-        if any(query in normalize(v).casefold() for v in fields):
-            results.append(entry)
-            if len(results) >= limit:
-                break
+        if part_of_speech is not None and normalize(entry.get("part_of_speech", "")).casefold() != normalize(part_of_speech).casefold():
+            continue
+        scores = [_search_rank(entry.get(field, ""), query) for field in fields]
+        matches = [score for score in scores if score is not None]
+        if matches:
+            ranked.append((min(matches), entry))
+    ranked.sort(key=lambda item: (item[0], normalize(item[1]["headword"]).casefold(), item[1]["id"]))
+    results = [entry for _, entry in ranked[:limit]]
     return {"query": q, "count": len(results), "results": results}
 
 
