@@ -1,8 +1,6 @@
 from __future__ import annotations
-import re
 import unicodedata
 
-WORD_RE = re.compile(r"[^\W\d_]+(?:['’\-][^\W\d_]+)*", re.UNICODE)
 
 
 def nfc(text: str) -> str:
@@ -14,12 +12,33 @@ def normalize_token(text: str) -> str:
 
 
 def tokenize(text: str):
-    """Return Unicode-safe Khasi word tokens and character offsets."""
-    text = nfc(text)
-    return [
-        {"text": m.group(0), "start": m.start(), "end": m.end(), "normalized": normalize_token(m.group(0))}
-        for m in WORD_RE.finditer(text)
-    ]
+    """Return original surface tokens and original Python character offsets.
+
+    Letters and attached combining marks are retained; apostrophes and ASCII
+    hyphens are internal connectors only when followed by a letter.
+    """
+    tokens = []
+    i = 0
+    while i < len(text):
+        if not unicodedata.category(text[i]).startswith("L"):
+            i += 1
+            continue
+        start = i
+        i += 1
+        while i < len(text):
+            category = unicodedata.category(text[i])
+            if category.startswith(("L", "M")):
+                i += 1
+            elif (text[i] in "'’-"
+                  and i + 1 < len(text)
+                  and unicodedata.category(text[i + 1]).startswith("L")):
+                i += 1
+            else:
+                break
+        surface = text[start:i]
+        tokens.append({"text": surface, "start": start, "end": i,
+                       "normalized": normalize_token(surface)})
+    return tokens
 
 
 def detect_adjacent_reduplication(text: str):
